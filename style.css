@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 img{
-  border: 0px solid #ddd;
+  border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 250px;
+  float: left;
+  width: 200px;
 }
 
 .grid-2{

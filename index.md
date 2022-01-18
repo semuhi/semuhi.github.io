@@ -3,7 +3,7 @@ layout: page
 title: "About me"
 ---
 
-<img src="/assets/img/prof_pic.jpg" align="right" width="250px" style="border-radius:50%;margin-right: 30px"/>
+<img src="/assets/img/prof_pic.jpg" float="right" align="center" width="250px" style="border-radius:50%;margin-right: 30px"/>
 
 I'm a Ph.D. candidate in Political Science at the University of Toronto. I'm originally from Turkey. 
 

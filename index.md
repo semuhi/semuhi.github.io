@@ -18,4 +18,7 @@ I'm a competitive cook. You may also find me occasionally singing at open-mic ev
     ![](/assets/img/prof_pic.jpg)
 </div>
 
-
+``{r out.width=c('50%', '50%'), fig.show='hold'}
+boxplot(1:10)
+plot(rnorm(10))
+`

@@ -1,6 +1,10 @@
 ---
 layout: page
 title: "About me"
+
+profile:
+  align: right
+  image: prof_pic.jpg
 ---
 
 I'm a PhD candidate in Political Science at the University of Toronto. I'm originally from Turkey. 

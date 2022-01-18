@@ -3,7 +3,6 @@ layout: page
 title: "About me"
 ---
 
-<p float="left">
 I'm a Ph.D. candidate in Political Science at the University of Toronto. I'm originally from Turkey. 
 
 My dissertation research is on the authoritarian political control of the business elite through repression and cooptation. I'm also interested in how autocrats use polarization as an electoral strategy. I employ quantitative, computational, and experimental methods for my academic research. My co-authored papers are published on high-impact academic journals such as <a href="https://jcp.gc.cuny.edu"> Comparative Politics </a> and [Sociological Methods & Research](https://journals.sagepub.com/home/smr). 
@@ -14,7 +13,9 @@ businesses. Before my doctoral studies, I co‑founded two social impact initiat
 I'm a non‑resident fellow at Massey College.
 
 I'm a competitive cook. You may also find me occasionally singing at open-mic events.
-</p>
-<p float="right">
-  <img width="200" src="/assets/img/prof_pic.jpg" alt="Profile">
-</p>
+
+<img src="/assets/img/prof_pic.jpg" align="left" width="200px"/>
+some text floating around the image
+
+<br clear="left"/>
+

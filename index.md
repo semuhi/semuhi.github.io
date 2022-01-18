@@ -4,7 +4,7 @@ title: "About me"
 
 profile:
   align: right
-  image: "/assets/img/prof_pic.jpg"
+  image: "..master/assets/img/prof_pic.jpg"
 ---
 
 I'm a Ph.D. candidate in Political Science at the University of Toronto. I'm originally from Turkey. 

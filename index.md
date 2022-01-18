@@ -1,10 +1,6 @@
 ---
 layout: page
 title: "About me"
-
-profile:
-  align: right
-  image: "..master/assets/img/prof_pic.jpg"
 ---
 
 I'm a Ph.D. candidate in Political Science at the University of Toronto. I'm originally from Turkey. 
@@ -17,3 +13,5 @@ businesses. Before my doctoral studies, I co‑founded two social impact initiat
 I'm a non‑resident fellow at Massey College.
 
 I'm a competitive cook. You may also find me occasionally singing at open-mic events.
+
+![](..master/assets/img/prof_pic.jpg)

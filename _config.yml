@@ -16,7 +16,6 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", title: "Home"}
   - {file: "README.md", title: "About"}
   - {title: "Maidan", url: "https://maidan.ca/"}
 

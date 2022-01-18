@@ -14,4 +14,4 @@ I'm a non‑resident fellow at Massey College.
 
 I'm a competitive cook. You may also find me occasionally singing at open-mic events.
 
-![](..master/assets/img/prof_pic.jpg)
+![](/assets/img/prof_pic.jpg)

@@ -21,6 +21,6 @@ Distribution of repression |  and cooptation
 
 ## Main results
 
-<embed src="https://sumanbogati.github.io/sample.pdf" type="application/pdf" />
+<embed src="https://github.com/semuhi/semuhi.github.io/blob/master/assets/pdf/main-results.pdf.pdf" type="application/pdf" style="width: 5000px" />
 
 

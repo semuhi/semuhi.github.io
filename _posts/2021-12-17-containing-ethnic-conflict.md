@@ -27,6 +27,6 @@ Distribution of repression |  and cooptation
 
 ## Main results
 
-<embed src="https://semuhi.github.io/assets/pdf/main-results.pdf.pdf" type="application/pdf" width="700px" height="600px"/>
+<embed src="https://semuhi.github.io/assets/pdf/main-results.pdf.pdf" type="application/pdf" width="800px" height="400px"/>
 
 

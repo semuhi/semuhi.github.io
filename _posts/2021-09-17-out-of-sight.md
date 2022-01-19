@@ -1,6 +1,7 @@
 ---
 title:  "Out of sight, out of mind: The impact of lockdown measures on sentiment towards refugees"
 layout: post
+categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
 ### with Amir Abdul Reda & Amine Mohamed Aboussalah, under review. Originally prepared for the World Bank Policy Research Working Paper Series 2021. 

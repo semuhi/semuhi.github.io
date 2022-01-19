@@ -5,7 +5,7 @@ excerpt_separator: <!-- excerpt-end -->
 ---
 ### with Amir Abdul Reda & Amine Mohamed Aboussalah, under review. Originally prepared for the World Bank Policy Research Working Paper Series 2021. 
 
-You may find an earlier draft [on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3924999). 
+### You may find an earlier draft [on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3924999). 
 
 <!-- excerpt-end -->
 

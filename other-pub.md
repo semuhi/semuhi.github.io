@@ -7,7 +7,7 @@ title: "Other Publications"
 
 |   year          |       reference        |  type | 
 | :---         |     :---:     | ---: |
-| 2021 | [<i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey</i>](https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey). Istanbul: Turkish Enterprise and Business Confederation & CIPE (November). | report
+|  |  | 
 | 2021 | [<i>COVID Impact Assessment Report</i>](https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report). Istanbul: Turkish Enterprise and Business Confederation & CIPE (May). | report
 | 2021   | [“Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?],”](https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/) <i>Daktilo1984</i>, February 15.  |  op-ed
 | 2018  | [“Building a policy school that has real social impact,”](https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/) <i>Policy Options</i>, November 28.  |  op-ed
@@ -46,14 +46,14 @@ title: "Other Publications"
     <div class="column">
       <table id="contact-table" class="table is-fullwidth is-striped">
         <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
+          <th>Year</th>
+          <th>Reference</th>
+          <th>Type</th>
         </tr>
         <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
+          <td>2021</td>
+          <td>[<i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey</i>](https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey). Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).</td>
+          <td>report</td>
         </tr>
         <tr>
           <td>Centro comercial Moctezuma</td>

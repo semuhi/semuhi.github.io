@@ -14,4 +14,4 @@ excerpt_separator: <!-- excerpt-end -->
 
 ### You may access the syllabus [here](https://drive.google.com/file/d/14pksOrsQJfXYZJATlcT0-aj4sD3gBtto/view?usp=sharing){:target="_blank"}. 
 
-<img src="https://www.demdigest.org/wp-content/uploads/2021/11/autocrats-atlantic.jpg" | width=75 />
+![](https://www.demdigest.org/wp-content/uploads/2021/11/autocrats-atlantic.jpg | width=75)

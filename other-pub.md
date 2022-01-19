@@ -52,7 +52,7 @@ title: "Other Publications"
         </tr>
         <tr>
           <td>2021</td>
-          <td>[<i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey</i>](https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey). Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).</td>
+          <td> <a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey"><i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).</td>
           <td>report</td>
         </tr>
         <tr>

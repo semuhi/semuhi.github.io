@@ -21,6 +21,151 @@ title: "Other Publications"
 | 2017  | [“Review of Steven Cook’s False Dawn: Protest, Democracy, and Violence in the Middle East.”](http://turkishpolicy.com/files/articlepdf/book-review-false-dawn-protest-democracy-and-violence-in-the-new-middle-east_en_1847.pdf) <i>Turkish Policy Quarterly</i> (Summer): 107‑11.  |  book review
 | 2017  | [“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”](https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri) <i>Birikim</i>, March 30. | op-ed
 | 2016  | [“5 disturbing facts about living under occupation,”](https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/) <i>Middle East Monitor</i>, August 22. | op-ed
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filter Table using JQuery - Demo</title>
+  <link rel="stylesheet" href="bulma.min.css" />
+  <style>
+    .subtitle>a{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Filter Table using JQuery
+            </h1>
+            <h2 class="subtitle">
+              <a class="link" href="https://github.com/monsterbrain/filter-table">source</a> | styling:<a href="https://bulma.io">bulma css</a> | forked from <a href="https://github.com/novelja/filter-table">novelja</a>
+            </h2>
+          </div>
+        </div>
+      </section>
+  <div class="container">
+    <div class="column is-full">
+      <input class="input" type="text" placeholder="Search Table" id="contact-filter">
+    </div>
+    <div class="column">
+      <table id="contact-table" class="table is-fullwidth is-striped">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+            <td>Enim Institute</td>
+            <td>Kuame Herrera</td>
+            <td>Svalbard and Jan Mayen Islands</td>
+          </tr>
+          <tr>
+            <td>Lacus LLC</td>
+            <td>Gannon Walsh</td>
+            <td>China</td>
+          </tr>
+          <tr>
+            <td>Quisque Incorporated</td>
+            <td>Brennan Reeves</td>
+            <td>Armenia</td>
+          </tr>
+          <tr>
+            <td>Ullamcorper Magna Consulting</td>
+            <td>Vaughan Shepard</td>
+            <td>Reunion</td>
+          </tr>
+          <tr>
+            <td>Ullamcorper PC</td>
+            <td>Henry Welch</td>
+            <td>Dominica</td>
+          </tr>
+          <tr>
+            <td>Integer PC</td>
+            <td>Tarik Leblanc</td>
+            <td>Mozambique</td>
+          </tr>
+          <tr>
+            <td>Erat Industries</td>
+            <td>Lawrence Thornton</td>
+            <td>Ecuador</td>
+          </tr>
+          <tr>
+            <td>Dolor Sit Amet Associates</td>
+            <td>Allen Quinn</td>
+            <td>Colombia</td>
+          </tr>
+          <tr>
+            <td>Integer Vulputate Industries</td>
+            <td>Zeph Wells</td>
+            <td>Estonia</td>
+          </tr>
+          <tr>
+            <td>Nullam Enim Inc.</td>
+            <td>Christian Holland</td>
+            <td>Djibouti</td>
+          </tr>
+          <tr>
+            <td>Ipsum LLP</td>
+            <td>Kuame Guy</td>
+            <td>Germany</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <script
+  src="js/jquery-3.5.1.slim.min.js"></script>
+
+  <script src="filter-table.js"></script>
+
+  <script>
+  (function ($) {
+    $(document).ready(function () {
+      $('#contact-table').filterTable('#contact-filter');
+    });
+  })(jQuery);
+  
+  </script>
+</body>
+</html>
 | 2016 | [“Tackling the Syrian Refugee Crisis: Prospects & Challenges,”](http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges) <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner). | report
 | 2015 | contributed to [<i>Improving Basic Services Delivery for the Poor in the OIC Member Countries</i>](http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf) prepared by Development Analytics. Ankara: COMCEC. | report
 | 2014 | contributed to [<i>Supply and Demand for Child Care Services in Turkey</i>](https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf) prepared by Development Analytics. Washington, DC: World Bank. | report

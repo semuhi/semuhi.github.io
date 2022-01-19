@@ -36,8 +36,3 @@ comments:
 
 plugins:
  - jekyll-feed
- - jekyll-archives
-    enabled:
-  - categories
-   layouts:
-    category: category-archive

@@ -4,8 +4,10 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
+## Other Publications
+
 <html lang="en">
-<body>
+<body> 
   <div class="container">
     <div class="column is-full">
       <input class="input" type="text" placeholder="Search Table" id="contact-filter">

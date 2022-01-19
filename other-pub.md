@@ -63,6 +63,11 @@ title: "Other Publications"
           <td> <a href="https://www.iai.it/en/pubblicazioni/realizing-youth-potential-mediterranean-unlocking-opportunities-overcoming-challenges">“Socially Inclusive Fourth Industrial Revolution: Fostering Youth Employment in the Middle East and North Africa.”</a>  In <i>Realizing Youth Potential in the Mediterranean: Unlocking Opportunities, Overcoming Challenges</i>, edited by Lorenzo Kamel & Asli Selin Okyay: 101‑12. Rome: IAI Research Studies.  </td>
           <td>book chapter</td>
           </tr>
+           <tr>
+          <td>2018</td>
+          <td> <a href="https://www.sivilsayfalar.org/2018/04/19/akilli-sehirler-cagimizin-hastaligi-teknolojizm/">“Akıllı Şehirler ve Çağımızın Hastalığı Teknolojizm [Smart cities and technologism as the curse of our age]”</a>  <i>Civil Pages</i>, April 19.  </td>
+          <td>op-ed</td>
+          </tr>
           <tr>
           <td>2018</td>
           <td> <a href="https://www.sivilsayfalar.org/2018/01/02/genclerin-sesini-dinlemek/">“Gençlerin sesini dinlemek [Hearing Youth's Voices],”</a>  <i>Civil Pages</i>, January 2.  </td>

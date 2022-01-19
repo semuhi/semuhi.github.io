@@ -14,7 +14,7 @@ This article examines how the Turkish government calibrated its repression and c
 
 Distribution of repression |  The share of tribal population
 :-------------------------:|:-------------------------:
-![the distribution of repression](/assets/img/repression.jpg)  |  ![the share of tribal population](/assets/img/share of tribal2.jpg)
+![the distribution of repression](/assets/img/repression.jpg)  |  ![share of tribal population](/assets/img/share of tribal2.jpg)
 
 
 

@@ -1,6 +1,7 @@
 ---
 title:  "Containing Ethnic Conflict: Repression, Cooptation, and Identity Politics"
 layout: post
+categories: published
 excerpt_separator: <!-- excerpt-end -->
 ---
 ### with Ceren Belge, published on [Comparative Politics](https://www.ingentaconnect.com/content/cuny/cp/pre-prints/content-jcpo20258), December 17.

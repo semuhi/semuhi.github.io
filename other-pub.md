@@ -16,4 +16,5 @@ title: "Other Publications"
 | 2017  | [“Review of Steven Cook’s False Dawn: Protest, Democracy, and Violence in the Middle East.”](http://turkishpolicy.com/files/articlepdf/book-review-false-dawn-protest-democracy-and-violence-in-the-new-middle-east_en_1847.pdf) <i>Turkish Policy Quarterly</i> (Summer): 107‑11.  |  book review
 | 2017  | [“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”](https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri) <i>Birikim</i>, March 30. | op-ed
 | 2016  | [“5 disturbing facts about living under occupation,”](https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/) <i>Middle East Monitor</i>, August 22. | op-ed
+| 2011 | [“Youth who make the future,”](https://www.opendemocracy.net/en/youth-who-make-future/) <i>openDemocracy</i>, September 23. | op-ed
 

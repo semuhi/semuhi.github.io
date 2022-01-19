@@ -4,7 +4,7 @@ permalink: "/teaching/"
 title: "Teaching"
 ---
 
-<h1>Archive of posts with {{ published }} '{{ page.title }}'</h1>
+<h1>Archive of posts with {{ published }} </h1>
 <ul class="posts">
   {% for post in page.posts %}
     <li>

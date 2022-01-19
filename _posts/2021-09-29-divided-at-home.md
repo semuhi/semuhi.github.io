@@ -19,6 +19,6 @@ Our findings overall suggest that polarization travels abroad and it can shape t
 
 ## Facebook profile treatment example
 
-<img src="https://pbs.twimg.com/media/E9eZq2gXoAI5KuM?format=jpg&name=large" data-canonical-src="https://pbs.twimg.com/media/E9eZq2gXoAI5KuM?format=jpg&name=large" width="400" height="400" />
+<img src="https://pbs.twimg.com/media/E9eZq2gXoAI5KuM?format=jpg" width="400" height="400" />
 
 

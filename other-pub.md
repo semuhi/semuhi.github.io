@@ -4,14 +4,7 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-
-| 2017  | [“Review of Steven Cook’s False Dawn: Protest, Democracy, and Violence in the Middle East.”](http://turkishpolicy.com/files/articlepdf/book-review-false-dawn-protest-democracy-and-violence-in-the-new-middle-east_en_1847.pdf) <i>Turkish Policy Quarterly</i> (Summer): 107‑11.  |  book review
-| 2017  | [“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”](https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri) <i>Birikim</i>, March 30. | op-ed
-| 2016  | [“5 disturbing facts about living under occupation,”](https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/) <i>Middle East Monitor</i>, August 22. | op-ed
-| 2016 | [“Tackling the Syrian Refugee Crisis: Prospects & Challenges,”](http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges) <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner). | report
-| 2015 | contributed to [<i>Improving Basic Services Delivery for the Poor in the OIC Member Countries</i>](http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf) prepared by Development Analytics. Ankara: COMCEC. | report
-| 2014 | contributed to [<i>Supply and Demand for Child Care Services in Turkey</i>](https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf) prepared by Development Analytics. Washington, DC: World Bank. | report
-| 2011 | [“Youth who make the future,”](https://www.opendemocracy.net/en/youth-who-make-future/) <i>openDemocracy</i>, September 23. | op-ed
+| 2011 | [“Youth who make the future,”]() <i>openDemocracy</i>, September 23. | op-ed
 
 <html lang="en">
 <head>
@@ -93,47 +86,46 @@ title: "Other Publications"
           <td>op-ed</td>
           </tr>
           <tr>
-            <td>Ullamcorper PC</td>
-            <td>Henry Welch</td>
-            <td>Dominica</td>
+          <td>2017</td>
+          <td> <a href="http://turkishpolicy.com/files/articlepdf/book-review-false-dawn-protest-democracy-and-violence-in-the-new-middle-east_en_1847.pdf">“Review of Steven Cook’s False Dawn: Protest, Democracy, and Violence in the Middle East.”</a>  <i>Turkish Policy Quarterly</i> (Summer): 107‑11.  </td>
+          <td>book review</td>
           </tr>
           <tr>
-            <td>Integer PC</td>
-            <td>Tarik Leblanc</td>
-            <td>Mozambique</td>
+          <td>2017</td>
+          <td> <a href="https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri">“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”</a>  i>Birikim</i>, March 30.  </td>
+          <td>op-ed</td>
           </tr>
           <tr>
-            <td>Erat Industries</td>
-            <td>Lawrence Thornton</td>
-            <td>Ecuador</td>
+          <td>2016</td>
+          <td> <a href="https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/">“5 disturbing facts about living under occupation,”</a>  <i>Middle East Monitor</i>, August 22. </td>
+          <td>op-ed</td>
           </tr>
           <tr>
-            <td>Dolor Sit Amet Associates</td>
-            <td>Allen Quinn</td>
-            <td>Colombia</td>
+          <td>2016</td>
+          <td> <a href="http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges">“Tackling the Syrian Refugee Crisis: Prospects & Challenges,”</a>   <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner). </td>
+          <td>report</td>
           </tr>
           <tr>
-            <td>Integer Vulputate Industries</td>
-            <td>Zeph Wells</td>
-            <td>Estonia</td>
+          <td>2015</td>
+          <td> <a href="http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf">contributed to <i>Improving Basic Services Delivery for the Poor in the OIC Member Countries</i></a>  prepared by Development Analytics. Ankara: COMCEC. </td>
+          <td>report</td>
           </tr>
           <tr>
-            <td>Nullam Enim Inc.</td>
-            <td>Christian Holland</td>
-            <td>Djibouti</td>
+          <td>2014</td>
+          <td> <a href="https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf">contributed to <i>Supply and Demand for Child Care Services in Turkey</i></a>  prepared by Development Analytics. Washington, DC: World Bank. </td>
+          <td>report</td>
           </tr>
           <tr>
-            <td>Ipsum LLP</td>
-            <td>Kuame Guy</td>
-            <td>Germany</td>
+          <td>2011</td>
+          <td> <a href="https://www.opendemocracy.net/en/youth-who-make-future/">“Youth who make the future,”</a>  <i>openDemocracy</i>, September 23.  </td>
+          <td>op-ed</td>
           </tr>
       </table>
     </div>
   </div>
 
 
-  <script
-  src="/assets/css/jquery-3.5.1.slim.min.js"></script>
+  <script src="/assets/css/jquery-3.5.1.slim.min.js"></script>
 
   <script src="/assets/css/filter-table.js"></script>
 

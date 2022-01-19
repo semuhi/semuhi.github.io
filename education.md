@@ -14,6 +14,8 @@ title: "Education"
   - Committee Members: Murat Somer, Ziya Onis, Zeynep Kadirbeyoglu
 - <b>Bogazici University</b>, Double Major with Political Science and Economics, 2009-2014
 
+-------------------
+
 ### Non-degree Programs and Training
 
 - <b>University of Michigan</b>, ICPSR, Summer 2019

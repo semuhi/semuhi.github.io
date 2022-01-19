@@ -26,13 +26,11 @@ title: "Other Publications"
 | 2014 | contributed to [<i>Supply and Demand for Child Care Services in Turkey</i>](https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf) prepared by Development Analytics. Washington, DC: World Bank. | report
 | 2011 | [“Youth who make the future,”](https://www.opendemocracy.net/en/youth-who-make-future/) <i>openDemocracy</i>, September 23. | op-ed
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Filter Table using JQuery - Demo</title>
   <link rel="stylesheet" href="/assets/css/bulma.min.css" />
   <style>
     .subtitle>a{
@@ -41,18 +39,6 @@ title: "Other Publications"
   </style>
 </head>
 <body>
-    <section class="hero is-info">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
-              Filter Table using JQuery
-            </h1>
-            <h2 class="subtitle">
-              <a class="link" href="https://github.com/monsterbrain/filter-table">source</a> | styling:<a href="https://bulma.io">bulma css</a> | forked from <a href="https://github.com/novelja/filter-table">novelja</a>
-            </h2>
-          </div>
-        </div>
-      </section>
   <div class="container">
     <div class="column is-full">
       <input class="input" type="text" placeholder="Search Table" id="contact-filter">

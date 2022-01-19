@@ -1,6 +1,7 @@
 ---
 title:  "Mobilizing the Masses: Measuring Resource Mobilization on Twitter"
 layout: post
+categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
 ### with Amir Abdul Reda & Mohamed Abdalla, published on [Sociological Methods & Research](https://journals.sagepub.com/doi/full/10.1177/0049124120986197), February 4.

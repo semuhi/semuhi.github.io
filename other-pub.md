@@ -1,5 +1,5 @@
 ---
 layout: page
-permalink: "/other-publications/"
+permalink: "/other-pub/"
 title: ""
 ---

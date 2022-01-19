@@ -14,7 +14,7 @@ This article examines how the Turkish government calibrated its repression and c
 
 Distribution of repression |  and cooptation
 :-------------------------:|:-------------------------:
-![the distribution of repression](/assets/img/repression.jpg)  |  ![share of tribal population](/assets/img/cooptation2.jpg)
+[![the distribution of repression](/assets/img/repression.jpg)](http://semuhi.github.io/assets/img/repression.jpg)  |  ![share of tribal population](/assets/img/cooptation2.jpg)
 
 
 

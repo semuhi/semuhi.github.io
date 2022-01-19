@@ -1,6 +1,7 @@
 ---
 title:  "Divided at Home, Divided Abroad?"
 layout: post
+categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
 ### with Selin Kepenek, working paper presented at [APSA 2021](https://tinyurl.com/yfudmjpw) and [ECPR 2021](https://ecpr.eu/Events/Event/PaperDetails/57133). 

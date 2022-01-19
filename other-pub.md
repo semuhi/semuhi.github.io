@@ -7,6 +7,7 @@ title: "Other Publications"
 
 |   year          |       reference        |  type | 
 | :---         |     :---:     | ---: |
+| 2021 | [<i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey</i>](https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey). Istanbul: Turkish Enterprise and Business Confederation & CIPE (November). | report
 | 2021   | [“Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?],”](https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/) <i>Daktilo1984</i>, February 15.  |  op-ed
 | 2018  | [“Building a policy school that has real social impact,”](https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/) <i>Policy Options</i>, November 28.  |  op-ed
 | 2018  | [“Memlekete Dönmek [Return Home],”](https://birikimdergisi.com/guncel/9210/memlekete-donmek) <i>Birikim</i>, November 12.  |  op-ed

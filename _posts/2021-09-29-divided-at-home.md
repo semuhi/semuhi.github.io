@@ -18,8 +18,7 @@ To address this gap, we conducted two online experiments with immigrants from Tu
 Our findings overall suggest that polarization travels abroad and it can shape the social interactions within immigrant communities. First, anti-government immigrants from a country with high level of political polarization are less likely to assist pro-government newcomers from their country. On the other hand, there is no such difference between attitudes towards pro- and anti-government immigrants who come from countries with low level of polarization. Secondly, polarization among anti-government immigrants who support different political parties disappears abroad and on average, there is no statistically significant difference between their attitude towards their co-partisans and other anti-government immigrants supporting other opposition parties.
 
 ## Facebook profile treatment example
- 
-[![fake-profile](https://pbs.twimg.com/media/E9eZq2gXoAI5KuM?format=jpg&name=large)](https://pbs.twimg.com/media/E9eZq2gXoAI5KuM?format=jpg&name=large =250x250){:target="_blank" rel="noopener"}   
 
+<img src="https://pbs.twimg.com/media/E9eZq2gXoAI5KuM?format=jpg&name=large" data-canonical-src="https://pbs.twimg.com/media/E9eZq2gXoAI5KuM?format=jpg&name=large" width="200" height="400" />
 
 

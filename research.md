@@ -4,5 +4,14 @@ permalink: "/research/"
 layout: default
 ---
 
-
-{% if site.show_excerpts %} {% include home.html %} {% else %} {% include archive.html %} {% endif %}
+<article>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <ul class="archive">
+{% for post in site.categories.research %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</article>

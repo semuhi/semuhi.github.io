@@ -30,7 +30,7 @@ title: "Other Publications"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Filter Table using JQuery - Demo</title>
-  <link rel="stylesheet" href="bulma.min.css" />
+  <link rel="stylesheet" href="/assets/css/bulma.min.css" />
   <style>
     .subtitle>a{
       text-decoration: underline;
@@ -152,9 +152,9 @@ title: "Other Publications"
 
 
   <script
-  src="js/jquery-3.5.1.slim.min.js"></script>
+  src="/assets/css/jquery-3.5.1.slim.min.js"></script>
 
-  <script src="filter-table.js"></script>
+  <script src="/assets/css/filter-table.js"></script>
 
   <script>
   (function ($) {
@@ -166,6 +166,7 @@ title: "Other Publications"
   </script>
 </body>
 </html>
+
 | 2016 | [“Tackling the Syrian Refugee Crisis: Prospects & Challenges,”](http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges) <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner). | report
 | 2015 | contributed to [<i>Improving Basic Services Delivery for the Poor in the OIC Member Countries</i>](http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf) prepared by Development Analytics. Ankara: COMCEC. | report
 | 2014 | contributed to [<i>Supply and Demand for Child Care Services in Turkey</i>](https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf) prepared by Development Analytics. Washington, DC: World Bank. | report

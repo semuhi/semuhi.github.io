@@ -14,8 +14,7 @@ How can we measure the resource mobilization (RM) efforts of social movements on
 
 ## The validity of our measure
  
-:-------------------------:|
-[![validity](/assets/img/paper-rm-protest.gif)](http://semuhi.github.io/assets/img/paper-rm-protest.gif){:target="_blank" rel="noopener"}  |  
+[![validity](/assets/img/paper-rm-protest.gif)](http://semuhi.github.io/assets/img/paper-rm-protest.gif){:target="_blank" rel="noopener"}   
 
 
 

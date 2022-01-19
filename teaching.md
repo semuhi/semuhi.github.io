@@ -1,5 +1,5 @@
 ---
-layout: page
-permalink: "/teaching"
+layout: default
+permalink: "/teaching/"
 title: "Teaching"
 ---

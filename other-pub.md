@@ -5,14 +5,6 @@ title: "Other Publications"
 ---
 
 
-| 2018  | [“Building a policy school that has real social impact,”](https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/) <i>Policy Options</i>, November 28.  |  op-ed
-| 2018  | [“Memlekete Dönmek [Return Home],”](https://birikimdergisi.com/guncel/9210/memlekete-donmek) <i>Birikim</i>, November 12.  |  op-ed
-| 2018  | [“We need a new conservative party in Turkey for regime transition,”](https://www.jpost.com/Opinion/We-need-a-new-conservative-party-in-Turkey-for-regime-transition-585286) <i>The Jerusalem Post</i>, March 31.  |  op-ed
-| 2018   | [“Socially Inclusive Fourth Industrial Revolution: Fostering Youth Employment in the Middle East and North Africa.”](https://www.iai.it/en/pubblicazioni/realizing-youth-potential-mediterranean-unlocking-opportunities-overcoming-challenges) In <i>Realizing Youth Potential in the Mediterranean: Unlocking Opportunities, Overcoming Challenges</i>, edited by Lorenzo Kamel & Asli Selin Okyay: 101‑12. Rome: IAI Research Studies   |  book chapter
-| 2018  | [“Gençlerin sesini dinlemek [Hearing Youth's Voices],”](https://www.sivilsayfalar.org/2018/01/02/genclerin-sesini-dinlemek/) <i>Civil Pages</i>,  January 2.  |  op-ed
-| 2017  | [“Kanada Masalı [The Tale of Canada],”](https://www.sivilsayfalar.org/2017/11/01/kanada-masali/) <i>Civil Pages</i>,  November 1.  |  op-ed
-| 2017  | [“Death & politics: the burial of a Kurdish woman in Turkey,”](https://www.opendemocracy.net/en/north-africa-west-asia/politics-death-kurdish-turkey-kurd/) <i>openDemocracy</i>,  October 4.  |  op-ed
-| 2017  | [“Derneğe Ev Yok [No Home for Associations],”](https://www.sivilsayfalar.org/2017/08/01/dernege-ev-yok/) <i>Civil Pages</i>, August 1.  |  op-ed
 | 2017  | [“Review of Steven Cook’s False Dawn: Protest, Democracy, and Violence in the Middle East.”](http://turkishpolicy.com/files/articlepdf/book-review-false-dawn-protest-democracy-and-violence-in-the-new-middle-east_en_1847.pdf) <i>Turkish Policy Quarterly</i> (Summer): 107‑11.  |  book review
 | 2017  | [“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”](https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri) <i>Birikim</i>, March 30. | op-ed
 | 2016  | [“5 disturbing facts about living under occupation,”](https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/) <i>Middle East Monitor</i>, August 22. | op-ed
@@ -61,39 +53,44 @@ title: "Other Publications"
           <td>op-ed</td>
         </tr>
         <tr>
-          <td>Island Trading</td>
-          <td>Helen Bennett</td>
-          <td>UK</td>
+          <td>2018</td>
+          <td> <a href="https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/">“Building a policy school that has real social impact,”</a>  <i>Policy Options</i>, November 28. </td>
+          <td>op-ed</td>
         </tr>
         <tr>
-          <td>Laughing Bacchus Winecellars</td>
-          <td>Yoshi Tannamuri</td>
-          <td>Canada</td>
+          <td>2018</td>
+          <td> <a href="https://birikimdergisi.com/guncel/9210/memlekete-donmek">“Memlekete Dönmek [Return Home],”</a>  <i>Birikim</i>, November 12.  </td>
+          <td>op-ed</td>
         </tr>
         <tr>
-          <td>Magazzini Alimentari Riuniti</td>
-          <td>Giovanni Rovelli</td>
-          <td>Italy</td>
+          <td>2018</td>
+          <td> <a href="https://www.jpost.com/Opinion/We-need-a-new-conservative-party-in-Turkey-for-regime-transition-585286">“We need a new conservative party in Turkey for regime transition,”</a>  <i>The Jerusalem Post</i>, March 31.  </td>
+          <td>op-ed</td>
         </tr>
         <tr>
-            <td>Enim Institute</td>
-            <td>Kuame Herrera</td>
-            <td>Svalbard and Jan Mayen Islands</td>
+          <td>2018</td>
+          <td> <a href="https://www.iai.it/en/pubblicazioni/realizing-youth-potential-mediterranean-unlocking-opportunities-overcoming-challenges">“Socially Inclusive Fourth Industrial Revolution: Fostering Youth Employment in the Middle East and North Africa.”</a>  In <i>Realizing Youth Potential in the Mediterranean: Unlocking Opportunities, Overcoming Challenges</i>, edited by Lorenzo Kamel & Asli Selin Okyay: 101‑12. Rome: IAI Research Studies.  </td>
+          <td>book chapter</td>
           </tr>
           <tr>
-            <td>Lacus LLC</td>
-            <td>Gannon Walsh</td>
-            <td>China</td>
+          <td>2018</td>
+          <td> <a href="https://www.sivilsayfalar.org/2018/01/02/genclerin-sesini-dinlemek/">“Gençlerin sesini dinlemek [Hearing Youth's Voices],”</a>  <i>Civil Pages</i>, January 2.  </td>
+          <td>op-ed</td>
           </tr>
           <tr>
-            <td>Quisque Incorporated</td>
-            <td>Brennan Reeves</td>
-            <td>Armenia</td>
+          <td>2017</td>
+          <td> <a href="https://www.sivilsayfalar.org/2017/11/01/kanada-masali/">“Kanada Masalı [The Tale of Canada],”</a>  <i>Civil Pages</i>, November 1.  </td>
+          <td>op-ed</td>
+          </tr>
+           <tr>
+          <td>2017</td>
+          <td> <a href="https://www.opendemocracy.net/en/north-africa-west-asia/politics-death-kurdish-turkey-kurd/">“Death & politics: the burial of a Kurdish woman in Turkey,”</a>  <i>openDemocracy</i>,  October 4. </td>
+          <td>op-ed</td>
           </tr>
           <tr>
-            <td>Ullamcorper Magna Consulting</td>
-            <td>Vaughan Shepard</td>
-            <td>Reunion</td>
+          <td>2017</td>
+          <td> <a href="https://www.sivilsayfalar.org/2017/08/01/dernege-ev-yok/">“Derneğe Ev Yok [No Home for Associations],”</a>  <i>Civil Pages</i>, August 1.  </td>
+          <td>op-ed</td>
           </tr>
           <tr>
             <td>Ullamcorper PC</td>

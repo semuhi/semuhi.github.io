@@ -4,6 +4,6 @@ permalink: "/teaching/"
 title: "Teaching"
 ---
 
-deneme
+
 
 

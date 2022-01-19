@@ -6,7 +6,7 @@ title: "Teaching"
 
 deneme
 
-<h1>Archive of posts with {{ category }} '{{ page.title }}'</h1>
+<h1>Archive of posts with {{ category }} '{{ published }}'</h1>
 <ul class="posts">
   {% for post in page.posts %}
     <li>

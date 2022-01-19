@@ -1,6 +1,7 @@
 ---
 title:  "Does Every Cloud Have a Silver Lining? Disasters and Polarization"
 layout: post
+categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
 ### with Michael Donnelly, ongoing research funded through [EGAP Priority Theme Research Grant](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) and [POMEPS Travel, Research, Engagement Grant](https://pomeps.org/call-for-proposals-2022-travel-research-engagement-grants).

@@ -1,4 +1,10 @@
-<h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
+---
+layout: default
+permalink: "/teaching/"
+title: "Teaching"
+---
+
+<h1>Archive of posts with {{ published }} '{{ page.title }}'</h1>
 <ul class="posts">
   {% for post in page.posts %}
     <li>

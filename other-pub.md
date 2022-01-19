@@ -19,6 +19,7 @@ title: "Other Publications"
 | 2017  | [“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”](https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri) <i>Birikim</i>, March 30. | op-ed
 | 2016  | [“5 disturbing facts about living under occupation,”](https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/) <i>Middle East Monitor</i>, August 22. | op-ed
 | 2016 | [“Tackling the Syrian Refugee Crisis: Prospects & Challenges,”](http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges) <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner). | report
-| 2014 | contributed to the World Bank's [<i>Supply and Demand for Child Care Services in Turkey</i>”](https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf) prepared by Development Analytics. | report
+| 2015 | contributed to [<i>Improving Basic Services Delivery for the Poor in the OIC Member Countries</i>](http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf) prepared by Development Analytics. Ankara: COMCEC. | report
+| 2014 | contributed to [<i>Supply and Demand for Child Care Services in Turkey</i>](https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf) prepared by Development Analytics. Washington, DC: World Bank. | report
 | 2011 | [“Youth who make the future,”](https://www.opendemocracy.net/en/youth-who-make-future/) <i>openDemocracy</i>, September 23. | op-ed
 

@@ -4,8 +4,6 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-| 2011 | [“Youth who make the future,”]() <i>openDemocracy</i>, September 23. | op-ed
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">

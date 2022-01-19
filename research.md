@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: "/research/"
-layout: page
+layout: default
 ---
 
 # Academic Publications

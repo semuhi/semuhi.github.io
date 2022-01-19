@@ -12,7 +12,7 @@ My dissertation research is on the authoritarian political control of the busine
 I'm the co‑founder of a Toronto‑based political risk consultancy company that leverages big data to predict protest‑related risks for
 businesses. Before my doctoral studies, I co‑founded two social impact initiatives for youth empowerment. One based in Montreal advocated for youth inclusion in the design of smart cities. The other, based in Istanbul, mobilized more than 30 stakeholder organizations in six countries across the MENA region to foster youth employment in the region. 
 
-I'm a non‑resident fellow at [Massey College](https://www.masseycollege.ca/). I completed a double major program with Political Science and Economics at Bogazici University, Istanbul. I earned an MA degree in International Relations at Koc University, Istanbul. 
+I'm a non‑resident fellow at [Massey College](https://www.masseycollege.ca/).
 
 I'm a competitive cook. You may also find me occasionally singing at open-mic events.
 

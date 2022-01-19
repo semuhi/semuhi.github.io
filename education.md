@@ -22,5 +22,5 @@ title: "Education"
   - [EITM‑certified courses](https://eitminstitute.org/): Introduction to Bayesian Statistics, Advanced Bayesian Statistics
 - <b>McGill University</b>, Graduate Research Trainee, 2017‑18
 - <b>Harvard Kennedy School Executive Education</b>; Leadership, Organizing, and Action, Spring 2017
-- <b>Columbia University<b>, Exchange Program, Spring 2013
+- <b>Columbia University</b>, Exchange Program, Spring 2013
 

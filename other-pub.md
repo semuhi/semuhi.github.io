@@ -95,7 +95,7 @@ title: "Other Publications"
           </tr>
           <tr>
           <td>2017</td>
-          <td> <a href="https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri">“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”</a>  i>Birikim</i>, March 30.  </td>
+          <td> <a href="https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri">“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”</a>  <i>Birikim</i>, March 30.  </td>
           <td>op-ed</td>
           </tr>
           <tr>

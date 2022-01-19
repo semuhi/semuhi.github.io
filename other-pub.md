@@ -5,11 +5,6 @@ title: "Other Publications"
 ---
 
 
-|   year          |       reference        |  type | 
-| :---         |     :---:     | ---: |
-|  |  | 
-| 2021 | [<i>COVID Impact Assessment Report</i>](https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report). Istanbul: Turkish Enterprise and Business Confederation & CIPE (May). | report
-| 2021   | [“Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?],”](https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/) <i>Daktilo1984</i>, February 15.  |  op-ed
 | 2018  | [“Building a policy school that has real social impact,”](https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/) <i>Policy Options</i>, November 28.  |  op-ed
 | 2018  | [“Memlekete Dönmek [Return Home],”](https://birikimdergisi.com/guncel/9210/memlekete-donmek) <i>Birikim</i>, November 12.  |  op-ed
 | 2018  | [“We need a new conservative party in Turkey for regime transition,”](https://www.jpost.com/Opinion/We-need-a-new-conservative-party-in-Turkey-for-regime-transition-585286) <i>The Jerusalem Post</i>, March 31.  |  op-ed
@@ -56,14 +51,14 @@ title: "Other Publications"
           <td>report</td>
         </tr>
         <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
+          <td>2021</td>
+          <td> <a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"><i>COVID Impact Assessment Report.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).</td>
+          <td>report</td>
         </tr>
         <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
+          <td>2021</td>
+          <td> <a href="https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/">“Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?],”</a> <i>Daktilo1984</i>, February 15.</td>
+          <td>op-ed</td>
         </tr>
         <tr>
           <td>Island Trading</td>

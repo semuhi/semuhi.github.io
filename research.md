@@ -7,7 +7,7 @@ layout: default
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in site.categories.research %}
   <article>
-    {% include meta.html post=post preview=true %}
+    {% include meta.html post=post preview=false %}
     {{ post.excerpt }}
     <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
   </article>

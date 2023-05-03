@@ -1,6 +1,6 @@
 ---
 permalink: "/research/"
-layout: page
+layout: default
 title: "Research"
 ---
 # <span style="font-size: 30px; color: #0000EE;">Publications</span>

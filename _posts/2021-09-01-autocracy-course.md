@@ -11,6 +11,9 @@ I taught this course at the University of Toronto, Mississauga multiple times as
 
 You may access a draft syllabus [here](https://drive.google.com/file/d/1RNW_G7-QZrCdOopF2i_EGF0JUS96OKOu/view?usp=sharing){:target="_blank"}. 
 
+You may find a draft syllabus below:
+<embed src="https://drive.google.com/file/d/1RNW_G7-QZrCdOopF2i_EGF0JUS96OKOu/view?usp=sharing" type="application/pdf" width="800px" height="400px"/>
+
 You may find a summary of student evaluations and example excerpts below:
 
 > _"Hands down best learning experience I've had at UTM. The professor is extremely engaging and provides great support to the whole class. The general mood of the class was excellent throughout and this is thanks to the prof's excellent student management and treating us like peers."_

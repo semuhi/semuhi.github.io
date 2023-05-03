@@ -3,7 +3,7 @@ title: ""
 permalink: "/research/"
 layout: page
 ---
-# **Publications**
+# <span style="font-size: 24px; color: red;">Publications</span>
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in site.categories.research %}
   <article>

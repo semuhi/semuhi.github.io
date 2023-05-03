@@ -4,9 +4,8 @@ layout: post
 categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
-### with Amir Abdul Reda & Mohamed Abdalla, published on [Sociological Methods & Research](https://journals.sagepub.com/doi/full/10.1177/0049124120986197), February 4.
+2021. [Sociological Methods & Research](https://journals.sagepub.com/doi/full/10.1177/0049124120986197) (February) (with Amir Abdul Reda and Mohamed Abdalla)
 
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Our paper w/ <a href="https://twitter.com/amirabdulreda?ref_src=twsrc%5Etfw">@amirabdulreda</a> &amp; Mo. Abdalla just up at SMR. Ungated! <br><br>We created a lexicon to capture tweets about resource mobilization in the US. Our index score correlates with <a href="https://twitter.com/hashtag/protests?src=hash&amp;ref_src=twsrc%5Etfw">#protests</a> in the US.<a href="https://twitter.com/hashtag/AcademicChatter?src=hash&amp;ref_src=twsrc%5Etfw">#AcademicChatter</a> <a href="https://twitter.com/hashtag/AcademicTwitter?src=hash&amp;ref_src=twsrc%5Etfw">#AcademicTwitter</a><a href="https://twitter.com/hashtag/phdlife?src=hash&amp;ref_src=twsrc%5Etfw">#phdlife</a><a href="https://t.co/Ph6QwmstwH">https://t.co/Ph6QwmstwH</a></p>&mdash; Semuhi Sinanoğlu (@semuhi) <a href="https://twitter.com/semuhi/status/1357345870404964352?ref_src=twsrc%5Etfw">February 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- excerpt-end -->
 
 ## Abstract 

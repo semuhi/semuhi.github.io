@@ -1,5 +1,5 @@
 ---
-title:  "Containing Ethnic Conflict: Repression, Cooptation, and Identity Politics"
+subtitle:  "Containing Ethnic Conflict: Repression, Cooptation, and Identity Politics"
 layout: post
 categories: research
 excerpt_separator: <!-- excerpt-end -->

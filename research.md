@@ -3,7 +3,7 @@ title: ""
 permalink: "/research/"
 layout: page
 ---
-## **Publications**
+# **Publications**
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in site.categories.research %}
   <article>
@@ -21,7 +21,7 @@ layout: page
   </footer>
 {% endif %}
 
-## **Working Papers**
+# **Working Papers**
 
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in site.categories.research-working %}

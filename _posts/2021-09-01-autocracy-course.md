@@ -19,3 +19,5 @@ Here is a summary of student evaluations and example excerpts:
 > _"The overall instruction of this course was great. Professor Sinanoglu was very enthusiastic about the subject material, explained concepts very clearly, and created an environment where I could feel comfortable sharing thoughts about the course readings."_
 
 > _"I appreciated Professor Sinanoglu's conversational teaching style. It essentially forced us, as students, to engage with the readings rather than merely recite back what we read. The critical engagement made me think more about the implications of the readings rather than what was printed."_
+
+![](assets/img/meme1.jpg)

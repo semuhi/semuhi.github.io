@@ -10,7 +10,7 @@ I taught this course at the University of Toronto, Mississauga multiple times as
 <!-- excerpt-end -->
 
 You may find a draft syllabus below:
-<embed src="https://github.com/semuhi/semuhi.github.io/blob/master/assets/pdf/autocrat-syllabus.pdf" type="application/pdf" width="800px" height="400px"/>
+<embed src="https://semuhi.github.io/assets/pdf/autocrat-syllabus.pdf" type="application/pdf" width="800px" height="400px"/>
 
 Here is a summary of student evaluations and example excerpts:
 

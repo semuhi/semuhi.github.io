@@ -4,7 +4,7 @@ layout: post
 categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
-2021. [Sociological Methods & Research](https://journals.sagepub.com/doi/full/10.1177/0049124120986197) (February) (with Amir Abdul Reda and Mohamed Abdalla)
+(2021) [Sociological Methods & Research](https://journals.sagepub.com/doi/full/10.1177/0049124120986197) (February) (with Amir Abdul Reda and Mohamed Abdalla)
 
 <!-- excerpt-end -->
 

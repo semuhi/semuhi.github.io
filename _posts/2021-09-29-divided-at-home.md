@@ -4,9 +4,6 @@ layout: post
 categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
-### with Selin Kepenek, working paper presented at [APSA 2021](https://tinyurl.com/yfudmjpw) and [ECPR 2021](https://ecpr.eu/Events/Event/PaperDetails/57133). 
-
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Hey <a href="https://twitter.com/hashtag/polisci?src=hash&amp;ref_src=twsrc%5Etfw">#polisci</a> scholars! Interested in polarization scholarship? Gather around and buckle up! <a href="https://twitter.com/selinkepenek?ref_src=twsrc%5Etfw">@selinkepenek</a> and I have a working paper entitled &quot;Divided at Home, Divided Abroad?&quot; on polarization among immigrants. To be presented at <a href="https://twitter.com/APSAtweets?ref_src=twsrc%5Etfw">@APSAtweets</a> &amp; <a href="https://twitter.com/ECPR?ref_src=twsrc%5Etfw">@ECPR</a> this year! <br><br>A short thread: <a href="https://t.co/3q355tn3bn">pic.twitter.com/3q355tn3bn</a></p>&mdash; Semuhi Sinanoğlu (@semuhi) <a href="https://twitter.com/semuhi/status/1429841637581238272?ref_src=twsrc%5Etfw">August 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!-- excerpt-end -->
 

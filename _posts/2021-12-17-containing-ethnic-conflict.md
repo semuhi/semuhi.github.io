@@ -4,7 +4,7 @@ layout: post
 categories: research
 excerpt_separator: <!-- excerpt-end -->
 ---
-[Comparative Politics(https://www.ingentaconnect.com/content/cuny/cp/2022/00000054/00000004/art00009) 54(4): 765-786 (with Ceren Belge). 
+[Comparative Politics](https://www.ingentaconnect.com/content/cuny/cp/2022/00000054/00000004/art00009) 54(4): 765-786 (with Ceren Belge). 
 <!-- excerpt-end -->
 
 ### Abstract 

@@ -1,7 +1,7 @@
 ---
 title:  "Divided at Home, Divided Abroad?"
 layout: post
-categories: research
+categories: research-working
 excerpt_separator: <!-- excerpt-end -->
 ---
 

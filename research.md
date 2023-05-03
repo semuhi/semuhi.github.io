@@ -1,7 +1,7 @@
 ---
-title: "Research"
 permalink: "/research/"
 layout: page
+title: "Research"
 ---
 # <span style="font-size: 30px; color: #0000EE;">Publications</span>
 {%- assign posts = paginator.posts | default: site.posts -%}

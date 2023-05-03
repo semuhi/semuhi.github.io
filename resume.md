@@ -1,8 +1,10 @@
 ---
 layout: page
-permalink: "/education/"
-title: "Education"
+permalink: "/resume/"
+title: "Resume"
 ---
+
+## Education
 
 ### Degree Programs
 

@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: "/research/"
-layout: default
+layout: page
 ---
 **Publications**
 {%- assign posts = paginator.posts | default: site.posts -%}

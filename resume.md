@@ -16,8 +16,6 @@ title: "Academic Resume"
   - Committee Members: Murat Somer, Ziya Onis, Zeynep Kadirbeyoglu
 - <b>Bogazici University</b>, Double Major with Political Science and Economics, 2009-2014
 
--------------------
-
 ### Non-degree Programs and Training
 
 - <b>University of Michigan</b>, ICPSR, Summer 2019
@@ -26,11 +24,15 @@ title: "Academic Resume"
 - <b>Harvard Kennedy School Executive Education</b>; Leadership, Organizing, and Action, Spring 2017
 - <b>Columbia University</b>, Exchange Program, Spring 2013
 
+-------------------
+
 ## Research Grants
 
 - (2022) Hayek Fund by the IHS, George Mason Uni. for my research on the business support for autocracies
 - (2022) Travel, Research, Engagement Grant by POMEPS to fund my research on depolarization
 - (2021) Priority Theme Small Grants Fund by EGAP to fund my research on depolarization
+
+-------------------
 
 ## Fellowships and Affiliations
 - (2022‑23) Regional Manager at Digital Society Project
@@ -40,6 +42,8 @@ title: "Academic Resume"
 - (2019‑22) Non‑resident Junior Fellow at Massey College
 - (2017‑18) Resident Junior Fellow at Jeanne Sauvé Foundation
 - (2012-13) Young Scholar at the Global Relations Forum
+
+-------------------
 
 ## Awards and Scholarships
 - (2021‑23) Mary H. Beatty Scholarship by University of Toronto

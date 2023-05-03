@@ -20,4 +20,4 @@ Here is a summary of student evaluations and example excerpts:
 
 > _"I appreciated Professor Sinanoglu's conversational teaching style. It essentially forced us, as students, to engage with the readings rather than merely recite back what we read. The critical engagement made me think more about the implications of the readings rather than what was printed."_
 
-![](assets/img/meme1.jpg)
+![](/assets/img/meme1.jpg)

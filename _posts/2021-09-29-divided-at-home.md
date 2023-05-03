@@ -4,7 +4,7 @@ layout: post
 categories: research-working
 excerpt_separator: <!-- excerpt-end -->
 ---
-
+(with Selin Kepenek). Accepted for the PSA Annual International Conference (Edinburgh, April); APSA Annual Conference (Seattle, September); ECPR General Conference (August).
 <!-- excerpt-end -->
 
 ## Abstract 

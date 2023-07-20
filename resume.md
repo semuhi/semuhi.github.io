@@ -46,6 +46,7 @@ title: "Academic Resume"
 -------------------
 
 ## Awards and Scholarships
+- (2023) Outstanding TA Award by University of Toronto
 - (2021‑23) Mary H. Beatty Scholarship by University of Toronto
 - (2022) Research Travel Award: M. W. Donnelly Fellowship in Political Economy by University of Toronto
 - (2020) Ontario Graduate Scholarship (OGS) is a merit‑based competitive scholarship by the Province of Ontario

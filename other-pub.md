@@ -4,8 +4,6 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-## Other Publications
-
 <a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey"><i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).
       
 <a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"><i>COVID Impact Assessment Report.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).

@@ -11,7 +11,7 @@ My dissertation research is about how autocrats politically control the business
 
 I'm the co‑founder of a Toronto‑based political risk consultancy company, [Maidan Analytics](https://maidan.ca/), which leverages big data to predict protest‑related risks for businesses. Before my doctoral studies, I co‑founded two social impact initiatives for youth empowerment. One based in Montreal advocated for youth inclusion in the design of smart cities. The other, based in Istanbul, mobilized more than 30 stakeholder organizations in six countries across the MENA region to foster youth employment in the region. 
 
-I'm a graduate associate at [POSTCOR Lab](https://www.postcorlab.com/). Previously, I was a [Trudeau Centre Fellow](https://munkschool.utoronto.ca/trudeau-centre) in Peace, Conflict, and Justice at Munk School of Global Affairs & Public Policy, a resident fellow at [Jeanne Sauvé Foundation](https://jeannesauve.org/fellows/), and a Regional Manager at [Digital Society Project](http://digitalsocietyproject.org/the-team/). I'm also an alum of [Massey College](https://www.masseycollege.ca/). 
+I'm a graduate associate at [POSTCOR Lab](https://www.postcorlab.com/). Previously, I was a [Trudeau Centre Fellow](https://munkschool.utoronto.ca/trudeau-centre) at the Munk School, a resident fellow at [Jeanne Sauvé Foundation](https://jeannesauve.org/fellows/), and a Regional Manager at [Digital Society Project](http://digitalsocietyproject.org/the-team/). I'm also an alum of [Massey College](https://www.masseycollege.ca/). 
 
 You may also find me occasionally singing at open mic events in Toronto and Montreal.
 

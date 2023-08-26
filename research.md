@@ -51,7 +51,7 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 
 -------------------
 
-# <span style="font-size: 20px; ">Presentations</span>
+# <span style="font-size: 20px; ">Selected presentations</span>
 
 (2022) Does Every Cloud Have a Silver Lining? Disasters and Polarization. APSA Annual Conference, Montreal (with Michael Donnelly). 
 

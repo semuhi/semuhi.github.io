@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: "/other-pub/"
-title: "Other Publications"
+title: ""
 ---
 
 <a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey"><i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).

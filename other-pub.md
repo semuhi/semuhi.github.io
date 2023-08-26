@@ -40,7 +40,7 @@ title: ""
  
 (2014) <a href="https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf"> Supply and Demand for Child Care Services in Turkey </a>  contributions through Development Analytics. Washington, DC: World Bank. 
        
-<a href="https://www.opendemocracy.net/en/youth-who-make-future/">“Youth who make the future,”</a>  <i>openDemocracy</i>, September 23.  </td>
+(2011) <a href="https://www.opendemocracy.net/en/youth-who-make-future/">Youth who make the future.</a>  <i>openDemocracy</i>, September 23.
  
 
 

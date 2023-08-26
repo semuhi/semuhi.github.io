@@ -46,11 +46,14 @@ The course is organized thematically but chronologically follows significant tur
 
 # <span style="font-size: 20px; ">Teaching Assistantship</span>
 
-<details> <summary> ### Comparative Politics </summary>
+<details> <summary> <b>Comparative Politics</b> </summary>
 
-- POL218: State, Society and Power
-- POLB92: Democratization in Modern Europe 
-- POL101: Democracy, Dictatorship, War and Peace: An Introduction 
+- State, Society and Power in Comparative Perspective
+- Comparative Politics: Revolution, Democracy and Authoritarianism
+- Democracy, Dictatorship, War and Peace: An Introduction
+- Public Opinion and Voting
+
+</details>
 
 ### Political Economy
 - POL386: U.S. Government and Politics

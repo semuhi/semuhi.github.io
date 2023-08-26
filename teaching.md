@@ -25,6 +25,19 @@ The course will investigate the following key questions: Is there a new emerging
 
 </details>
 
+[**Politics in the Middle East**](https://semuhi.github.io/assets/pdf/syllabus-mena.pdf) **(University of Toronto, St. George)** 
+<details> <summary> Course description: </summary>
+The course is organized thematically but chronologically follows significant turning points. We will investigate key topics such as the legacies of colonial state on the formation of collective identities, the repercussions of patrimonial capitalism and rentier state on resource mobilization, the impact of autocratic ruling bargains on contentious politics, and the role of foreign intervention in a comparative perspective, by covering different countries under each theme. The Middle East exhibits remarkable diversity in economic development, social mobilizations, and state capacity. This course's primary expected learning outcome is to capture this intra-regional variation and deconstruct blanket explanations for the region's politics. Students will be encouraged to be attentive to social mobilizations under different types of autocratic ruling bargains. Lastly, through in-class discussions and debates with guests, students will follow current regional events to identify prominent actors, events, and institutions, especially in social mobilizations.
+</details>
+
+<details> <summary> Sample student evaluations: </summary>
+<blockquote> The professor created an optimal learning environment that stimulates critical thinking and discussion. Engagement with the students was optimal, and the learning experience was professional and inclusive. The professor made sure all students were engaged with the content and made effective accommodations to ensure optimal learning.</blockquote>
+
+<blockquote> The instructor offered assistance of all kinds, from office hours at the students' preferred times, generous extensions when work in the semester was piling up, and feedback on every assignment that helped to improve for future assignments. </blockquote>
+
+<blockquote> One of the best professors, very well versed in Middle Eastern politics. The professor was brilliant and enthusiastic. </blockquote>
+</details>
+
 # <span style="font-size: 20px; ">Workshops and Teaching Materials</span>
 
 # <span style="font-size: 20px; ">Teaching Assistantship</span>

@@ -4,7 +4,7 @@ permalink: "/teaching/"
 title: ""
 ---
 
-# <span style="font-size: 20px; ">Course Instructor</span>
+# <span style="font-size: 20px; ">Course Instructorship</span>
 
 [**The Political Economy of Economic Crisis**](https://semuhi.github.io/assets/pdf/syllabus-crisis.pdf) (University of Toronto, Mississauga) 
 

@@ -4,15 +4,15 @@ permalink: "/other-pub/"
 title: ""
 ---
 
-<a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey"><i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).
+(2021) <a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey">A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).
       
-<a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"><i>COVID Impact Assessment Report.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).
+(2021) <a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"><i>COVID Impact Assessment Report.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).
      
- <a href="https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/">“Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?],”</a> <i>Daktilo1984</i>, February 15.
+(2021) <a href="https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/"> Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?] </a> <i>Daktilo1984</i>, February 15.
   
- <a href="https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/">“Building a policy school that has real social impact,”</a>  <i>Policy Options</i>, November 28. 
+(2018) <a href="https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/"> Building a policy school that has real social impact. </a>  <i>Policy Options</i>, November 28. 
  
-<a href="https://birikimdergisi.com/guncel/9210/memlekete-donmek">“Memlekete Dönmek [Return Home],”</a>  <i>Birikim</i>, November 12.  
+(2018) <a href="https://birikimdergisi.com/guncel/9210/memlekete-donmek">Memlekete Dönmek [Returning Home].</a> <i>Birikim</i>, November 12.  
  
 <a href="https://www.jpost.com/Opinion/We-need-a-new-conservative-party-in-Turkey-for-regime-transition-585286">“We need a new conservative party in Turkey for regime transition,”</a>  <i>The Jerusalem Post</i>, March 31.  
 

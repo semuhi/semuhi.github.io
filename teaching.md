@@ -48,9 +48,9 @@ The course is organized thematically but chronologically follows significant tur
 
 <details> <summary> <b>Comparative Politics</b> </summary>
 
-- State, Society and Power in Comparative Perspective
-- Comparative Politics: Revolution, Democracy and Authoritarianism
-- Democracy, Dictatorship, War and Peace: An Introduction
+- State, Society and Power in Comparative Perspective <br>
+- Comparative Politics: Revolution, Democracy and Authoritarianism <br>
+- Democracy, Dictatorship, War and Peace: An Introduction <br>
 - Public Opinion and Voting
 
 </details>

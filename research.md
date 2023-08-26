@@ -13,7 +13,7 @@ title: ""
 
 # <span style="font-size: 20px; ">Under review</span>
 
-(2021) [Divided at home, divided abroad? Affective polarization and political tolerance among migrants](https://www.researchgate.net/publication/354914015_Divided_at_Home_Divided_Abroad) (with Selin Kepenek). 
+(2021) [Divided at home, divided abroad? Affective polarization and political tolerance among migrants](https://www.researchgate.net/publication/354914015_Divided_at_Home_Divided_Abroad) (with Selin Kepenek). \[[replication\]](https://github.com/semuhi/polarization)
 
 # <span style="font-size: 20px; ">Working papers</span>
 

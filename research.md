@@ -3,7 +3,9 @@ permalink: "/research/"
 layout: page
 title: ""
 ---
-# <span style="font-size: 20px; ">Peer-reviewed Publications</span>
+# <span style="font-size: 20px; ">Peer-reviewed publications</span>
+
+(2023) "[Out of sight, out of mind: The impact of lockdown measures on sentiment towards refugees.](https://doi-org.myaccess.library.utoronto.ca/10.1080/19331681.2023.2183301)" *Journal of Information Technology & Politics*, March 2 (with Amir Abdul Reda and Amine Aboussalah).
 
 # <span style="font-size: 30px; color: #0000EE;">Ongoing Research</span>
 

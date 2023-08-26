@@ -53,9 +53,9 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 
 # <span style="font-size: 20px; ">Presentations</span>
 
-(2022) Does Every Cloud Have a Silver Lining? Disasters and Polarization. APSA Annual Conference, Montreal (with Michael Donnelly). 
-(2021) Curbing Xenophobia? Assessing the Impact of COVID‑19 Lockdown Measures on Anti‑Refugee Sentiment in Turkey. APSA Annual Conference, Seattle (with Amir Abdul Reda). 
-(2020-21) Divided at Home, Divided Abroad? Accepted for the PSA Annual International Conference, Edinburgh; APSA Annual Conference, Seattle; ECPR General Conference (with Selin Kepenek).
-(2019) Mobilizing the Masses: Measuring Social Movements’ Resource Mobilization on Twitter. Accepted for APSA Annual Conference, DC (with Amir Abdul Reda).
-(2019) Containing Ethnic Conflict: Repression, Co‑optation, and Identity Politics. ISA Annual Convention, Toronto (with Ceren Belge).
+(2022) Does Every Cloud Have a Silver Lining? Disasters and Polarization. APSA Annual Conference, Montreal (with Michael Donnelly).  <br>
+(2021) Curbing Xenophobia? Assessing the Impact of COVID‑19 Lockdown Measures on Anti‑Refugee Sentiment in Turkey. APSA Annual Conference, Seattle (with Amir Abdul Reda).  <br>
+(2020-21) Divided at Home, Divided Abroad? Accepted for the PSA Annual International Conference, Edinburgh; APSA Annual Conference, Seattle; ECPR General Conference (with Selin Kepenek).  <br>
+(2019) Mobilizing the Masses: Measuring Social Movements’ Resource Mobilization on Twitter. Accepted for APSA Annual Conference, DC (with Amir Abdul Reda).  <br>
+(2019) Containing Ethnic Conflict: Repression, Co‑optation, and Identity Politics. ISA Annual Convention, Toronto (with Ceren Belge).  <br>
 (2014) A Typology of Welfare Regimes in the Middle East and North Africa. ECPR General Conference, Warsaw. 

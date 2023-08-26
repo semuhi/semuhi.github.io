@@ -17,16 +17,14 @@ The course will investigate the following key questions: Is there a new emerging
 </details>
 
 <details> <summary> Sample student evaluations: </summary>
-> Hands down, best learning experience I've had at UTM. The professor is extremely engaging and provides great support to the whole class. The general mood of the > class was excellent throughout, and this is thanks to the professor's excellent student management and treating us like peers. <br>
+<blockquote> Hands down, best learning experience I've had at UTM. The professor is extremely engaging and provides great support to the whole class. The general mood of the class was excellent throughout, and this is thanks to the professor's excellent student management and treating us like peers. </blockquote> <br>
   <br>
 
-> The overall instruction of this course was great. Professor Sinanoglu was very enthusiastic about the subject material, explained concepts very clearly, and
-> created an environment where I could feel comfortable sharing thoughts about the course readings. <br>
+<blockquote>The overall instruction of this course was great. Professor Sinanoglu was very enthusiastic about the subject material, explained concepts very clearly, and created an environment where I could feel comfortable sharing thoughts about the course readings. </blockquote> <br>
   <br>
 
-> I appreciated Professor Sinanoglu's conversational teaching style. It essentially forced us, as students, to engage with the readings rather than merely recite
-> back what we read. The critical engagement made me think more about the implications of the readings rather than what was printed.
-> 
+<blockquote> I appreciated Professor Sinanoglu's conversational teaching style. It essentially forced us, as students, to engage with the readings rather than merely recite back what we read. The critical engagement made me think more about the implications of the readings rather than what was printed. </blockquote>
+
 </details>
 
 # <span style="font-size: 20px; ">Workshops and Teaching Materials</span>

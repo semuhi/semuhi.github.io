@@ -6,7 +6,7 @@ title: ""
 
 (2021) <a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey">A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).
       
-(2021) <a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"><i>COVID Impact Assessment Report.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).
+(2021) <a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"> COVID Impact Assessment Report.</a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).
      
 (2021) <a href="https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/"> Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?] </a> <i>Daktilo1984</i>, February 15.
   

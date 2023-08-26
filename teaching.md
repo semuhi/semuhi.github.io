@@ -16,6 +16,14 @@ Following an introduction to the history of global economic crises and macroecon
 The course will investigate the following key questions: Is there a new emerging post-liberal global order as a backlash against economic globalization? Are we experiencing a new wave of autocratization across the world at the hands of tech-savvy dictators who repress dissidents beyond their borders and disrupt democratic processes abroad? Has autocracy promotion and diffusion replaced the international efforts of democratization? Can the international community feasibly constrain autocratic regimes? This course’s primary expected learning outcome is to offer an insight into the international roots of autocratic resilience. Students will also be equipped with analytical tools to assess current policy interventions designed to contain or curtail autocratic regime practices.
 </details>
 
+<details> <summary> Sample student evaluations: </summary>
+  > _"Hands down, best learning experience I've had at UTM. The professor is extremely engaging and provides great support to the whole class. The general mood of the class was excellent throughout, and this is thanks to the professor's excellent student management and treating us like peers."_
+
+> _"The overall instruction of this course was great. Professor Sinanoglu was very enthusiastic about the subject material, explained concepts very clearly, and created an environment where I could feel comfortable sharing thoughts about the course readings."_
+
+> _"I appreciated Professor Sinanoglu's conversational teaching style. It essentially forced us, as students, to engage with the readings rather than merely recite back what we read. The critical engagement made me think more about the implications of the readings rather than what was printed."_
+</details>
+
 # <span style="font-size: 20px; ">Workshops and Teaching Materials</span>
 
 # <span style="font-size: 20px; ">Teaching Assistantship</span>

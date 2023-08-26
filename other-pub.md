@@ -6,133 +6,44 @@ title: "Other Publications"
 
 ## Other Publications
 
-<html lang="en">
-<body> 
-  <div class="container">
-    <div class="column is-full">
-      <input class="input" type="text" placeholder="Search Table" id="contact-filter">
-    </div>
-    <div class="column">
-      <table id="contact-table" class="table is-fullwidth is-striped">
-        <tr>
-          <th>Year</th>
-          <th>Reference</th>
-          <th>Type</th>
-        </tr>
-        <tr>
-          <td>2021</td>
-          <td> <a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey"><i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).</td>
-          <td>report</td>
-        </tr>
-        <tr>
-          <td>2021</td>
-          <td> <a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"><i>COVID Impact Assessment Report.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).</td>
-          <td>report</td>
-        </tr>
-        <tr>
-          <td>2021</td>
-          <td> <a href="https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/">“Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?],”</a> <i>Daktilo1984</i>, February 15.</td>
-          <td>op-ed</td>
-        </tr>
-        <tr>
-          <td>2018</td>
-          <td> <a href="https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/">“Building a policy school that has real social impact,”</a>  <i>Policy Options</i>, November 28. </td>
-          <td>op-ed</td>
-        </tr>
-        <tr>
-          <td>2018</td>
-          <td> <a href="https://birikimdergisi.com/guncel/9210/memlekete-donmek">“Memlekete Dönmek [Return Home],”</a>  <i>Birikim</i>, November 12.  </td>
-          <td>op-ed</td>
-        </tr>
-        <tr>
-          <td>2018</td>
-          <td> <a href="https://www.jpost.com/Opinion/We-need-a-new-conservative-party-in-Turkey-for-regime-transition-585286">“We need a new conservative party in Turkey for regime transition,”</a>  <i>The Jerusalem Post</i>, March 31.  </td>
-          <td>op-ed</td>
-        </tr>
-        <tr>
-          <td>2018</td>
-          <td> <a href="https://www.iai.it/en/pubblicazioni/realizing-youth-potential-mediterranean-unlocking-opportunities-overcoming-challenges">“Socially Inclusive Fourth Industrial Revolution: Fostering Youth Employment in the Middle East and North Africa.”</a>  In <i>Realizing Youth Potential in the Mediterranean: Unlocking Opportunities, Overcoming Challenges</i>, edited by Lorenzo Kamel & Asli Selin Okyay: 101‑12. Rome: IAI Research Studies.  </td>
-          <td>book chapter</td>
-          </tr>
-           <tr>
-          <td>2018</td>
-          <td> <a href="https://www.sivilsayfalar.org/2018/04/19/akilli-sehirler-cagimizin-hastaligi-teknolojizm/">“Akıllı Şehirler ve Çağımızın Hastalığı Teknolojizm [Smart cities and technologism as the curse of our age]”</a>  <i>Civil Pages</i>, April 19.  </td>
-          <td>op-ed</td>
-          </tr>
-          <tr>
-          <td>2018</td>
-          <td> <a href="https://www.sivilsayfalar.org/2018/01/02/genclerin-sesini-dinlemek/">“Gençlerin sesini dinlemek [Hearing Youth's Voices],”</a>  <i>Civil Pages</i>, January 2.  </td>
-          <td>op-ed</td>
-          </tr>
-          <tr>
-          <td>2017</td>
-          <td> <a href="https://www.sivilsayfalar.org/2017/11/01/kanada-masali/">“Kanada Masalı [The Tale of Canada],”</a>  <i>Civil Pages</i>, November 1.  </td>
-          <td>op-ed</td>
-          </tr>
-           <tr>
-          <td>2017</td>
-          <td> <a href="https://www.opendemocracy.net/en/north-africa-west-asia/politics-death-kurdish-turkey-kurd/">“Death & politics: the burial of a Kurdish woman in Turkey,”</a>  <i>openDemocracy</i>,  October 4. </td>
-          <td>op-ed</td>
-          </tr>
-          <tr>
-          <td>2017</td>
-          <td> <a href="https://www.sivilsayfalar.org/2017/08/01/dernege-ev-yok/">“Derneğe Ev Yok [No Home for Associations],”</a>  <i>Civil Pages</i>, August 1.  </td>
-          <td>op-ed</td>
-          </tr>
-          <tr>
-          <td>2017</td>
-          <td> <a href="http://turkishpolicy.com/files/articlepdf/book-review-false-dawn-protest-democracy-and-violence-in-the-new-middle-east_en_1847.pdf">“Review of Steven Cook’s False Dawn: Protest, Democracy, and Violence in the Middle East.”</a>  <i>Turkish Policy Quarterly</i> (Summer): 107‑11.  </td>
-          <td>book review</td>
-          </tr>
-          <tr>
-          <td>2017</td>
-          <td> <a href="https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri">“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”</a>  <i>Birikim</i>, March 30.  </td>
-          <td>op-ed</td>
-          </tr>
-          <tr>
-          <td>2016</td>
-          <td> <a href="https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/">“5 disturbing facts about living under occupation,”</a>  <i>Middle East Monitor</i>, August 22. </td>
-          <td>op-ed</td>
-          </tr>
-          <tr>
-          <td>2016</td>
-          <td> <a href="http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges">“Tackling the Syrian Refugee Crisis: Prospects & Challenges,”</a>   <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner). </td>
-          <td>report</td>
-          </tr>
-          <tr>
-          <td>2015</td>
-          <td> <a href="http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf">contributed to <i>Improving Basic Services Delivery for the Poor in the OIC Member Countries</i></a>  prepared by Development Analytics. Ankara: COMCEC. </td>
-          <td>report</td>
-          </tr>
-          <tr>
-          <td>2014</td>
-          <td> <a href="https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf">contributed to <i>Supply and Demand for Child Care Services in Turkey</i></a>  prepared by Development Analytics. Washington, DC: World Bank. </td>
-          <td>report</td>
-          </tr>
-          <tr>
-          <td>2011</td>
-          <td> <a href="https://www.opendemocracy.net/en/youth-who-make-future/">“Youth who make the future,”</a>  <i>openDemocracy</i>, September 23.  </td>
-          <td>op-ed</td>
-          </tr>
-      </table>
-    </div>
-  </div>
-
-
-  <script src="/assets/css/jquery-3.5.1.slim.min.js"></script>
-
-  <script src="/assets/css/filter-table.js"></script>
-
-  <script>
-  (function ($) {
-    $(document).ready(function () {
-      $('#contact-table').filterTable('#contact-filter');
-    });
-  })(jQuery);
+<a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey"><i>A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).
+      
+<a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"><i>COVID Impact Assessment Report.</i></a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).
+     
+ <a href="https://daktilo1984.com/forum/otoriter-rejimlerde-burokrasi-sadik-mi-layik-mi/">“Otoriter Rejimlerde Bürokrasi: Sadık mı Layık mı? [Bureaucracy under Authoritarianism: Loyal or Competent?],”</a> <i>Daktilo1984</i>, February 15.
   
-  </script>
-</body>
-</html>
+ <a href="https://policyoptions.irpp.org/magazines/february-2018/building-a-policy-school-that-has-real-social-impact/">“Building a policy school that has real social impact,”</a>  <i>Policy Options</i>, November 28. 
+ 
+<a href="https://birikimdergisi.com/guncel/9210/memlekete-donmek">“Memlekete Dönmek [Return Home],”</a>  <i>Birikim</i>, November 12.  
+ 
+<a href="https://www.jpost.com/Opinion/We-need-a-new-conservative-party-in-Turkey-for-regime-transition-585286">“We need a new conservative party in Turkey for regime transition,”</a>  <i>The Jerusalem Post</i>, March 31.  
+
+<a href="https://www.iai.it/en/pubblicazioni/realizing-youth-potential-mediterranean-unlocking-opportunities-overcoming-challenges">“Socially Inclusive Fourth Industrial Revolution: Fostering Youth Employment in the Middle East and North Africa.”</a>  In <i>Realizing Youth Potential in the Mediterranean: Unlocking Opportunities, Overcoming Challenges</i>, edited by Lorenzo Kamel & Asli Selin Okyay: 101‑12. Rome: IAI Research Studies.  
+    
+ <a href="https://www.sivilsayfalar.org/2018/04/19/akilli-sehirler-cagimizin-hastaligi-teknolojizm/">“Akıllı Şehirler ve Çağımızın Hastalığı Teknolojizm [Smart cities and technologism as the curse of our age]”</a>  <i>Civil Pages</i>, April 19. 
+ 
+<a href="https://www.sivilsayfalar.org/2018/01/02/genclerin-sesini-dinlemek/">“Gençlerin sesini dinlemek [Hearing Youth's Voices],”</a>  <i>Civil Pages</i>, January 2.  
+         
+<a href="https://www.sivilsayfalar.org/2017/11/01/kanada-masali/">“Kanada Masalı [The Tale of Canada],”</a>  <i>Civil Pages</i>, November 1. 
+  
+ <a href="https://www.opendemocracy.net/en/north-africa-west-asia/politics-death-kurdish-turkey-kurd/">“Death & politics: the burial of a Kurdish woman in Turkey,”</a>  <i>openDemocracy</i>,  October 4. 
+    
+ <a href="https://www.sivilsayfalar.org/2017/08/01/dernege-ev-yok/">“Derneğe Ev Yok [No Home for Associations],”</a>  <i>Civil Pages</i>, August 1.  
+       
+ <a href="http://turkishpolicy.com/files/articlepdf/book-review-false-dawn-protest-democracy-and-violence-in-the-new-middle-east_en_1847.pdf">“Review of Steven Cook’s False Dawn: Protest, Democracy, and Violence in the Middle East.”</a>  <i>Turkish Policy Quarterly</i> (Summer): 107‑11. 
+   
+ <a href="https://birikimdergisi.com/guncel/8236/parti-ebed-muddet-bir-siyaset-teknolojisi-olarak-yeni-osmanlici-trt-dizileri">“Parti Ebed Müddet: Bir Siyaset Teknolojisi Olarak Yeni Osmanlıcı TRT Dizileri [The Eternal Party: New Ottomanist TV Series as a Political Technology],”</a>  <i>Birikim</i>, March 30. 
+     
+ <a href="https://www.middleeastmonitor.com/20160822-5-disturbing-facts-about-living-under-occupation/">“5 disturbing facts about living under occupation,”</a>  <i>Middle East Monitor</i>, August 22.
+        
+ <a href="http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges">“Tackling the Syrian Refugee Crisis: Prospects & Challenges,”</a>   <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner).
+  
+ <a href="http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf">contributed to <i>Improving Basic Services Delivery for the Poor in the OIC Member Countries</i></a>  prepared by Development Analytics. Ankara: COMCEC. 
+ 
+ <a href="https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf">contributed to <i>Supply and Demand for Child Care Services in Turkey</i></a>  prepared by Development Analytics. Washington, DC: World Bank. 
+       
+<a href="https://www.opendemocracy.net/en/youth-who-make-future/">“Youth who make the future,”</a>  <i>openDemocracy</i>, September 23.  </td>
+ 
 
 
 

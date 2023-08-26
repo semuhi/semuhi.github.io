@@ -17,6 +17,7 @@ First, I argue that under resource constraints, autocrats’ hands may be tied r
 Secondly, autocrats employ polarization in tandem with repression of the business elite to justify their policies by tapping into anti-business public sentiment. Public support is a key mechanism here because elite purges and repression are often coupled with legitimation efforts around these coercive acts to hedge against a potential elite dissent. Because the co-opted business elite is often perceived as corrupt by the masses, marked by easened bureaucratic regulations, preferential treatments, and lucrative public contracts, autocrats exploit polarized environments to quickly stigmatize an in-group member of the business elite working in a co-opted industry and blame them for pressing economic problems. That means autocrats may find it easier to enlist public support for ousting previously co-opted allies in politicized and co-opted sectors with a long history of receiving public bids. Polarization is a useful tool of political technology, especially in times of dwindling resources, since it provides maneuvering room for the autocrat to calibrate the existing ruling coalition and justify expropriation and economic coercion. 
 
 </details>
+-------------------
 
 # <span style="font-size: 20px; ">Peer-reviewed publications</span>
 
@@ -26,9 +27,13 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 
 (2021) [Mobilizing the masses: Measuring resource mobilization on Twitter.](https://doi-org.myaccess.library.utoronto.ca/10.1177/0049124120986197) ***Sociological Methods & Research*** (February): 1-40 (with Amir Abdul Reda and Mohamed Abdalla). 
 
+-------------------
+
 # <span style="font-size: 20px; ">Under review</span>
 
 (2021) [Divided at home, divided abroad? Affective polarization and political tolerance among migrants](https://www.researchgate.net/publication/354914015_Divided_at_Home_Divided_Abroad) (with Selin Kepenek). \[[replication\]](https://github.com/semuhi/polarization)
+
+-------------------
 
 # <span style="font-size: 20px; ">Working papers</span>
 
@@ -37,6 +42,8 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 (2023) [Cross-partisan outreach, political tolerance, and affective polarization in Turkey](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) (with Michael Donnelly). 
 
 (2023) Authoritarian power-sharing and information leaks (with Sahib Jafarov).
+
+-------------------
 
 # <span style="font-size: 20px; ">Ongoing research</span>
 

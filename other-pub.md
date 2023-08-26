@@ -41,6 +41,8 @@ title: ""
 (2014) <a href="https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf"> Supply and Demand for Child Care Services in Turkey. </a>  Contributions through Development Analytics. Washington, DC: World Bank. 
        
 (2011) <a href="https://www.opendemocracy.net/en/youth-who-make-future/">Youth who make the future.</a>  <i>openDemocracy</i>, September 23.
+
+(2009) <a href="https://www.ielev.org.tr/tr/medya/yayinlar/billur-bir-avizedir-istanbul-lisesinde-zaman/"> Billur Bir Avizedir İstanbul Lisesinde Zaman [Ein kristallener Leuchter ist die Zeit am Istanbul Lisesi? 125 Jahre mit Dokumenten ( 1884-2009)]. Istanbul: IELEV (with L. Deniz & I. Buyukkal). 
  
 
 

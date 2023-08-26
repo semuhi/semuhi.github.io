@@ -55,24 +55,30 @@ The course is organized thematically but chronologically follows significant tur
 
 </details>
 
-### Political Economy
-- POL386: U.S. Government and Politics
-- POL362: Global Political Economy II: Policy and Analysis
-- POL201: Politics of Development 
+<details> <summary> <b>Political Economy </b> </summary>
 
-### Methods
-- POL2504: Statistics for Political Scientists (grad‑level) 
-- POL2503: Thinking Through Research Design (grad‑level) 
-- POL304: Using Data to Understand Politics and Society
-- POL222‑232: Introduction to Quantitative Reasoning I‑II 
-- POL242: Methods 
+- Global Political Economy: Policy and Analysis <br>
+- Politics of Development <br>
+- U.S. Government and Politics 
 
-You may find a summary of student evaluations and example excerpts below:
+</details>
 
-> _"Semuhi is the best TA I had since I started university, he is dedicated to make the tutorial session as fun and educative as possible, he always came prepared to tutorial, organized small debate, game and other interactive ways to help students engage with the material seen in class. He went beyond all expectations by proposing his students to send their intro so that he could give us additional feedback before we submitted our essays."_
+<details> <summary> <b>Methods </b> </summary>
 
-> _"I think his main strength was that he was able to create an inclusive environment and establish a lively discussion that kept me interested in the concepts that were being discussed. These tutorial sections actually made me look forward to this class."_
+- Statistics for Political Scientists <br>
+- Thinking Through Research Design <br>
+- Using Data to Understand Politics and Society <br>
+- Introduction to Quantitative Reasoning
 
-> _"Semuhi was extremely supportive, approachable, kind, and encouraging while still challenging students. This not only created an excellent learning environment, but motivated students to succeed."_
+</details>
 
-> _"Excellent grasp of the material and an ability to synthesize complex ideas so the class understood the essence of the ideas. Very generous with his time to explain and help students. Great teacher and very smooth delivery."_
+<details> <summary> Sample student evaluations: </summary>
+<blockquote> Semuhi is the best TA I had since I started university, he is dedicated to making the tutorial session as fun and educative as possible, he always came prepared for tutorials, organized small debates, games, and other interactive ways to help students engage with the material seen in class. He went beyond all expectations by proposing his students send their intro so that he could give us additional feedback before we submitted our essays.</blockquote>
+
+<blockquote> I think his main strength was that he was able to create an inclusive environment and establish a lively discussion that kept me interested in the concepts that were being discussed. These tutorial sections actually made me look forward to this class.</blockquote>
+
+<blockquote> Semuhi was extremely supportive, approachable, kind, and encouraging while still challenging students. This not only created an excellent learning environment but motivated students to succeed.</blockquote>
+
+<blockquote> Excellent grasp of the material and an ability to synthesize complex ideas, so the class understood the essence of the ideas. He is very generous with his time to explain and help students. Great teacher and very smooth delivery.</blockquote>
+
+</details>

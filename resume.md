@@ -28,6 +28,7 @@ title: "Academic Resume"
 
 ## Research Grants
 
+- (2023) IHS Research Grant for online survey experiments in Turkey
 - (2022) Hayek Fund by the IHS, George Mason Uni. for my research on the business support for autocracies
 - (2022) Travel, Research, Engagement Grant by POMEPS to fund my research on depolarization
 - (2021) Priority Theme Small Grants Fund by EGAP to fund my research on depolarization

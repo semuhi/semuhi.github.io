@@ -11,7 +11,19 @@ title: ""
 
 (2021) [Mobilizing the masses: Measuring resource mobilization on Twitter.](https://doi-org.myaccess.library.utoronto.ca/10.1177/0049124120986197) ***Sociological Methods & Research*** (February): 1-40 (with Amir Abdul Reda and Mohamed Abdalla). 
 
+# <span style="font-size: 20px; ">Under review</span>
+
+(2021) [Divided at home, divided abroad? Affective polarization and political tolerance among migrants.](https://www.researchgate.net/publication/354914015_Divided_at_Home_Divided_Abroad) (with Selin Kepenek). 
+
 # <span style="font-size: 20px; ">Working papers</span>
+
+(2023) Taming the paper tiger? Repression, polarization, and the business elite.
+
+(2023) [Cross-partisan outreach, political tolerance, and affective polarization in Turkey.](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) (with Michael Donnelly). 
+
+(2023) Authoritarian power-sharing and information leaks (with Sahib Jafarov).
+
+# <span style="font-size: 20px; ">Ongoing research</span>
 
 - "The impact of fiction on support for repression." (with Michael Donnelly)
 - "The prosecution of Heads of State and democratic backsliding." (with Seva Gunitsky)

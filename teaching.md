@@ -42,6 +42,8 @@ The course is organized thematically but chronologically follows significant tur
 
 [**Spatial Analysis using R: An Introduction**](https://semuhi.github.io/uoft-spatial/slides#1). University of Toronto, March 5, 2021. 
 
+[**Introduction to R**](). University of Toronto, September 2020. 
+
 # <span style="font-size: 20px; ">Teaching Assistantship</span>
 
 

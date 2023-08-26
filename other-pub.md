@@ -42,7 +42,7 @@ title: ""
        
 (2011) <a href="https://www.opendemocracy.net/en/youth-who-make-future/">Youth who make the future.</a>  <i>openDemocracy</i>, September 23.
 
-(2009) <a href="https://www.ielev.org.tr/tr/medya/yayinlar/billur-bir-avizedir-istanbul-lisesinde-zaman/"> Billur Bir Avizedir İstanbul Lisesinde Zaman </a> [Ein kristallener Leuchter ist die Zeit am Istanbul Lisesi? 125 Jahre mit Dokumenten (1884-2009)]. Istanbul: IELEV (with L. Deniz & I. Buyukkal). 
+(2009) <a href="https://www.ielev.org.tr/tr/medya/yayinlar/billur-bir-avizedir-istanbul-lisesinde-zaman/"> Billur Bir Avizedir İstanbul Lisesinde Zaman: Belgeleriyle 125 Yıl [Ein kristallener Leuchter ist die Zeit am Istanbul Lisesi?].</a> Istanbul: IELEV (with L. Deniz & I. Buyukkal). 
  
 
 

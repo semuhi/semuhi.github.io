@@ -55,3 +55,14 @@ title: "Academic Resume"
 - (2019) The [Ranjit Kumar Graduate Scholarship](https://www.sgs.utoronto.ca/awards/university-wide-awards/) by the University of Toronto
 - (2019) ICPSR Scholarship by the [EITM](https://eitminstitute.org/) 
 - (2009) Outstanding Success Scholarship by the [Turkish Educational Foundation](https://www.tev.org.tr/homepage/en)
+  
+-------------------
+
+## Service
+- (2022) Search Committee for Middle Eastern Politics, Grad. Rep., University of Toronto.
+- (2020‑23) Quantitative Methods Research Cluster, Co‑organizer, University of Toronto.
+- (2022) APSA General Conference, Discussant, Montreal.
+- (2021) APSA General Conference, Discussant, Seattle.
+- (2019) Search Committee for Quantitative Methods, Grad. Rep., University of Toronto.
+- (2019) The Khashoggi Killing and the Future of US‑Saudi Relations, Event Organizer, University of Toronto.
+- (2018‑20) Comparative Autocracy Research Cluster, Organizer, University of Toronto.

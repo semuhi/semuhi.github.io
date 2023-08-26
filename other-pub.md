@@ -36,9 +36,9 @@ title: ""
         
 (2016) <a href="http://turkishpolicy.com/article/803/tackling-the-syrian-refugee-crisis-prospects-challenges">Tackling the Syrian Refugee Crisis: Prospects & Challenges.</a>  <i>Turkish Policy Quarterly</i> (Spring): 123‑30 (with E. Arslan & I. Taner).
   
-(2015) <a href="http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf">Improving Basic Services Delivery for the Poor in the OIC Member Countries</a> contributions through Development Analytics. Ankara: COMCEC. 
+(2015) <a href="http://ebook.comcec.org/Kutuphane/Icerik/Yayinlar/Analitik_Calismalar/Yoksullugun_Azaltilmasi/Toplanti6/files/assets/common/downloads/publication.pdf">Improving Basic Services Delivery for the Poor in the OIC Member Countries.</a> Contributions through Development Analytics. Ankara: COMCEC. 
  
-(2014) <a href="https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf"> Supply and Demand for Child Care Services in Turkey </a>  contributions through Development Analytics. Washington, DC: World Bank. 
+(2014) <a href="https://docs.wixstatic.com/ugd/b70f3f_fbc0cd4b7e4049d7ade1c182d66aa3f7.pdf"> Supply and Demand for Child Care Services in Turkey. </a>  Contributions through Development Analytics. Washington, DC: World Bank. 
        
 (2011) <a href="https://www.opendemocracy.net/en/youth-who-make-future/">Youth who make the future.</a>  <i>openDemocracy</i>, September 23.
  

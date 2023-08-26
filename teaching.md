@@ -46,7 +46,7 @@ The course is organized thematically but chronologically follows significant tur
 
 # <span style="font-size: 20px; ">Teaching Assistantship</span>
 
-<details> <summary> <b>Comparative Politics</b> </summary>
+<details> <summary> Comparative Politics </summary>
 
 - State, Society and Power in Comparative Perspective <br>
 - Comparative Politics: Revolution, Democracy and Authoritarianism <br>
@@ -55,7 +55,7 @@ The course is organized thematically but chronologically follows significant tur
 
 </details>
 
-<details> <summary> <b>Political Economy </b> </summary>
+<details> <summary> Political Economy </summary>
 
 - Global Political Economy: Policy and Analysis <br>
 - Politics of Development <br>
@@ -63,7 +63,7 @@ The course is organized thematically but chronologically follows significant tur
 
 </details>
 
-<details> <summary> <b>Methods </b> </summary>
+<details> <summary> Methods </summary>
 
 - Statistics for Political Scientists <br>
 - Thinking Through Research Design <br>

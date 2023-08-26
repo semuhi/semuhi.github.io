@@ -44,7 +44,7 @@ The course is organized thematically but chronologically follows significant tur
 
 [**Introduction to R**](https://semuhi.github.io/intro-to-r/). University of Toronto, September 2020. 
 
-# <span style="font-size: 20px; ">Teaching Assistantship</span>
+# <span style="font-size: 20px; ">Teaching Assistantship (University of Toronto) </span>
 
 <details> <summary> Comparative Politics </summary>
 

@@ -17,11 +17,16 @@ The course will investigate the following key questions: Is there a new emerging
 </details>
 
 <details> <summary> Sample student evaluations: </summary>
-  > _"Hands down, best learning experience I've had at UTM. The professor is extremely engaging and provides great support to the whole class. The general mood of the class was excellent throughout, and this is thanks to the professor's excellent student management and treating us like peers."_
+> Hands down, best learning experience I've had at UTM. The professor is extremely engaging and provides great support to the whole class. The general mood of the > class was excellent throughout, and this is thanks to the professor's excellent student management and treating us like peers. <br>
+  <br>
 
-> _"The overall instruction of this course was great. Professor Sinanoglu was very enthusiastic about the subject material, explained concepts very clearly, and created an environment where I could feel comfortable sharing thoughts about the course readings."_
+> The overall instruction of this course was great. Professor Sinanoglu was very enthusiastic about the subject material, explained concepts very clearly, and
+> created an environment where I could feel comfortable sharing thoughts about the course readings. <br>
+  <br>
 
-> _"I appreciated Professor Sinanoglu's conversational teaching style. It essentially forced us, as students, to engage with the readings rather than merely recite back what we read. The critical engagement made me think more about the implications of the readings rather than what was printed."_
+> I appreciated Professor Sinanoglu's conversational teaching style. It essentially forced us, as students, to engage with the readings rather than merely recite
+> back what we read. The critical engagement made me think more about the implications of the readings rather than what was printed.
+> 
 </details>
 
 # <span style="font-size: 20px; ">Workshops and Teaching Materials</span>

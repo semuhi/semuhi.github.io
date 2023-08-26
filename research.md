@@ -13,19 +13,20 @@ title: ""
 
 # <span style="font-size: 20px; ">Under review</span>
 
-(2021) [Divided at home, divided abroad? Affective polarization and political tolerance among migrants.](https://www.researchgate.net/publication/354914015_Divided_at_Home_Divided_Abroad) (with Selin Kepenek). 
+(2021) [Divided at home, divided abroad? Affective polarization and political tolerance among migrants](https://www.researchgate.net/publication/354914015_Divided_at_Home_Divided_Abroad) (with Selin Kepenek). 
 
 # <span style="font-size: 20px; ">Working papers</span>
 
 (2023) Taming the paper tiger? Repression, polarization, and the business elite.
 
-(2023) [Cross-partisan outreach, political tolerance, and affective polarization in Turkey.](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) (with Michael Donnelly). 
+(2023) [Cross-partisan outreach, political tolerance, and affective polarization in Turkey](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) (with Michael Donnelly). 
 
 (2023) Authoritarian power-sharing and information leaks (with Sahib Jafarov).
 
 # <span style="font-size: 20px; ">Ongoing research</span>
 
-- "The impact of fiction on support for repression." (with Michael Donnelly)
-- "The prosecution of Heads of State and democratic backsliding." (with Seva Gunitsky)
--  "The determinants of group defection: Survey experiments with rebel groups in Myanmar." (with POSTCOR Lab)
-- "Return to Civil War: Insurgent Groups and the Decision to Abandon Peace." (with POSTCOR Lab)
+(2023) The impact of fiction on support for repression (with Michael Donnelly).
+
+(2023) The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar (with POSTCOR Lab).
+
+(2023) The prosecution of heads of state and democratic backsliding (with Seva Gunitsky).

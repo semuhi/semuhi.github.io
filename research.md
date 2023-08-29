@@ -46,6 +46,7 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 # <span style="font-size: 20px; ">Ongoing research</span>
 
 (2023) The impact of fiction on support for repression (with Michael Donnelly). <br>
+(2023) The determinants of business support for authoritarianism. <br>
 (2023) The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar (with POSTCOR). <br>
 (2023) The prosecution of heads of state and democratic backsliding (with Seva Gunitsky).
 

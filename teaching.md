@@ -11,6 +11,15 @@ title: "Teaching"
 Following an introduction to the history of global economic crises and macroeconomic fundamentals, the course will first investigate the political implications and social costs of austerity programs. What are the electoral costs of austerity measures? Who supports austerity programs and why? How do austerity measures impact political behavior and preferences for redistribution? Do they lead to increasing support for leftist or anti-mainstream parties? Then, we will discuss the international ramifications of economic crises: Do they lead to autocratization? Is the global monetary order crumbling? The primary learning outcome of this course is to expose students to timely and critical conversations about the political impact of financial crises and austerity measures at the domestic and international levels.
 </details>
 
+<details> <summary> Sample student evaluations: </summary>
+<blockquote> Extremely satisfied with my experience, instructor offered an excellent space for discussion, making everyone feel comfortable, despite getting into some controversial issues related to the political implications of economic crises. </blockquote>
+
+<blockquote> The professor created an environment in which I felt incredibly comfortable. I honestly believed in the sentiment “no stupid questions.” I never felt embarrassed when I failed to understand a concept. Prof always was very quick to respond to emails and was very understanding of the often harsh reality of student life. </blockquote>
+
+<blockquote> Professor Semuhi was excellent in his instruction. His course content was thorough and engaging. He was extremely knowledgable and did an amazing job in passing on his knowledge. His assignments and readings were well curated and the atmosphere in his class was very conducive to learning. Discussions were well orchestrated and made sure no one felt left out or disengaged. He was also very warm and understanding and never added unnecessary burden to discourage the learning experience. </blockquote>
+
+</details>
+
 [**The International Politics of Authoritarianism**](https://semuhi.github.io/assets/pdf/autocrat-syllabus.pdf) **(University of Toronto, Mississauga)** 
 <details> <summary> Course description: </summary>
 The course will investigate the following key questions: Is there a new emerging post-liberal global order as a backlash against economic globalization? Are we experiencing a new wave of autocratization across the world at the hands of tech-savvy dictators who repress dissidents beyond their borders and disrupt democratic processes abroad? Has autocracy promotion and diffusion replaced the international efforts of democratization? Can the international community feasibly constrain autocratic regimes? This course’s primary expected learning outcome is to offer an insight into the international roots of autocratic resilience. Students will also be equipped with analytical tools to assess current policy interventions designed to contain or curtail autocratic regime practices.

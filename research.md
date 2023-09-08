@@ -42,7 +42,7 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 
 # <span style="font-size: 20px; ">Working papers</span>
 
-(2023) [Taming the paper tiger? A political economy of support for the repression of the business elite](https://osf.io/dxw7g). 
+(2023) **[Taming the paper tiger? A political economy of support for the repression of the business elite](https://osf.io/dxw7g)**. 
 
 (2023) [Cross-partisan outreach, political tolerance, and affective polarization in Turkey](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) (with Michael Donnelly). 
 <details> <summary>Abstract:</summary> How do opposition parties achieve depolarization against populist autocratic incumbents? Which depolarization strategies are effective? We examine the impact of opposition parties’ cross-partisan post-disaster relief aid on affective polarization and political tolerance, and whether government counterpropaganda mitigates its impact. To that aim, we conducted in-person survey experiments in Turkey. This highly polarized country recently went through natural disasters, including floods and wildfires. By randomizing the partisan identity of the aid recipients, our study measures the heterogenous treatment effects of depolarization strategies on different partisan groups in the context of an electoral autocracy. The results indicate that such strategies may be more effective in boosting political tolerance of the opposition rather than reducing affective polarization.  </details>
@@ -76,6 +76,8 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 (2019) Containing Ethnic Conflict: Repression, Co‑optation, and Identity Politics. ISA Annual Convention, Toronto (with Ceren Belge).  
 
 (2014) A Typology of Welfare Regimes in the Middle East and North Africa. ECPR General Conference, Warsaw. 
+
+-------------------
 
 # <span style="font-size: 20px; ">Other research experience</span>
 

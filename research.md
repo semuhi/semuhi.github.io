@@ -58,8 +58,10 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 <details> <summary>Abstract:</summary> We collected experimental data in Turkey using TV series clips as visual treatments to assess the effect of ultra-nationalist/militarist fiction/TV series on public support for autocratic repression and cross-border military operations. </details>
 
 (2023) The determinants of business support for authoritarianism. <be>
+<details> <summary>Abstract:</summary> Why does the business elite defect? On the one hand, it’s a risky enterprise to challenge an autocratic incumbent, as the threat of expropriation, imprisonment, or any other type of repression is real. On the other hand, the business elite sometimes does defect from autocratic regimes and in some cases, even spearheads the social mobilization against them. What determines this variation? Using the V-DEM data, I analyze the determinants of business opposition to autocratic regimes. </details>
 
-(2023) [The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar](https://osf.io/k9tnr/) (with POSTCOR). <be>
+(2023) [The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar](https://osf.io/k9tnr/) (with POSTCOR). 
+<details> <summary>Abstract:</summary> We will conduct list and conjoint experiments through online surveys with active armed group members in Myanmar and the Philippines to better understand rebel retention. We also hope to establish some priors for future experimental research with active rebel group members. To what extent do they strategically misreport? Are they less attentive compared to the general population? Do they differ in terms of their values/attitudes, including trust in institutions, life satisfaction, and attitudes toward democracy? </details>
 
 (2023) The prosecution of heads of state and democratic backsliding (with Seva Gunitsky).
 

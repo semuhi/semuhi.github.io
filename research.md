@@ -5,7 +5,7 @@ title: "Research"
 ---
 
 # <span style="font-size: 20px; ">Dissertation project</span>
-<span style="font-size: 16px; ">Why do autocrats target one group of the elite under an economic crisis rather than others for financial repression?</span> * 
+<span style="font-size: 20px; "> Why do autocrats target one group of the elite under an economic crisis rather than others for financial repression? </span> 
 
 <details> <summary>Read more:</summary>
 Under protracted economic crises, authoritarian co-optative systems often become untenable. Economic crises put constraints on available resources and the range of policy options at the regime’s disposal. As a response, if autocrats lack access to other natural resources, they must ramp up repression and reduce the winning coalition’s size. In other words, under economic constraints, autocrats do not just repress opponents but also coerce allies and purge them out of the power-sharing arrangements. This shift in gears, however, is not of choice but necessity. Under resource constraints, an autocrat must prioritize one group of close allies over the others to keep the support coalition intact. Yet, we still know very little about <i>who exactly</i> autocrats decide to kick out from the ruling coalition and target with repression under resource constraints. This is the gap my dissertation aims to fill. <br>

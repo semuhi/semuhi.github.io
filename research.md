@@ -37,31 +37,38 @@ Secondly, autocrats employ polarization in tandem with repression of the busines
 
 # <span style="font-size: 20px; ">Working papers</span>
 
-(2023) Taming the paper tiger? Repression, polarization, and the business elite. <br>
-(2023) [Cross-partisan outreach, political tolerance, and affective polarization in Turkey](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) (with Michael Donnelly). <br>
-(2023) Authoritarian power-sharing and information leaks (with Sahib Jafarov). <br>
+(2023) [Taming the paper tiger? A political economy of support for the repression of the business elite](https://osf.io/dxw7g). <be>
+
+(2023) [Cross-partisan outreach, political tolerance, and affective polarization in Turkey](https://egap.org/project/does-every-cloud-have-a-silver-lining-disasters-and-polarization/) (with Michael Donnelly). <be>
+
+(2023) [Authoritarian power-sharing and information leaks](https://tinyurl.com/2afveokx) (with Sahib Jafarov). <br>
 
 -------------------
 
 # <span style="font-size: 20px; ">Ongoing research</span>
 
-(2023) The impact of fiction on support for repression (with Michael Donnelly). <br>
-(2023) The determinants of business support for authoritarianism. <br>
-(2023) The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar (with POSTCOR). <br>
+(2023) The impact of fiction on support for repression (with Michael Donnelly). <be>
+
+(2023) The determinants of business support for authoritarianism. <be>
+
+(2023) [The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar](https://osf.io/k9tnr/) (with POSTCOR). <be>
+
 (2023) The prosecution of heads of state and democratic backsliding (with Seva Gunitsky).
 
 -------------------
 
 # <span style="font-size: 20px; ">Selected presentations</span>
 
-(2022) Does Every Cloud Have a Silver Lining? Disasters and Polarization. APSA Annual Conference, Montreal (with Michael Donnelly). 
+(2022) Does Every Cloud Have a Silver Lining? Disasters and Polarization. [APSA Annual Conference, Montreal](https://tinyurl.com/yyaeljsh) (with Michael Donnelly). 
 
-(2021) Curbing Xenophobia? Assessing the Impact of COVID‑19 Lockdown Measures on Anti‑Refugee Sentiment in Turkey. APSA Annual Conference, Seattle (with Amir Abdul Reda).  
-
-(2020-21) Divided at Home, Divided Abroad? Accepted for the PSA Annual International Conference, Edinburgh; APSA Annual Conference, Seattle; ECPR General Conference (with Selin Kepenek). 
-
-(2019) Mobilizing the Masses: Measuring Social Movements’ Resource Mobilization on Twitter. Accepted for APSA Annual Conference, DC (with Amir Abdul Reda).  
+(2020-21) Divided at Home, Divided Abroad? [APSA Annual Conference, Seattle](https://tinyurl.com/yfudmjpw); [ECPR General Conference](https://ecpr.eu/Events/Event/PaperDetails/57133) (with Selin Kepenek). 
 
 (2019) Containing Ethnic Conflict: Repression, Co‑optation, and Identity Politics. ISA Annual Convention, Toronto (with Ceren Belge).  
 
 (2014) A Typology of Welfare Regimes in the Middle East and North Africa. ECPR General Conference, Warsaw. 
+
+# <span style="font-size: 20px; ">Other research experience</span>
+
+(2022) Preventing civil war recurrence (with [POSTCOR Lab](https://www.postcorlab.com/)).
+
+(2020) Protests, resource curse, and economic diversification (with Jacques Bertrand).

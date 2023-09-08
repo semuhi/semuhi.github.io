@@ -1,7 +1,7 @@
 ---
 permalink: "/research/"
 layout: page
-title: ""
+title: "Research"
 ---
 
 # <span style="font-size: 20px; ">Dissertation project</span>

@@ -5,7 +5,7 @@ title: "About me"
 
 <img src="/assets/img/prof_pic.jpg" align="right" width="200px" style="border-radius:50%;padding-left:10px"/>
 
-I'm a researcher at the [German Institute of Development and Sustainability](https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/), and PhDc in Political Science at [the University of Toronto](https://politics.utoronto.ca/). 
+I'm a researcher at the [German Institute of Development and Sustainability (IDOS)](https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/), and PhDc in Political Science at [the University of Toronto](https://politics.utoronto.ca/). 
 
 I study how autocrats employ and justify repression in polarized contexts and ensure the political control of key social groups during economic downturns. My dissertation research is about how autocrats financially coerce their business allies during sovereign debt crises with little political cost. I also contribute to the computational and experimental methodological tools in political science research. My co-authored papers are published in high-impact academic journals such as <a href="https://jcp.gc.cuny.edu"> Comparative Politics </a> and [Sociological Methods & Research](https://journals.sagepub.com/home/smr). 
 

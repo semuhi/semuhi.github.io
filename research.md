@@ -7,7 +7,7 @@ title: "Research"
 # <span style="font-size: 20px; ">Dissertation project</span>
 ## <span style="font-size: 16px; "> For Better, For Worse? Autocrats and their Business Allies during Sovereign Debt Crises </span>
 
-**Why does an autocrat financially repress his business allies during an economic crisis? And why does the business elite rarely defect in the face of repression?**
+Why does an autocrat financially repress his business allies during an economic crisis? And why does the business elite rarely defect in the face of repression?
 
 <details> <summary>Read more:</summary>
 On the one hand, the financial extortion of the wealthy businesspeople may provide a quick windfall for the regime to survive through a prolonged fiscal crisis. Indeed, the financial shakedown of businesses during economic downturns is quite common across different types of autocratic regimes. However, it is also a risky endeavor: autocrats may run the risk of damaging their reputation in the international markets with coercive acts like expropriations. Violent repression of political insiders, if the wrong person targeted, may also trigger collective elite dissent against the regime. Endowed with structural and disruptive power, the business elite may defect from the regime by mobilizing protests and funding the opposition. And yet, despite these inherent risks, dictators choose to financially extort or purge their business allies during economic crises. One might expect dictator’s business allies to defect from the regime in the face of financial repression. However, on average, they do not. The available data suggest that business opposition to autocratic regimes is a rare event. Why?

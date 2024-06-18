@@ -1,6 +1,6 @@
 title: "Semuhi Sinanoglu"
 author: "Semuhi Sinanoglu"
-description: <a href="https://maidan.ca/"> Maidan Analytics </a>
+description: <a href="https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/"> German Institute of Development and Sustainability (IDOS) </a>
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -22,7 +22,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "resume.md", title: "Resume"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:semuhi.sinanoglu@mail.utoronto.ca"}
+  - {title: Mail, icon: envelope, url: "mailto:Semuhi.Sinanoglu@idos-research.de"}
   - {title: Github, icon: github, url: "https://github.com/semuhi"}
   - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/semuhisinanoglu/"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/semuhi"}

@@ -4,6 +4,8 @@ permalink: "/other-pub/"
 title: "Other publications"
 ---
 
+(2024) <a href="https://www.idos-research.de/policy-brief/article/countering-information-pollution-to-protect-democracy/">Countering Information Pollution to Protect Democracy.</a> Bonn: German Institute of Development and Sustainability (IDOS) (29/2024).
+
 (2021) <a href="https://turkonfed.org/en/detail/3578/a-time-of-crisis-and-opportunity-digitizing-smes-in-turkey">A Time of Crisis and Opportunity: Digitizing SMEs in Turkey.</a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (November).
       
 (2021) <a href="https://turkonfed.org/en/detail/3458/covid-19-impact-assessment-report"> COVID Impact Assessment Report.</a> Istanbul: Turkish Enterprise and Business Confederation & CIPE (May).

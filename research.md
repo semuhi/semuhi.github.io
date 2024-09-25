@@ -56,6 +56,7 @@ In my dissertation, I argue that autocrats can financially coerce their business
 -------------------
 
 # <span style="font-size: 20px; ">Ongoing research</span>
+(2024) **The Sources of Democratic Resilience in an Age of Backsliding** (SSHRC-funded project run by Lucan Way and Steve Levitsky)
 
 (2023) **The impact of fiction on support for repression** (with Michael Donnelly). 
 <details> <summary>Abstract:</summary> We collected experimental data in Turkey using TV series clips as visual treatments to assess the effect of ultra-nationalist/militarist fiction/TV series on public support for autocratic repression and cross-border military operations. </details>

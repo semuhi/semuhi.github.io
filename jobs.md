@@ -8,11 +8,15 @@ title: "Call for Applications: Graduate Research Assistant in Computational Poli
 
 
 **Position:** Graduate Research Assistant
+
 **Duration:** Minimum 6 months (up to 1 year)
+
 **Compensation:** $31 CAD/hour (up to $21,000 CAD per year)
+
 **Start Date:** October 2024
 
 **About the Project**
+
 We are seeking a talented and motivated graduate student to join a SSHRC-funded research project led by Professors Lucan Way (University of Toronto) and Steve Levitsky (Harvard University). This project aims to enhance our understanding of global trends of democracy. 
 
 **Key Responsibilities**
@@ -44,10 +48,12 @@ We are seeking a talented and motivated graduate student to join a SSHRC-funded 
 - Accommodations can be made to fit your academic schedule.
   
 **How to Apply**
+
 Please submit the following documents to [semuhi.sinanoglu@mail.utoronto.ca](mailto:semuhi.sinanoglu@mail.utoronto.ca) by **October 10**:
 - Cover Letter
 - Curriculum Vitae (CV)
 
 **Contact Information**
+
 For any inquiries, please contact:
 [semuhi.sinanoglu@mail.utoronto.ca](mailto:semuhi.sinanoglu@mail.utoronto.ca) 

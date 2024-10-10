@@ -11,9 +11,9 @@ title: "Call for Applications: Graduate Research Assistant in Computational Poli
 
 **Duration:** Minimum 6 months (up to 1 year)
 
-**Compensation:** $31 CAD/hour (up to $21,000 CAD per year)
+**Compensation:** up to $21,000 CAD per year
 
-**Start Date:** October 2024
+**Start Date:** November 2024
 
 **About the Project**
 
@@ -49,7 +49,7 @@ We are seeking a talented and motivated graduate student to join a SSHRC-funded 
   
 **How to Apply**
 
-Please submit the following documents to [semuhi.sinanoglu@mail.utoronto.ca](mailto:semuhi.sinanoglu@mail.utoronto.ca) by **October 10**:
+Please submit the following documents to [semuhi.sinanoglu@mail.utoronto.ca](mailto:semuhi.sinanoglu@mail.utoronto.ca) by **October 20 (extended deadline)**:
 - Cover Letter
 - Curriculum Vitae (CV)
 

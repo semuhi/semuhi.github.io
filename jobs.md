@@ -9,7 +9,7 @@ title: "Call for Applications: Graduate Research Assistant in Computational Poli
 
 **Position:** Graduate Research Assistant
 
-**Duration:** Minimum 6 months (up to 1 year)
+**Duration:** up to 1 year
 
 **Compensation:** up to $21,000 CAD per year
 

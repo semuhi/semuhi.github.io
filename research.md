@@ -66,7 +66,7 @@ varying cues of co-optation, and their firm’s characteristics. The results ind
 
 # <span style="font-size: 20px; ">Ongoing research</span>
 (2024) **The sources of democratic resilience in an age of backsliding** (SSHRC-funded project run by Lucan Way and Steve Levitsky)
-<details> <summary>Abstract:</summary> You may find further details on the argument [here](https://www.journalofdemocracy.org/articles/democracys-surprising-resilience/). </details>
+<details> <summary>Abstract:</summary> You may find further details on the argument <a href="https://www.journalofdemocracy.org/articles/democracys-surprising-resilience/">here</a>. </details>
 
 (2023) **[The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar](https://osf.io/k9tnr/)** (with POSTCOR). 
 <details> <summary>Abstract:</summary> We will conduct list and conjoint experiments through online surveys with active armed group members in Myanmar and the Philippines to better understand rebel retention. We also hope to establish some priors for future experimental research with active rebel group members. To what extent do they strategically misreport? Are they less attentive compared to the general population? Do they differ in terms of their values/attitudes, including trust in institutions, life satisfaction, and attitudes toward democracy? </details>

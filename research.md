@@ -12,9 +12,9 @@ Why does an autocrat financially repress his closest business allies during an e
 <details> <summary>Read more:</summary>
 On the one hand, the financial extortion of the wealthy businesspeople may provide a quick windfall for the regime to survive through a prolonged fiscal crisis. Indeed, the financial shakedown of businesses during economic downturns is quite common across different types of autocratic regimes. However, it is also risky: autocrats may damage their reputation in the international markets with coercive acts like expropriations. Violent repression of political insiders may also trigger collective elite dissent against the regime. Endowed with structural and disruptive power, the business elite may defect from the regime by mobilizing protests and funding the opposition. And yet, despite these inherent risks, dictators choose to financially extort or purge their business allies during economic crises. One might expect dictator’s business allies to defect from the regime in the face of financial repression. However, on average, they do not. The available data suggest that business opposition to autocratic regimes is a rare event. Why?
 
-  
+<p>
 In my dissertation, I argue that autocrats can financially coerce their business allies during sovereign debt crises with little political cost. They do so by relying on less intensive coercive tactics like tax audits. The co-opted business elite also presents a politically expedient target for repression. First, they can be incorporated into the support coalition in exchange for material benefits without institutional power-sharing concessions. That is why they are relatively easy targets for coercion and less likely to defect from the regime during major crises. Second, due to cronyism and corruption, they lack public support, and the dictator can easily mobilize public opinion to justify their repression and frame it as a crackdown on corruption. In other words, co-optation is a poisonous pill for businesses. The politically connected business elite become punching bags for the dictator during major crises without a credible threat of defection. Once co-opted, the cards get stacked against them, despite their structural power.
-
+</p>
 </details>
 -------------------
 

@@ -57,14 +57,16 @@ varying cues of co-optation, and their firm’s characteristics. The results ind
 (2024) **Sultanist and militarist soft propaganda, and support for security operations** (with Michael Donnelly). 
 <details> <summary>Abstract:</summary> How does autocratic soft propaganda impact support for security operations at home and abroad? Autocratic regimes allocate significant resources for TV series and movies to manufacture public support and boost nationalism. Despite the growing scholarship, we still do not know enough to what extent different types of soft propaganda effectively generate support for military operations. To that aim, we conducted a pre-registered in-person experiment with a representative sample of the Turkish population to measure the varying effects of government-funded militarist and neo-Ottomanist TV series on support for cross-border military operations and domestic police operations. The findings suggest that we should take fiction seriously – neo-Ottomanist TV series significantly increase support for scaling up security operations abroad among religious pro-regime voters, while militarist scripts drive similar attitudes with nationalists. Both scripts fuel anti-Israel sentiments among government supporters. The results show that autocrats cater soft propaganda to different ideological groups within their support base and to varying degrees of effectiveness.</details>
 
-(2023) **The prosecution of heads of state and democratic backsliding** (with Seva Gunitsky).
+(2024) **The prosecution of heads of state and democratic backsliding** (with Seva Gunitsky).
 <details> <summary>Abstract:</summary> A new leader-level dataset on the cases of prosecutions of former heads of state or government in democratic regimes since 1990. </details>
+
+(2024) **Can businesses safeguard democracy?** (with Lucan Way). 
 
 -------------------
 
 # <span style="font-size: 20px; ">Ongoing research</span>
-(2024) **The Sources of Democratic Resilience in an Age of Backsliding** (SSHRC-funded project run by Lucan Way and Steve Levitsky)
-<details> <summary>Abstract:</summary>  </details>
+(2024) **The sources of democratic resilience in an age of backsliding** (SSHRC-funded project run by Lucan Way and Steve Levitsky)
+<details> <summary>Abstract:</summary> You may find further details on the argument [here](https://www.journalofdemocracy.org/articles/democracys-surprising-resilience/). </details>
 
 (2023) **[The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar](https://osf.io/k9tnr/)** (with POSTCOR). 
 <details> <summary>Abstract:</summary> We will conduct list and conjoint experiments through online surveys with active armed group members in Myanmar and the Philippines to better understand rebel retention. We also hope to establish some priors for future experimental research with active rebel group members. To what extent do they strategically misreport? Are they less attentive compared to the general population? Do they differ in terms of their values/attitudes, including trust in institutions, life satisfaction, and attitudes toward democracy? </details>
@@ -73,15 +75,15 @@ varying cues of co-optation, and their firm’s characteristics. The results ind
 
 # <span style="font-size: 20px; ">Selected presentations</span>
 
-(2024) Sultanist and militarist soft propaganda, and support for security operations [VWAR Workshop](http://authoritarianregimes.net) (with Michael Donnelly).
+(2024) Sultanist and militarist soft propaganda, and support for security operations. [VWAR Workshop](http://authoritarianregimes.net) (with Michael Donnelly).
 
 (2024) Climate disasters exacerbate polarization: Could cross-partisan outreach help? [CEU Democracy Institute DRD Annual Workshop: Breaking the Dynamics of Political Polarization](https://democracyinstitute.ceu.edu/projects/politics-polarization); [APSA Annual Conference, Montreal](https://tinyurl.com/yyaeljsh) (with Michael Donnelly).
 
-(2020-21) Divided at Home, Divided Abroad? [APSA Annual Conference, Seattle](https://tinyurl.com/yfudmjpw); [ECPR General Conference](https://ecpr.eu/Events/Event/PaperDetails/57133) (with Selin Kepenek). 
+(2020-21) Divided at home, divided abroad? [APSA Annual Conference, Seattle](https://tinyurl.com/yfudmjpw); [ECPR General Conference](https://ecpr.eu/Events/Event/PaperDetails/57133) (with Selin Kepenek). 
 
-(2019) Containing Ethnic Conflict: Repression, Co‑optation, and Identity Politics. ISA Annual Convention, Toronto (with Ceren Belge).  
+(2019) Containing ethnic conflict: Repression, co‑optation, and identity politics. ISA Annual Convention, Toronto (with Ceren Belge).  
 
-(2014) A Typology of Welfare Regimes in the Middle East and North Africa. ECPR General Conference, Warsaw. 
+(2014) A typology of welfare regimes in the Middle East and North Africa. ECPR General Conference, Warsaw. 
 
 -------------------
 

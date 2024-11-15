@@ -5,7 +5,7 @@ title: "Research"
 ---
 
 # <span style="font-size: 20px; ">Dissertation project</span>
-## <span style="font-size: 16px; "> For Better, For Worse? Autocrats and their Business Allies during Sovereign Debt Crises </span>
+## <span style="font-size: 16px; "> [For Better, For Worse? Autocrats and their Business Allies during Sovereign Debt Crises](https://tspace.library.utoronto.ca/handle/1807/140563) </span>
 
 Why does an autocrat financially repress his closest business allies during an economic crisis? And why does the business elite rarely defect in the face of repression?
 

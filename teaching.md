@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: "/teaching/"
-title: "Teaching"
+title: "Teaching/Training"
 ---
 
 # <span style="font-size: 20px; ">Course Instructorship</span>
@@ -54,6 +54,14 @@ The course is organized thematically but chronologically follows significant tur
 [**Spatial Analysis using R: An Introduction**](https://semuhi.github.io/uoft-spatial/slides#1). University of Toronto, March 5, 2021. 
 
 [**Introduction to R**](https://semuhi.github.io/intro-to-r/). University of Toronto, September 2020. 
+
+# <span style="font-size: 20px; ">Training</span>
+
+Understanding the Gridlock: Measuring and Responding to Polarization. UNDP Global Policy Centre for Governance, November 2024 (with Armin von Schiller and Julia Leininger).
+
+Organizational Development & Management: Digital Security in the Age of Hyper‑Surveillance. Istanbul: Co‑Opinion, April-June 2017.
+
+Design Lab: Preventing & Countering Violent Extremism. Istanbul: Co‑Opinion & Hollings Center for International Dialogue, April 2017.
 
 # <span style="font-size: 20px; ">Teaching Assistantship (University of Toronto) </span>
 

@@ -54,7 +54,7 @@ In my dissertation, I argue that autocrats can financially coerce their business
 
 # <span style="font-size: 20px; ">Working papers</span>
 
-(2025) **How International Solidarity Backfires**. 
+(2025) **How international solidarity backfires**. 
 <details> <summary>Abstract:</summary> Western foreign aid (development and democracy assistance) are more and more clearly and publicly linked to national security and strategic interests. Such shift may have unintended consequences. In recipient countries with high levels of polarization and government propaganda, such ‘securitization’ may further politicize a society, discredit international organizations, and be exploited by autocrats/populists for political gains. In such context, even politically least controversial humanitarian assistance (such as post-disaster recovery aid by Western countries) may be politicized and backfire -- they would not just drive support for the government, but also reduce trust in international organizations and increase skepticism, by fueling conspiratorial thinking, and evoking emotions and considerations that reinforce government's propaganda talking points. To test these ideas, I conducted an online survey experiment with a sample of the general population in Turkey to assess the effect of different types of solidarity post-disaster: conditional, unconditional, and strategic, and whether they are effective in countering government propaganda that dismisses them as disingenuous and hypocrisy. The findings have significant implications for foreign aid strategies in the context of democracy support and protection. </details>
   
 (2025) **Sultanist and militarist soft propaganda, and support for security operations** (with Michael Donnelly). 

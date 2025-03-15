@@ -5,7 +5,7 @@ title: "About me"
 
 <img src="/assets/img/prof_pic.jpg" align="right" width="200px" style="border-radius:50%;padding-left:10px"/>
 
-I'm a researcher at the [German Institute of Development and Sustainability (IDOS)](https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/). I completed my PhD in Political Science at [the University of Toronto](https://politics.utoronto.ca/). 
+I'm a researcher at the [German Institute of Development and Sustainability (IDOS)](https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/). I completed my PhD in Political Science at [the University of Toronto](https://politics.utoronto.ca/). I'm a [German Marshall Fund Marshall Memorial Fellow (2025)](https://www.gmfus.org/marshall-memorial-fellowship). 
 
 I study how dictators employ and justify repression in polarized contexts, drive normative support for the regime, and ensure the political control of key social groups during economic downturns. My dissertation research is about how and why autocrats financially coerce their closest business allies during sovereign debt crises. I also contribute to the computational and experimental methodological tools in political science research. My co-authored papers are published in high-impact academic journals such as <a href="https://jcp.gc.cuny.edu"> Comparative Politics </a> and [Sociological Methods & Research](https://journals.sagepub.com/home/smr). 
 

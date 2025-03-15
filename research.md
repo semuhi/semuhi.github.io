@@ -1,4 +1,4 @@
-<img width="1459" alt="image" src="https://github.com/user-attachments/assets/bf1b5750-3fb6-4123-b998-8a6aa0720551" />---
+---
 permalink: "/research/"
 layout: page
 title: "Research"

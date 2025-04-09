@@ -73,6 +73,8 @@ In my dissertation, I argue that autocrats can financially coerce their business
 
 # <span style="font-size: 20px; ">Selected presentations</span>
 
+(2025) How international solidarity backfires. [MPSA](https://www.mpsanet.org/conference/). 
+
 (2024) Sultanist and militarist soft propaganda, and support for security operations. [VWAR Workshop](http://authoritarianregimes.net); [PEDD Conference](https://www.wiwi.uni-muenster.de/loep/en/pedd) (with Michael Donnelly).
 
 (2024) Climate disasters exacerbate polarization: Could cross-partisan outreach help? [CEU Democracy Institute DRD Annual Workshop: Breaking the Dynamics of Political Polarization](https://democracyinstitute.ceu.edu/projects/politics-polarization); [APSA Annual Conference, Montreal](https://tinyurl.com/yyaeljsh) (with Michael Donnelly).
@@ -92,7 +94,3 @@ In my dissertation, I argue that autocrats can financially coerce their business
 
 (2023) **[The determinants of defection in civil wars: Survey experiments with rebel groups in Myanmar](https://osf.io/k9tnr/)** (with POSTCOR). 
 <details> <summary>Abstract:</summary> We will conduct list and conjoint experiments through online surveys with active armed group members in Myanmar and the Philippines to better understand rebel retention. We also hope to establish some priors for future experimental research with active rebel group members. To what extent do they strategically misreport? Are they less attentive compared to the general population? Do they differ in terms of their values/attitudes, including trust in institutions, life satisfaction, and attitudes toward democracy? </details>
-
-(2022) Preventing civil war recurrence (with [POSTCOR Lab](https://www.postcorlab.com/)).
-
-(2020) Protests, resource curse, and economic diversification (with Jacques Bertrand).

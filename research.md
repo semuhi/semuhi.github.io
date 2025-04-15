@@ -75,7 +75,7 @@ In my dissertation, I argue that autocrats can financially coerce their business
 
 (2025) How international solidarity backfires. [MPSA](https://www.mpsanet.org/conference/). 
 
-(2024) Sultanist and militarist soft propaganda, and support for security operations. [VWAR Workshop](http://authoritarianregimes.net); [PEDD Conference](https://www.wiwi.uni-muenster.de/loep/en/pedd) (with Michael Donnelly).
+(2025) Sultanist and militarist soft propaganda, and support for security operations. [VWAR Workshop](http://authoritarianregimes.net); [PEDD Conference](https://www.wiwi.uni-muenster.de/loep/en/pedd); [PSA Annual Conference](https://www.psa.ac.uk/events/psa-annual-conference) (with Michael Donnelly).
 
 (2024) Climate disasters exacerbate polarization: Could cross-partisan outreach help? [CEU Democracy Institute DRD Annual Workshop: Breaking the Dynamics of Political Polarization](https://democracyinstitute.ceu.edu/projects/politics-polarization); [APSA Annual Conference, Montreal](https://tinyurl.com/yyaeljsh) (with Michael Donnelly).
 

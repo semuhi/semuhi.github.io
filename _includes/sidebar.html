@@ -20,6 +20,8 @@
     <a href="{{ entry.url }}" title="{{ entry.title }}" target="_blank">
       <i class="fab fa-{{ entry.icon }}"></i>
     </a>
+      {% endif %}
+{% endfor %}
     {%- assign node = site.pages | where: "name", item.file | first -%}
     {%- assign url = item.url | default: node.url -%}
     {%- assign title = item.title | default: node.title -%}

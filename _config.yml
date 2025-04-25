@@ -26,9 +26,8 @@ external:                  # shows a footer with social links - for available ic
   - {title: Github, icon: github, url: "https://github.com/semuhi"}
   - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/semuhisinanoglu/"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/semuhi"}
-  - {title: Google Scholar, icon: google-plus, url: "https://scholar.google.com/citations?user=4IlRWR0AAAAJ&hl=tr"}
   - {title: Bluesky, icon: bluesky, url: "https://bsky.app/profile/semuhi.bsky.social"}
-
+  - {title: Google Scholar, icon: google-plus, url: "https://scholar.google.com/citations?user=4IlRWR0AAAAJ&hl=tr"}
   - {title: Researchgate, icon: researchgate, url: "https://www.researchgate.net/profile/Semuhi-Sinanoglu-2"}
   
 

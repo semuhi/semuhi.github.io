@@ -12,6 +12,11 @@
     </a>
   {%- endfor -%}
   {%- for item in site.external -%}
+     {% if entry.icon == "bluesky" %}
+    <a href="{{ entry.url }}" title="{{ entry.title }}" target="_blank">
+      <img src="{{ '/assets/img/bluesky.svg' | relative_url }}" alt="Bluesky" width="24" height="24" style="vertical-align: middle; margin-right: 8px;" />
+    </a>
+  {% else %}
     {%- assign node = site.pages | where: "name", item.file | first -%}
     {%- assign url = item.url | default: node.url -%}
     {%- assign title = item.title | default: node.title -%}

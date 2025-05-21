@@ -4,6 +4,8 @@ permalink: "/other-pub/"
 title: "Other publications"
 ---
 
+(2025) <a href="https://www.globalpolicyjournal.com/blog/21/05/2025/media-support-needs-tech-upgrade-its-too-late"> Media Support Needs a Tech Upgrade Before It’s Too Late. </a> <i> Global Policy </i>, May 21.
+
 (2025) <a href="https://www.globalpolicyjournal.com/blog/27/03/2025/standing-istanbuls-mayor-will-strengthen-european-security"> Standing up for Istanbul’s mayor will strengthen European security. </a> <i> Global Policy </i>, March 27.
 
 (2024) <a href="https://www.idos-research.de/policy-brief/article/countering-information-pollution-to-protect-democracy/">Countering Information Pollution to Protect Democracy.</a> Bonn: German Institute of Development and Sustainability (IDOS) (29/2024).

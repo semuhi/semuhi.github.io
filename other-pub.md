@@ -4,6 +4,8 @@ permalink: "/other-pub/"
 title: "Other publications"
 ---
 
+(2025) <a href="https://background.tagesspiegel.de/digitalisierung-und-ki/briefing/die-entwicklungszusammenarbeit-braucht-dringend-ein-technologie-upgrade"> Die Entwicklungszusammenarbeit braucht dringend ein Technologie-Upgrade [Development cooperation is overdue for a tech upgrade] </a> <i> Tagesspiegel </i>, June 27. 
+
 (2025) <a href="https://www.globalpolicyjournal.com/blog/21/05/2025/media-support-needs-tech-upgrade-its-too-late"> Media Support Needs a Tech Upgrade Before It’s Too Late. </a> <i> Global Policy </i>, May 21.
 
 (2025) <a href="https://www.globalpolicyjournal.com/blog/27/03/2025/standing-istanbuls-mayor-will-strengthen-european-security"> Standing up for Istanbul’s mayor will strengthen European security. </a> <i> Global Policy </i>, March 27.

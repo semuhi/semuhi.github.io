@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: "/teaching/"
-title: "Teaching & Training"
+title: "Teaching and Training"
 ---
 
 # <span style="font-size: 20px; ">Course Instructorship</span>

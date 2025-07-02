@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: "/other-pub/"
-title: "Other publications"
+title: "Other Publications"
 ---
 
 (2025) <a href="https://background.tagesspiegel.de/digitalisierung-und-ki/briefing/die-entwicklungszusammenarbeit-braucht-dringend-ein-technologie-upgrade"> Die Entwicklungszusammenarbeit braucht dringend ein Technologie-Upgrade [Development cooperation is overdue for a tech upgrade] </a> <i>Tagesspiegel</i>, June 27. 

@@ -4,6 +4,8 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
+(2025) <a href="https://www.diplomatisches-magazin.de/magazin/"> Strategic humanitarian aid – Could it weaken autocracies and boost confidence in Europe? [Strategische humanitäre Hilfe – Kann sie Autokratien schwächen und Vertrauen in Europa stärken?] </a> <i> Diplomatisches Magazine </i> (July-August): 28-31.
+
 (2025) <a href="https://background.tagesspiegel.de/digitalisierung-und-ki/briefing/die-entwicklungszusammenarbeit-braucht-dringend-ein-technologie-upgrade"> Die Entwicklungszusammenarbeit braucht dringend ein Technologie-Upgrade [Development cooperation is overdue for a tech upgrade] </a> <i>Tagesspiegel</i>, June 27. 
 
 (2025) <a href="https://www.globalpolicyjournal.com/blog/21/05/2025/media-support-needs-tech-upgrade-its-too-late"> Media Support Needs a Tech Upgrade Before It’s Too Late. </a> <i> Global Policy </i>, May 21.

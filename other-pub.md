@@ -4,6 +4,8 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
+(2025) <a href="https://doi.org/10.23661/ipb16.2025">Communicating strategic interests in humanitarian aid may help counter authoritarian propaganda and build trust in Europe.</a> Bonn: German Institute of Development and Sustainability (IDOS) (16/2025).
+
 (2025) <a href="https://www.diplomatisches-magazin.de/magazin/"> Strategic humanitarian aid – Could it weaken autocracies and boost confidence in Europe? [Strategische humanitäre Hilfe – Kann sie Autokratien schwächen und Vertrauen in Europa stärken?] </a> <i> Diplomatisches Magazin </i> (July-August): 28-31.
 
 (2025) <a href="https://background.tagesspiegel.de/digitalisierung-und-ki/briefing/die-entwicklungszusammenarbeit-braucht-dringend-ein-technologie-upgrade"> Die Entwicklungszusammenarbeit braucht dringend ein Technologie-Upgrade [Development cooperation is overdue for a tech upgrade] </a> <i>Tagesspiegel</i>, June 27. 

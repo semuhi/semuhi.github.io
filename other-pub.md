@@ -4,13 +4,13 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-(2025) <a href="https://foreignpolicy.com/2025/10/28/democracy-prosecution-crimes-sarkozy-trump-berlusconi/?utm_content=gifting&tpcc=gifting_article&gifting_article=ZGVtb2NyYWN5LXByb3NlY3V0aW9uLWNyaW1lcy1zYXJrb3p5LXRydW1wLWJlcmx1c2Nvbmk=&pid=PNI1bixlkt4ujc3"> Prosecuting the Powerful </a> <i>Foreign Policy</i>, October 28 (with S. Gunitsky & S. Jafarov). 
+(2025) <a href="https://foreignpolicy.com/2025/10/28/democracy-prosecution-crimes-sarkozy-trump-berlusconi/?utm_content=gifting&tpcc=gifting_article&gifting_article=ZGVtb2NyYWN5LXByb3NlY3V0aW9uLWNyaW1lcy1zYXJrb3p5LXRydW1wLWJlcmx1c2Nvbmk=&pid=PNI1bixlkt4ujc3"> Prosecuting the Powerful. </a> <i>Foreign Policy</i>, October 28 (with S. Gunitsky & S. Jafarov). 
 
 (2025) <a href="https://doi.org/10.23661/ipb16.2025">Communicating strategic interests in humanitarian aid may help counter authoritarian propaganda and build trust in Europe.</a> Bonn: German Institute of Development and Sustainability (IDOS) (16/2025).
 
 (2025) <a href="https://www.diplomatisches-magazin.de/magazin/"> Strategic humanitarian aid – Could it weaken autocracies and boost confidence in Europe? [Strategische humanitäre Hilfe – Kann sie Autokratien schwächen und Vertrauen in Europa stärken?] </a> <i> Diplomatisches Magazin </i> (July-August): 28-31.
 
-(2025) <a href="https://background.tagesspiegel.de/digitalisierung-und-ki/briefing/die-entwicklungszusammenarbeit-braucht-dringend-ein-technologie-upgrade"> Die Entwicklungszusammenarbeit braucht dringend ein Technologie-Upgrade [Development cooperation is overdue for a tech upgrade] </a> <i>Tagesspiegel</i>, June 27. 
+(2025) <a href="https://background.tagesspiegel.de/digitalisierung-und-ki/briefing/die-entwicklungszusammenarbeit-braucht-dringend-ein-technologie-upgrade"> Die Entwicklungszusammenarbeit braucht dringend ein Technologie-Upgrade [Development cooperation is overdue for a tech upgrade]. </a> <i>Tagesspiegel</i>, June 27. 
 
 (2025) <a href="https://www.globalpolicyjournal.com/blog/21/05/2025/media-support-needs-tech-upgrade-its-too-late"> Media Support Needs a Tech Upgrade Before It’s Too Late. </a> <i> Global Policy </i>, May 21.
 

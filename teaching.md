@@ -49,9 +49,11 @@ The course is organized thematically but chronologically follows significant tur
 
 # <span style="font-size: 20px; ">Workshops and Teaching Materials</span>
 
+[**Can Capitalism Save Democracy?](http://rpubs.com/semuhisinanoglu/demcor). Guest Lecture, University of Duisburg-Essen/IDOS, January 2026.
+
 [**A Basic Introduction to Visual Conjoints**](https://semuhi.github.io/assets/pdf/2025-02-13-Visual conjoint.pdf). IDOS, February 2025.
 
-[**The Politics of Authoritarianism: An Introduction**](https://rpubs.com/semuhisinanoglu/autocracy-intro). University of Toronto, October 2023. 
+[**The Politics of Authoritarianism: An Introduction**](https://rpubs.com/semuhisinanoglu/autocracy-intro). Guest Lecture, University of Toronto, October 2023. 
 
 [**Spatial Analysis using R: An Introduction**](https://semuhi.github.io/uoft-spatial/slides#1). University of Toronto, March 5, 2021. 
 

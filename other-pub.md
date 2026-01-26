@@ -4,6 +4,10 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
+(2026) <a href="https://www.foreignaffairs.com/united-states/personalist-global-order"> The personalist global order: When individual whims drive great-power policy. </a> <i>Foreign Affairs</i>, January 26 (with S. Gunitsky). 
+
+(2026) <a href="https://www.devex.com/news/can-the-private-sector-help-safeguard-democracy-the-answer-is-yes-111752"> Can the private sector help safeguard democracy? The answer is yes. </a> <i>Devex</i>, January 26.
+
 (2025) <a href="https://foreignpolicy.com/2025/10/28/democracy-prosecution-crimes-sarkozy-trump-berlusconi/?utm_content=gifting&tpcc=gifting_article&gifting_article=ZGVtb2NyYWN5LXByb3NlY3V0aW9uLWNyaW1lcy1zYXJrb3p5LXRydW1wLWJlcmx1c2Nvbmk=&pid=PNI1bixlkt4ujc3"> Prosecuting the powerful: Prosecuting political leaders for crimes is healthy for democracies. </a> <i>Foreign Policy</i>, October 28 (with S. Gunitsky & S. Jafarov). 
 
 (2025) <a href="https://doi.org/10.23661/ipb16.2025">Communicating strategic interests in humanitarian aid may help counter authoritarian propaganda and build trust in Europe.</a> Bonn: German Institute of Development and Sustainability (IDOS) (16/2025).

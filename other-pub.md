@@ -4,7 +4,7 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-(2026) <a href="https://table.media/forum/tableforum-neue-sicherheits-strategie/middle-powers-can-build-a-new-world-order-based-on-principled-pragmatism"> Middle powers can build a new world order based on principled pragmatism </a> <i>Table.media</i>, February 12.
+(2026) <a href="https://table.media/forum/tableforum-neue-sicherheits-strategie/middle-powers-can-build-a-new-world-order-based-on-principled-pragmatism"> Middle powers can build a new world order based on principled pragmatism </a> <i>Table.Briefings</i>, February 12.
 
 (2026) <a href="https://www.foreignaffairs.com/united-states/personalist-global-order"> The personalist global order: When individual whims drive great-power policy. </a> <i>Foreign Affairs</i>, January 26 (with S. Gunitsky). 
 

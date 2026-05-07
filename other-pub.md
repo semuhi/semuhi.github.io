@@ -5,7 +5,7 @@ title: "Other Publications"
 ---
 
 (2026) <a href="https://www.idos-research.de/en/the-current-column/article/reforming-the-development-sector-for-agentic-ai-and-whatever-comes-next/"> Reforming the development sector for agentic AI (and whatever comes next) </a> <a href="https://www.idos-research.de/die-aktuelle-kolumne/article/reform-des-entwicklungssektors-fuer-agentische-ki-und-was-danach-kommt/"> 
-[Reform des Entwicklungssektors für agentische KI (und was danach kommt)] </a> <i>The Current Column </i>, May 7. 
+[Reform des Entwicklungssektors für agentische KI (und was danach kommt)] </a> <i>The Current Column</i>, May 7. 
 
 (2026) <a href="https://www.globalpolicyjournal.com/blog/22/04/2026/dont-draw-wrong-lessons-hungarian-election"> Don’t draw the wrong lessons from the Hungarian election </a> <i>Global Policy</i>, April 22. 
 

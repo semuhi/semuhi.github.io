@@ -4,7 +4,7 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-(2026) <a href="https://doi.org/10.23661/idp4.2026"> The future of democracy promotion </a>, in <i>International development cooperation and the emerging global order</i>, edited by M. Furness & N. Keijzer. Bonn: German Institute of Development and Sustainability (IDOS) (04/2026) (with J. Leininger). 
+(2026) <a href="https://doi.org/10.23661/idp4.2026"> The future of democracy promotion</a>, in <i>International development cooperation and the emerging global order</i>, edited by M. Furness & N. Keijzer. Bonn: German Institute of Development and Sustainability (IDOS) (04/2026) (with J. Leininger). 
 
 (2026) <a href="https://www.idos-research.de/en/the-current-column/article/reforming-the-development-sector-for-agentic-ai-and-whatever-comes-next/"> Reforming the development sector for agentic AI (and whatever comes next) </a> <a href="https://www.idos-research.de/die-aktuelle-kolumne/article/reform-des-entwicklungssektors-fuer-agentische-ki-und-was-danach-kommt/"> 
 [Reform des Entwicklungssektors für agentische KI (und was danach kommt)] </a> <i>The Current Column</i>, May 7. 

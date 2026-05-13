@@ -4,7 +4,7 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-(2026) <a href="https://doi.org/10.23661/idp4.2026"> The future of democracy promotion</a>, in <i>International development cooperation and the emerging global order</i>, edited by M. Furness & N. Keijzer. Bonn: German Institute of Development and Sustainability (IDOS) (04/2026) (with J. Leininger). 
+(2026) <a href="https://doi.org/10.23661/idp4.2026"> The future of democracy promotion</a>. In <i>International development cooperation and the emerging global order</i>, edited by M. Furness & N. Keijzer: 43-46. Bonn: German Institute of Development and Sustainability (IDOS) (04/2026) (with J. Leininger). 
 
 (2026) <a href="https://www.idos-research.de/en/the-current-column/article/reforming-the-development-sector-for-agentic-ai-and-whatever-comes-next/"> Reforming the development sector for agentic AI (and whatever comes next) </a> <a href="https://www.idos-research.de/die-aktuelle-kolumne/article/reform-des-entwicklungssektors-fuer-agentische-ki-und-was-danach-kommt/"> 
 [Reform des Entwicklungssektors für agentische KI (und was danach kommt)] </a> <i>The Current Column</i>, May 7. 
@@ -43,7 +43,7 @@ title: "Other Publications"
  
 (2018) <a href="https://birikimdergisi.com/guncel/9210/memlekete-donmek">Memlekete Dönmek [Returning Home].</a> <i>Birikim</i>, November 12.  
  
-(2018) <a href="https://www.iai.it/en/pubblicazioni/realizing-youth-potential-mediterranean-unlocking-opportunities-overcoming-challenges"> Socially Inclusive Fourth Industrial Revolution: Fostering Youth Employment in the Middle East and North Africa.</a>  In <i>Realizing Youth Potential in the Mediterranean: Unlocking Opportunities, Overcoming Challenges</i>, edited by Lorenzo Kamel & Asli Selin Okyay: 101‑12. Rome: IAI Research Studies.  
+(2018) <a href="https://www.iai.it/en/pubblicazioni/realizing-youth-potential-mediterranean-unlocking-opportunities-overcoming-challenges"> Socially Inclusive Fourth Industrial Revolution: Fostering Youth Employment in the Middle East and North Africa.</a>  In <i>Realizing Youth Potential in the Mediterranean: Unlocking Opportunities, Overcoming Challenges</i>, edited by L. Kamel & A. S. Okyay: 101‑12. Rome: IAI Research Studies.  
     
 (2018) <a href="https://www.sivilsayfalar.org/2018/04/19/akilli-sehirler-cagimizin-hastaligi-teknolojizm/"> Akıllı Şehirler ve Çağımızın Hastalığı Teknolojizm [Smart cities and technologism as the curse of our age].”</a> <i>Civil Pages</i>, April 19. 
  

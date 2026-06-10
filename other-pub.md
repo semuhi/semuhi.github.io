@@ -4,7 +4,7 @@ permalink: "/other-pub/"
 title: "Other Publications"
 ---
 
-(2026) <a href="https://doi.org/10.23661/ipb16.2025">Reality check on donor expectations: do GovTech initiatives help autocrats? </a> Bonn: German Institute of Development and Sustainability (IDOS) (17/2026) (with A. von Schiller).
+(2026) <a href="https://doi.org/10.23661/ipb17.2026">Reality check on donor expectations: do GovTech initiatives help autocrats? </a> Bonn: German Institute of Development and Sustainability (IDOS) (17/2026) (with A. von Schiller).
 
 (2026) <a href="https://www.idos-research.de/en/publications/mitarbeiter-sonstige/article/the-future-of-democracy-promotion/"> The future of democracy promotion</a>. In <i>International development cooperation and the emerging global order</i>, edited by M. Furness & N. Keijzer: 43-46. Bonn: German Institute of Development and Sustainability (IDOS) (04/2026) (with J. Leininger). 
 

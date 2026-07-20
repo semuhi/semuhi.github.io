@@ -469,9 +469,16 @@ workshops = teaching["workshops"].map { |w|
 }.join
 trainings = teaching["training"].map { |w|
   note = w["note"] ? " &middot; #{w["note"]}" : ""
+  # trainings with a url render as a link (site-relative urls remapped like syllabi)
+  t = if w["url"]
+    href = w["url"].start_with?("/") ? "../..#{w["url"]}" : w["url"]
+    %(<a class="t" href="#{href}" target="_blank" rel="noopener">#{w["title"]}#{note}</a>)
+  else
+    %(<span class="t">#{w["title"]}#{note}</span>)
+  end
   <<~HTML
     <div class="row"><span class="yr">#{w["date"].split.last}</span>
-    <span class="t">#{w["title"]}#{note}</span><span class="v">#{w["venue"]}</span></div>
+    #{t}<span class="v">#{w["venue"]}</span></div>
   HTML
 }.join
 ta = teaching["assistantship"]["groups"].map { |g|
@@ -482,7 +489,7 @@ teach_body = <<~HTML
   <section class="pf-head" style="--pc:var(--cobalt)">
     <div class="sec-kicker">Teaching</div>
     <h1>Teaching and training</h1>
-    <p class="narrative">I designed and taught three courses as instructor at the University of Toronto for ten semesters, and designed a fourth on quantitative methods in conflict studies. I run methods workshops and guest lectures, and practitioner trainings.</p>
+    <p class="narrative">I have designed several political economy and methods courses. I taught three courses as an instructor at the University of Toronto for ten semesters. I run methods workshops, guest lectures, and practitioner trainings.</p>
   </section>
   <section>
     <div class="sec-kicker">Instruction &amp; design</div>

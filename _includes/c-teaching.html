@@ -6,7 +6,7 @@ links + student evaluations), workshops & guest lectures, trainings, assistantsh
 <section class="pf-head" style="--pc:var(--cobalt)">
   <div class="sec-kicker">Teaching</div>
   <h1>Teaching and training</h1>
-  <p class="narrative">I designed and taught three courses as instructor at the University of Toronto for ten semesters, and designed a fourth on quantitative methods in conflict studies. I run methods workshops and guest lectures, and practitioner trainings.</p>
+  <p class="narrative">I have designed several political economy and methods courses. I taught three courses as an instructor at the University of Toronto for ten semesters. I run methods workshops, guest lectures, and practitioner trainings.</p>
 </section>
 
 <section>
@@ -52,7 +52,11 @@ links + student evaluations), workshops & guest lectures, trainings, assistantsh
     {% for w in t.training %}
       <div class="row">
         <span class="yr">{{ w.date | split: " " | last }}</span>
-        <span class="t">{{ w.title }}{% if w.note %} · {{ w.note }}{% endif %}</span>
+        {% if w.url %}
+          <a class="t" href="{{ w.url | relative_url }}" target="_blank" rel="noopener">{{ w.title }}{% if w.note %} · {{ w.note }}{% endif %}</a>
+        {% else %}
+          <span class="t">{{ w.title }}{% if w.note %} · {{ w.note }}{% endif %}</span>
+        {% endif %}
         <span class="v">{{ w.venue }}</span>
       </div>
     {% endfor %}

@@ -91,9 +91,9 @@ courses:
     link_label: "Course deck (PDF)"
     image: "/assets/img/teach-conflict-deck.png"
     description: >
-      An MA-level seminar I designed but have not yet taught. Debates on how
-      conflicts are measured, why they start, who funds rebels, who gets
-      victimized, how rebels communicate, and what makes peace hold, each pairing
+      I designed an MA-level seminar on debates over how conflicts are measured,
+      why they start, who funds rebels, who gets victimized, how rebels
+      communicate, and what makes peace hold, with each topic pairing
       quantitative readings with interactive apps, replication snippets, policy
       exercises, and an OSINT workshop.
 
@@ -124,6 +124,7 @@ training:
     venue: "UNDP Global Policy Centre for Governance"
     date: "November 2024"
     note: "with Armin von Schiller and Julia Leininger"
+    url: "/assets/pdf/polarization-training.pdf"
   - title: "Organizational Development & Management: Digital Security in the Age of Hyper-Surveillance"
     venue: "Co-Opinion, Istanbul"
     date: "April-June 2017"

@@ -1,0 +1,153 @@
+# Teaching & training data. Rendered by the teaching include.
+# workshops/training dates: keep the month in `date` — it drives chronological
+# ordering — but the templates display only the year (last whitespace token).
+
+courses:
+  - title: "The Political Economy of Economic Crisis"
+    institution: "University of Toronto, Mississauga"
+    role: "Course Instructor"
+    syllabus: "/assets/pdf/syllabus-crisis.pdf"
+    image: "/assets/img/post-capitalism.jpeg"
+    description: >
+      The political and social costs of economic crises and austerity: electoral
+      punishment, redistribution preferences, and the international ramifications,
+      from autocratization to the global monetary order.
+    evaluations:
+      - >
+        Extremely satisfied with my experience, instructor offered an excellent space
+        for discussion, making everyone feel comfortable, despite getting into some
+        controversial issues related to the political implications of economic crises.
+      - >
+        The professor created an environment in which I felt incredibly comfortable.
+        I honestly believed in the sentiment "no stupid questions." I never felt
+        embarrassed when I failed to understand a concept. Prof always was very quick
+        to respond to emails and was very understanding of the often harsh reality of
+        student life.
+      - >
+        Professor Semuhi was excellent in his instruction. His course content was
+        thorough and engaging. He was extremely knowledgable and did an amazing job in
+        passing on his knowledge. His assignments and readings were well curated and
+        the atmosphere in his class was very conducive to learning. Discussions were
+        well orchestrated and made sure no one felt left out or disengaged. He was also
+        very warm and understanding and never added unnecessary burden to discourage
+        the learning experience.
+
+  - title: "The International Politics of Authoritarianism"
+    institution: "University of Toronto, Mississauga"
+    role: "Course Instructor"
+    syllabus: "/assets/pdf/autocrat-syllabus.pdf"
+    image: "/assets/img/pub-promotion.jpg"
+    description: >
+      The international roots of autocratic resilience: post-liberal order, cross-border
+      repression, autocracy promotion and diffusion, and whether the international
+      community can constrain autocratic regimes.
+    evaluations:
+      - >
+        Hands down, best learning experience I've had at UTM. The professor is
+        extremely engaging and provides great support to the whole class. The general
+        mood of the class was excellent throughout, and this is thanks to the
+        professor's excellent student management and treating us like peers.
+      - >
+        The overall instruction of this course was great. Professor Sinanoglu was very
+        enthusiastic about the subject material, explained concepts very clearly, and
+        created an environment where I could feel comfortable sharing thoughts about
+        the course readings.
+      - >
+        I appreciated Professor Sinanoglu's conversational teaching style. It
+        essentially forced us, as students, to engage with the readings rather than
+        merely recite back what we read. The critical engagement made me think more
+        about the implications of the readings rather than what was printed.
+
+  - title: "Politics in the Middle East"
+    institution: "University of Toronto, St. George"
+    role: "Course Instructor"
+    syllabus: "/assets/pdf/syllabus-mena.pdf"
+    image: "/assets/img/morocco.jpg"
+    description: >
+      Colonial state legacies, patrimonial capitalism and the rentier state,
+      authoritarian ruling bargains, and social mobilization, read through the
+      region's intra-regional variation.
+    evaluations:
+      - >
+        The professor created an optimal learning environment that stimulates critical
+        thinking and discussion. Engagement with the students was optimal, and the
+        learning experience was professional and inclusive. The professor made sure all
+        students were engaged with the content and made effective accommodations to
+        ensure optimal learning.
+      - >
+        The instructor offered assistance of all kinds, from office hours at the
+        students' preferred times, generous extensions when work in the semester was
+        piling up, and feedback on every assignment that helped to improve for future
+        assignments.
+      - >
+        One of the best professors, very well versed in Middle Eastern politics. The
+        professor was brilliant and enthusiastic.
+
+  # Designed but not yet taught — no institution, no evaluations; the card links
+  # the sanitized course-design deck instead of a syllabus (link_label override).
+  - title: "Measuring War and Peace: Quantitative Methods in Conflict Studies"
+    role: "Course Design"
+    syllabus: "/assets/pdf/mwp-course-deck.pdf"
+    link_label: "Course deck (PDF)"
+    image: "/assets/img/teach-conflict-deck.png"
+    description: >
+      An MA-level seminar I designed but have not yet taught. Debates on how
+      conflicts are measured, why they start, who funds rebels, who gets
+      victimized, how rebels communicate, and what makes peace hold, each pairing
+      quantitative readings with interactive apps, replication snippets, policy
+      exercises, and an OSINT workshop.
+
+workshops:
+  - title: "Can Capitalism Save Democracy?"
+    venue: "Guest Lecture, University of Duisburg-Essen"
+    date: "January 2026"
+    url: "http://rpubs.com/semuhisinanoglu/demcor"
+  - title: "A Basic Introduction to Visual Conjoints"
+    venue: "IDOS"
+    date: "February 2025"
+    url: "/assets/pdf/2025-02-13-Visual conjoint.pdf"
+  - title: "The Politics of Authoritarianism: An Introduction"
+    venue: "Guest Lecture, University of Toronto"
+    date: "October 2023"
+    url: "https://rpubs.com/semuhisinanoglu/autocracy-intro"
+  - title: "Spatial Analysis using R: An Introduction"
+    venue: "University of Toronto"
+    date: "March 2021"
+    url: "https://semuhi.github.io/uoft-spatial/slides#1"
+  - title: "Introduction to R"
+    venue: "University of Toronto"
+    date: "September 2020"
+    url: "https://semuhi.github.io/intro-to-r/"
+
+training:
+  - title: "Understanding the Gridlock: Measuring and Responding to Polarization"
+    venue: "UNDP Global Policy Centre for Governance"
+    date: "November 2024"
+    note: "with Armin von Schiller and Julia Leininger"
+  - title: "Organizational Development & Management: Digital Security in the Age of Hyper-Surveillance"
+    venue: "Co-Opinion, Istanbul"
+    date: "April-June 2017"
+  - title: "Design Lab: Preventing & Countering Violent Extremism"
+    venue: "Co-Opinion & Hollings Center for International Dialogue, Istanbul"
+    date: "April 2017"
+
+assistantship:
+  institution: "University of Toronto"
+  groups:
+    - field: "Comparative Politics"
+      courses:
+        - "State, Society and Power in Comparative Perspective"
+        - "Comparative Politics: Revolution, Democracy and Authoritarianism"
+        - "Democracy, Dictatorship, War and Peace: An Introduction"
+        - "Public Opinion and Voting"
+    - field: "Political Economy"
+      courses:
+        - "Global Political Economy: Policy and Analysis"
+        - "Politics of Development"
+        - "U.S. Government and Politics"
+    - field: "Methods"
+      courses:
+        - "Statistics for Political Scientists"
+        - "Thinking Through Research Design"
+        - "Using Data to Understand Politics and Society"
+        - "Introduction to Quantitative Reasoning"

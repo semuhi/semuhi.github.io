@@ -1,0 +1,161 @@
+{% comment %}
+Parameterized portfolio page (spec v3): narrative → anchor project lead card →
+flagships (Data Hub: Datasets/Methods shelves instead, since its flagship set IS the
+Datasets shelf) → interactive slot → interleaved stream → highlights → bridges.
+The page sets `pf:` in front matter; everything renders from _data/.
+{% endcomment %}
+{% assign pf = site.data.portfolios.list | where: "key", page.pf | first %}
+{% assign type_labels = site.data.portfolios.type_labels %}
+{% assign items = site.data.publications | where_exp: "p", "p.portfolio contains pf.key" %}
+{% assign stream = items | sort: "year" | reverse %}
+{% comment %} Stream = primary-home items only (first portfolio key). Flagships section
+dropped 2026-07-19; Data Hub shelves replaced by thread-style research lines
+2026-07-20 (user decision). Same-day revision: datahub clusters are primary-only
+again (the RC index moved its primary home here), so no special member lookup —
+cross-listed items surface in Bridges on every page. {% endcomment %}
+{% assign srest = stream | where_exp: "p", "p.portfolio.first == pf.key" %}
+{% comment %} All non-map_only projects render as lead cards (2026-07-20: aitech
+gained cityinclusive as a second card; file order in projects.yml = page order). {% endcomment %}
+{% assign pfprojects = site.data.projects | where: "portfolio", pf.key | where_exp: "p", "p.map_only != true" %}
+
+<section class="pf-head" style="--pc:{{ pf.color }}">
+  <div class="sec-kicker">Portfolio {{ pf.num }}</div>
+  <h1>{{ pf.title }}</h1>
+  <p class="narrative">{{ pf.narrative }}</p>
+  <div class="pf-meta">{{ items.size }} outputs · <a href="{{ '/portfolios/' | relative_url }}">all portfolios</a> · <a href="{{ '/work/' | relative_url }}">the wall</a></div>
+</section>
+
+{% if pfprojects.size > 0 %}
+<section style="--pc:{{ pf.color }}">
+  <div class="sec-kicker">Initiative{% if pfprojects.size > 1 %}s{% endif %}</div>
+  {% for project in pfprojects %}
+  <div class="lead-card{% if project.image %} has-thumb{% endif %}">
+    {% if project.image %}<img class="lc-thumb" src="{{ project.image | relative_url }}" alt="" loading="lazy">{% endif %}
+    <div class="lc-body">
+      <div class="kicker">{{ project.card_label | default: project.label }} · {{ project.years }} · {{ project.host }}</div>
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.blurb }}</p>
+      {% if project.url %}<a class="mono go" href="{{ project.url }}" target="_blank" rel="noopener">{{ project.link_label | default: "Project page" }} →</a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% comment %} Research lines (2026-07-19): the stream is grouped, not chronological —
+_data/threads.yml curates one block per research line (titles + row order), every
+member an equal-weight row so op-eds never read as derivatives of papers. Rows keep
+the + expander (c-thread-row.html: abstract, coauthors, presentations, grants,
+links). Items not in threads.yml render as single-row blocks after, newest first.
+Chronological/thematic ordering lives in the Publications menu instead. {% endcomment %}
+{% assign pfthreads = site.data.threads[page.pf] %}
+{% assign used = "" | split: "" %}
+{% assign nthreads = 0 %}{% assign inthreads = 0 %}
+{% if pfthreads %}{% for th in pfthreads %}
+  {% assign nmem = 0 %}
+  {% for tid in th.ids %}{% assign used = used | push: tid %}{% assign m = srest | where: "id", tid | first %}{% if m %}{% assign nmem = nmem | plus: 1 %}{% endif %}{% endfor %}
+  {% if nmem > 0 %}{% assign nthreads = nthreads | plus: 1 %}{% assign inthreads = inthreads | plus: nmem %}{% endif %}
+{% endfor %}{% endif %}
+{% assign nlines = srest.size | minus: inthreads | plus: nthreads %}
+<section>
+  <div class="sec-kicker">Research lines</div>
+  {% if pf.lines_heading %}<h2>{{ pf.lines_heading }}</h2>{% else %}<h2>All {{ srest.size }} outputs, {{ nlines }} research lines</h2>{% endif %}
+  <div class="latest xstream threads" style="--pc:{{ pf.color }}">
+    {% if pfthreads %}{% for th in pfthreads %}
+      {% assign mem = "" | split: "" %}
+      {% for tid in th.ids %}{% assign m = srest | where: "id", tid | first %}{% if m %}{% assign mem = mem | push: m %}{% endif %}{% endfor %}
+      {% if mem.size > 0 %}
+      <div class="thread">
+        {% if th.title %}<div class="th-head"><h3>{{ th.title }}</h3>{% if th.desc %}<p class="th-desc">{{ th.desc }}</p>{% endif %}</div>{% endif %}
+        {% for pub in mem %}{% include c-thread-row.html pub=pub pf=pf type_labels=type_labels %}{% endfor %}
+      </div>
+      {% endif %}
+    {% endfor %}{% endif %}
+    {% for pub in srest %}
+      {% unless used contains pub.id %}
+      <div class="thread">
+        {% include c-thread-row.html pub=pub pf=pf type_labels=type_labels %}
+      </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+
+{% comment %} Interactive slot (Phase 4): one playable per marquee portfolio, all
+rendered AFTER the research-lines stream (datahub's DERTT teaser moved down
+2026-07-20, user decision, joining propaganda's and business's). aitech's
+architecture explorer (c-depol-arch.html) pulled 2026-07-20 (user decision): the
+toolkit is in its infancy, don't showcase prematurely. {% endcomment %}
+{% if page.pf == "propaganda" %}{% include c-finding.html %}
+{% elsif page.pf == "business" %}{% include c-conjoint.html %}
+{% elsif page.pf == "datahub" %}{% include c-dertt-teaser.html %}
+{% endif %}
+
+{% assign hls = site.data.highlights | where_exp: "h", "h.portfolio contains pf.key" %}
+{% if hls.size > 0 %}
+{% assign months = "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC" | split: "," %}
+<section>
+  <div class="sec-kicker">Highlights</div>
+  <h2>Recent highlights</h2>
+  <div class="hl">
+    {% for h in hls limit: 5 %}
+      {% assign parts = h.date | split: "-" %}
+      {% assign mi = parts[1] | plus: 0 | minus: 1 %}
+      <article data-y="{{ parts[0] }}" data-k="{{ h.kind }}" data-pf="{{ h.portfolio | join: ' ' }}">
+        {% if h.image %}<img class="thumb{% if h.fit == 'contain' %} contain{% endif %}" src="{{ h.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        <div class="d">{{ months[mi] }} {{ parts[0] }} · {{ h.kind | upcase }}</div>
+        <h3>{% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.title }}</a>{% else %}{{ h.title }}{% endif %}</h3>
+      </article>
+    {% endfor %}
+  </div>
+  <p class="mono" style="font-size:12px;margin-top:14px"><a href="{{ '/activity/' | relative_url }}?pf={{ pf.key }}#highlights">Browse all {{ hls.size }} highlights from this portfolio →</a></p>
+</section>
+{% endif %}
+
+{% comment %} Field notes — newest 5 posts tagged with this portfolio; the link
+opens /activity/ with the portfolio chip preselected via ?pf= (activity.js). {% endcomment %}
+{% assign pposts = site.data.social.posts | where_exp: "p", "p.portfolio contains pf.key" %}
+{% if pposts.size > 0 %}
+<section>
+  <div class="sec-kicker">Field notes</div>
+  <h2>Latest posts</h2>
+  <div class="fn">
+    {% for p in pposts limit: 5 %}
+      {% if p.platform == "linkedin" %}{% assign plat = "LinkedIn" %}{% elsif p.platform == "bluesky" %}{% assign plat = "Bluesky" %}{% else %}{% assign plat = "X" %}{% endif %}
+      <a class="fncard" data-y="{{ p.date | date: '%Y' }}" data-k="{{ p.type }}" data-pf="{{ p.portfolio | join: ' ' }}" href="{{ p.url }}" target="_blank" rel="noopener">
+        {% if p.image %}<img class="thumb{% if p.fit == 'contain' %} contain{% endif %}" src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        <div class="d">{{ p.date | date: "%b %Y" | upcase }} · {{ plat | upcase }}</div>
+        <p>{{ p.excerpt }}</p>
+        <span class="mono go">Read on {{ plat }} →</span>
+      </a>
+    {% endfor %}
+  </div>
+  <p class="mono" style="font-size:12px;margin-top:14px"><a href="{{ '/activity/' | relative_url }}?pf={{ pf.key }}#posts">Browse all {{ pposts.size }} posts from this portfolio →</a></p>
+</section>
+{% endif %}
+
+{% comment %} Bridges (reworked 2026-07-19): each card lists items whose PRIMARY home
+is that other portfolio but which are cross-listed into this one — the stream above
+already covers everything primary here, so nothing repeats. Rendered on every page
+(the Data Hub's brief opt-out was reverted same day, 2026-07-20). {% endcomment %}
+<section>
+  <div class="sec-kicker">Bridges</div>
+  <h2>From the other portfolios</h2>
+  <div class="bridges">
+    {% for other in site.data.portfolios.list %}
+      {% unless other.key == pf.key %}
+        {% assign shared = items | where_exp: "p", "p.portfolio.first == other.key" %}
+        {% if shared.size > 0 %}
+          <a class="bridge" style="--pc:{{ other.color }}" href="{{ '/portfolios/' | append: other.key | append: '/' | relative_url }}">
+            <div class="num">{{ other.num }} · {{ shared.size }} shared</div>
+            <h3>{{ other.title }}</h3>
+            <ul>
+              {% for pub in shared limit: 4 %}<li>{{ pub.title }}</li>{% endfor %}
+            </ul>
+          </a>
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+<script src="{{ '/assets/js/constellation/stream.js' | relative_url }}"></script>

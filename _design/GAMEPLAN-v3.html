@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>semuhi.github.io — Gameplan v3 (2026-07-17)</title>
+<style>
+  body{font:15px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#16263A;background:#F4F7FA}
+  h1{font-size:24px;border-bottom:3px solid #14507D;padding-bottom:.3rem}
+  h2{font-size:19px;color:#14507D;margin-top:2rem;border-bottom:1px solid #D7E0E8;padding-bottom:.2rem}
+  h3{font-size:15px;margin:1rem 0 .3rem}
+  .box{background:#FBFCFD;border:1px solid #D7E0E8;border-left:4px solid #C2871C;padding:.8rem 1.1rem;margin:1rem 0}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:#E7EEF4;padding:1px 4px}
+  table{border-collapse:collapse;width:100%;font-size:13px;margin:.6rem 0}
+  th,td{border:1px solid #D7E0E8;padding:4px 7px;text-align:left;vertical-align:top}
+  th{background:#E7EEF4;font-size:12px}
+  .cp{background:#EAF3FB}.bd{background:#FBF3E2}.dh{background:#EAF6EF}.ai{background:#E9F5F8}.ds{background:#F3EDF8}.wall{background:#F1F1F1;color:#5E7186}
+  ul{margin:.3rem 0 .5rem 1.2rem}li{margin:.18rem 0}
+  pre{background:#E7EEF4;padding:.6rem .8rem;font-size:12.5px;overflow-x:auto}
+</style>
+</head>
+<body>
+<h1>Gameplan v3 — semuhi.github.io rebuild</h1>
+<p><strong>2026-07-17, v3.2 — taxonomy FINAL after three review rounds; Phase 0 complete.</strong> Supersedes the locked 2026-06-26 spec. Carries over: data-driven architecture (<code>_data/*.yml</code>), append-a-block editing, no-AI-tells, no unlabeled placeholder magnitudes. Reopened: the visual design (cyanotype/network is one candidate among three).</p>
+
+<h2>1 · The five portfolios (final)</h2>
+<p>Four marquee initiatives plus the trunk they grow from. Each reads as an ongoing initiative — narrative, anchor project, flagships, interactive where it fits. Academic and non-academic work interleave in one stream per portfolio with type badges, never split into separate sections.</p>
+
+<table>
+<tr><th></th><th>Portfolio</th><th>Key</th><th>Covers</th><th>Anchor project / interactive</th></tr>
+<tr class="cp"><td>01</td><td><strong>(Countering) authoritarian propaganda</strong></td><td><code>propaganda</code></td><td>Both sides of the coin: how effective authoritarian propaganda is (soft propaganda/fiction, CIMER e-gov, TRT essay) and how to counter it (info pollution, aid-as-counter-propaganda, disaster-relief depolarization, GovTech reality check)</td><td>Soft-propaganda playable finding (script × audience → outcomes), real magnitudes from <code>fiction/</code></td></tr>
+<tr class="bd"><td>02</td><td><strong>Business &amp; democracy</strong></td><td><code>business</code></td><td>Financial repression of firms (dissertation, G&amp;O, EPSR conjoint, tax audit), capitalism &amp; democracy (JoD), resource concentration, private-sector-safeguards-democracy</td><td><strong>#DEMCOR</strong> (IDOS, 2025–2027) is the main highlight: mapping global business initiatives for democracy, what motivates firms to defend institutions, AI-powered simulations for firms facing erosion. Interactive: EPSR conjoint or tax-audit explorer</td></tr>
+<tr class="dh"><td>03</td><td><strong>Methods &amp; Political Regimes Data Hub</strong></td><td><code>datahub</code></td><td>Data infrastructure + computational methods, two shelves: <em>Datasets</em> (DERTT 18,227 events / 193 countries, PROSEC, RC index, CP-2022 original data) · <em>Methods</em> (RM-Twitter lexicon, JITP lockdown-sentiment). Dual-tagged items show what each dataset powers</td><td>DERTT event-map/timeline browser — flagship playful candidate</td></tr>
+<tr class="ai"><td>04</td><td><strong>AI &amp; tech for development cooperation</strong></td><td><code>aitech</code></td><td>Agentic AI for dev coop (+ 142-row donor-AI deployment database), GovTech, media support (tech side), dev-coop tech upgrade, SME digitalization, e-gov</td><td><strong>Depolarization Toolkit</strong> (IDOS w/ UNDP + DW Akademie, 2026–): multi-agent AI assistant for practitioners designing depolarization programs. Interactive: donor-AI database explorer</td></tr>
+<tr class="ds"><td>05</td><td><strong>Democracy support &amp; authoritarian durability</strong></td><td><code>durability</code></td><td>The trunk: how autocrats hold power (cooptation/repression, personalism, elite defection, propaganda politics) and how democracies and their partners push back (leader prosecutions, democracy promotion, aid strategy, middle powers). Deliberately the widest portfolio — most cross-listed work passes through it</td><td>None dedicated; cross-links into PROSEC/DERTT interactives</td></tr>
+</table>
+
+<div class="box"><strong>Anchor projects — new <code>_data/projects.yml</code>.</strong> The two live IDOS projects are first-class objects rendered as lead cards on their portfolio pages: <a href="https://www.idos-research.de/en/research/description/details/corporate-civic-responsibility-in-safeguarding-democracy-demcor/">#DEMCOR</a> → 02; <a href="https://www.idos-research.de/en/research/description/details/depolarization-toolkit-an-agentic-ai-framework/">Depolarization Toolkit</a> → 04 (cross-links to the disaster-depolarization paper, id 7, and portfolio 05). The Data Hub itself is the anchor initiative of 03. Publications, highlights, and posts can reference a project (<code>project: demcor</code>) — another cross-linkage thread.</div>
+
+<h2>2 · Data model: type vs. portfolio vs. tag vs. related</h2>
+<ul>
+  <li><strong><code>type</code> is already a first-class field</strong> (peer-reviewed, discussion/working paper, chapter, thesis, policy brief, op-ed, file drawer…) — the first axis of the model. It renders as the badge on every card and drives the wall's type filter. No tags needed to duplicate it.</li>
+  <li><strong><code>portfolio[]</code></strong> — which initiative streams an item appears in (1+; multi-membership = the visible bridge between portfolios).</li>
+  <li><strong><code>tags[]</code></strong> — cross-cutting facets: <code>turkey</code>, <code>mena</code>, <code>experiment</code> (survey/conjoint experiments: ids 7, 8, 10, 11, 12), <code>polarization</code>, <code>civil-war</code>, <code>identity-politics</code>, <code>migration</code>, <code>refugees</code>, <code>dev-cooperation</code>, <code>policy-advice</code> (commissioned/advisory work: ids 34, 37, 39, 49, 50 — also surfaces the under-represented advisory record), <code>earlier-work</code>, <code>personal</code>.</li>
+  <li><strong><code>related:</code></strong> — explicit item-to-item links with a short label, rendered as a "connections" line on each card (and as drawn edges in network-style designs). Schema and semantics:
+<pre>- id: 19            # GovTech reality check (PB17)
+  related:
+    - {id: 12, rel: "policy-brief version of"}   # CIMER DP35
+- id: 29
+  related:
+    - {id: 30, rel: "companion argument"}        # both tech-upgrade op-eds
+- id: 26
+  related:
+    - {id: 13, rel: "features the PROSEC dataset"}
+- id: 46
+  related:
+    - {id: 11, rel: "early version of the argument"}</pre>
+  Links render on <em>both</em> cards automatically (12 shows "policy brief: GovTech reality check →"). Typical labels: <em>policy-brief version of · distills · features dataset · companion argument · early version of · grew into · pre-registration of</em>.</li>
+</ul>
+
+<h2>3 · Full corpus mapping (42 items — FINAL, three rounds of user review, 2026-07-17)</h2>
+
+<table>
+<tr><th>id</th><th>Item (year)</th><th>Portfolios</th><th>Tags / related</th></tr>
+<tr class="bd"><td>1</td><td>Dissertation: business allies &amp; debt crises (2024)</td><td>02 + 05</td><td>turkey</td></tr>
+<tr class="bd"><td>2</td><td>Autocrats &amp; business allies, G&amp;O (2025)</td><td>02 + 01</td><td>media-control mediation = the cross-link</td></tr>
+<tr class="bd"><td>3</td><td>Can capitalism save democracy? JoD (2025)</td><td>02</td><td></td></tr>
+<tr class="dh"><td>4</td><td>Lockdown &amp; refugee sentiment, JITP (2024)</td><td>03 (methods)</td><td>turkey, migration, refugees</td></tr>
+<tr class="dh"><td>5</td><td>RM-Twitter lexicon, SMR (2024)</td><td>03 (methods)</td><td></td></tr>
+<tr class="ds"><td>6</td><td>Containing ethnic conflict, CP (2022)</td><td>05 + 03</td><td>identity-politics, civil-war, turkey; rel → 17</td></tr>
+<tr class="cp"><td>7</td><td>Disaster relief &amp; depolarization (2025)</td><td>01 + 05</td><td>turkey, polarization, experiment; rel → Depolarization Toolkit project</td></tr>
+<tr class="bd"><td>8</td><td>EPSR visual conjoint (2024)</td><td>02</td><td>turkey, experiment</td></tr>
+<tr class="bd"><td>9</td><td>Tax audit as financial repression (2025)</td><td>02</td><td>secondary firm data — not in 03</td></tr>
+<tr class="cp"><td>10</td><td>Strategic humanitarian aid, DP28 (2025)</td><td>01 + 05</td><td>dev-cooperation, turkey, experiment; rel → 27, 28</td></tr>
+<tr class="cp"><td>11</td><td>Soft propaganda &amp; security ops (2025)</td><td>01</td><td>turkey, experiment; playable-finding source</td></tr>
+<tr class="cp"><td>12</td><td>CIMER e-gov propaganda, DP35 (2025)</td><td>01 + 04 + 05</td><td>turkey, experiment; rel → 19 (policy-brief version)</td></tr>
+<tr class="dh"><td>13</td><td>PROSEC dataset v1.0 (2025)</td><td>03 + 05</td><td>dataset; rel → 26</td></tr>
+<tr class="bd"><td>14</td><td>Resource concentration (2025)</td><td>02 + 03</td><td>original RC index</td></tr>
+<tr class="dh"><td>15</td><td>DERTT event dataset (2025)</td><td>03</td><td>hub flagship</td></tr>
+<tr class="ds"><td>16</td><td>Elite defection under polarization (2026)</td><td>05</td><td>polarization</td></tr>
+<tr class="wall"><td>17</td><td>Myanmar rebel defection, file drawer (2023)</td><td>wall</td><td>civil-war, earlier-work; rel → 6</td></tr>
+<tr class="wall"><td>18</td><td>Migrant polarization, file drawer (2022)</td><td>wall</td><td>polarization, migration, turkey</td></tr>
+<tr class="ai"><td>19</td><td>GovTech reality check, PB17 (2026)</td><td>04 + 01 + 05</td><td>rel → 12 (policy-brief version of)</td></tr>
+<tr class="ds"><td>20</td><td>Future of democracy promotion, chapter (2026)</td><td>05</td><td></td></tr>
+<tr class="ai"><td>21</td><td>Agentic AI Current Column (2026)</td><td>04</td><td>featured highlight too</td></tr>
+<tr class="ds"><td>22</td><td>Hungarian election lessons (2026)</td><td>05</td><td></td></tr>
+<tr class="ds"><td>23</td><td>Middle powers, Table.Briefings (2026)</td><td>05</td><td></td></tr>
+<tr class="ds"><td>24</td><td>Personalist global order, Foreign Affairs (2026)</td><td>05</td><td></td></tr>
+<tr class="bd"><td>25</td><td>Private sector safeguards democracy, Devex (2026)</td><td>02</td><td>rel → DEMCOR project</td></tr>
+<tr class="ds"><td>26</td><td>Prosecuting the powerful, Foreign Policy (2025)</td><td>05 + 03</td><td>rel → 13 (features PROSEC)</td></tr>
+<tr class="cp"><td>27</td><td>Communicating aid interests, PB16 (2025)</td><td>01 + 05</td><td>dev-cooperation; rel → 10</td></tr>
+<tr class="cp"><td>28</td><td>Strategic aid, Diplomatisches Magazin (2025)</td><td>01 + 05</td><td>dev-cooperation; rel → 10, 27</td></tr>
+<tr class="ai"><td>29</td><td>Dev coop tech upgrade, Tagesspiegel (2025)</td><td>04</td><td>rel → 30 (companion argument)</td></tr>
+<tr class="ai"><td>30</td><td>Media support tech upgrade, Global Policy (2025)</td><td>04 + 05</td><td>rel → 29 (companion argument)</td></tr>
+<tr class="ds"><td>31</td><td>Istanbul's mayor, Global Policy (2025)</td><td>05</td><td>turkey</td></tr>
+<tr class="cp"><td>32</td><td>Countering information pollution, PB29 (2024)</td><td>01 + 04</td><td></td></tr>
+<tr class="ai"><td>33</td><td>Digitizing SMEs, TURKONFED (2021)</td><td>04</td><td>turkey</td></tr>
+<tr class="wall"><td>34</td><td>COVID impact assessment (2021)</td><td>wall</td><td>turkey, policy-advice, earlier-work</td></tr>
+<tr class="ds"><td>35</td><td>Bureaucracy under authoritarianism (2021)</td><td>05</td><td>turkey</td></tr>
+<tr class="ds"><td>36</td><td>New conservative party, JPost (2019)</td><td>05</td><td>turkey</td></tr>
+<tr class="wall"><td>37</td><td>Policy school, Policy Options (2018)</td><td>wall</td><td>policy-advice, earlier-work</td></tr>
+<tr class="wall"><td>38</td><td>Memlekete Dönmek, Birikim (2018)</td><td>wall</td><td>personal, turkey</td></tr>
+<tr class="ai"><td>39</td><td>MENA youth &amp; 4IR, IAI chapter (2018)</td><td>04</td><td>mena, policy-advice, earlier-work</td></tr>
+<tr class="wall"><td>43</td><td>Death &amp; politics, openDemocracy (2017)</td><td>wall</td><td>turkey, identity-politics, migration</td></tr>
+<tr class="cp"><td>46</td><td>New-Ottomanist TRT series, Birikim (2017)</td><td>01</td><td>turkey; rel → 11 (early version of the argument)</td></tr>
+<tr class="wall"><td>49</td><td>OIC basic services, COMCEC (2015)</td><td>wall</td><td>policy-advice, earlier-work</td></tr>
+<tr class="wall"><td>50</td><td>Child care, World Bank (2014)</td><td>wall</td><td>turkey, policy-advice, earlier-work</td></tr>
+<tr class="wall"><td>51</td><td>Youth who make the future (2011)</td><td>wall</td><td>personal, turkey, earlier-work</td></tr>
+<tr class="wall"><td>52</td><td>5 disturbing facts about living under occupation, Middle East Monitor (2016) <em>— restored to corpus</em></td><td>wall</td><td>mena, earlier-work</td></tr>
+<tr class="wall"><td>53</td><td>Tackling the Syrian refugee crisis, Turkish Policy Quarterly (2016, w/ Arslan &amp; Taner) <em>— restored to corpus</em></td><td>wall</td><td>mena, refugees, earlier-work</td></tr>
+</table>
+
+<p>Distribution: 01: 10 · 02: 7 · 03: 7 · 04: 8 · 05: 19 · wall-only 11. Portfolio 05 is deliberately the widest — it is the trunk, and most cross-listed items pass through it; the four marquee initiatives stay tight. Still to add to the corpus: fiction/music sub-study, donor-AI deployment database, trade/procurement brief when out.</p>
+
+<h2>4 · Cross-linkage &amp; academic↔policy blending (goal 1)</h2>
+<ul>
+  <li><strong>Multi-portfolio membership</strong> — an item in two portfolios appears in both streams and is the visible bridge (G&amp;O bridges 02↔01; CIMER bridges 01↔04↔05; PROSEC bridges 03↔05).</li>
+  <li><strong><code>related:</code> links</strong> — see §2 for schema; both cards show the connection.</li>
+  <li><strong>Anchor projects</strong> — publications/highlights/posts can carry <code>project: demcor | depol-toolkit | datahub</code>, tying outputs to the live initiatives.</li>
+  <li><strong>One interleaved stream per portfolio</strong> — papers, briefs, op-eds, datasets, talks, posts sorted by date with type badges. No academic/non-academic separation; the wall's type filter serves the academic-only view.</li>
+</ul>
+
+<h2>5 · New surfaces (goals 3–5)</h2>
+<h3>Highlights — <code>_data/highlights.yml</code></h3>
+<p>Dated milestone cards (talks, fellowships, panels, media, news) on the homepage strip and inside the matching portfolio. Backfill from the IDOS profile: agentic-AI Current Column (May 2026), Democratic Backsliding news (Jan 2026), UNDP Oslo (Nov 2025), Global Media Forum panel (Aug 2025), Marshall Memorial Fellowship (Mar 2025) — plus advisory work worth surfacing (BMZ, European Democracy Shield, DW Akademie…), which pairs with the <code>policy-advice</code> tag.</p>
+
+<h3>Social — <code>_data/social.yml</code></h3>
+<p>Curated cards, not a feed: paste a URL into the update workflow; Claude fetches the post, writes a one-liner, appends the YAML. Uniform cards for X/LinkedIn/Bluesky (LinkedIn cannot be auto-embedded). Optional later: client-side auto-fetch of latest Bluesky posts via the public API (no auth, works on GitHub Pages).</p>
+
+<h3>Playful findings (goal 3)</h3>
+<p>One signature interactive per marquee portfolio (§1), shipped incrementally — launch needs one or two. Real magnitudes from replication files (<code>fiction/</code>, EPSR) or clearly labeled illustrative. DERTT event browser is the flagship candidate.</p>
+
+<h2>6 · Site map</h2>
+<ul>
+  <li><strong>Home</strong> — identity line · 5 portfolio cards (4 initiatives + the trunk) · highlights strip · one featured playable finding · latest (mixed types + posts).</li>
+  <li><strong>5 portfolio pages</strong> — ~120-word narrative → anchor project card (02, 04) → flagships → interactive (when built) → interleaved stream → cross-portfolio bridges. Data Hub page has Datasets / Methods shelves.</li>
+  <li><strong>Work</strong> — full wall, filter by type × portfolio × tag × year.</li>
+  <li><strong>Teaching</strong> · <strong>About/CV</strong>.</li>
+</ul>
+
+<h2>7 · Phased plan</h2>
+<table>
+<tr><th>Phase</th><th>What</th><th>Exit criterion</th></tr>
+<tr><td><strong>0 · Taxonomy sign-off — ✅ DONE 2026-07-17</strong></td><td>Five-portfolio model, tags, related-links semantics, anchor projects: all user-confirmed over three rounds (v3.2).</td><td>Complete.</td></tr>
+<tr><td><strong>1 · Design exploration — NEXT</strong></td><td>Three full homepage mockups with the REAL 5-portfolio content: (A) network constellation v5, refined; (B) and (C) two genuinely fresh directions. Compare, pick, or merge.</td><td>User picks a direction; spec v3 locked.</td></tr>
+<tr><td><strong>2 · Data layer</strong></td><td>Retag <code>publications.yml</code> per §3 (+ restore ids 52–53); rewrite <code>portfolios.yml</code>; add <code>related:</code>/<code>tags:</code>/<code>project:</code>; create <code>projects.yml</code>, <code>highlights.yml</code> (IDOS backfill), <code>social.yml</code> (first batch).</td><td>Data complete; renders nothing yet.</td></tr>
+<tr><td><strong>3 · Jekyll build</strong></td><td>Design tokens, layouts, home + portfolio pages + wall + teaching, wall-filter JS. Replace the Bulma theme. Local preview each step.</td><td>Full site previews clean; old URLs redirect or persist.</td></tr>
+<tr><td><strong>4 · Interactives</strong></td><td>First playable finding wired to real numbers; then DERTT browser; others incremental after launch.</td><td>At least one real-magnitude interactive live.</td></tr>
+<tr><td><strong>5 · Update workflow + launch</strong></td><td><code>.claude/workflows/site-update.js</code>: paste a paper/talk/post/highlight in plain text → Claude classifies, appends YAML, commits, verifies build. Launch checklist: build, links, mobile, no-AI-tells copy pass.</td><td>Site pushed; one workflow run adds a test item end-to-end.</td></tr>
+</table>
+
+<h2>8 · Constraints &amp; risks</h2>
+<ul>
+  <li>GitHub Pages = stock Jekyll only: no build plugins, no npm. Interactives = vanilla JS reading JSON emitted by Liquid from <code>_data/</code>.</li>
+  <li>Package installs denied in this environment — local preview depends on an existing <code>jekyll</code>/<code>bundler</code>; else static mockups + CI build on push.</li>
+  <li>05 is wide by design (the trunk), but wall-residuals still never enter it.</li>
+  <li>DERTT browser ships with a clear data-version note; never imply more coverage than the release.</li>
+  <li>Website is an embedded repo — commits separate from the workspace repo; never <code>git add</code> from the parent.</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% comment %}One flagship/shelf card. Params: pub (item), pf (portfolio object).{% endcomment %}
+{% assign tl = site.data.portfolios.type_labels %}
+{% comment %}A venue that only repeats the type label ("Working paper") is dropped.{% endcomment %}
+{% assign v_lc = include.pub.venue | downcase %}
+{% assign t_lc = tl[include.pub.type] | downcase %}
+{% if v_lc == t_lc %}{% assign venueline = "" %}{% else %}{% assign venueline = include.pub.venue %}{% endif %}
+{% if include.pub.coauthors %}
+  {% if venueline == "" %}{% assign venueline = "with " | append: include.pub.coauthors %}
+  {% else %}{% assign venueline = venueline | append: " · with " | append: include.pub.coauthors %}{% endif %}
+{% endif %}
+<a class="fcard" style="--pc:{{ include.pf.color }}" href="{{ include.pub.url | default: '#' }}"{% if include.pub.url %} target="_blank" rel="noopener"{% endif %}>
+  <div class="ty">{{ tl[include.pub.type] }}{% if include.pub.dataset %} · dataset{% endif %} · {{ include.pub.year }}</div>
+  {% comment %}No dataset diamond before the title (user decision 2026-07-20);
+  the "· dataset" tag in the type line still marks it.{% endcomment %}
+  <h3>{{ include.pub.title }}</h3>
+  {% if venueline != "" %}<div class="venue">{{ venueline }}</div>{% endif %}
+  <p>{{ include.pub.blurb }}</p>
+</a>

@@ -1,0 +1,73 @@
+{% comment %}
+Teaching page — renders entirely from _data/teaching.yml: courses (with syllabus
+links + student evaluations), workshops & guest lectures, trainings, assistantship.
+{% endcomment %}
+{% assign t = site.data.teaching %}
+<section class="pf-head" style="--pc:var(--cobalt)">
+  <div class="sec-kicker">Teaching</div>
+  <h1>Teaching and training</h1>
+  <p class="narrative">I designed and taught three courses as instructor at the University of Toronto for ten semesters, and designed a fourth on quantitative methods in conflict studies. I run methods workshops and guest lectures, and practitioner trainings.</p>
+</section>
+
+<section>
+  <div class="sec-kicker">Instruction & design</div>
+  <h2>Courses taught and designed</h2>
+  <div class="fgrid">
+    {% for c in t.courses %}
+      <div class="fcard course" style="--pc:var(--cobalt)">
+        {% if c.image %}<img class="ithumb" src="{{ c.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        <div class="ty">{{ c.role }}{% if c.institution %} · {{ c.institution }}{% endif %}</div>
+        <h3>{{ c.title }}</h3>
+        <p>{{ c.description }}</p>
+        <a class="mono go" href="{{ c.syllabus | relative_url }}" target="_blank" rel="noopener">{{ c.link_label | default: "Syllabus (PDF)" }} →</a>
+        {% if c.evaluations %}
+        <details class="evals">
+          <summary>Student evaluations</summary>
+          {% for q in c.evaluations %}<blockquote>{{ q }}</blockquote>{% endfor %}
+        </details>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <div class="sec-kicker">Workshops & guest lectures</div>
+  <h2>Methods and topics</h2>
+  <div class="latest compact">
+    {% for w in t.workshops %}
+      <div class="row">
+        <span class="yr">{{ w.date | split: " " | last }}</span>
+        <a class="t" href="{{ w.url }}" target="_blank" rel="noopener">{{ w.title }}</a>
+        <span class="v">{{ w.venue }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <div class="sec-kicker">Beyond the classroom</div>
+  <h2>Practitioner trainings</h2>
+  <div class="latest compact">
+    {% for w in t.training %}
+      <div class="row">
+        <span class="yr">{{ w.date | split: " " | last }}</span>
+        <span class="t">{{ w.title }}{% if w.note %} · {{ w.note }}{% endif %}</span>
+        <span class="v">{{ w.venue }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <div class="sec-kicker">{{ t.assistantship.institution }}</div>
+  <h2>Teaching assistantship</h2>
+  <div class="ta-groups">
+    {% for g in t.assistantship.groups %}
+      <div class="ta-group">
+        <div class="flabel">{{ g.field }}</div>
+        <ul>{% for c in g.courses %}<li>{{ c }}</li>{% endfor %}</ul>
+      </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,170 @@
+# Anchor projects — first-class objects (GAMEPLAN v3.2 §1). Rendered as lead cards on
+# their portfolio pages and as ringed gold nodes in the network hero.
+# `key` is what publications.yml / highlights.yml / social.yml reference via `project:`.
+# net_x/net_y = node position in the 1200x640 network viewBox (from mockup A).
+
+- key: demcor
+  label: "#DEMCOR"
+  title: "Corporate Civic Responsibility in Safeguarding Democracy"
+  portfolio: "business"
+  # extra portfolio chips on the map card only (primary stays `portfolio`)
+  also: ["durability"]
+  methods: ["exp", "text"]
+  years: "2025-28"
+  # host "IDOS" is dropped on the map card (user decision, round 8); the
+  # portfolio-page lead card still shows it
+  host: "IDOS"
+  url: "https://www.idos-research.de/en/research/description/details/corporate-civic-responsibility-in-safeguarding-democracy-demcor/"
+  net_x: 862
+  net_y: 88
+  # lead-card thumbnail on the portfolio page (square, shown left of the text)
+  image: "/assets/img/post-capitalism.jpeg"
+  # short version for the home-page network card only (the long blurb below
+  # overflows the pinned-card frame); this is the pre-expansion blurb
+  map_blurb: "Mapping pro-democracy business initiatives, what motivates firms to defend institutions, and AI-powered simulations for firms facing democratic erosion."
+  blurb: >
+    What moves private companies to safeguard democratic institutions and
+    practices when they come under pressure? Where democracies erode, the
+    private sector can act as a counterweight. Firms can sustain independent
+    media, support civic participation, and lend their weight to electoral
+    integrity. Yet we lack systematic evidence on when and why firms shift from
+    acquiescence to engagement, especially during periods of heightened
+    political risk stemming from democratic erosion and autocratization. The
+    project aims to develop a comprehensive database of business-led
+    pro-democracy initiatives and to assess the effectiveness of different cues
+    and nudges in convincing firm managers to take pro-democracy action.
+
+- key: depol-toolkit
+  label: "Depolarization Toolkit"
+  title: "Depolarization Toolkit: an agentic AI framework"
+  portfolio: "aitech"
+  years: "2026-28"
+  host: "IDOS with UNDP + DW Akademie"
+  url: "https://www.idos-research.de/en/research/description/details/depolarization-toolkit-an-agentic-ai-framework/"
+  net_x: 820
+  net_y: 552
+  # lead-card thumbnail: post8-toolkit.jpeg title card padded to a square on its
+  # own cream background (the lc-thumb slot is a 150x150 cover crop)
+  image: "/assets/img/depol-title-sq.jpg"
+  # short version for the home-page network card only (pre-expansion blurb)
+  map_blurb: "A multi-agent AI assistant for practitioners designing depolarization programs."
+  blurb: >
+    In collaboration with Deutsche Welle (DW) Akademie and UNDP, we are
+    developing an open, AI-powered assistant that supports development
+    practitioners, consultants, and policy advisors in their programming,
+    advisory, and policy-design work on mitigating political polarization.
+    Rising polarization erodes institutional trust and, as the UNDP Human
+    Development Report documents, slows progress across development goals. Yet
+    the guidance practitioners rely on still lives in static, 100-page PDFs
+    that are rarely updated, hard to navigate, and impossible to adapt to
+    fast-moving, low-resource settings. Our tool replaces that model with a
+    conversational interface: users describe their situation and receive
+    context-specific guidance, a draft action plan, a risk assessment, and a
+    stakeholder map, each grounded in vetted evidence. The tool builds on a
+    multi-agent architecture: a retrieval agent runs optimized search; a
+    context agent adapts outputs to the user's role, sector, and country; a
+    scenario agent generates branching decision simulations; a
+    structured-output agent drafts action plans and risk matrices; a
+    quality-assurance agent fact-checks every output against the repository;
+    and a translation agent delivers multilingual access. Each agent is
+    independently testable and upgradable.
+
+- key: datahub
+  # renamed from "Political Regimes Data Hub" 2026-07-20 (user decision): the
+  # portfolio is now "Data and Methods" and the hub itself is this initiative.
+  label: "Autocracy Data Hub"
+  title: "Autocracy Data Hub"
+  portfolio: "datahub"
+  years: "2026-29"
+  host: "Bonn/Toronto"
+  # home map card venue line only ("self-hosted" dropped, user round 2026-07-20);
+  # the portfolio-page kicker keeps `host`
+  map_host: "with Way & Levitsky"
+  # ringed initiative node on the network hero, left of the datahub hub —
+  # lowered from y=370 (2026-07-20, user) so tall pinned cards (panel at
+  # top-left) no longer cover it
+  net_x: 120
+  net_y: 435
+  # No external URL: the hub's own portfolio page is the destination.
+  # lead-card thumbnail: DERTT country x event-type heatmap grid, square-cropped
+  # to the colored cells (from dertt/figures/country_type_heatmap.pdf, user
+  # decision 2026-07-20; replaced the PROSEC-Sankey stand-in)
+  image: "/assets/img/dertt-heatmap-sq.png"
+  # short version for the home-page network card only
+  map_blurb: "A sustainable dataset infrastructure for transparent, replicable, and low-cost measures of political regime dynamics."
+  blurb: >
+    A sustainable dataset infrastructure for transparent, replicable, and
+    low-cost measures of political regime dynamics. A robustness-check
+    alternative for expert-coded measures, including autocratization and
+    resource concentration. Ongoing collaboration with Lucan Way and Steve
+    Levitsky.
+
+# Earlier initiatives (About page "Launched" cards) shown on the network hero as
+# ringed nodes near their portfolio hubs. map_only: excluded from the portfolio
+# pages' Anchor-project lead card (that slot stays for current IDOS projects).
+
+- key: maidan
+  label: "Maidan Analytics"
+  # lead-card kicker override (map node keeps `label`); matches the About card
+  card_label: "Political Risk Consultancy"
+  title: "Maidan Analytics"
+  portfolio: "datahub"
+  years: "2019-24"
+  host: "Toronto"
+  # map_only removed 2026-07-20 (user decision): maidan joins the datahub
+  # Initiative section as a second lead card after the hub card.
+  url: "https://maidan.ca/products/"
+  # lead-card link text (user preference, matches the archive-capture cards)
+  link_label: "Link here"
+  net_x: 140
+  net_y: 555
+  # lead-card thumbnail: "maidan logo.jpg" wordmark (2581x831) padded to a
+  # square on white (the lc-thumb slot is a 150x150 cover crop)
+  image: "/assets/img/maidan-logo-sq.jpg"
+  blurb: "We offered risk consultancy built on two proprietary algorithms that predict protests and forecast elections in authoritarian regimes using open data and cutting-edge methodologies."
+
+- key: cityinclusive
+  label: "CityInclusive"
+  # lead-card kicker override (map node keeps `label`); matches the About card
+  card_label: "Social Impact"
+  title: "CityInclusive"
+  portfolio: "aitech"
+  years: "2017-18"
+  host: "Montreal"
+  # map_only removed 2026-07-20 (user decision): cityinclusive joins the aitech
+  # Initiative section as a second lead card after depol-toolkit.
+  url: "https://web.archive.org/web/20200121082817/http://cityinclusive.ca/"
+  # lead-card link text ("Project page" reads wrong for an archive capture)
+  link_label: "Link here"
+  net_x: 1090
+  net_y: 560
+  # lead-card thumbnail on the portfolio page (same photo as the About card)
+  image: "/assets/img/cityinclusive.jpg"
+  # short version for the home-page network card only (drops the advocacy lead-in)
+  map_blurb: "On our digital platform, we documented the work of Canadian cities as they went through the process of developing applications for the Smart Cities Challenge Canada."
+  blurb: "Advocating for social inclusion in the design of smart cities, on our digital platform, we documented the work of Canadian cities as they went through the process of developing applications for the Smart Cities Challenge Canada."
+
+- key: coopinion
+  label: "Co-Opinion Network"
+  title: "Co-Opinion Network"
+  portfolio: "durability"
+  years: "2015-17"
+  host: "Istanbul"
+  # map_only removed 2026-07-20 (user decision): coopinion is the durability
+  # portfolio's Initiative lead card, like demcor on business.
+  url: "https://web.archive.org/web/20170312022329/http://co-opinion.org/"
+  # lead-card link text ("Project page" reads wrong for an archive capture)
+  link_label: "Link here"
+  net_x: 735
+  net_y: 205
+  # lead-card thumbnail on the portfolio page (same photo as the About card)
+  image: "/assets/img/coop.jpg"
+  # short version for the home-page network card only (pre-expansion blurb)
+  map_blurb: "The network mobilized more than 30 stakeholders in six countries across the MENA region, built cross-sectoral collaboration for inclusive economies in the age of the Fourth Industrial Revolution."
+  blurb: >
+    The network mobilized more than 30 stakeholders in six countries across the
+    MENA region, built cross-sectoral collaboration with NGOs, business
+    associations, and research institutes for inclusive economies, good
+    governance, and youth mobilization in the age of the Fourth Industrial
+    Revolution, and organized summits and capacity development programs in
+    Belgium, Italy, Lebanon, Morocco, Tunisia, and Turkey.

@@ -1,0 +1,25 @@
+{% comment %}
+Field notes — curated post cards from _data/social.yml. Homepage strip shows the
+newest 6 (user decision 2026-07-19; was 8); the full list lives on /activity/#posts.
+Excerpts are the posts' own opening words verbatim (no AI summaries), clamped by
+CSS; each card links out. Renders nothing while posts is empty.
+{% endcomment %}
+{% assign posts = site.data.social.posts %}
+{% if posts and posts.size > 0 %}
+<section>
+  <div class="sec-kicker">Field notes</div>
+  <h2 class="ruled">Latest Posts</h2>
+  <div class="fn">
+    {% for p in posts limit: 6 %}
+      {% if p.platform == "linkedin" %}{% assign plat = "LinkedIn" %}{% elsif p.platform == "bluesky" %}{% assign plat = "Bluesky" %}{% else %}{% assign plat = "X" %}{% endif %}
+      <a class="fncard" data-y="{{ p.date | date: '%Y' }}" data-pf="{{ p.portfolio | join: ' ' }}" href="{{ p.url }}" target="_blank" rel="noopener">
+        {% if p.image %}<img class="thumb{% if p.fit == 'contain' %} contain{% endif %}" src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        <div class="d">{{ p.date | date: "%b %Y" | upcase }} · {{ plat | upcase }}</div>
+        <p>{{ p.excerpt }}</p>
+        <span class="mono go">Read on {{ plat }} →</span>
+      </a>
+    {% endfor %}
+  </div>
+  <p class="mono" style="font-size:12px;margin-top:14px"><a href="{{ '/activity/' | relative_url }}#posts">Browse all {{ posts | size }} posts →</a></p>
+</section>
+{% endif %}

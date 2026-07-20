@@ -1,0 +1,32 @@
+{% comment %}
+One stream row inside a thread block: format badge first (formats are equal
+siblings of one research line), then title, venue, year, and the + expander.
+Badge mirrors the wall rule: a per-item `kicker` ("IDOS Policy brief") becomes
+the badge and swallows the numbered venue; otherwise a venue that only repeats
+the type label is dropped. The .rowx panel leads with the record (coauthors —
+full names via `coauthors_full` when set — presentations, grants, links, each
+linkable) and the abstract (blurb fallback) comes last.
+Params: pub, pf, type_labels.
+{% endcomment %}
+{% assign abs = include.pub.abstract | default: include.pub.blurb %}
+{% assign expandable = false %}
+{% if abs or include.pub.coauthors or include.pub.presentations or include.pub.grants or include.pub.links %}{% assign expandable = true %}{% endif %}
+<div class="row">
+  <span class="badge">{{ include.pub.kicker | default: include.type_labels[include.pub.type] }}</span>
+  <a class="t" href="{{ include.pub.url | default: '#' }}"{% if include.pub.url %} target="_blank" rel="noopener"{% endif %}>{{ include.pub.title }}</a>
+  {% assign v_lc = include.pub.venue | downcase %}{% assign t_lc = include.type_labels[include.pub.type] | downcase %}
+  <span class="v">{% unless include.pub.kicker or v_lc == t_lc %}{{ include.pub.venue }}{% endunless %}</span>
+  <span class="yr">{{ include.pub.year }}</span>
+  {% if expandable %}<button class="exp" type="button" aria-expanded="false" aria-label="Show details">+</button>{% endif %}
+</div>
+{% if expandable %}
+<div class="rowx" hidden>
+  {% if include.pub.coauthors or include.pub.presentations or include.pub.grants %}
+  <p class="xmeta mono">{% if include.pub.coauthors %}<span>With {{ include.pub.coauthors_full | default: include.pub.coauthors }}</span>{% endif %}{% if include.pub.presentations %}<span>Presented: {% for pr in include.pub.presentations %}{% if pr.url %}<a href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.label }}</a>{% else %}{{ pr }}{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>{% endif %}{% if include.pub.grants %}<span>Funded by {% for g in include.pub.grants %}{% if g.url %}<a href="{{ g.url }}" target="_blank" rel="noopener">{{ g.label }}</a>{% else %}{{ g }}{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>{% endif %}</p>
+  {% endif %}
+  {% if include.pub.links %}
+  <p class="xlinks mono">{% for l in include.pub.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} →</a>{% endfor %}</p>
+  {% endif %}
+  {% if abs %}<p class="abs">{{ abs }}</p>{% endif %}
+</div>
+{% endif %}

@@ -1,0 +1,7 @@
+# Work wall config. `featured`: ordered publication ids rendered as flag cards
+# in the "Selected work" band above the filter chips (2026-07-20, user picks:
+# JoD capitalism piece, G&O business allies, FP prosecutions op-ed, GovTech
+# reality-check brief, DERTT, sultanist soft-propaganda paper). Deliberately
+# separate from the per-item `featured:` flag in publications.yml, which 16
+# items carry.
+featured: [3, 2, 26, 19, 15, 11]

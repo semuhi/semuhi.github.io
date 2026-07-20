@@ -1,0 +1,263 @@
+# About/CV page content — the page renders entirely from this file.
+# Edit or append here; the include (_includes/c-about.html) never hardcodes facts.
+# bio paragraphs allow inline HTML (links). Keep the voice rules: no em-dashes.
+
+photo: "/assets/img/prof_pic.jpg"
+kicker: "Bio"
+heading: "About me"
+
+bio:
+  - >-
+    I’m a senior researcher at the <a href="https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/">German
+    Institute of Development and Sustainability (IDOS)</a>. I completed my
+    <a href="https://tspace.library.utoronto.ca/handle/1807/140563">PhD in
+    Political Science</a> at <a href="https://politics.utoronto.ca/">the University of
+    Toronto</a>. I’m a <a href="https://www.gmfus.org/marshall-memorial-fellowship">German
+    Marshall Fund Marshall Memorial Fellow (MMF) (2025)</a>.
+  - >-
+    At IDOS, I offer policy advice to German and international stakeholders on
+    countering digital authoritarian propaganda, based on insights from my experimental
+    and computational research within a
+    <a href="https://www.idos-research.de/forschung/projekte/details/protecting-democracy-in-times-of-autocratization-and-polarization/">project
+    team</a> analyzing global autocratization and polarization trends. I launched a new
+    research-based policy initiative, called
+    <a href="https://www.idos-research.de/forschung/projekte/details/corporate-civic-responsibility-in-safeguarding-democracy-demcor/">Corporate
+    Civic Responsibility in Safeguarding Democracy (#DEMCOR)</a>, which aims to map
+    global business initiatives for protecting democracy and, through experiments,
+    identify what motivates firms to take action. In addition, I lead an initiative to
+    reform programming, consulting, and capacity building in the development cooperation
+    sector, using a
+    <a href="https://www.idos-research.de/en/research/description/details/depolarization-toolkit-an-agentic-ai-framework/">multi-agentic
+    AI architecture</a>.
+  - >-
+    I study how dictators drive support for their regimes through propaganda,
+    repression, and polarization, and which counter-mobilization and international
+    assistance strategies can mitigate their effectiveness. My dissertation research is
+    about how and why autocrats financially coerce their closest business allies during
+    sovereign debt crises. I also contribute to the computational and experimental
+    methodological tools in political science research. I am part of several novel data
+    collection efforts, including developing
+    <a href="https://www.researchgate.net/publication/400025334_Tracking_Democratic_Erosion_Transparently_and_Reproducibly_An_Event-Level_Dataset">measures
+    of autocratization</a> and
+    <a href="https://www.researchgate.net/publication/393329518_Domestic_leader_prosecutions_in_the_age_of_democratic_contestation_Introducing_the_PROSEC_Dataset_v10">leader
+    prosecutions</a>. My co-authored papers are published in leading journals in our
+    discipline, such as
+    <a href="https://www.journalofdemocracy.org/articles/can-capitalism-save-democracy/">Journal
+    of Democracy</a>, <a href="https://journals.sagepub.com/home/smr">Sociological
+    Methods &amp; Research</a>,
+    <a href="https://www.cambridge.org/core/journals/government-and-opposition">Government
+    &amp; Opposition</a>, and <a href="https://jcp.gc.cuny.edu/">Comparative Politics</a>.
+  - >-
+    Previously, I was the co‑founder of a Toronto‑based political risk consultancy
+    company, <a href="https://maidan.ca/">Maidan Analytics</a>, which leverages
+    proprietary algorithms to forecast protests and elections. Before my doctoral
+    studies, I worked as a social policy researcher at
+    <a href="https://www.developmentanalytics.org">Development Analytics</a>, offering
+    quantitative analysis support for reports delivered to international organizations.
+  - >-
+    I also co‑founded two social impact initiatives. One,
+    <a href="https://web.archive.org/web/20200121082817/http://cityinclusive.ca/">CityInclusive</a>,
+    based in Montreal advocated for social inclusion in the design of smart cities.
+    The other,
+    <a href="https://web.archive.org/web/20170312022329/http://co-opinion.org/">Co-Opinion
+    Network</a>, based in Istanbul, mobilized more than 30 stakeholder organizations
+    in six countries across the MENA region to foster inclusive economies in the
+    region in the wake of the Fourth Industrial Revolution.
+  - >-
+    During my doctoral studies, I was a graduate associate at
+    <a href="https://www.postcorlab.com/">POSTCOR Lab</a>, a
+    <a href="https://munkschool.utoronto.ca/trudeau-centre">Trudeau Centre Fellow</a> at
+    the Munk School, a fellow at <a href="https://web.archive.org/web/20250419194114/https://jeannesauve.org/fellows/">Jeanne Sauvé
+    Foundation</a>, and a Regional Manager at
+    <a href="http://digitalsocietyproject.org/the-team/">Digital Society Project</a>.
+    I’m a member of <a href="https://www.gif.org.tr/homepage">the Global Relations
+    Forum</a>. I’m also an alum of <a href="https://www.masseycollege.ca/">Massey
+    College</a>.
+  - >-
+    You may also find me occasionally singing at open mic events.
+
+# "Launched" cards — initiatives, newest first. color = portfolio hue.
+# desc allows inline HTML links; the include adds target=_blank to them.
+launched:
+  - label: "Data Infrastructure · 2026-29 · Bonn/Toronto"
+    color: "var(--p-datahub)"
+    title: "Autocracy Data Hub"
+    # PROSEC charges->outcomes Sankey stands in for the hub (one of its
+    # datasets); swap when a dedicated hub visual exists
+    # DERTT heatmap grid, same visual as the portfolio lead card (2026-07-20;
+    # replaced the PROSEC Sankey + its contain fit — the square crop can cover)
+    img: "/assets/img/dertt-heatmap-sq.png"
+    desc: "A sustainable dataset infrastructure for transparent, replicable, and low-cost measures of political regime dynamics. Ongoing collaboration with Lucan Way and Steve Levitsky."
+    url: "/portfolios/datahub/"
+  - label: "DEMCOR · 2025-28 · Bonn"
+    color: "var(--p-business)"
+    title: "Corporate Civic Responsibility in Safeguarding Democracy"
+    img: "/assets/img/highlight-businesssupport.jpg"
+    desc: "The project aims to develop a database of business-led pro-democracy initiatives and conduct experiments to assess which interventions are effective in convincing firm managers to support democracy."
+    url: "https://www.idos-research.de/en/research/description/details/corporate-civic-responsibility-in-safeguarding-democracy-demcor/"
+  - label: "Depolarization Toolkit · 2026-28 · Bonn"
+    color: "var(--p-aitech)"
+    title: "A multi-agentic AI framework for depolarization"
+    img: "/assets/img/post8-toolkit.jpeg"
+    fit: "contain"
+    desc: "In collaboration with UNDP and DW Akademie, the project aims to develop an AI assistant with a multi-agent architecture for depolarization-related programming, consulting, capacity building, and training, targeting development practitioners, media professionals, and public communicators."
+    url: "https://www.idos-research.de/en/research/description/details/depolarization-toolkit-an-agentic-ai-framework/"
+  - label: "Political Risk Consultancy · 2019-24 · Toronto"
+    color: "var(--p-datahub)"
+    title: "Maidan Analytics"
+    img: "/assets/img/maidan.png"
+    fit: "contain"
+    desc: "We offered risk consultancy built on two proprietary algorithms that predict protests and forecast elections in authoritarian regimes using open data and cutting-edge methodologies."
+    url: "https://maidan.ca/products/"
+  - label: "Social Impact · 2017-18 · Montreal"
+    color: "var(--p-aitech)"
+    title: "CityInclusive"
+    img: "/assets/img/cityinclusive.jpg"
+    desc: "Advocating for social inclusion in the design of smart cities, on our digital platform, we documented the work of Canadian cities as they went through the process of developing applications for the <a href=\"https://www.infrastructure.gc.ca/cities-villes/index-eng.html\">Smart Cities Challenge Canada</a>."
+    url: "https://web.archive.org/web/20200121082817/http://cityinclusive.ca/"
+  - label: "Social Impact · 2015-17 · Istanbul"
+    color: "var(--p-durability)"
+    title: "Co-Opinion Network"
+    img: "/assets/img/coop.jpg"
+    desc: "The network mobilized more than 30 stakeholders in six countries across the MENA region, built cross-sectoral collaboration for inclusive economies in the age of the Fourth Industrial Revolution, and organized summits and trainings in Belgium, Italy, Lebanon, Morocco, Tunisia, and Turkey."
+    url: "https://web.archive.org/web/20170312022329/http://co-opinion.org/"
+
+# Recognition — fellowships/affiliations and awards, newest first (CV order).
+# when = year range (site style: hyphen, trailing hyphen for ongoing).
+# url optional; about.js folds each column at 6 rows behind a Show-more toggle.
+recognition:
+  - group: "Fellowships & Affiliations"
+    entries:
+      - when: "2026"
+        what: "Cornell Center on Global Democracy"
+        role: "Community of Practice Member"
+        url: "https://www.publicpolicy.cornell.edu/cgd/"
+      - when: "2025-26"
+        what: "UNDP Sounding Board on Innovation in Public Communication"
+        role: "Member"
+        url: "https://www.undp.org/governance/blog/atlas-innovation-public-communication"
+      - when: "2025"
+        what: "German Marshall Fund (GMF)"
+        role: "Marshall Memorial Fellow"
+        url: "https://www.gmfus.org/marshall-memorial-fellowship"
+      - when: "2025-"
+        what: "Global Relations Forum (GRF)"
+        role: "Member"
+        url: "https://www.gif.org.tr/about/about-grf"
+      - when: "2022-23"
+        what: "Digital Society Project"
+        role: "Regional Manager"
+        url: "https://digitalsocietyproject.org"
+      - when: "2022-23"
+        what: "POSTCOR Lab"
+        role: "Associate"
+        url: "https://www.postcorlab.com"
+      - when: "2022-23"
+        what: "Trudeau Centre for Peace, Conflict and Justice"
+        role: "Fellow"
+        url: "https://munkschool.utoronto.ca/trudeau-centre"
+      - when: "2021-22"
+        what: "Mercatus Center"
+        role: "Oskar Morgenstern Fellow"
+        url: "https://www.mercatus.org/students/oskar-morgenstern-fellowship#2392643287-25203644"
+      - when: "2019-22"
+        what: "Massey College"
+        role: "Non-resident Fellow"
+        url: "https://www.masseycollege.ca"
+      - when: "2017-18"
+        what: "Jeanne Sauvé Foundation"
+        role: "Public Leadership Fellow"
+        url: "https://web.archive.org/web/20250417201942/https://jeannesauve.org/"
+      - when: "2016"
+        what: "Open Society Foundation"
+        role: "Human Rights & Governance Intern"
+        url: "https://web.archive.org/web/20190718141045/https://www.opensocietyfoundations.org/grants/open-society-internship-for-rights-and-governance"
+      - when: "2016"
+        what: "Ashoka Foundation"
+        role: "ChangemakerXChange"
+        url: "https://changemakerxchange.org"
+  - group: "Awards & Scholarships"
+    entries:
+      - when: "2023"
+        what: "Outstanding TA Award"
+        role: "University of Toronto"
+      - when: "2021-23"
+        what: "Mary H. Beatty Scholarship"
+        role: "University of Toronto"
+        url: "https://www.statistics.utoronto.ca/awards/mary-h-beatty-top-scholarship"
+      - when: "2022"
+        what: "M. W. Donnelly Fellowship in Political Economy"
+        role: "University of Toronto"
+      - when: "2020"
+        what: "Ontario Graduate Scholarship (OGS)"
+        role: "Province of Ontario"
+        url: "https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html"
+      - when: "2020"
+        what: "Morimitsu Inaba Doctoral Scholarship"
+        role: "University of Toronto"
+        url: "https://www.politics.utoronto.ca/graduate/program-info/phd-program/scholarships#fellowships-accordion-1"
+      - when: "2019"
+        what: "Ranjit Kumar Graduate Scholarship"
+        role: "University of Toronto"
+        url: "https://www.sgs.utoronto.ca/awards/university-wide-awards/"
+      - when: "2019"
+        what: "ICPSR Scholarship"
+        role: "EITM"
+        url: "https://eitminstitute.org/programs/scholarship-program/"
+      - when: "2014"
+        what: "Graduate Scholarship"
+        role: "Scientific and Technological Research Council of Turkey"
+      - when: "2009"
+        what: "Outstanding Success Scholarship"
+        role: "Turkish Educational Foundation"
+        url: "https://www.tev.org.tr/anasayfa/tr"
+
+# Education — degree and non-degree programs, newest first (CV order).
+# org rendered bold (org_url optional); degree carries the link (url optional).
+education:
+  - group: "Degree Programs"
+    entries:
+      - when: "2018-24"
+        org: "University of Toronto"
+        degree: "PhD in Political Science"
+        url: "https://utoronto.scholaris.ca/items/b539ae4b-e8a0-47e0-af47-d9e8bdf35822"
+      - when: "2014-17"
+        org: "Koc University"
+        degree: "MA in International Relations"
+        url: "https://libdigitalcollections.ku.edu.tr/digital/collection/TEZ/id/27313/"
+      - when: "2009-14"
+        org: "Bogazici University"
+        degree: "Double Major: Political Science, IR, and Economics"
+        url: "https://bogazici.edu.tr"
+  - group: "Non-degree Programs"
+    entries:
+      - when: "2019"
+        org: "ICPSR Summer Program"
+        org_url: "https://www.icpsr.umich.edu/web/pages/sumprog/"
+        degree: "EITM-certified Bayesian Modeling"
+        url: "https://eitminstitute.org"
+      - when: "2017-18"
+        org: "McGill University"
+        degree: "Graduate Research Trainee"
+        url: "https://www.mcgill.ca"
+      - when: "2017"
+        org: "Harvard Kennedy Executive Education"
+        degree: "Leadership, Organizing, and Action"
+        url: "https://www.hks.harvard.edu/educational-programs/executive-education/leadership-organizing-and-action"
+      - when: "2013"
+        org: "Columbia University"
+        degree: "Exchange Program"
+        url: "https://www.columbia.edu"
+
+# Network strip — profile links rendered as logos (icon = _includes/icons/<icon>.svg).
+# Order mirrors the footer icon row (c-footer-icons.html): Email, Bluesky,
+# LinkedIn, Twitter, GitHub, Google Scholar, ResearchGate, ORCID.
+profiles:
+  - { label: "Email", icon: "email", url: "mailto:Semuhi.Sinanoglu@idos-research.de" }
+  - { label: "Bluesky", icon: "bluesky", url: "https://bsky.app/profile/semuhi.bsky.social" }
+  - { label: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/semuhisinanoglu/" }
+  - { label: "Twitter", icon: "twitter", url: "https://twitter.com/semuhi" }
+  - { label: "GitHub", icon: "github", url: "https://github.com/semuhi" }
+  - { label: "Google Scholar", icon: "scholar", url: "https://scholar.google.com/citations?user=4IlRWR0AAAAJ" }
+  - { label: "ResearchGate", icon: "researchgate", url: "https://www.researchgate.net/profile/Semuhi-Sinanoglu-2" }
+  - { label: "ORCID", icon: "orcid", url: "https://orcid.org/0000-0003-1964-1054" }

@@ -1,0 +1,21 @@
+{% comment %}Highlights strip from _data/highlights.yml (dates as YYYY-MM strings).
+Homepage shows the newest 6; the full list lives on /activity/#highlights
+(user decision 2026-07-19).{% endcomment %}
+{% assign months = "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC" | split: "," %}
+{% assign n_hl = site.data.highlights | size %}
+<section>
+  <div class="sec-kicker">Milestones</div>
+  <h2 class="ruled">Recent Highlights</h2>
+  <div class="hl">
+    {% for h in site.data.highlights limit: 6 %}
+      {% assign parts = h.date | split: "-" %}
+      {% assign mi = parts[1] | plus: 0 | minus: 1 %}
+      <article data-y="{{ parts[0] }}" data-k="{{ h.kind }}" data-pf="{{ h.portfolio | join: ' ' }}">
+        {% if h.image %}{% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img class="thumb{% if h.fit == 'contain' %} contain{% endif %}" src="{{ h.image | relative_url }}" alt="" loading="lazy"></a>{% else %}<img class="thumb{% if h.fit == 'contain' %} contain{% endif %}" src="{{ h.image | relative_url }}" alt="" loading="lazy">{% endif %}{% endif %}
+        <div class="d">{{ months[mi] }} {{ parts[0] }}{% if h.kind %} · {{ h.kind | upcase }}{% endif %}</div>
+        <h3>{% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.title }}</a>{% else %}{{ h.title }}{% endif %}</h3>
+      </article>
+    {% endfor %}
+  </div>
+  <p class="mono" style="font-size:12px;margin-top:14px"><a href="{{ '/activity/' | relative_url }}#highlights">Browse all {{ n_hl }} highlights →</a></p>
+</section>

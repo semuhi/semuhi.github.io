@@ -1,0 +1,27 @@
+{% comment %}Latest publications: user-curated five newest outputs, all types in one
+stream (order fixed 2026-07-18; update the id list as new work lands). Card strip in
+the Recent Highlights style (round-10 trial, 2026-07-19); optional per-item image:
+and fit: contain fields work like on highlight cards.{% endcomment %}
+{% assign n_items = site.data.publications | size %}
+{% assign type_labels = site.data.portfolios.type_labels %}
+<section id="work">
+  <div class="sec-kicker">Outputs</div>
+  <h2 class="ruled">Latest Publications</h2>
+  <div class="hl">
+    {% assign latest_ids = "19,21,20,22,23" | split: "," %}
+    {% for lid in latest_ids %}
+      {% assign lid_n = lid | plus: 0 %}
+      {% assign pub = site.data.publications | where: "id", lid_n | first %}
+      <article>
+        {% if pub.image %}<a href="{{ pub.url | default: '#' }}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img class="thumb{% if pub.fit == 'contain' %} contain{% endif %}" src="{{ pub.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+        <div class="d">{{ pub.year }}{% if pub.month %}/{% if pub.month < 10 %}0{% endif %}{{ pub.month }}{% endif %} · {{ type_labels[pub.type] | upcase }}</div>
+        <h3><a href="{{ pub.url | default: '#' }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
+        {% assign v_lc = pub.venue | downcase %}{% assign t_lc = type_labels[pub.type] | downcase %}
+        {% capture pv %}{% unless v_lc == t_lc %}{{ pub.venue }}{% if pub.coauthors %} · {% endif %}{% endunless %}{% if pub.coauthors %}with {{ pub.coauthors }}{% endif %}{% endcapture %}
+        {% assign pv = pv | strip %}
+        {% if pv != "" %}<div class="pv">{{ pv }}</div>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+  <p class="mono" style="font-size:12px;margin-top:14px"><a href="{{ '/work/' | relative_url }}">Browse all {{ n_items }} outputs →</a></p>
+</section>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{{ page.description | default: 'Semuhi Sinanoglu, political scientist at IDOS, Bonn.' }}">
+<meta name="google-site-verification" content="Km-GWINZtbH18zUFHu1vxeP_kUI_yj0vDKCYaD8FG1Q">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicon-180.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/constellation.css' | relative_url }}">
+</head>
+<body class="constellation">
+
+<header class="site">
+  <a class="brand" href="{{ '/' | relative_url }}">Dr. Semuhi Sinanoglu</a>
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/portfolios/' | relative_url }}">Portfolios</a>
+    <a href="{{ '/work/' | relative_url }}">Publications</a>
+    <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+  </nav>
+</header>
+
+{{ content }}
+
+<footer class="site">
+  <span>© {{ site.time | date: "%Y" }} Semuhi Sinanoglu</span>
+  <span><a href="https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/" target="_blank" rel="noopener">IDOS</a></span>
+  {% include c-footer-icons.html %}
+</footer>
+
+</body>
+</html>

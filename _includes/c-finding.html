@@ -1,0 +1,27 @@
+{% comment %}
+Playable finding — soft-propaganda experiment (id 11). Bars rendered by finding.js.
+Phase 4: magnitudes are the REAL replication estimates (Cohen's d on the security
+index vs the neutral-drama control, fiction/ replication). The provenance line below
+the bars must stay in sync with finding.js if the numbers ever change.
+{% endcomment %}
+<section>
+  <div class="sec-kicker">Playable finding</div>
+  <div class="finding">
+    <img class="fbanner" src="{{ '/assets/img/series_collage_trio.jpg' | relative_url }}" alt="Episode art from the Turkish state-sponsored TV series Alparslan Büyük Selçuklu, Selahaddin Eyyubi, and Teşkilat" loading="lazy">
+    <div>
+      <div class="kicker" style="color:var(--p-propaganda)">From the propaganda portfolio</div>
+      <h3>Is state-sponsored TV drama effective propaganda?</h3>
+      <p>A pre-registered in-person survey experiment in Turkey (N = 1,769, with Donnelly) showed respondents sultanist or militarist scripts, against a neutral drama control, then measured support for military bases, drone strikes, and intelligence operations abroad. Pick a script; bars are standardized effects against the control, and faded bars miss significance at 5%. The results show that different scripts are effective for different ideological groups within the government's voter base.</p>
+      <div class="scripts" id="scripts">
+        <button class="sbtn on" data-s="sultanist">Sultanist script</button>
+        <button class="sbtn" data-s="militarist">Militarist script</button>
+      </div>
+      <a class="mono" style="font-size:12px" href="https://www.researchgate.net/publication/392093393_Sultanist_and_Militarist_Soft_Propaganda_and_Support_for_Security_Operations" target="_blank" rel="noopener">Read the working paper (with Donnelly) →</a>
+    </div>
+    <div>
+      <div class="bars" id="bars"></div>
+      <div class="disclaim">REPLICATION ESTIMATES · COHEN'S D ON THE SECURITY INDEX VS NEUTRAL-DRAMA CONTROL · HOLM-ADJUSTED 5% TEST</div>
+    </div>
+  </div>
+</section>
+<script src="{{ '/assets/js/constellation/finding.js' | relative_url }}"></script>

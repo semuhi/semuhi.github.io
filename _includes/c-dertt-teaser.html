@@ -1,0 +1,30 @@
+{% comment %}
+DERTT teaser — datahub interactive slot (Phase 4, teaser-only slice per user decision
+2026-07-17: headline counts + one small chart, no client-side event browsing).
+All numbers are the working paper's own (76,792 unique incidents / 197 countries /
+6 event types / 2000–2023 / 9,677 country-year reports); the per-year bars in
+dertt.js come straight from mvpv2_events.db and sum to 76,792.
+{% endcomment %}
+<section>
+  <div class="sec-kicker">Inside the data</div>
+  <div class="finding dertt">
+    <div>
+      <div class="kicker" style="color:var(--p-datahub)">From the Data Hub · DERTT</div>
+      <h3>Autocratization, one at a time</h3>
+      <p>DERTT reads 9,677 country-year human rights reports from the U.S. State Department, Freedom House, and Amnesty International with an open-weight LLM and precision-first prompts, then deduplicates what it finds. The result: a global dataset of 76,792 unique incidents of democratic erosion across six event types, from rights suspensions and electoral fraud to violence against critics, each traceable to the exact sentences in the source report.</p>
+      <div class="stat-chips">
+        <span class="stat"><b>76,792</b> incidents</span>
+        <span class="stat"><b>6</b> event types</span>
+        <span class="stat"><b>2000–2023</b></span>
+      </div>
+      <a class="mono" style="font-size:12px" href="https://www.researchgate.net/publication/400025334_Tracking_Democratic_Erosion_Transparently_and_Reproducibly_An_Event-Level_Dataset" target="_blank" rel="noopener">Read the working paper (with Way, Levitsky &amp; Talebirad) →</a>
+    </div>
+    <div>
+      <div class="chart-cap mono"><span>INCIDENTS PER YEAR</span><span id="dertt-tip"></span></div>
+      <div class="ybars" id="dertt-chart" style="--pc:var(--p-datahub)"></div>
+      <div class="axis mono"><span>2000</span><span>2023</span></div>
+      <div class="disclaim">DATASET FIGURES · UNIQUE INCIDENTS AFTER SEMANTIC DEDUPLICATION · FROM THE DERTT WORKING PAPER</div>
+    </div>
+  </div>
+</section>
+<script src="{{ '/assets/js/constellation/dertt.js' | relative_url }}"></script>

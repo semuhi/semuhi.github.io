@@ -1,0 +1,34 @@
+// Constellation design tokens — spec v3 (locked 2026-07-17 from mockup A).
+// Single source of truth for colors and type. Portfolio hues also live in
+// _data/portfolios.yml (data-driven renders read them from there).
+
+:root {
+  // ground
+  --paper: #F4F7FA;
+  --card: #FBFCFD;
+  --ink: #16263A;
+  --muted: #5E7186;
+  --hair: #D7E0E8;
+  --chipground: #E7EEF4;
+
+  // inks
+  --cobalt: #14507D;
+  --gold: #C2871C;
+  --gold-on-dark: #E9C07E;
+
+  // portfolio hues (light ground; keep in sync with _data/portfolios.yml)
+  --p-propaganda: #2A5599;
+  --p-business: #B5791A;
+  --p-datahub: #C14E6B;
+  --p-aitech: #7B5BA6;
+  --p-durability: #1196B9;
+  --p-conflict: #A44A3F;
+
+  // wall-only / other policy work
+  --wallnode: #9AAAB9;
+}
+
+$font-display: "Space Grotesk", sans-serif;
+$font-mono: "IBM Plex Mono", monospace;
+$grid-size: 56px;
+$max-width: 1200px;

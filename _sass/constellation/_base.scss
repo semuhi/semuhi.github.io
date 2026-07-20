@@ -1,0 +1,121 @@
+// Constellation base: ground, header, sections, footer (from mockup A).
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body.constellation {
+  // plain white ground (user decision 2026-07-18: blueprint grid removed);
+  // var(--paper) stays in use as the inset ground for chips and panels
+  background: #FFFFFF;
+  color: var(--ink);
+  font: 16px/1.6 $font-display;
+
+  .mono { font-family: $font-mono; }
+
+  a { color: var(--cobalt); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header.site {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 22px 24px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    // brand + six links exceed a phone width on one row; let them wrap
+    @media (max-width: 980px) {
+      flex-wrap: wrap;
+      row-gap: 4px;
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 16px;
+        a { margin-left: 0; }
+      }
+    }
+
+    .brand {
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--ink); // the brand is a home link; keep it ink, not link-blue
+      &:hover { color: var(--cobalt); }
+    }
+    nav a {
+      font-family: $font-mono;
+      font-size: 12px;
+      letter-spacing: .06em;
+      margin-left: 22px;
+      color: var(--ink);
+      &:hover { color: var(--cobalt); }
+    }
+  }
+
+  section {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 52px 24px 8px;
+    position: relative;
+  }
+
+  .sec-kicker {
+    font-family: $font-mono;
+    font-size: 11px;
+    letter-spacing: .18em;
+    color: var(--cobalt);
+    text-transform: uppercase;
+    &::before { content: "+ "; color: var(--gold); }
+  }
+
+  h2 { font-size: 24px; font-weight: 600; margin: .3rem 0 1.1rem; }
+
+  // home-section variant of the pf-head treatment: kicker above, rule on the title
+  // (user request 2026-07-19)
+  h2.ruled {
+    border-top: 3px solid var(--cobalt);
+    padding-top: .8rem;
+    margin-top: .35rem;
+  }
+
+  .kicker {
+    font-family: $font-mono;
+    font-size: 11px;
+    letter-spacing: .16em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  // the map header line reads in ink, not gold (user decision 2026-07-18)
+  .hero-head .kicker { color: var(--ink); }
+
+  footer.site {
+    max-width: $max-width;
+    margin: 56px auto 0;
+    padding: 20px 24px 40px;
+    border-top: 1px solid var(--hair);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-mono;
+    font-size: 11.5px;
+    color: var(--muted);
+
+    // phone: © + IDOS + eight icons exceed the row width, so space-between
+    // collapses and IDOS jams against the email icon; wrap instead — IDOS
+    // stays right-aligned on the first line, icons take their own line
+    @media (max-width: 560px) {
+      flex-wrap: wrap;
+      row-gap: 12px;
+    }
+
+    // icon row (logos instead of platform names, user decision 2026-07-19)
+    .ficons {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+
+      a { color: var(--muted); display: inline-flex; }
+      a:hover { color: var(--ink); }
+      svg { width: 15px; height: 15px; fill: currentColor; }
+    }
+  }
+}

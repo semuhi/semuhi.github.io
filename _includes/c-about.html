@@ -1,0 +1,84 @@
+{% comment %}
+About/CV page — renders entirely from _data/about.yml. Sections: head (photo + bio),
+Launched cards, Recognition columns (fellowships + awards), profile strip (#cv).
+{% endcomment %}
+{% assign ab = site.data.about %}
+
+<section class="pf-head about-head" style="--pc:var(--cobalt)">
+  <div class="sec-kicker">{{ ab.kicker }}</div>
+  <h1>{{ ab.heading }}</h1>
+  <div class="about-cols">
+    <div id="bio">
+      {% comment %}Bio links are all external; open them in a new tab.{% endcomment %}
+      {% for p in ab.bio %}<p class="narrative">{{ p | replace: '<a href=', '<a target="_blank" rel="noopener" href=' }}</p>{% endfor %}
+    </div>
+    <img class="portrait" src="{{ ab.photo | relative_url }}" alt="Portrait of Semuhi Sinanoglu">
+  </div>
+</section>
+
+<section>
+  <div class="sec-kicker">Launched</div>
+  <h2>Initiatives</h2>
+  {% comment %}Cards are divs, not link wrappers: descriptions may carry their own
+  links, and anchors cannot nest. The title is the external link (new tab).{% endcomment %}
+  <div class="fgrid">
+    {% for n in ab.launched %}
+    <div class="fcard" style="--pc:{{ n.color }}">
+      <a href="{{ n.url }}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img class="ithumb{% if n.fit == 'contain' %} ithumb--contain{% endif %}" src="{{ n.img | relative_url }}" alt="{{ n.title }}"></a>
+      <div class="ty">{{ n.label }}</div>
+      <h3><a href="{{ n.url }}" target="_blank" rel="noopener">{{ n.title }}</a></h3>
+      <p>{{ n.desc | replace: '<a href=', '<a target="_blank" rel="noopener" href=' }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="recognition">
+  <div class="sec-kicker">Recognition</div>
+  <h2>Fellowships &amp; Awards</h2>
+  {% comment %}Two CV-derived columns; about.js folds each at 6 rows.{% endcomment %}
+  <div class="ta-groups two">
+    {% for g in ab.recognition %}
+    <div class="ta-group">
+      <div class="flabel">{{ g.group }}</div>
+      <ul>
+        {% for e in g.entries %}
+        <li>
+          <span class="when">{{ e.when }}</span>
+          {% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.what }}</a>{% else %}{{ e.what }}{% endif %} &middot; {{ e.role }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="education">
+  <div class="sec-kicker">Background</div>
+  <h2>Education</h2>
+  {% comment %}CV-derived; bold org (linked if org_url), link on the degree.{% endcomment %}
+  <div class="ta-groups two">
+    {% for g in ab.education %}
+    <div class="ta-group">
+      <div class="flabel">{{ g.group }}</div>
+      <ul>
+        {% for e in g.entries %}
+        <li>
+          <span class="when">{{ e.when }}</span>
+          <strong>{% if e.org_url %}<a href="{{ e.org_url }}" target="_blank" rel="noopener">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</strong> &middot; {% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.degree }}</a>{% else %}{{ e.degree }}{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="cv">
+  <div class="sec-kicker">Network</div>
+  <h2>My Profiles</h2>
+  <div class="about-links">
+    {% for pr in ab.profiles %}{% capture icon_path %}icons/{{ pr.icon }}.svg{% endcapture %}<a class="plink" href="{{ pr.url }}" title="{{ pr.label }}" aria-label="{{ pr.label }}"{% unless pr.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{% include {{ icon_path }} %}</a>{% endfor %}
+  </div>
+</section>

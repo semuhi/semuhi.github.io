@@ -1,0 +1,12 @@
+{% comment %}
+Emits the site data as JSON for the Constellation JS modules (network.js).
+Shape: {items, portfolios, projects} straight from _data/ via jsonify.
+{% endcomment %}
+<script id="c-data" type="application/json">
+{"items": {{ site.data.publications | jsonify }},
+ "portfolios": {{ site.data.portfolios.list | jsonify }},
+ "typeLabels": {{ site.data.portfolios.type_labels | jsonify }},
+ "tags": {{ site.data.portfolios.tags | jsonify }},
+ "methods": {{ site.data.portfolios.methods | jsonify }},
+ "projects": {{ site.data.projects | jsonify }}}
+</script>

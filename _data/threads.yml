@@ -1,0 +1,107 @@
+# Curated research lines per portfolio (2026-07-19). The portfolio stream renders
+# one block per entry, in this order; `ids` sets the row order inside a block.
+# Formats are equal siblings — no member is "the original". Items not listed here
+# still render, as single-row blocks after the threads, newest first.
+# A single-id entry is allowed if a standalone piece needs a title or a fixed slot.
+# Titles are drafts — edit freely; the render only reads `title` and `ids`.
+propaganda:
+  - title: Discrediting the West and the opposition
+    desc: >
+      Autocrats deploy narratives to discredit European and international organizations,
+      as well as the domestic opposition, in order to consolidate their support base.
+      Transparent communication of the strategic intent behind Western relief aid, and
+      cross-partisan post-disaster relief offered by the opposition to government
+      supporters, may help counter these narratives, yet both carry unintended negative
+      consequences.
+    ids: [10, 27, 28, 7]
+  - title: Going digital, claiming responsiveness
+    desc: >
+      Autocrats invest in gov-tech tools to claim responsiveness and redress citizen
+      grievances, nurturing normative support for their regime. They also exert political
+      control over digital spaces to steer narratives. Donors must acknowledge that
+      digitalization does not always mean democratization, and that conventional tools for
+      protecting information integrity, such as content moderation, may be politically
+      costly.
+    ids: [12, 19, 32]
+  - title: Soft propaganda on screen
+    desc: >
+      Autocratic governments invest in controlling entertainment content, allocating
+      significant resources to TV series and movies that manufacture public support and
+      boost nationalism. This visual authoritarian communication is sophisticated and
+      varied, and effective because it is tailored to the different ideological support
+      groups of the regime coalition.
+    ids: [11, 46]
+business:
+  - title: Autocrats and their business allies
+    desc: >
+      Autocrats can politically co-opt businesses with material quid pro quo and
+      without power-sharing arrangements. That is why they can shake down their
+      business allies during severe crises. And despite such repression, the
+      co-opted business elite rarely defects from the regime, because it would
+      lack the public support and legitimacy to do so. There is a hidden and
+      serious cost of co-optation for businesses.
+    ids: [2, 1, 8, 9]
+  - title: Business role in safeguarding democracy
+    desc: >
+      Businesses face increasing stakeholder pressure to support democracy. They
+      are funding corporate civic responsibility initiatives to protect democratic
+      values such as electoral integrity, civic participation, diversity, good
+      governance, and public-interest media. In addition to principled support
+      for democratic institutions, commercial interests have also motivated
+      businesses in a number of countries to oppose populist trade protectionism,
+      internet shutdowns, and foreign agent laws. Yet we lack systematic knowledge
+      about when, why, and how corporations engage in pro-democracy action.
+      Structurally, such engagement is only possible in societies where the
+      private sector is large and independent enough.
+    # 14 (RC index) removed 2026-07-20: primary home moved to datahub; it now
+    # reaches this page via Bridges instead.
+    ids: [3, 25]
+durability:
+  - title: Democracy support
+    desc: >
+      The nature of democracy support has shifted. Is there a role for
+      international and development cooperation in democracy support? Which
+      narratives and interventions are effective?
+    ids: [23, 22, 20, 31, 54]
+  - title: Defection and mobilization
+    desc: >
+      Which groups defect from and mobilize under authoritarian regimes? What
+      are the implications for regime durability?
+    ids: [16, 35, 36, 51]
+conflict:
+  - title: Ethnic conflict and wartime defection
+    ids: [6, 17]
+  - title: Polarization and migration
+    ids: [38, 43, 18]
+  - title: Refugees
+    ids: [4, 53]
+  - title: Other
+    ids: [24, 52]
+# Data Hub (2026-07-20): shelves replaced by thread-style research lines. Same-day
+# revision (user decision): primary-home items only — cross-listed 6 and 4 dropped
+# (they live in Bridges now that the page has it back), and the RC index (14) moved
+# its primary home here from business. The FP op-ed (26) rides with PROSEC.
+datahub:
+  - title: Autocracy Data Hub
+    desc: >
+      Transparent, reproducible, and low-cost alternative measures to
+      expert-coded data.
+    ids: [15, 14]
+  # PROSEC split into its own cluster 2026-07-20 (user decision): the dataset
+  # paper and the FP op-ed that features it ride together.
+  - title: PROSEC
+    desc: >
+      A database tracking prosecution of political leaders.
+    ids: [13, 26]
+  - title: Methods
+    ids: [5]
+aitech:
+  - title: A tech upgrade for development cooperation
+    desc: >
+      The sector can no longer rely on outdated static PDFs for its advisory and
+      programming work. But more than plug-in efficiency tools, the technological
+      disruption requires a complete rethinking of how the sector operates and
+      offers democracy support.
+    ids: [21, 29, 30, 37]
+  - title: Digitalization and inclusive economies
+    ids: [33, 39]

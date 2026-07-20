@@ -1,0 +1,558 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>Taxonomy review — three-axis model (v2, confirmed)</title>
+<style>
+:root{--ink:#16263A;--cobalt:#14507D;--paper:#F4F7FA;--card:#FBFCFD;--line:#D7E0E8;--mut:#5E7186}
+*{box-sizing:border-box}
+body{font:14px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--paper);margin:0;padding:1.4rem}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:21px;margin:0 0 .2rem;border-bottom:3px solid var(--cobalt);padding-bottom:.35rem}
+.sub{color:var(--mut);font-size:12.5px;margin:.3rem 0 1rem}
+.legend{background:var(--card);border:1px solid var(--line);border-left:4px solid #C2871C;padding:.7rem .9rem;margin:.6rem 0 1rem;font-size:12.5px;border-radius:3px}
+.legend b{font-weight:600}
+.bar{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0 .9rem;align-items:center}
+.bar .lab{font:11px ui-monospace,Menlo,monospace;color:var(--cobalt);letter-spacing:.04em;text-transform:uppercase;margin-right:.2rem}
+button.f{font:12px ui-monospace,Menlo,monospace;border:1px solid var(--line);background:#fff;color:var(--ink);padding:.25rem .55rem;border-radius:20px;cursor:pointer}
+button.f.on{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:13px}
+th,td{text-align:left;padding:.5rem .55rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:11px ui-monospace,Menlo,monospace;color:var(--cobalt);text-transform:uppercase;letter-spacing:.04em;position:sticky;top:0;background:#EEF3F8;z-index:2}
+td.id{color:var(--mut);font:11px ui-monospace,monospace}
+td.yr{font:11px ui-monospace,monospace;color:var(--mut);white-space:nowrap}
+.ttl .t{font-weight:600;line-height:1.35}
+.ttl .o{color:var(--mut);font-size:11.5px;margin-top:.15rem}
+.ty{font:11px ui-monospace,monospace;color:#33506b;white-space:nowrap}
+.chip{display:inline-block;font:10.5px ui-monospace,monospace;color:#fff;background:var(--c);padding:.12rem .4rem;border-radius:3px;margin:.1rem .15rem .1rem 0;white-space:nowrap}
+.rchip{display:inline-block;font:10.5px ui-monospace,monospace;color:var(--cobalt);border:1px solid var(--cobalt);padding:.1rem .38rem;border-radius:3px;margin:.1rem .15rem .1rem 0;white-space:nowrap}
+.ds{display:inline-block;font:10px ui-monospace,monospace;color:#2F9DB5;border:1px solid #2F9DB5;padding:.08rem .3rem;border-radius:3px;margin-left:.15rem}
+.in span{font:11px ui-monospace,monospace;padding:.1rem .4rem;border-radius:3px}
+.iy{background:#E3F0E7;color:#216c3a} .im{background:#FBF0D8;color:#8a6212} .ino{background:#F1E3E0;color:#9a4530}
+.fl{font-size:11.5px;color:#8a5a12;max-width:230px}
+.flag{display:block}
+.count{font:11px ui-monospace,monospace;color:var(--mut);margin:.5rem 0}
+tr.hide{display:none}
+</style></head><body><div class="wrap">
+<h1>Taxonomy review v2 — corrections applied</h1>
+<div class="sub">52 outputs in the confirmed <b>type &times; portfolio[] &times; region[]</b> model + <b>dataset</b> flag. Your corrections (regions, #23&rarr;Dev coop, #33/34 no regime tag, #45 excluded, #38/#51 included, #35 year 2021, all years verified against the live page) are in. Only <b>1 open item</b> remains (#37). Nothing is written to <code>publications.yml</code> until you say go.</div>
+
+<div class="legend">
+<b>Portfolios (thematic):</b> <b style="color:#B5791A">Pol. economy</b> 18 &middot; <b style="color:#2A5599">Propaganda</b> 11 &middot; <b style="color:#2E8B57">Dev. coop</b> 18 &middot; <b style="color:#2F9DB5">AI & digital</b> 8 &middot; <b style="color:#BE5234">Foundations</b> 13<br>
+<b>Region facet:</b> <b>Turkey</b> 27 &middot; <b>MENA</b> 3 &middot; <b>Cross-national / other</b> 25 &nbsp;|&nbsp; <b>&#9670; dataset</b>: 5 &nbsp;|&nbsp; <b>Include:</b> yes 42 / maybe 2 / no 8<br>
+<b>Read:</b> colored chips = thematic portfolios (multiple = cross-cutting). Outlined chips = region. Yellow last column = still open.
+</div>
+
+<div class="bar"><span class="lab">Portfolio</span>
+<button class="f pf-f on" data-k="all">all</button>
+<button class="f pf-f" data-k="PE">Pol. economy</button>
+<button class="f pf-f" data-k="PROP">Propaganda</button>
+<button class="f pf-f" data-k="DEV">Dev. coop</button>
+<button class="f pf-f" data-k="AI">AI &amp; digital</button>
+<button class="f pf-f" data-k="FND">Foundations</button>
+</div>
+<div class="bar"><span class="lab">Region</span>
+<button class="f rg-f on" data-k="all">all</button>
+<button class="f rg-f" data-k="TR">Turkey</button>
+<button class="f rg-f" data-k="MENA">MENA</button>
+<button class="f rg-f" data-k="GLB">Cross-national / other</button>
+<span style="width:1rem"></span><span class="lab">Other</span>
+<button class="f only-flag" data-k="flag">open items</button>
+<button class="f only-ds" data-k="ds">datasets</button>
+</div>
+<div class="count" id="count"></div>
+
+<table><thead><tr>
+<th>#</th><th>Yr</th><th>Title / outlet</th><th>Type</th><th>Portfolio(s)</th><th>Region</th><th>Incl.</th><th>Open?</th>
+</tr></thead><tbody>
+<tr data-ports="PE" data-regs="TR GLB" data-inc="yes" data-ds="0">
+      <td class="id">1</td>
+      <td class="yr">2024</td>
+      <td class="ttl"><div class="t">Dissertation: For better, for worse? Autocrats and their business allies during sovereign debt crises</div><div class="o">PhD thesis, U of Toronto</div></td>
+      <td class="ty">academic-thesis</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Turkey</span><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE PROP" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">2</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Autocrats and their business allies: informal politics of defection and co-optation</div><div class="o">Government and Opposition 60(4)</div></td>
+      <td class="ty">academic-peer-review</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">3</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Can capitalism save democracy?</div><div class="o">Journal of Democracy 36(3) &middot; Way &amp; Levitsky</div></td>
+      <td class="ty">academic-peer-review</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PROP" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">4</td>
+      <td class="yr">2024</td>
+      <td class="ttl"><div class="t">Out of sight, out of mind: lockdown measures and sentiment toward refugees</div><div class="o">J. Information Technology &amp; Politics 21(2) &middot; Reda &amp; Aboussalah</div></td>
+      <td class="ty">academic-peer-review</td>
+      <td class="pf"><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="GLB" data-inc="yes" data-ds="1">
+      <td class="id">5</td>
+      <td class="yr">2024</td>
+      <td class="ttl"><div class="t">Mobilizing the masses: measuring resource mobilization on Twitter</div><div class="o">Sociological Methods &amp; Research 53(1) &middot; Reda &amp; Abdalla</div></td>
+      <td class="ty">academic-peer-review</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span><span class="ds" title="dataset contribution">&#9670; data</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"><span class="flag">US Twitter data (lexicon/dataset)</span></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">6</td>
+      <td class="yr">2022</td>
+      <td class="ttl"><div class="t">Containing ethnic conflict: repression, cooptation, and identity politics</div><div class="o">Comparative Politics 54(4) &middot; Belge</div></td>
+      <td class="ty">academic-peer-review</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE PROP" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">7</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Cross-partisan disaster relief aid as opposition depolarization tactic</div><div class="o">Working paper &middot; Donnelly</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">8</td>
+      <td class="yr">2024</td>
+      <td class="ttl"><div class="t">Why citizens endorse authoritarian financial repression?</div><div class="o">Working paper (EPSR; visual conjoint, N~1732)</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="1">
+      <td class="id">9</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">The cost of co-optation: tax audit as authoritarian financial repression</div><div class="o">Working paper (32k firms / 40 autocracies)</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span><span class="ds" title="dataset contribution">&#9670; data</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV PROP" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">10</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Strategic humanitarian aid, trust in Europe, and support for authoritarianism</div><div class="o">IDOS Discussion Paper 28</div></td>
+      <td class="ty">academic-discussion-paper</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PROP" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">11</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Sultanist and militarist soft propaganda, and support for security operations</div><div class="o">Working paper &middot; Donnelly</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PROP DEV AI" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">12</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">E-government tools, authoritarian propaganda, and regime support</div><div class="o">IDOS Discussion Paper 35 (N~4,600) &middot; von Schiller</div></td>
+      <td class="ty">academic-discussion-paper</td>
+      <td class="pf"><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="1">
+      <td class="id">13</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Domestic leader prosecutions: PROSEC Dataset v1.0</div><div class="o">Research note / dataset &middot; Gunitsky &amp; Jafarov</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span><span class="ds" title="dataset contribution">&#9670; data</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="1">
+      <td class="id">14</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Resource concentration and autocratic resilience</div><div class="o">Working paper &middot; Way &amp; Levitsky</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span><span class="ds" title="dataset contribution">&#9670; data</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="1">
+      <td class="id">15</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Tracking democratic erosion: an event-level dataset (DERTT)</div><div class="o">Working paper / dataset (18,227 events / 193 countries) &middot; Way, Levitsky &amp; Talebirad</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span><span class="ds" title="dataset contribution">&#9670; data</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">16</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">Elite defection under polarization</div><div class="o">Working paper &middot; Jafarov, del Río</div></td>
+      <td class="ty">academic-working-paper</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">17</td>
+      <td class="yr">2023</td>
+      <td class="ttl"><div class="t">Determinants of defection in civil wars: survey experiments in Myanmar</div><div class="o">File drawer / pre-registration &middot; POSTCOR Lab</div></td>
+      <td class="ty">academic-file-drawer</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="maybe" data-ds="0">
+      <td class="id">18</td>
+      <td class="yr">2022</td>
+      <td class="ttl"><div class="t">Divided at home, divided abroad? Affective polarization among migrants</div><div class="o">File drawer &middot; Kepenek</div></td>
+      <td class="ty">academic-file-drawer</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="im">maybe</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV AI" data-regs="TR GLB" data-inc="yes" data-ds="0">
+      <td class="id">19</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">Reality check on donor expectations: do GovTech initiatives help autocrats?</div><div class="o">IDOS Policy Brief 17/2026 &middot; von Schiller</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span></td>
+      <td class="rg"><span class="rchip">Turkey</span><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV PE" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">20</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">The future of democracy promotion</div><div class="o">IDOS book chapter 04/2026 &middot; Leininger</div></td>
+      <td class="ty"><s>policy-brief</s> &rarr; <b>academic-chapter</b></td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="AI DEV" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">21</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">Reforming the development sector for agentic AI</div><div class="o">IDOS Current Column</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">22</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">Don&#x27;t draw the wrong lessons from the Hungarian election</div><div class="o">Global Policy</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">23</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">Middle powers can build a new world order based on principled pragmatism</div><div class="o">Table.Briefings</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">24</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">The personalist global order: when individual whims drive great-power policy</div><div class="o">Foreign Affairs &middot; Gunitsky</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">25</td>
+      <td class="yr">2026</td>
+      <td class="ttl"><div class="t">Can the private sector help safeguard democracy? The answer is yes</div><div class="o">Devex</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">26</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Prosecuting the powerful: prosecuting political leaders is healthy for democracies</div><div class="o">Foreign Policy &middot; Gunitsky &amp; Jafarov</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV PROP" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">27</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Communicating strategic interests in humanitarian aid</div><div class="o">IDOS Policy Brief 16/2025</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV PROP" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">28</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Strategic humanitarian aid - could it weaken autocracies and boost confidence in Europe?</div><div class="o">Diplomatisches Magazin</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV AI" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">29</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Development cooperation is overdue for a tech upgrade</div><div class="o">Tagesspiegel</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV AI PROP" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">30</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Media support needs a tech upgrade before it&#x27;s too late</div><div class="o">Global Policy</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">31</td>
+      <td class="yr">2025</td>
+      <td class="ttl"><div class="t">Standing up for Istanbul&#x27;s mayor will strengthen European security</div><div class="o">Global Policy</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PROP DEV" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">32</td>
+      <td class="yr">2024</td>
+      <td class="ttl"><div class="t">Countering information pollution to protect democracy</div><div class="o">IDOS Policy Brief 29/2024 &middot; Breuer</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="AI DEV" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">33</td>
+      <td class="yr">2021</td>
+      <td class="ttl"><div class="t">A time of crisis and opportunity: digitizing SMEs in Turkey</div><div class="o">TURKONFED &amp; CIPE</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">34</td>
+      <td class="yr">2021</td>
+      <td class="ttl"><div class="t">COVID-19 impact assessment report</div><div class="o">TURKONFED &amp; CIPE</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">35</td>
+      <td class="yr">2021</td>
+      <td class="ttl"><div class="t">Otoriter Rejimlerde Burokrasi: Sadik mi Layik mi? [Bureaucracy under authoritarianism]</div><div class="o">Daktilo1984</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PE" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">36</td>
+      <td class="yr">2019</td>
+      <td class="ttl"><div class="t">We need a new conservative party in Turkey for regime transition</div><div class="o">Jerusalem Post</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#B5791A" title="Political economy of authoritarian power">Pol. economy</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV" data-regs="GLB" data-inc="maybe" data-ds="0">
+      <td class="id">37</td>
+      <td class="yr">2018</td>
+      <td class="ttl"><div class="t">Building a policy school that has real social impact</div><div class="o">Policy Options</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="im">maybe</span></td>
+      <td class="fl"><span class="flag">off-theme essay - include?</span></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">38</td>
+      <td class="yr">2018</td>
+      <td class="ttl"><div class="t">Memlekete Donmek [Returning home]</div><div class="o">Birikim</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV AI" data-regs="MENA" data-inc="yes" data-ds="0">
+      <td class="id">39</td>
+      <td class="yr">2018</td>
+      <td class="ttl"><div class="t">Socially inclusive fourth industrial revolution: youth employment in MENA</div><div class="o">IAI Research Studies (chapter)</div></td>
+      <td class="ty">academic-chapter</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span></td>
+      <td class="rg"><span class="rchip">MENA</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="AI" data-regs="TR" data-inc="no" data-ds="0">
+      <td class="id">40</td>
+      <td class="yr">2018</td>
+      <td class="ttl"><div class="t">Akilli Sehirler ve Cagimizin Hastaligi Teknolojizm [Smart cities and technologism]</div><div class="o">Civil Pages</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2F9DB5" title="AI & digitalization">AI & digital</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="no" data-ds="0">
+      <td class="id">41</td>
+      <td class="yr">2018</td>
+      <td class="ttl"><div class="t">Genclerin sesini dinlemek [Hearing youth&#x27;s voices]</div><div class="o">Civil Pages</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="no" data-ds="0">
+      <td class="id">42</td>
+      <td class="yr">2017</td>
+      <td class="ttl"><div class="t">Kanada Masali [The tale of Canada]</div><div class="o">Civil Pages</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">43</td>
+      <td class="yr">2017</td>
+      <td class="ttl"><div class="t">Death &amp; politics: the burial of a Kurdish woman in Turkey</div><div class="o">openDemocracy</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="no" data-ds="0">
+      <td class="id">44</td>
+      <td class="yr">2017</td>
+      <td class="ttl"><div class="t">Dernege Ev Yok [No home for associations]</div><div class="o">Civil Pages</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="no" data-ds="0">
+      <td class="id">45</td>
+      <td class="yr">2017</td>
+      <td class="ttl"><div class="t">Review of Steven Cook&#x27;s False Dawn</div><div class="o">Turkish Policy Quarterly (book review)</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="PROP" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">46</td>
+      <td class="yr">2017</td>
+      <td class="ttl"><div class="t">Parti Ebed Muddet: New Ottomanist TRT series as political technology</div><div class="o">Birikim</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#2A5599" title="Propaganda & hybrid threats">Propaganda</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="MENA" data-inc="no" data-ds="0">
+      <td class="id">47</td>
+      <td class="yr">2016</td>
+      <td class="ttl"><div class="t">5 disturbing facts about living under occupation</div><div class="o">Middle East Monitor</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">MENA</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV" data-regs="MENA TR" data-inc="no" data-ds="0">
+      <td class="id">48</td>
+      <td class="yr">2016</td>
+      <td class="ttl"><div class="t">Tackling the Syrian refugee crisis: prospects &amp; challenges</div><div class="o">Turkish Policy Quarterly &middot; Arslan &amp; Taner</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">MENA</span><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV" data-regs="GLB" data-inc="yes" data-ds="0">
+      <td class="id">49</td>
+      <td class="yr">2015</td>
+      <td class="ttl"><div class="t">Improving basic services delivery for the poor in OIC member countries</div><div class="o">COMCEC (report) &middot; Development Analytics</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Cross-national / other</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="DEV" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">50</td>
+      <td class="yr">2014</td>
+      <td class="ttl"><div class="t">Supply and demand for child care services in Turkey</div><div class="o">World Bank (report) &middot; Development Analytics</div></td>
+      <td class="ty">policy-brief</td>
+      <td class="pf"><span class="chip" style="--c:#2E8B57" title="Development cooperation">Dev. coop</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="yes" data-ds="0">
+      <td class="id">51</td>
+      <td class="yr">2011</td>
+      <td class="ttl"><div class="t">Youth who make the future</div><div class="o">openDemocracy</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="iy">yes</span></td>
+      <td class="fl"></td>
+    </tr><tr data-ports="FND" data-regs="TR" data-inc="no" data-ds="0">
+      <td class="id">52</td>
+      <td class="yr">2009</td>
+      <td class="ttl"><div class="t">Billur Bir Avizedir... 125 Yil [IELEV school history book]</div><div class="o">IELEV (book) &middot; Deniz &amp; Buyukkal</div></td>
+      <td class="ty">oped</td>
+      <td class="pf"><span class="chip" style="--c:#BE5234" title="Foundations / other">Foundations</span></td>
+      <td class="rg"><span class="rchip">Turkey</span></td>
+      <td class="in"><span class="ino">no</span></td>
+      <td class="fl"></td>
+    </tr>
+</tbody></table>
+<p class="sub" style="margin-top:1rem">Review only; excluded from the published site (<code>_design/</code>).</p>
+</div>
+<script>
+let pf="all",rg="all",flagOnly=false,dsOnly=false;
+function apply(){
+  let shown=0;
+  document.querySelectorAll('tbody tr').forEach(tr=>{
+    const ports=tr.dataset.ports.split(' '), regs=tr.dataset.regs.split(' ');
+    const okp=pf==='all'||ports.includes(pf);
+    const okr=rg==='all'||regs.includes(rg);
+    const okf=!flagOnly||tr.querySelector('.flag');
+    const okd=!dsOnly||tr.dataset.ds==='1';
+    const vis=okp&&okr&&okf&&okd;
+    tr.classList.toggle('hide',!vis); if(vis) shown++;
+  });
+  document.getElementById('count').textContent=shown+' of 52 shown';
+}
+document.querySelectorAll('.pf-f').forEach(b=>b.onclick=()=>{pf=b.dataset.k;document.querySelectorAll('.pf-f').forEach(x=>x.classList.toggle('on',x===b));apply();});
+document.querySelectorAll('.rg-f').forEach(b=>b.onclick=()=>{rg=b.dataset.k;document.querySelectorAll('.rg-f').forEach(x=>x.classList.toggle('on',x===b));apply();});
+document.querySelector('.only-flag').onclick=function(){flagOnly=!flagOnly;this.classList.toggle('on',flagOnly);apply();};
+document.querySelector('.only-ds').onclick=function(){dsOnly=!dsOnly;this.classList.toggle('on',dsOnly);apply();};
+apply();
+</script>
+</body></html>

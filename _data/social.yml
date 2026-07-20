@@ -1,0 +1,440 @@
+# Social — curated post cards, never an auto feed (GAMEPLAN v3.2 §5).
+# Rendered as the "Latest Posts" strip on the homepage (newest 6; user decision
+# 2026-07-19) and in full on /activity/#posts (so EVERY entry here renders there).
+# excerpt = the post's own opening words VERBATIM (no AI summaries,
+# per user decision), clamped visually by CSS; the card links out to the post.
+# Bluesky text fetched via the public API; LinkedIn text read from the public
+# post pages. platform: bluesky | linkedin | x
+# type: one per post, feeds the /activity/ Type chip filter (user classification
+# 2026-07-19; same vocabulary as highlights.yml `kind`, plus post-only extras):
+#   event       = participated / represented
+#   talk        = delivered a talk at an event
+#   media       = video interview or media appearance
+#   publication = new publication of any kind (papers, datasets, op-eds)
+#   news        = other news / announcements
+#   reflection  = the user's own thoughts shared on social (not tied to an output)
+# portfolio: a LIST of portfolio keys (a post can belong to several; user
+# assignments 2026-07-19). Optional: project (key), item (publications.yml id),
+# image (thumbnail path under /assets/img/), fit: contain (letterbox instead of crop).
+# Cross-post rule (user, 2026-07-19): when a LinkedIn and a Bluesky post are near-
+# duplicates, keep the LinkedIn version and drop the Bluesky twin.
+# (Four twins purged 2026-07-19 when /activity/ began rendering the full list;
+# the principled-pragmatism Bluesky twin of the MSC2026 LinkedIn post dropped
+# the same day, and the sounding-board Bluesky twin was replaced by its
+# LinkedIn original (Atlas of Innovation) when the 2024-25 backfill landed.)
+# Dates for the 2024-25 backfill are decoded from the LinkedIn post IDs (UTC).
+
+posts:
+  - date: 2026-07-09
+    platform: linkedin
+    type: event
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_geneva-globaldialogue-ai4good-ugcPost-7480983532803244032-e4Tp"
+    excerpt: "I've been in #Geneva since the beginning of the week to represent the German Institute of Development and Sustainability (IDOS) at the inaugural United Nations Global Dialogue on AI Governance and the AI For Good Global Summit. While the #GlobalDialogue presented the first opportunity to convene diverse stakeholders for productive conversations on ensuring regulatory and technical interoperability, instituting safeguards, and building trust, the #AI4Good Summit showcased cutting-edge AI innovations across sectors, including development cooperation."
+    portfolio: [aitech]
+    project: depol-toolkit
+    image: /assets/img/post1-geneva.jpeg
+
+  - date: 2026-06-24
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_fimi-ai-gmf2026-activity-7475539588481167360-XFcN"
+    excerpt: "#FIMI operations' effectiveness has so far been an open empirical question, with evidence suggesting their impact might be more limited than initially assumed. That's about to change with malicious #AI swarms. These are AI agents with persistent identities and memory that would come across as a real, diverse crowd of people, and could self-coordinate and infiltrate online communities. The risk is real and imminent. To discuss the effects of AI swarms on electoral integrity, we convened a panel for the DW Global Media Forum #GMF2026, which took place this year at the World Conference Center Bonn."
+    portfolio: [propaganda]
+    image: /assets/img/post2-gmf26.jpeg
+
+  - date: 2026-06-23
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_belfast-epss2026-autocratic-activity-7475166936218337280-uOYE"
+    excerpt: "Last week, I was in #Belfast for the #EPSS2026. I presented our ongoing work with Lucan Way and Steve Levitsky on how resource concentration leads to autocratic durability. We show that there is one common thread across durable #autocratic regimes that are quite diverse in institutions, wealth, and culture: whether resources are concentrated in the hands of the state. When they are, it is difficult for the #opposition to mount an independent challenge against the regime, and easier for the government to divide, demobilize, and co-opt the opposition."
+    portfolio: [business]
+    image: /assets/img/post3-belfast.jpeg
+
+  - date: 2026-06-22
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_fiction-experimental-security-activity-7474816009082961920-yG8K"
+    excerpt: "State-sponsored fiction is politically consequential. We should take it seriously. Last week, I was at Queen Mary University of London for the APSG conference, where I presented joint work with Michael Donnelly on how authoritarian state-sponsored fiction shapes public support for security operations abroad. Authoritarian governments invest more and more in producing and controlling entertainment content. It is a deliberate instrument of influence."
+    portfolio: [propaganda]
+    image: /assets/img/post4-qmul.jpeg
+
+  - date: 2026-06-18
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_can-we-track-autocratization-in-real-time-activity-7473328678664396800-nEFX"
+    excerpt: "Can we track autocratization in real time, at low cost, and in a transparent and reproducible way? Last week, I was at the European University Institute in Florence for an incredible event organized by MetRiSP Standing Group of the Italian Political Science Association SISP on conceptualization and measurement challenges of democracy. I presented our ongoing work with Lucan Way, Steve Levitsky, and Yashar Talebirad. It's a framework for extracting structured autocratization events from sources. The most important contribution is that we implement this framework at low cost and at scale."
+    portfolio: [datahub]
+    project: datahub
+    image: /assets/img/post5-eui.jpeg
+
+  - date: 2026-06-18
+    platform: bluesky
+    type: talk
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3mokdgbfep22w"
+    excerpt: "On your way to Belfast for #EPSS2026? Need help finding a panel you'd regret missing? I got you! Join us today!  @thenoahbuckley.bsky.social  @sukaynayk.bsky.social @rikhilb.bsky.social @amjaime.bsky.social @skaaning.bsky.social @epssnet.bsky.social @lucanway.bsky.social @idos-research.bsky.social"
+    portfolio: [business]
+    image: /assets/img/post6-belfast.webp
+
+  - date: 2026-06-16
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_govtech-initiatives-activity-7472555355185557505-ag5_"
+    excerpt: "#Donors pour money into #GovTech expecting a #democratization dividend. #Autocrats are spending just as eagerly on the same tools. At least 88 authoritarian regimes currently run GovTech projects. Electoral autocracies alone receive 48.6% of GovTech aid commitments. Someone must be off the mark. In our recent policy brief, our experimental evidence with Armin von Schiller suggests that efficiency-enhancing GovTech does not just make services faster. When it is paired with sophisticated regime communication, it can durably entrench autocratic rule."
+    portfolio: [aitech, durability, propaganda]
+    image: /assets/img/post7-realitycheck.jpeg
+
+  - date: 2026-05-20
+    platform: linkedin
+    type: news
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_depolarization-toolkit-activity-7462758158311198720-ZYjR"
+    excerpt: "Development cooperation is closer to the #AI frontier than people assume. We are following it carefully at the German Institute of Development and Sustainability (IDOS). In collaboration with UNDP and DW Akademie, we are launching the Depolarization Toolkit: an AI-powered assistant with a multi-agent architecture, designed for practitioners working on depolarization. The toolkit provides vetted knowledge on #polarization through a conversational interface that generates adaptive, context-sensitive content."
+    portfolio: [aitech]
+    project: depol-toolkit
+    image: /assets/img/post8-toolkit.jpeg
+    fit: contain  # wide banner: side-crop clips the "Depolarization Toolkit" lettering
+
+  - date: 2026-05-13
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_the-future-of-democracy-promotion-activity-7460263996739215360-MMjq"
+    excerpt: "#Democracy promotion as we know it is likely finished. That's the starting point of the chapter that Julia Leininger and I contributed to the new discussion paper edited by Mark Furness and Niels Keijzer. For three decades, the field worked with the tide of democratization. Today, it runs against the tide of #autocratization, and the toolkit hasn't caught up. The rationale has to shift from promotion to protection."
+    portfolio: [durability]
+    image: /assets/img/post-democracypromotion.jpeg
+
+  - date: 2026-05-12
+    platform: linkedin
+    type: event
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_berlin-geopolitics-transatlantic-activity-7459890109455237120-7-FB"
+    excerpt: "I was in #Berlin last week for a series of meetings, but the main occasion was the German Marshall Fund of the United States' panel with the Alfred Landecker Foundation on the implications of shifting #geopolitics for the #transatlantic alliance. As you may suspect, I immediately fired off a question on EU dependence on US compute and #AI foundation models, and what it means for #EuropeanSecurity."
+    portfolio: [aitech]
+    image: /assets/img/post-berlin.jpeg
+
+  - date: 2026-05-07
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_reforming-the-development-sector-for-agentic-activity-7458086112176168960-Xr7M"
+    excerpt: "Agentic #AI is arriving in development cooperation before the sector is ready to adopt and govern such a rapidly evolving and increasingly autonomous technology. My latest column on the topic. This is the hard question to answer for international cooperation. The Federal Ministry for Economic Cooperation and Development (BMZ) has already done some groundwork and can play a leadership role in the development sector's technological transformation, as Germany is the top #donor among DAC countries."
+    portfolio: [aitech]
+    image: /assets/img/post-agenticai.png
+
+  - date: 2026-04-22
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_hungarian-election-magyar-activity-7452679791725576192-TAkF"
+    excerpt: "Don't draw the wrong lessons from the #Hungarian #election. I know the hot takes are piling up, and I promise this isn't another one. It's a worry about the explanations circulating. Most accounts I've read feel post-hoc, or at best secondary. I think two factors did the heavy lifting, and without them, the rest doesn't mean much: Peter #Magyar's legal immunity as an MEP, and Tisza's independent financial mobilization."
+    portfolio: [durability]
+    image: /assets/img/post-hungary.jpeg
+
+  - date: 2026-04-16
+    platform: linkedin
+    type: event  # was meeting; one-off category folded into event (user decision 2026-07-19)
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_demcor-activity-7450520798609645569-Q6in"
+    excerpt: "More to come for the German-Canadian partnership in development cooperation! We hosted Santiago Alba-Corral from the International Development Research Centre (IDRC) at the German Institute of Development and Sustainability (IDOS), where we discussed a wide range of topics, including democratic governance, trade, and science communication, and explored potential avenues for collaboration. I hope that our conversations will move forward on two fronts (among others): the role of the private sector in democracy protection, and reforming development cooperation for agentic AI."
+    portfolio: [business, aitech]
+    project: demcor
+    image: /assets/img/post-idrc.jpeg
+
+  - date: 2026-04-14
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_donors-democratization-innsbruck-activity-7449788829328343040-bNPF"
+    excerpt: "International #donors allocate millions of dollars every year to gov-tech projects, expecting a #democratization payoff. Autocrats, meanwhile, are using these same tools to consolidate control. Someone must be off the mark, right? Last week, I was in #Innsbruck for the European Consortium for Political Research Joint Sessions. I presented our ongoing work with Armin von Schiller on how autocratic regimes deploy #propaganda and build legitimacy through #egov tools."
+    portfolio: [propaganda, durability, aitech]
+    image: /assets/img/post-innsbruck.jpeg
+
+  - date: 2026-04-11
+    platform: bluesky
+    type: reflection
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3mj7t736j6s2f"
+    excerpt: "The #Islamabad talks seem quite unique to me. The US almost always serves as the mediator in the conflicts that I know and study, brokering deals at Camp David, etc. I can't recall many cases where the US was the party needing a mediator."
+    portfolio: [conflict]
+    image: /assets/img/post-islamabad.webp
+
+  - date: 2026-04-09
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_oxford-democracy-activity-7447961600843714560--acV"
+    excerpt: "Spent last week in #Oxford at the Political Studies Association (UK) conference, presenting ongoing work with Lucan Way and Steven Levitsky on how state resource concentration keeps authoritarian regimes in place. One implication of our findings for #democracy support is that it requires addressing the concentration of economic power."
+    portfolio: [business, durability]
+    image: /assets/img/post-oxford.jpeg
+
+  - date: 2026-03-26
+    platform: linkedin
+    type: event
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_brussels-media-europeandemocracyshield-activity-7442909495518908418-Y42T"
+    excerpt: "Back from #Brussels. One discussion that stayed with me was about leveraging emerging technologies to support #media and ensure information integrity. One of the events that I attended was organized by the European Partnership for Democracy (EPD), focused on the future of media support under the #EuropeanDemocracyShield. There is solid work being done in this space in terms of policy and funding. But the field still remains fragmented, lacks standardization, and needs more coordination to move forward."
+    portfolio: [durability]
+    image: /assets/img/post-brussels.jpeg
+
+  - date: 2026-02-24
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_europe-authoritarian-pedd-activity-7432024672868782080-Zq-i"
+    excerpt: "Last week, I was back at the University of Muenster to present my work on the strategic framing of humanitarian aid, how it can increase trust in #Europe and undermine support for #authoritarian regimes. This was my second time at the #PEDD Conference, and one thing that I really appreciate is the consistency of this gathering."
+    portfolio: [propaganda]
+    image: /assets/img/post-muenster.jpeg
+    fit: contain
+
+  - date: 2026-02-13
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_msc2026-activity-7428052806512713728-bybv"
+    excerpt: "Are you looking for readings for the Munich Security Conference? #MSC2026 We got you! Is principled pragmatism possible, or is it just pure contradiction? Is it realistic to expect middle powers to shape the next global order? If these questions interest you, check out my recent op-ed published on Table.Briefings / Security.Table."
+    portfolio: [durability]
+    image: /assets/img/post-pragmatism.webp
+    fit: contain
+
+  - date: 2026-01-28
+    platform: bluesky
+    type: publication
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3mdiezhklnt2e"
+    excerpt: "#Davos is over. Participants are calling it one of the gloomiest editions yet. Sessions like \"Is #Democracy in Trouble?\" drew packed rooms of anxious corporate leaders.   My latest reflections on Davos for @devex.com: the private sector can be democracy's ally.   www.devex.com/news/can-the..."
+    portfolio: [business]
+    image: /assets/img/post-davos.webp
+    fit: contain
+
+  - date: 2026-01-27
+    platform: bluesky
+    type: publication
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3mdfuk6raib26"
+    excerpt: "For the first time since the 1930s, three nuclear superpowers are all governed by personalist leaders, who concentrate power, and operate in echo chambers. On @foreignaffairs.com, @seva.bsky.social and I discuss how personalism is reshaping the world order.   www.foreignaffairs.com/united-state..."
+    portfolio: [durability, conflict]
+    image: /assets/img/post-personalist.webp
+
+  - date: 2026-01-16
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_chicago-democratic-experimental-ugcPost-7417904416206245888-Or2W"
+    excerpt: "There are tons of reasons to love #Chicago. The Chicago Center On Democracy is one of them (shoutout to Kevin Kromash!) This week, the center hosted a group of scholars from different disciplines to discuss the international dynamics of #democratic backsliding. I learned a lot, particularly from our historian colleagues, including my own aha moment that we may have been here before. I pitched in with a presentation on my #experimental findings regarding strategic framing of humanitarian assistance, and how it may reduce conspiracism and increase trust in #European organizations among conservative and nationalist voters in recipient countries."
+    portfolio: [propaganda, durability]
+    image: /assets/img/highlight4-chicago.jpeg
+
+  - date: 2025-12-23
+    platform: bluesky
+    type: news
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3manrapqpqc2l"
+    excerpt: "Our article was featured as one of the top 10 most-read articles on the @jodemocracy.bsky.social. Looking for a good holiday read? Interested in the role of business in democracy protection? Here's one for you 👇  www.journalofdemocracy.org/articles/can...  @lucanway.bsky.social"
+    portfolio: [business]
+    image: /assets/img/post-top10.webp
+    fit: contain
+
+  - date: 2025-12-15
+    platform: bluesky
+    type: publication
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3m7zpgdikdk2b"
+    excerpt: "New publication alert! 🚨  Can digital tools connecting citizens directly to the executive strengthen autocracy?  doi.org/10.23661/idp...  w/ @idos-research.bsky.social @avonschiller.bsky.social"
+    portfolio: [propaganda, durability]
+    image: /assets/img/post-egovtools.webp
+
+  - date: 2025-12-09
+    platform: linkedin
+    type: media
+    url: "https://www.linkedin.com/posts/earlier-this-year-in-a-podcast-co-produced-share-7404203093279674368-ZQoC"
+    excerpt: "Earlier this year, in a podcast co-produced with the Journal of Democracy, Dr. Semuhi Sinanoğlu and Lucan Way reflected on capitalism’s enduring imperfections while presenting it as a plausible force for democratic change."
+    portfolio: [business]
+    image: /assets/img/post-podcast.jpeg
+
+  - date: 2025-11-19
+    platform: linkedin
+    type: news
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_communication-inclusion-share-7396923901064306688-EJuF"
+    excerpt: "𝗝𝗼𝗶𝗻 𝘁𝗵𝗲 𝗔𝘁𝗹𝗮𝘀 𝗼𝗳 𝗜𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝗼𝗻 𝗼𝗻 𝗣𝘂𝗯𝗹𝗶𝗰 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝗰𝗮𝘁𝗶𝗼𝗻! How can public #communication become a force for #inclusion and cooperation in today’s polarized world? UNDP is excited to announce this new initiative to map innovations and spotlight practices that are redefining how institutions communicate. As a member of the Sounding Board for this initiative, I'm really excited and looking forward to seeing the results."
+    portfolio: [durability]
+    image: /assets/img/post-atlas.jpeg
+    fit: contain
+
+  - date: 2025-11-13
+    platform: bluesky
+    type: reflection
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3m5jbl6mkon26"
+    excerpt: "The European Democracy Shield is officially out!   I'm pleased I could offer inputs to these conversations with my colleagues at @idos-research.bsky.social.  🔑 𝐡𝐞𝐫𝐞'𝐬 𝐰𝐡𝐚𝐭 𝐫𝐞𝐚𝐥𝐥𝐲 𝐜𝐚𝐮𝐠𝐡𝐭 𝐦𝐲 𝐞𝐲𝐞: 𝐭𝐡𝐞 𝐩𝐫𝐢𝐯𝐚𝐭𝐞 𝐬𝐞𝐜𝐭𝐨𝐫 𝐢𝐬 𝐟𝐢𝐧𝐚𝐥𝐥𝐲 𝐠𝐞𝐭𝐭𝐢𝐧𝐠 𝐚 𝐬𝐞𝐚𝐭 𝐚𝐭 𝐭𝐡𝐞 𝐝𝐞𝐦𝐨𝐜𝐫𝐚𝐜𝐲 𝐭𝐚𝐛𝐥e."
+    portfolio: [durability, business]
+    image: /assets/img/post-europeandemocracyshield.webp
+
+  - date: 2025-11-05
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_newwaysofgoverning-oslo-democratic-ugcPost-7391846597158035456-L1Bn"
+    excerpt: "It doesn't get any better than this. I'm talking about the #NewWaysofGoverning conference organized by the UNDP Global Policy Centre for Governance in #Oslo. We discussed #democratic #innovation with an incredible group of people and brainstormed ideas for the future of governance. I have three main takeaways: 🚧 The era of piloting is over. With the funding cuts in the development cooperation sector and a new era of governance looming on the horizon, it's time to take stock of what we know works, institutionalize it, and embed it in social networks."
+    portfolio: [business, durability]
+    image: /assets/img/highlight5-undposlo.png
+
+  - date: 2025-10-29
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_%F0%9D%97%AA%F0%9D%97%B5%F0%9D%98%86-%F0%9D%97%B1%F0%9D%97%BC-%F0%9D%97%B0%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B6%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%BD%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%80%F0%9D%97%B2-ugcPost-7389430502115569664-3LqB"
+    excerpt: "𝗪𝗵𝘆 𝗱𝗼 𝗰𝗼𝘂𝗻𝘁𝗿𝗶𝗲𝘀 𝗽𝗿𝗼𝘀𝗲𝗰𝘂𝘁𝗲 𝘁𝗵𝗲𝗶𝗿 𝗹𝗲𝗮𝗱𝗲𝗿𝘀? In our new dataset, we track these prosecutions. It's more common than you might think. Check out our Foreign Policy op-ed for the main findings. ♟️ Between 1989 and 2021, more than 75% of democratic and hybrid regimes initiated at least one prosecution against a former leader. Latin America stands out significantly in this trend."
+    portfolio: [datahub, conflict]
+    image: /assets/img/post-prosec.jpeg
+
+  - date: 2025-10-21
+    platform: bluesky
+    type: media
+    url: "https://bsky.app/profile/semuhi.bsky.social/post/3m3p7gvm7522v"
+    excerpt: "We are rethinking #corporate civic responsibility for safeguarding #democracy at @idos-research.bsky.social.   Drawing on my research and insights from my travels throughout the US as a @gmfus.bsky.social Marshall Memorial Fellow #MMF, I deliver three key messages:  www.youtube.com/watch?v=KhGG..."
+    portfolio: [business]
+    project: demcor
+    image: /assets/img/post-rethinkingcorporate.png
+
+  - date: 2025-10-04
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_politicalrisk-business-authoritarian-share-7380215456772771840-lTPm"
+    excerpt: "𝐖𝐡𝐲 𝐝𝐨𝐧’𝐭 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐞𝐥𝐢𝐭𝐞𝐬 𝐝𝐞𝐟𝐞𝐜𝐭 𝐟𝐫𝐨𝐦 𝐚𝐮𝐭𝐡𝐨𝐫𝐢𝐭𝐚𝐫𝐢𝐚𝐧 𝐫𝐞𝐠𝐢𝐦𝐞𝐬? They face huge risks, especially during economic crises, when dictators choose to financially extort or purge their business allies. And yet, despite their power to disrupt, business elites rarely switch sides. My research shows why. The deeper the 𝘲𝘶𝘪𝘥 𝘱𝘳𝘰 𝘲𝘶𝘰 with the dictator, the weaker their threat of defection."
+    portfolio: [business, propaganda]
+    image: /assets/img/post-gop.jpeg
+
+  - date: 2025-10-04
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_geopolitics-humanitarian-aid-ugcPost-7380192609866059776-B4gd"
+    excerpt: "\"𝐓𝐡𝐞 𝐫𝐞𝐭𝐮𝐫𝐧 𝐨𝐟 𝐠𝐞𝐨𝐩𝐨𝐥𝐢𝐭𝐢𝐜𝐬.\" You’ve probably heard that a lot lately. European leaders now frame international assistance as a strategic tool to protect borders, prevent conflict, and promote commercial ties. Authoritarian regimes jump on this. They weaponize the narrative, calling aid workers 𝘧𝘰𝘳𝘦𝘪𝘨𝘯 𝘢𝘨𝘦𝘯𝘵𝘴 and dismissing humanitarian assistance as 𝘴𝘦𝘭𝘧𝘪𝘴𝘩 and 𝘩𝘺𝘱𝘰𝘤𝘳𝘪𝘵𝘪𝘤𝘢𝘭. But here’s the question: 𝐝𝐨𝐞𝐬 𝐭𝐡𝐢𝐬 𝐩𝐫𝐨𝐩𝐚𝐠𝐚𝐧𝐝𝐚 𝐰𝐨𝐫𝐤?"
+    portfolio: [propaganda, durability]
+    image: /assets/img/post-strategic.jpeg
+
+  - date: 2025-10-01
+    platform: linkedin
+    type: news
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_gmfmmf-transatlantic-cooperation-ugcPost-7379100937136680960-lwe8"
+    excerpt: "\"𝘐𝘵 𝘸𝘢𝘴 𝘢 𝘵𝘳𝘢𝘯𝘴𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘷𝘦 𝘦𝘹𝘱𝘦𝘳𝘪𝘦𝘯𝘤𝘦.\" That’s what most GMF alumni told me in our meetings. I thought, maybe they were exaggerating. They weren’t. I just spent the last month in the US as a German Marshall Fund of the United States Marshall Memorial Fellow, traveling through 𝗗𝗖, 𝗠𝗶𝗰𝗵𝗶𝗴𝗮𝗻, 𝗧𝗲𝘅𝗮𝘀, and 𝗔𝗹𝗮𝗯𝗮𝗺𝗮. Along the way, I met with elected officials, mayors, judges, business leaders, and philanthropic organizations, while American fellows did the same across Europe."
+    portfolio: [durability, business]
+    image: /assets/img/post-gmf.jpeg
+    fit: contain  # 2.43:1 photo strip: 16:9 cover would clip a quarter of the width
+
+  - date: 2025-07-08
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_bonn-gmf25-breakingbarriers-ugcPost-7348305854816841729-mkxk"
+    excerpt: "What a day! DW Global Media Forum is just another reason to love this beautiful city of #Bonn. Anita and I organized a panel on how to foster cross-sectoral collaborations with businesses to protect information integrity and improve the audience's perception of the available toolkit to fight misinformation. After my keynote, we had an amazing lineup of panelists."
+    portfolio: [business, durability]
+    image: /assets/img/post-gmf25.jpeg
+    fit: contain
+
+  - date: 2025-07-03
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_why-democracy-needs-business-a-strong-and-ugcPost-7346486121909932033-ZFpu"
+    excerpt: "Why democracy needs business? A strong and autonomous private sector is critical to the creation of a robust opposition and an independent civil society that are central to democratic resilience. But there are risks! Even in rich, well-established democracies, governments have strong discretionary powers to help allies and punish rivals. That is why it is not business capture of the state but rather state capture of business that poses the greatest danger to democracy, we argue in our recent piece in the Journal of Democracy with Lucan Way and Steve Levitsky."
+    portfolio: [business]
+    image: /assets/img/post-capitalism.jpeg
+    fit: contain
+
+  - date: 2025-06-27
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_lets-be-honest-development-cooperation-share-7344289084678295552-_1AS"
+    excerpt: "Let’s be honest: development cooperation is overdue for a tech upgrade. It fails to keep pace with the threats it seeks to tackle. I propose two easily implementable solutions in my op-ed published on Tagesspiegel Background Digitalisierung & KI. 💡 AI-empowered toolkits: Imagine a program officer no longer manually scrolling through tens of 100-page-long toolkit documents for relevant content but interacting with an AI assistant trained on a living knowledge repository."
+    portfolio: [aitech, durability]
+    image: /assets/img/post-tagesspiegel.jpeg
+    fit: contain
+
+  - date: 2025-06-26
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_ever-wondered-why-autocrats-create-responsive-ugcPost-7343973887522611200-0LWU"
+    excerpt: "🔔 Ever wondered why autocrats create responsive, participatory institutions, even though it's a double-edged sword? Armin von Schiller and I conducted an experiment that examined how autocratic regimes create administrative and participatory tools that seem responsive, and then use them for propaganda. But, in some cases, such propaganda actually backfires! I presented an early draft at WZB Berlin Social Science Center, and Armin is presenting it at EPSA in Madrid as we speak."
+    portfolio: [propaganda]
+    image: /assets/img/post-wzb.jpeg
+
+  - date: 2025-06-10
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_autocrats-share-7338187097742168064-zS7S"
+    excerpt: "Last week, I was at the Università degli Studi di Milano to attend a SISP workshop. With an incredible group of scholars, we discussed how #autocrats drive support for their regime. I'm bringing two ideas with me after the event. 1️⃣ Populist strongmen have their own loyal followers. We can't really explain it with just personal charisma or legitimacy. They unconditionally support these leaders through thick and thin. We need more research to understand why and how to deal with it."
+    portfolio: [propaganda, durability]
+    image: /assets/img/post-sisp.jpeg
+    fit: contain  # 2.90:1 logo banner: 16:9 cover would clip nearly half the width
+
+  - date: 2025-05-27
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_prague-democratization-eu-share-7333071792770600960-W-TQ"
+    excerpt: "Last week, I was in #Prague to attend a workshop. With an amazing group of scholars, we discussed how donor competition shapes #democratization and autocratization trends. I presented initial findings from my experimental research on how autocrats discredit acts of international solidarity with propaganda and undermine trust in international organizations."
+    portfolio: [propaganda, durability]
+    image: /assets/img/post-prag.jpeg
+
+  - date: 2025-05-21
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_brussels-wpfd-pressfreedom-share-7330958802151788546-S7BA"
+    excerpt: "Why is media support still running on 20th-century tools in 2025? Earlier this month, I was in #Brussels for a series of events marking World Press Freedom Day. One impression stuck with me: donors and practitioners are still behind the curve on integrating new technologies into their workflows. Yes, there are promising efforts to protect media freedom and understand AI’s impact, but it’s not enough. Development cooperation on media support urgently needs a tech upgrade."
+    portfolio: [durability, aitech]
+    image: /assets/img/post-media.jpeg
+    fit: contain  # 3.68:1 text banner: 16:9 cover would clip over half the width
+
+  - date: 2025-04-17
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_psa25-autocracy-birmingham-ugcPost-7318629745355550720-o-XD"
+    excerpt: "We wrapped up #PSA25. Political Studies Association (UK) did a fabulous job with the event management. Great hospitality! Felix Wiebrecht and Janina Beiser-McGrath organized series of panels with incredible line-up. I look forward to attending the #Autocracy Group's future events. As part of the Turkish politics specialist group, I presented my paper with Michael Donnelly on soft propaganda and the effect of Turkish TV series."
+    portfolio: [propaganda]
+    image: /assets/img/post-psa.jpeg
+
+  - date: 2025-04-07
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_mpsa2025-polarization-chicago-ugcPost-7315116606777372673-kWVJ"
+    excerpt: "We’ve wrapped up the #MPSA2025 mini-conference on affective #polarization! Despite the tornado disrupting travel and turnout, connecting with colleagues and learning more about their fascinating work was a real pleasure. Special thanks to J. Adams and Yunus Orhan, PhD for bringing us together. I presented preliminary findings from my ongoing work on public perception of foreign aid in contexts with high levels of polarization and government propaganda."
+    portfolio: [propaganda, durability]
+    image: /assets/img/post-mpsa.jpeg
+
+  - date: 2025-03-27
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_the-european-reaction-to-imamoglus-arrest-share-7310991092680704000-fX3E"
+    excerpt: "The European reaction to Imamoglu's arrest has been muted. Some high-ranking EU officials expect to rely on the Turkish army to strengthen 🇪🇺 security and view their public criticism as largely ineffective. They are wrong. This time it is different. Here is why 👇 My op-ed published on Global Policy"
+    portfolio: [durability]
+    image: /assets/img/post-istanbul.jpeg
+    fit: contain
+
+  - date: 2025-02-24
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_pedd-ugcPost-7299801320612364288-_-3T"
+    excerpt: "I'm happy that I got to present our paper with Michael Donnelly at the #PEDD Conference at the University of Muenster. With established norms and a growing community, the Chair of Political Economy did a superb job. I'm grateful for their hospitality, and amazing and super helpful feedback from the participants. I must add that Muenster is such a lovely city. Hope to be there next year as well!"
+    portfolio: [propaganda]
+    image: /assets/img/post-pedd.jpeg
+    fit: contain
+
+  - date: 2024-12-05
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_polarization-development-data-share-7270457557310173185-7ude"
+    excerpt: "With Julia Leininger and Armin von Schiller, we organized a webinar in partnership with the UNDP Global Policy Centre for Governance on conceptualizing and measuring #polarization for #development programming. We provided guidance on evaluating #data quality, accuracy, and reliability when measuring polarization, noting the strengths and weaknesses of various approaches, and offering strategies to reduce bias in #survey research."
+    portfolio: [durability]
+    image: /assets/img/highlight-webinar.png
+
+  - date: 2024-12-05
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_democracy-berlin-corporate-ugcPost-7270454587784851456-wPwn"
+    excerpt: "Another #democracy protection event in #Berlin! This time, our amazing team at the German Institute of Development and Sustainability (IDOS) hosted an expert exchange meeting. I organized and moderated a panel on #corporate civic responsibility for safeguarding democracy with Monika Kočiová representing CIPE Europe & Eurasia, Arda Batu from TÜRKONFED - Turkish Business Confederation, and Marcel Schepp from Konrad-Adenauer-Stiftung."
+    portfolio: [business]
+    image: /assets/img/post-business.jpeg
+    fit: contain  # 2.20:1 group photo: 16:9 cover would clip a fifth of the width
+
+  - date: 2024-11-27
+    platform: linkedin
+    type: event
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_democracy-iaovmamoafblu-berlin-ugcPost-7267568700373778433-ZoPK"
+    excerpt: "Last week, my 'democracy protection' spree continued with the Helmut Schmidt Lecture titled 'For a just #democracy!' Bundeskanzler-Helmut-Schmidt-Stiftung hosted Istanbul's mayor, Ekrem #İmamoğlu in #Berlin. He delivered a well-crafted, politically balanced speech that resonated well with the audience."
+    portfolio: [durability]
+    image: /assets/img/post-berlin-ist.jpeg
+
+  - date: 2024-11-27
+    platform: linkedin
+    type: event
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_brussels-berlin-eucommission-ugcPost-7267562010140123136-IlgQ"
+    excerpt: "Last week, I went on a 'democracy protection' spree from Bonn to #Brussels and then #Berlin. My week started with the first Brussels Democracy Dialogue, organized by the Friedrich-Ebert-Stiftung. This expert conference was a platform for exchanging practical ideas for safeguarding democracy."
+    portfolio: [durability]
+    image: /assets/img/post-brussels-event.jpeg
+    fit: contain
+
+  - date: 2024-10-30
+    platform: linkedin
+    type: event
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_canada-polarization-europe-share-7257423673228189696-HY3v"
+    excerpt: "The Honorable Stéphane Dion, #Canada's Ambassador to France, and the former Minister of Intergovernmental Affairs, hosted a reception at his residence in Paris to discuss the growing threat of #polarization in #Europe with his fellow political scientists. We need further #transatlantic cooperation for democracy protection to deal with the structural causes of polarization."
+    portfolio: [durability]
+    image: /assets/img/post-canada-fra.jpeg
+    fit: contain

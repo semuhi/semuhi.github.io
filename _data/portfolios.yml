@@ -1,0 +1,172 @@
+# Portfolio definitions — taxonomy v3.2 (FINAL) + mockup-A hub geometry.
+# Reference in Liquid as site.data.portfolios.list. `key` matches publications.yml
+# `portfolio:` values. Colors are the validated light-ground set (spec v3); `color_dark`
+# is the validated dark-ground variant for any future dark surface.
+# hub_x/hub_y = anchored positions in the 1200x640 network viewBox (03 = center).
+# `trunk: true` marks portfolio 03; `spine: true` marks the gold business thread.
+# Numbering reordered 2026-07-18 (user decision): 03 durability, 04 datahub,
+# 05 conflict, 06 aitech. Keys, colors, and hub coordinates did not move.
+
+list:
+  - key: propaganda
+    num: "01"
+    title: "(Countering) authoritarian propaganda"
+    lines_heading: "Authoritarian narratives and counter-strategies"
+    short: "Propaganda"
+    color: "#2A5599"
+    color_dark: "#5B8FD9"
+    hub_x: 445
+    hub_y: 125
+    trunk: false
+    spine: false
+    blurb: "How effectively autocrats deploy propaganda, and which tools and narratives counter it."
+    image: "/assets/img/series_collage_3x2.jpg"
+    fit: contain
+    narrative: >
+      What types of narratives do autocratic regimes use in propaganda, and how
+      effective are they? Which strategies can counter them? These questions run
+      through this portfolio. I study how autocrats manufacture support with soft
+      tools, ranging from state-funded fiction to GovTech, and what pro-democracy
+      stakeholders can do about it. That is why this portfolio pairs every
+      effectiveness study with a countermeasure, from information correction to
+      cross-partisan depolarization.
+
+  - key: business
+    num: "02"
+    title: "Business, authoritarianism, and democracy"
+    short: "Business"
+    lines_heading: "Business elite in autocracies and democracies"
+    color: "#B5791A"
+    color_dark: "#BE8419"
+    hub_x: 975
+    hub_y: 150
+    trunk: false
+    spine: true
+    blurb: "How autocrats politically control the business elite, and what the private sector can do when democracy erodes."
+    image: "/assets/img/business-duo.jpg"
+    fit: contain
+    narrative: >
+      Under which conditions does the private sector safeguard democracy and
+      challenge autocrats? Which interventions are effective in changing firms'
+      attitudes and behavior? How do autocrats politically control the business
+      elite? These questions run through this portfolio. I study how autocrats
+      shake down their business allies during economic crises, and how a large
+      private sector that is not dependent on the state is crucial for
+      maintaining democracy.
+
+  - key: durability
+    num: "03"
+    title: "Democracy support & authoritarian durability"
+    short: "Democracy Support"
+    lines_heading: "Democracy support, defection, and mobilization"
+    color: "#1196B9"
+    color_dark: "#21A6C5"
+    hub_x: 600
+    hub_y: 290
+    trunk: true
+    spine: false
+    blurb: "How autocrats ensure political control, and which tools of democracy support are effective."
+    image: "/assets/img/pub-realitycheck.png"
+    narrative: >
+      Which narratives and interventions by development cooperation are effective
+      for democracy support? Under which conditions do social groups defect and
+      mobilize under autocracies? These questions run through this portfolio. I
+      study the effectiveness of European framing of democracy support, and why it
+      has been ineffective at best, as well as the structural conditions working
+      against elite defection in cases of highly polarized, incumbent-led
+      autocratization.
+
+  - key: datahub
+    num: "04"
+    # renamed 2026-07-20 (user decision): "Autocracy Data Hub" is now the
+    # portfolio's Initiative (projects.yml), not the portfolio name itself
+    title: "Data and Methods"
+    short: "Data Hub"
+    color: "#C14E6B"
+    color_dark: "#E07E96"
+    hub_x: 255
+    hub_y: 455
+    trunk: false
+    spine: false
+    blurb: "A dataset infrastructure for studying regimes and mobilization."
+    image: "/assets/img/maidan.png"
+    # overrides the stream h2 (user decision 2026-07-20: no output counts here)
+    lines_heading: "Data and Methods"
+    narrative: >
+      I aim to develop a sustainable data infrastructure for tracking regime and
+      mobilization dynamics in a transparent, reproducible, and low-cost fashion
+      with innovative event-level or observable datasets.
+
+  - key: conflict
+    num: "05"
+    title: "Authoritarianism, conflict & migration"
+    short: "Conflict & Migration"
+    # overrides the stream h2 ("All N outputs, M research lines")
+    lines_heading: "Identity politics, conflict, and migration"
+    color: "#A44A3F"
+    color_dark: "#C97A6E"
+    hub_x: 600
+    hub_y: 500
+    trunk: false
+    spine: false
+    blurb: "Civil war, migration, and identity politics under authoritarianism."
+    image: "/assets/img/morocco.jpg"
+    narrative: >
+      How do polarization trends at home diffuse abroad? How do autocrats use
+      identity politics to divide and politically control the opposition and key
+      social groups? How do these narratives affect sentiments towards
+      marginalized communities? These questions connect the work throughout this
+      portfolio.
+
+  - key: aitech
+    num: "06"
+    title: "AI & tech for development cooperation"
+    short: "AI & Tech"
+    # overrides the stream h2 ("All N outputs, M research lines")
+    lines_heading: "AI and digitalization"
+    color: "#7B5BA6"
+    color_dark: "#A47FD0"
+    hub_x: 945
+    hub_y: 455
+    trunk: false
+    spine: false
+    blurb: "AI and tech support for reforming development cooperation."
+    image: "/assets/img/agenticai-title.png"
+    fit: contain
+    narrative: >
+      Development cooperation is overdue for a tech upgrade. How can development
+      cooperation reform its organizational structure and programming on the
+      ground? The new technological disruption is more than just an efficiency
+      plug-in; the sector needs a complete transformation. Throughout this
+      portfolio, I discuss how.
+
+# Display labels for publications.yml `type:` keys (badges, chips, panel kickers).
+type_labels:
+  academic-thesis: "PhD thesis"
+  academic-peer-review: "Peer-reviewed"
+  academic-working-paper: "Working paper"
+  academic-discussion-paper: "IDOS Discussion paper"
+  academic-chapter: "Book chapter"
+  academic-file-drawer: "File drawer"
+  policy-brief: "Policy brief"
+  report: "Report"
+  oped: "Op-ed"
+  essay: "Essay"
+
+# Method facets for journal articles, working/discussion papers, and datasets.
+# key matches publications.yml methods[]; shown as panel chips + a legend row.
+methods:
+  - {key: exp, label: "Experiment"}
+  - {key: text, label: "Text-as-data"}
+  - {key: largen, label: "Large-N"}
+  - {key: gametheory, label: "Game theory"}
+  - {key: qual, label: "Qualitative"}
+
+# Cross-cutting tag facets (wall + portfolio-page filters). key matches publications.yml tags.
+tags:
+  - {key: turkey, label: "Turkey"}
+  - {key: mena, label: "MENA"}
+  - {key: europe, label: "Europe"}
+  - {key: polarization, label: "Polarization"}
+  - {key: defection, label: "Elites & defection"}
+  - {key: dev-cooperation, label: "Development cooperation"}

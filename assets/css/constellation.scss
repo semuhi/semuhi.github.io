@@ -1,0 +1,7 @@
+---
+# Jekyll SCSS entry point for the Constellation design system (spec v3).
+---
+@import "constellation/tokens";
+@import "constellation/base";
+@import "constellation/components";
+@import "constellation/pages";

@@ -1,0 +1,19 @@
+{% comment %}Portfolio cards from _data/portfolios.yml; counts from publications.yml.{% endcomment %}
+<section id="portfolios">
+  <div class="cards">
+    {% for pf in site.data.portfolios.list %}
+      {% assign n = 0 %}
+      {% for pub in site.data.publications %}
+        {% if pub.portfolio contains pf.key %}{% assign n = n | plus: 1 %}{% endif %}
+      {% endfor %}
+      <a class="pcard{% if pf.trunk %} trunk{% endif %}" style="--pc:{{ pf.color }}" href="{{ '/portfolios/' | append: pf.key | append: '/' | relative_url }}">
+        {% if pf.image %}<div class="pthumb-box"><img class="pthumb{% if pf.fit == 'contain' %} contain{% endif %}" src="{{ pf.image | relative_url }}" alt="" loading="lazy"></div>{% endif %}
+        <div class="num">{{ pf.num }}</div>
+        <h3>{{ pf.title }}</h3>
+        <p>{{ pf.blurb }}</p>
+        {% if pf.anchor %}<div class="anchor">{{ pf.anchor }}</div>{% endif %}
+        <div class="count">{{ n }} outputs →</div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

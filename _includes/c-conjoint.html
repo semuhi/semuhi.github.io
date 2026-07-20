@@ -1,0 +1,29 @@
+{% comment %}
+Conjoint explorer — business interactive slot (Phase 4). Shows ONE combined predicted
+outcome for the assembled profile (additive OLS/LPM on the EPSR visual-conjoint
+replication, respondent-clustered CIs) plus each pick's contribution vs the reference
+profile; values live in conjoint.js (extraction: _design/extract/conjoint-lpm.R) and
+the provenance line below must stay in sync if they ever change.
+{% endcomment %}
+<section>
+  <div class="sec-kicker">Playable finding</div>
+  <div class="finding conjoint">
+    <div>
+      <div class="kicker" style="color:var(--p-business)">From the business portfolio</div>
+      <h3>Which tycoon does the public want audited?</h3>
+      <p>Autocrats levy extraordinary tax fines on businesses, and citizens often approve. In a pre-registered visual conjoint fielded in Turkey in late 2022 (N = 1,732), respondents saw pairs of LinkedIn-style profiles of businesspeople and chose which one the government should hit with out-of-ordinary audits and extra fines. Assemble a profile and watch who draws fire: public contracts and large firms raise the appetite, and construction, the sector cronyism built, is the favorite target. Carmakers get a pass.</p>
+      <div class="scripts" id="cj-outcome">
+        <button class="sbtn cjo on" data-o="forced">Pick the target</button>
+        <button class="sbtn cjo" data-o="scale">How heavy a fine</button>
+      </div>
+      <div id="cj-picks" class="cj-picks"></div>
+      <a class="mono" style="font-size:12px" href="https://osf.io/zqcyt" target="_blank" rel="noopener">Read the working paper →</a>
+    </div>
+    <div>
+      <img class="cj-banner" src="{{ '/assets/img/business_collage_duo.jpg' | relative_url }}" alt="Two AI-generated LinkedIn-style profiles from the visual conjoint: a construction CEO with a public contract and MÜSİAD membership, and an automotive CEO with TÜSİAD membership" loading="lazy">
+      <div class="bars" id="cj-bars"></div>
+      <div class="disclaim">PREDICTED FROM AN ADDITIVE OLS MODEL OF THE VISUAL-CONJOINT REPLICATION, NO INTERACTIONS · RESPONDENT-CLUSTERED 95% CI · TURKEY, NOV–DEC 2022 · 1,732 RESPONDENTS · 3,258 PROFILE RATINGS</div>
+    </div>
+  </div>
+</section>
+<script src="{{ '/assets/js/constellation/conjoint.js' | relative_url }}"></script>

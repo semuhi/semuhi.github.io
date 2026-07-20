@@ -1,0 +1,83 @@
+# Highlights — dated milestone cards (talks, panels, media, news, trainings).
+# Rendered on the homepage strip, inside every matching portfolio page, and in
+# full on /activity/#highlights (Year x Type x Portfolio chip filters; the
+# filter row is labelled "Type" but the data field stays `kind`).
+# kind vocabulary (user definitions, 2026-07-19; training folded into talk
+# 2026-07-19):
+#   talk     = delivered a talk at an event (incl. trainings/webinars)
+#   event    = attendance / representation only
+#   media    = media appearance, video, or interview
+#   news     = announcement / news item
+# portfolio: a LIST of portfolio keys (a highlight can belong to several;
+# it renders on each listed portfolio's page).
+# Optional: project (key), item (publications.yml id), url,
+# image (card thumbnail; user-supplied captures from the IDOS blog/newsletters,
+# 2026-07-19; the two >2MB PNG originals have sips-derived .jpg copies).
+# Backfilled from the IDOS staff profile 2026-07-17; URLs supplied by the user
+# 2026-07-18 (IDOS blog + IDOS YouTube). Kinds + portfolios reclassified by the
+# user 2026-07-19. Add one = append a block (newest first).
+
+- date: 2026-07
+  kind: event
+  title: "At the UN Global Dialogue on AI Governance and AI4Good Summit, Geneva"
+  portfolio: [aitech]
+  image: "/assets/img/highlight3-ungeneva.png"
+  url: "https://blogs.idos-research.de/2026/07/09/idos-un-global-dialogue-and-ai4good-summit-in-geneva/"
+
+- date: 2026-07
+  kind: talk
+  title: "IDOS@GMF26: the effects of malicious AI swarms on democratic elections"
+  portfolio: [aitech, propaganda]
+  image: "/assets/img/highlight1-idosatgmf.png"
+  url: "https://blogs.idos-research.de/2026/07/09/idosgmf26-the-effects-of-malicious-ai-swarms-on-democratic-elections/"
+
+- date: 2026-07
+  kind: media
+  title: "Interview: AI swarms and electoral integrity"
+  portfolio: [aitech, propaganda, durability]
+  image: "/assets/img/highlight2-gmf26interview.jpg"
+  url: "https://www.youtube.com/watch?v=tSO_4dylVFE"
+
+- date: 2026-01
+  kind: talk
+  title: "@Chicago Center on Democracy: International Dynamics of Democratic Backsliding"
+  portfolio: [durability, propaganda]
+  project: datahub
+  image: "/assets/img/highlight4-chicago.jpeg"
+  url: "https://blogs.idos-research.de/2026/01/23/democratic-backsliding-international-dynamics-in-focus/"
+
+- date: 2025-11
+  kind: talk
+  title: "Private Sector Engagement, UNDP Global Conference on New Ways of Governance, Oslo"
+  portfolio: [business]
+  image: "/assets/img/highlight5-undposlo.png"
+  url: "https://blogs.idos-research.de/2025/11/25/undp-global-conference-on-new-ways-of-governance-in-oslo/"
+
+- date: 2025-10
+  kind: media
+  title: "How can businesses strengthen democracy instead of undermining it?"
+  portfolio: [business]
+  image: "/assets/img/highlight-businesssupport.jpg"
+  url: "https://www.youtube.com/watch?v=KhGGoWOtpTE"
+
+- date: 2025-08
+  kind: talk
+  title: "IDOS@GMF25: Cross-sectoral collaboration for information resilience"
+  portfolio: [business, durability]
+  image: "/assets/img/highlight6-gmf25.png"
+  url: "https://blogs.idos-research.de/2025/08/14/idos-panel-at-the-global-media-forum-2025/"
+
+- date: 2025-03
+  kind: news
+  title: "Marshall Memorial Fellowship, German Marshall Fund"
+  portfolio: [business]
+  image: "/assets/img/highlight7-marshall.png"
+  fit: contain  # wide banner: letterbox the whole image instead of center-cropping
+  url: "https://blogs.idos-research.de/2025/03/24/semuhi-sinanoglu-selected-as-a-marshall-memorial-fellow/"
+
+- date: 2024-11
+  kind: talk  # was training; category folded into talk (user decision 2026-07-19)
+  title: "Conceptualising and Measuring Polarisation Webinar with UNDP"
+  portfolio: [durability, aitech, conflict]
+  image: "/assets/img/highlight-webinar.png"
+  url: "https://blogs.idos-research.de/2024/11/22/conceptualising-and-measuring-polarisation-webinar-explores-insights/"

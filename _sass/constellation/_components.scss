@@ -1,0 +1,529 @@
+// Constellation components: network hero, chips, panel, portfolio cards,
+// highlights, playable finding, latest stream (from mockup A).
+
+body.constellation {
+
+  /* ---------- network hero ---------- */
+  .hero {
+    max-width: $max-width;
+    margin: 8px auto 0;
+    position: relative;
+    border: 1px solid var(--hair);
+    background: var(--card);
+
+    .reg {
+      position: absolute;
+      font-family: $font-mono;
+      color: var(--cobalt);
+      opacity: .5;
+      font-size: 12px;
+    }
+    .hero-head {
+      position: absolute;
+      top: 26px; left: 28px;
+      z-index: 5;
+      max-width: 390px;
+      pointer-events: none;
+      h1 { font-size: 30px; line-height: 1.15; font-weight: 600; margin: .35rem 0 .4rem; }
+      p { font-size: 14px; color: var(--muted); max-width: 340px; }
+    }
+    .net-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    svg.net { display: block; width: 100%; height: auto; }
+    // legend dimming fades softly
+    svg.net g, svg.net line { transition: opacity .2s; }
+  }
+
+  .chips {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 2px 24px 18px;
+  }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font-family: $font-mono;
+    font-size: 11px;
+    letter-spacing: .04em;
+    border: 1px solid var(--hair);
+    background: var(--paper);
+    padding: 3px 10px;
+    cursor: pointer;
+    color: var(--muted);
+    &.on { border-color: var(--cobalt); color: var(--cobalt); background: var(--chipground); }
+    .dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: baseline;
+    }
+  }
+
+  .net-panel {
+    position: absolute;
+    left: 24px; top: 58px; // in the whitespace under the kicker, clear of the 02 hub
+    width: 300px;
+    background: var(--paper);
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--cobalt);
+    padding: 14px 16px;
+    z-index: 6;
+    display: none;
+
+    .ty {
+      font-family: $font-mono;
+      font-size: 10px;
+      letter-spacing: .12em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+    h3 { font-size: 15px; line-height: 1.3; margin: .25rem 0; }
+    .venue { font-size: 12.5px; color: var(--muted); }
+    .blurb { font-size: 12.5px; margin-top: .45rem; }
+    .pf {
+      margin-top: .5rem;
+      span {
+        font-family: $font-mono;
+        font-size: 10px;
+        padding: 2px 6px;
+        border: 1px solid var(--hair);
+        margin-right: 4px;
+      }
+      // method chips (Exp, Text-as-data, ...) sit after the portfolio numbers
+      span.m { color: var(--muted); }
+    }
+    .anchor { font-family: $font-mono; font-size: 10.5px; color: var(--gold); margin-top: .5rem; }
+    .go { display: inline-block; font-family: $font-mono; font-size: 11px; margin-top: .55rem; color: var(--ink); }
+
+    // pinned PROGRAM card: the portfolio's own ground (set inline by network.js)
+    // with white text, so it reads differently from the output cards
+    // (user decision, 2026-07-18)
+    &.hub {
+      color: #fff;
+      .ty { color: rgba(255, 255, 255, .8); }
+      .blurb { color: #fff; }
+      .anchor { color: rgba(255, 255, 255, .75); }
+      .go { color: #fff; }
+    }
+  }
+
+  /* ---------- portfolio cards ---------- */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .pcard {
+    background: var(--card);
+    border: 1px solid var(--hair);
+    border-top: 3px solid var(--pc);
+    padding: 16px 15px 14px;
+    display: flex;
+    flex-direction: column;
+
+    // standardized low rectangle: same 3:1 frame at every card width, with a
+    // portfolio-color tint (lightened, fading out) unifying the mixed imagery
+    .pthumb-box {
+      position: relative; width: 100%; aspect-ratio: 3 / 1;
+      margin-bottom: .6rem; border: 1px solid var(--hair); overflow: hidden;
+      &::after {
+        content: ""; position: absolute; inset: 0; pointer-events: none;
+        background: linear-gradient(120deg,
+          color-mix(in srgb, color-mix(in srgb, var(--pc), #fff 45%) 45%, transparent),
+          transparent 70%);
+      }
+    }
+    .pthumb { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .pthumb.contain { object-fit: contain; }
+    .num { font-family: $font-mono; font-size: 11px; color: var(--pc); letter-spacing: .1em; }
+    h3 { font-size: 15.5px; line-height: 1.25; margin: .35rem 0 .4rem; font-weight: 600; }
+    p { font-size: 12.5px; color: var(--muted); flex: 1; }
+    .anchor { font-family: $font-mono; font-size: 10.5px; color: var(--gold); margin-top: .6rem; }
+    .count { font-family: $font-mono; font-size: 11px; color: var(--cobalt); margin-top: .35rem; }
+
+    // sole sanctioned gradient: the trunk card's faint surface tint (spec v3)
+    &.trunk { background: linear-gradient(#FBFCFD, #F1F6F3); }
+  }
+
+  /* ---------- highlights ---------- */
+  .hl {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+
+    article {
+      min-width: 212px;
+      max-width: 240px;
+      background: var(--card);
+      border: 1px solid var(--hair);
+      padding: 13px 14px;
+    }
+    // card thumbnail: full-bleed over the padding, uniform 16:9 crop
+    .thumb {
+      display: block;
+      width: calc(100% + 28px);
+      margin: -13px -14px 10px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 1px solid var(--hair);
+
+      // per-card override (yml fit: contain): letterbox wide banners whole
+      &.contain { object-fit: contain; background: var(--paper); }
+    }
+    .d { font-family: $font-mono; font-size: 10.5px; color: var(--gold); letter-spacing: .1em; }
+    h3 { font-size: 13.5px; font-weight: 500; line-height: 1.35; margin-top: .3rem; }
+    // venue + coauthor line (latest-publications cards)
+    .pv { font-size: 11.5px; color: var(--muted); margin-top: .3rem; }
+  }
+
+  /* ---------- playable finding ---------- */
+  .finding {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 26px;
+    background: var(--card);
+    border: 1px solid var(--hair);
+    padding: 24px;
+
+    h3 { font-size: 19px; font-weight: 600; margin: .3rem 0 .5rem; }
+    p { font-size: 14px; color: var(--muted); }
+    // two-poster series band above both columns: fixed height, natural aspect,
+    // centered — max-width + contain keep it inside the card on narrow screens
+    .fbanner { grid-column: 1 / -1; height: 150px; width: auto; max-width: 100%; object-fit: contain; justify-self: center; display: block; }
+    // conjoint variant: the two-profile strip sits inside the right column,
+    // above the bars, at column width — balances the two columns' heights
+    .cj-banner { width: 100%; height: auto; display: block; margin-bottom: 16px; }
+  }
+  .scripts { display: flex; gap: 8px; margin: 14px 0 18px; }
+  .sbtn {
+    font-family: $font-mono;
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 1px solid var(--hair);
+    background: var(--paper);
+    cursor: pointer;
+    color: var(--ink);
+    &.on { background: var(--p-propaganda); border-color: var(--p-propaganda); color: #fff; }
+  }
+  .bars {
+    .row { margin-bottom: 16px; }
+    .lab {
+      font-size: 13px;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      .val { font-family: $font-mono; color: var(--cobalt); }
+    }
+  }
+  .track { height: 14px; background: var(--chipground); position: relative; }
+  .fill {
+    height: 100%;
+    background: var(--p-propaganda);
+    border-radius: 0 4px 4px 0;
+    transition: width .45s ease;
+    /* non-significant estimates render faded */
+    &.ns { opacity: .3; }
+  }
+  .disclaim {
+    font-family: $font-mono;
+    font-size: 10.5px;
+    color: var(--gold);
+    margin-top: 10px;
+    letter-spacing: .03em;
+  }
+
+  /* ---------- field notes (curated social cards) ---------- */
+  .fn {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+  .fncard {
+    min-width: 300px;
+    max-width: 300px;
+    background: var(--card);
+    border: 1px solid var(--hair);
+    padding: 13px 14px;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+
+    // card thumbnail: same treatment as the highlight cards (full-bleed 16:9)
+    .thumb {
+      display: block;
+      width: calc(100% + 28px);
+      margin: -13px -14px 10px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 1px solid var(--hair);
+
+      &.contain { object-fit: contain; background: var(--paper); }
+    }
+    .d { font-family: $font-mono; font-size: 10.5px; color: var(--gold); letter-spacing: .1em; }
+    p {
+      font-size: 12.5px;
+      color: var(--ink);
+      margin: .45rem 0 .55rem;
+      flex: 1;
+      // the excerpt is the post's own words, verbatim; clamp the card, link out for the rest
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .go { font-size: 11px; color: var(--cobalt); }
+    &:hover { text-decoration: none; border-color: var(--cobalt); }
+  }
+
+  /* ---------- Phase 4 interactives: conjoint / DERTT teaser / depol arch ---------- */
+  // conjoint explorer (business accent overrides the propaganda defaults above)
+  .conjoint .sbtn.on { background: var(--p-business); border-color: var(--p-business); }
+  .conjoint .fill { background: var(--p-business); }
+  .cj-picks { margin-bottom: 12px; }
+  .cj-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    .sbtn { font-size: 11px; padding: 4px 9px; }
+  }
+  .track .base {
+    position: absolute;
+    left: 50%; top: -2px; bottom: -2px;
+    width: 1px;
+    background: var(--ink);
+    opacity: .45;
+    z-index: 1;
+  }
+  .track .ci {
+    position: absolute;
+    top: calc(50% - 1px);
+    height: 2px;
+    background: var(--ink);
+    opacity: .5;
+    z-index: 1;
+  }
+  .cj-note {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: .06em;
+    margin-top: 2px;
+  }
+  // combined-prediction redesign (2026-07-20): headline number + contribution bars
+  .cj-headline { margin-bottom: 16px; }
+  .cj-headline .big { font-family: $font-mono; font-size: 34px; font-weight: 600; color: var(--p-business); line-height: 1.1; }
+  .cj-headline .sub { font-family: $font-mono; font-size: 10.5px; color: var(--muted); letter-spacing: .05em; margin-top: 4px; }
+  .cj-baserow .lab { border-bottom: 1px dashed var(--hair); padding-bottom: 6px; }
+  .conjoint .fill.neg { border-radius: 4px 0 0 4px; } // negative pushes grow leftward
+
+  // DERTT teaser
+  .stat-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px 0 18px;
+  }
+  .stat {
+    font-family: $font-mono;
+    font-size: 11.5px;
+    letter-spacing: .03em;
+    border: 1px solid var(--hair);
+    background: var(--paper);
+    padding: 4px 10px;
+    color: var(--muted);
+    b { color: var(--ink); font-weight: 500; }
+  }
+  .chart-cap {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.5px;
+    letter-spacing: .08em;
+    color: var(--muted);
+    margin-bottom: 8px;
+    span:last-child { color: var(--cobalt); }
+  }
+  .ybars {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 170px;
+  }
+  .ybar {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    .bfill { width: 100%; background: var(--pc, var(--cobalt)); opacity: .55; transition: opacity .15s; }
+    &.on .bfill { opacity: 1; }
+  }
+  .axis {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  // depolarization toolkit architecture
+  .depol-diagram .tier {
+    border: 1px solid var(--hair);
+    background: var(--paper);
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    .flabel { display: block; margin-bottom: 6px; }
+  }
+  .tier-nodes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .anode {
+    font-family: $font-mono;
+    font-size: 11px;
+    letter-spacing: .03em;
+    border: 1px solid var(--hair);
+    background: var(--card);
+    padding: 5px 10px;
+    cursor: pointer;
+    color: var(--ink);
+    &.on { background: var(--p-aitech); border-color: var(--p-aitech); color: #fff; }
+  }
+  .depol-panel {
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--p-aitech);
+    background: var(--paper);
+    padding: 12px 14px;
+    margin-top: 16px;
+    h4 { font-size: 14px; font-weight: 600; margin-bottom: .25rem; }
+    p { font-size: 13px; }
+  }
+
+  /* ---------- latest stream ---------- */
+  .latest {
+    .row {
+      display: grid;
+      grid-template-columns: 64px 150px 1fr 220px;
+      gap: 14px;
+      align-items: baseline;
+      padding: 11px 4px;
+      border-bottom: 1px solid var(--hair);
+    }
+    .yr { font-family: $font-mono; font-size: 12px; color: var(--muted); }
+    .t { font-size: 14.5px; }
+    .v { font-size: 12.5px; color: var(--muted); text-align: right; }
+  }
+  /* teaching lists: 3-cell rows (yr/t/v) with a wide title column, capped width */
+  .latest.compact {
+    max-width: 860px;
+    .row { grid-template-columns: 44px minmax(0, 1.8fr) minmax(0, 1fr); gap: 12px; padding: 8px 4px; }
+  }
+  /* portfolio streams only: a fifth 22px column holds the expand toggle, and
+     each row can be followed by a .rowx detail panel (stream.js flips hidden) */
+  .xstream {
+    .row { grid-template-columns: 64px 150px 1fr 220px 22px; }
+    .exp {
+      font-family: $font-mono;
+      font-size: 14px;
+      line-height: 1;
+      width: 22px;
+      height: 22px;
+      padding: 0;
+      background: none;
+      border: 1px solid var(--hair);
+      color: var(--muted);
+      cursor: pointer;
+      align-self: center;
+      &:hover { color: var(--pc, var(--cobalt)); border-color: var(--pc, var(--cobalt)); }
+    }
+    .rowx {
+      padding: 14px 18px 16px;
+      border-bottom: 1px solid var(--hair);
+      border-left: 2px solid var(--pc, var(--cobalt));
+      .abs { font-size: 13.5px; line-height: 1.65; max-width: 96ch; margin: 0 0 10px; }
+      .xmeta {
+        font-size: 11.5px;
+        color: var(--muted);
+        margin: 0 0 8px;
+        span { display: block; margin-bottom: 3px; }
+      }
+      .xlinks {
+        font-size: 11.5px;
+        margin: 0 0 8px;
+        a { margin-right: 16px; }
+      }
+    }
+  }
+  /* research lines: the stream grouped into thread blocks (_data/threads.yml) —
+     format badge leads each row so every member reads as an equal sibling */
+  .threads {
+    .thread {
+      border: 1px solid var(--hair);
+      border-left: 3px solid var(--pc, var(--cobalt));
+      background: var(--paper);
+      margin-bottom: 16px;
+      > :last-child { border-bottom: 0; }
+    }
+    .th-head {
+      padding: 12px 16px 10px;
+      border-bottom: 1px solid var(--hair);
+      h3 { font-size: 15.5px; font-weight: 600; margin: 0; }
+      .th-desc { font-size: 13px; line-height: 1.6; color: var(--muted); margin: 6px 0 0; max-width: 96ch; }
+    }
+    .row {
+      grid-template-columns: 150px 1fr 220px 44px 22px;
+      padding: 11px 16px;
+    }
+    .yr { text-align: right; }
+    /* the block already carries the colored left border — don't double it */
+    .rowx { border-left: 0; padding-left: 16px; }
+  }
+
+  .badge {
+    font-family: $font-mono;
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border: 1px solid var(--hair);
+    padding: 2px 7px;
+    color: var(--cobalt);
+    white-space: nowrap;
+    justify-self: start;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 980px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .finding { grid-template-columns: 1fr; }
+    .latest .row, .latest.compact .row { grid-template-columns: 56px 1fr; }
+    .latest .v, .latest .badge { display: none; }
+    .xstream .row { grid-template-columns: 56px 1fr 22px; }
+    // thread rows: badge stacks above the title, venue + year flow on a small
+    // muted line below it (2026-07-20, user: don't drop that info on mobile),
+    // and the + expander pins top-right
+    .threads .row { display: block; position: relative; padding-right: 48px; }
+    .threads .row .badge { display: inline-block; margin-bottom: 5px; }
+    .threads .row .t { display: block; }
+    .threads .row .v, .threads .row .yr { display: inline; font-size: 12px; text-align: left; }
+    .threads .row .v:not(:empty)::after { content: " · "; }
+    .threads .row .exp { position: absolute; right: 16px; top: 11px; }
+    .hero .hero-head { position: static; max-width: none; padding: 22px 24px 0; }
+    // the map stays readable and tappable: pan sideways instead of shrinking
+    .net-scroll svg.net { min-width: 760px; }
+    // the pinned card becomes a bottom sheet; tap map whitespace to close
+    .net-panel {
+      position: fixed;
+      left: 12px; right: 12px; bottom: 12px; top: auto;
+      width: auto;
+      max-height: 55vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 34px rgba(22, 38, 58, .28);
+      z-index: 40;
+    }
+  }
+  @media (max-width: 560px) {
+    .cards { grid-template-columns: 1fr; }
+  }
+}

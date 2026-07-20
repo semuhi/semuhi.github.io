@@ -1,0 +1,54 @@
+{% comment %}Activity archive — the FULL highlights and posts lists (user decision
+2026-07-19). The homepage strips show the newest 6 of each and link here; this page
+has no top-menu entry, it is reached only through those "Browse all" links. Reuses
+the exact card markup of c-highlights.html (.hl) and c-social.html (.fn).
+Chip filters (user decision 2026-07-19): Year × Type × Portfolio on both
+highlights and posts (highlights read data-k from `kind`, posts from `type`;
+the row label is "Type"), Work-wall idiom; activity.js builds the chips from
+the cards' data-* attributes and the #act-pf JSON below (data-pf is a space-
+joined list; posts and highlights can belong to several portfolios), and caps
+each section at 12 cards behind a "Show N more" button.{% endcomment %}
+{% assign months = "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC" %}
+{% assign months = months | split: "," %}
+{% assign posts = site.data.social.posts %}
+<section class="pf-head" style="--pc:var(--cobalt)">
+  <div class="sec-kicker">Activity</div>
+  <h1>Highlights and posts</h1>
+</section>
+<section id="highlights">
+  <div class="sec-kicker">Milestones</div>
+  <h2>All Highlights</h2>
+  <div class="wall-filters" id="hl-filters"></div>
+  <div class="wall-count mono" id="hl-count"></div>
+  <div class="hl">
+    {% for h in site.data.highlights %}
+      {% assign parts = h.date | split: "-" %}
+      {% assign mi = parts[1] | plus: 0 | minus: 1 %}
+      <article data-y="{{ parts[0] }}" data-k="{{ h.kind }}" data-pf="{{ h.portfolio | join: ' ' }}">
+        {% if h.image %}{% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img class="thumb{% if h.fit == 'contain' %} contain{% endif %}" src="{{ h.image | relative_url }}" alt="" loading="lazy"></a>{% else %}<img class="thumb{% if h.fit == 'contain' %} contain{% endif %}" src="{{ h.image | relative_url }}" alt="" loading="lazy">{% endif %}{% endif %}
+        <div class="d">{{ months[mi] }} {{ parts[0] }}{% if h.kind %} · {{ h.kind | upcase }}{% endif %}</div>
+        <h3>{% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.title }}</a>{% else %}{{ h.title }}{% endif %}</h3>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% if posts and posts.size > 0 %}
+<section id="posts">
+  <div class="sec-kicker">Field notes</div>
+  <h2>All Posts</h2>
+  <div class="wall-filters" id="po-filters"></div>
+  <div class="wall-count mono" id="po-count"></div>
+  <div class="fn">
+    {% for p in posts %}
+      {% if p.platform == "linkedin" %}{% assign plat = "LinkedIn" %}{% elsif p.platform == "bluesky" %}{% assign plat = "Bluesky" %}{% else %}{% assign plat = "X" %}{% endif %}
+      <a class="fncard" data-y="{{ p.date | date: '%Y' }}" data-k="{{ p.type }}" data-pf="{{ p.portfolio | join: ' ' }}" href="{{ p.url }}" target="_blank" rel="noopener">
+        {% if p.image %}<img class="thumb{% if p.fit == 'contain' %} contain{% endif %}" src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        <div class="d">{{ p.date | date: "%b %Y" | upcase }} · {{ plat | upcase }}</div>
+        <p>{{ p.excerpt }}</p>
+        <span class="mono go">Read on {{ plat }} →</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+<script id="act-pf" type="application/json">[{% for pf in site.data.portfolios.list %}{"key":"{{ pf.key }}","short":"{{ pf.short }}","color":"{{ pf.color }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]</script>

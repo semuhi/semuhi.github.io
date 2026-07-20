@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup C · Observatory — semuhi.github.io</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0E14;--panel:#11161F;--panel2:#151C27;--hair:#1E2735;--ink:#E8EDF4;--muted:#8FA0B5;--dim:#5B6B80;
+ --c01:#5B8FD9;--c02:#BE8419;--c03:#1E97B4;--c04:#A47FD0;--c05:#3D9A69;--wall:#4A5568;--amber:#D9A441}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.6 "IBM Plex Sans",sans-serif}
+.mono{font-family:"IBM Plex Mono",monospace}
+a{color:var(--ink);text-decoration:none}
+a:hover{color:var(--amber)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+.compare{background:#E8EDF4;color:#0B0E14;font-family:"IBM Plex Mono",monospace;font-size:11px;
+ letter-spacing:.08em;padding:6px 20px;display:flex;justify-content:space-between}
+.compare a{color:#B3541E;text-decoration:none}
+
+header.site{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--hair)}
+.brand{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.1em}
+.brand .dot{color:var(--amber)}
+.brand small{display:block;font-size:10.5px;color:var(--muted);letter-spacing:.14em;margin-top:2px}
+nav{display:flex;gap:20px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
+nav a{color:var(--muted)} nav a:hover{color:var(--ink)}
+
+.hero{padding:44px 0 10px}
+.status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--amber);letter-spacing:.16em}
+.status::before{content:"● ";animation:blink 2.4s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:clamp(28px,4vw,44px);font-weight:700;line-height:1.12;max-width:760px;margin:.5rem 0 .6rem;letter-spacing:-.01em}
+.hero .sub{color:var(--muted);max-width:640px;font-size:15px}
+
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0 12px}
+.tile{background:var(--panel);border:1px solid var(--hair);padding:16px 16px 14px}
+.tile .v{font-family:"IBM Plex Mono",monospace;font-size:clamp(22px,2.4vw,30px);font-weight:500}
+.tile .v em{color:var(--amber);font-style:normal}
+.tile .c{font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;letter-spacing:.05em;margin-top:6px;line-height:1.5;text-transform:uppercase}
+
+.trace{background:var(--panel);border:1px solid var(--hair);padding:18px 20px 8px;margin-bottom:44px}
+.trace .th{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.trace .tt{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--muted)}
+.legend span::before{content:"■ ";font-size:9px}
+#stripchart{display:block;width:100%;height:auto}
+
+h2.sec{font-size:13px;font-family:"IBM Plex Mono",monospace;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin:40px 0 14px}
+h2.sec b{color:var(--amber);font-weight:400}
+
+.channel{display:grid;grid-template-columns:250px 110px 1fr 300px;gap:20px;align-items:center;
+ background:var(--panel);border:1px solid var(--hair);border-left:3px solid var(--cc);padding:16px 18px;margin-bottom:10px}
+.channel .id{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--cc);letter-spacing:.12em}
+.channel h3{font-size:15.5px;font-weight:600;line-height:1.3;margin-top:3px}
+.channel .spark{justify-self:center}
+.channel .meta{font-size:12.5px;color:var(--muted);line-height:1.55}
+.channel .meta .anchor{color:var(--amber);font-family:"IBM Plex Mono",monospace;font-size:11px}
+.channel .flags{font-size:12.5px}
+.channel .flags a{display:block;color:var(--ink);line-height:1.4;margin-bottom:6px}
+.channel .flags a::before{content:"▸ ";color:var(--cc)}
+.channel .n{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--dim);margin-top:2px}
+
+.grid2{display:grid;grid-template-columns:1.2fr 1fr;gap:14px}
+.panelbox{background:var(--panel);border:1px solid var(--hair);padding:20px}
+.bridge{display:flex;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--hair);font-size:13.5px}
+.bridge:last-child{border-bottom:none}
+.bridge .chips{display:flex;gap:3px}
+.bridge .chip{font-family:"IBM Plex Mono",monospace;font-size:9.5px;padding:1px 5px;border:1px solid;border-radius:2px}
+.bridge .rel{color:var(--dim);font-size:11.5px;font-family:"IBM Plex Mono",monospace}
+
+.finding h3{font-size:18px;font-weight:600;margin-bottom:8px}
+.finding p{font-size:13.5px;color:var(--muted)}
+.scripts{display:flex;gap:6px;margin:14px 0 16px}
+.sbtn{font-family:"IBM Plex Mono",monospace;font-size:11.5px;padding:6px 11px;background:var(--panel2);border:1px solid var(--hair);color:var(--muted);cursor:pointer}
+.sbtn.on{border-color:var(--c01);color:var(--ink);background:#17233a}
+.bars .lab{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:4px}
+.bars .lab .val{font-family:"IBM Plex Mono",monospace;color:var(--c01)}
+.track{height:12px;background:#0E1420;border:1px solid var(--hair);margin-bottom:14px}
+.fill{height:100%;background:var(--c01);transition:width .4s ease;border-radius:0 3px 3px 0}
+.disclaim{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--amber);letter-spacing:.05em;margin-top:4px}
+
+.log .line{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:8px 0;border-bottom:1px solid var(--hair);font-size:13.5px}
+.log .line:last-child{border-bottom:none}
+.log .d{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--amber)}
+
+.feed .row{display:grid;grid-template-columns:56px 132px 1fr auto;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--hair)}
+.feed .y{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--dim)}
+.badge{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+ border:1px solid var(--hair);padding:2px 7px;color:var(--muted);white-space:nowrap;justify-self:start}
+.feed a{font-size:14px}
+.feed .v{font-size:12px;color:var(--dim)}
+
+#tip{position:fixed;display:none;background:#171F2C;border:1px solid #2A3648;color:var(--ink);font-size:12px;
+ padding:8px 11px;max-width:280px;z-index:50;pointer-events:none;line-height:1.45}
+#tip .m{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--amber);letter-spacing:.06em}
+
+footer{border-top:1px solid var(--hair);margin-top:52px;padding:18px 0 42px;display:flex;justify-content:space-between;
+ font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--dim)}
+@media(max-width:960px){.tiles{grid-template-columns:repeat(2,1fr)}
+ .channel{grid-template-columns:1fr;gap:10px}.channel .spark{justify-self:start}
+ .grid2{grid-template-columns:1fr}.feed .row{grid-template-columns:48px 1fr}.feed .v,.feed .badge{display:none}}
+</style>
+</head>
+<body>
+<div class="compare">MOCKUP C · OBSERVATORY (dark instrument) <span>compare: <a href="mockup-A-constellation.html">A · Constellation</a> · <a href="mockup-B-index.html">B · Index</a></span></div>
+
+<div class="wrap">
+<header class="site">
+  <div class="brand">SEMUHI SINANOGLU <span class="dot">·</span> OBSERVATORY
+    <small>POLITICAL SCIENTIST · IDOS, BONN · PHD, UNIVERSITY OF TORONTO</small></div>
+  <nav><a href="#channels">Channels</a><a href="#feed">Work</a><a href="#">Teaching</a><a href="#">About</a><a href="#">CV</a></nav>
+</header>
+
+<div class="hero">
+  <div class="status">TRACKING AUTHORITARIAN DURABILITY · 42 OUTPUTS · 5 CHANNELS · 2011–2026</div>
+  <h1>Watching how autocrats hold power, measuring what pushes back.</h1>
+  <p class="sub">Money, propaganda, and technology on one side; democracies and their partners on the other. Every paper, brief, dataset, and op-ed is a reading on the same instrument.</p>
+</div>
+
+<div class="tiles">
+  <div class="tile"><div class="v">18<em>,</em>227</div><div class="c">Repression events in the DERTT dataset · 193 countries</div></div>
+  <div class="tile"><div class="v">32<em>,</em>000</div><div class="c">Firms in the tax-audit study · 40 electoral autocracies</div></div>
+  <div class="tile"><div class="v">N≈4<em>,</em>600</div><div class="c">Respondents in the e-government propaganda experiment</div></div>
+  <div class="tile"><div class="v">5<em>+</em></div><div class="c">Survey &amp; conjoint experiments fielded in Turkey</div></div>
+</div>
+
+<div class="trace">
+  <div class="th"><span class="tt">The trace · every output, 2011–2026 · hover a tick</span>
+    <div class="legend" id="legend"></div></div>
+  <svg id="stripchart" viewBox="0 0 1120 200"></svg>
+</div>
+
+<h2 class="sec"><b>01</b> — Five channels</h2>
+<div id="channels"></div>
+
+<div class="grid2" style="margin-top:40px">
+  <div class="panelbox">
+    <h2 class="sec" style="margin:0 0 12px"><b>02</b> — Cross-channel signals</h2>
+    <div id="bridges"></div>
+  </div>
+  <div class="panelbox finding">
+    <h2 class="sec" style="margin:0 0 12px"><b>03</b> — Live reading · soft propaganda</h2>
+    <h3>Does state TV drama change what security policies people support?</h3>
+    <p>A survey experiment in Turkey. Pick a script; the bars read out support for security operations.</p>
+    <div class="scripts" id="scripts">
+      <button class="sbtn on" data-s="neutral">Neutral</button>
+      <button class="sbtn" data-s="sultanist">Sultanist</button>
+      <button class="sbtn" data-s="militarist">Militarist</button>
+    </div>
+    <div class="bars" id="bars"></div>
+    <div class="disclaim">ILLUSTRATIVE PATTERN FOR THIS MOCKUP · LAUNCH VERSION USES THE REPLICATION ESTIMATES</div>
+    <p style="margin-top:12px"><a class="mono" style="font-size:11.5px;color:var(--c01)" href="https://www.researchgate.net/publication/392093393_Sultanist_and_Militarist_Soft_Propaganda_and_Support_for_Security_Operations">→ READ THE WORKING PAPER (WITH DONNELLY)</a></p>
+  </div>
+</div>
+
+<div class="grid2" style="margin-top:14px">
+  <div class="panelbox log">
+    <h2 class="sec" style="margin:0 0 10px"><b>04</b> — Station log</h2>
+    <div class="line"><span class="d">2026-05</span><span>IDOS Current Column: reforming the development sector for agentic AI</span></div>
+    <div class="line"><span class="d">2026-01</span><span>IDOS news feature on tracking democratic backsliding</span></div>
+    <div class="line"><span class="d">2025-11</span><span>Invited talk, UNDP Oslo Governance Centre</span></div>
+    <div class="line"><span class="d">2025-08</span><span>Panelist, DW Global Media Forum</span></div>
+    <div class="line"><span class="d">2025-03</span><span>Marshall Memorial Fellowship, German Marshall Fund</span></div>
+  </div>
+  <div class="panelbox feed" id="feed">
+    <h2 class="sec" style="margin:0 0 10px"><b>05</b> — Latest signals</h2>
+    <div id="latest"></div>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 SEMUHI SINANOGLU</span>
+  <span>IDOS · GERMAN INSTITUTE OF DEVELOPMENT AND SUSTAINABILITY</span>
+  <span><a href="#">BLUESKY</a> · <a href="#">LINKEDIN</a> · <a href="#">SCHOLAR</a></span>
+</footer>
+</div>
+<div id="tip"></div>
+
+<script>
+const PF={
+ "01":{name:"(Countering) authoritarian propaganda",c:"#5B8FD9",
+   anchor:"Interactive: the soft-propaganda live reading",count:10,
+   meta:"How effective authoritarian propaganda really is, from state TV drama to e-government portals, and what counters it.",
+   flags:[["Soft propaganda & security operations (working paper, 2025)","https://www.researchgate.net/publication/392093393"],
+          ["E-government propaganda & regime support (IDOS DP 35, 2025)","https://doi.org/10.23661/idp35.2025"]]},
+ "02":{name:"Business & democracy",c:"#BE8419",
+   anchor:"Anchor: #DEMCOR · IDOS 2025–2027",count:7,
+   meta:"Financial repression of firms, capitalism and democratic resilience, what business can do when institutions erode.",
+   flags:[["Can capitalism save democracy? (Journal of Democracy, 2025)","https://muse.jhu.edu/pub/1/article/964562"],
+          ["Tax audit as financial repression (working paper, 2025)","https://www.researchgate.net/publication/392093558"]]},
+ "03":{name:"Methods & Political Regimes Data Hub",c:"#1E97B4",
+   anchor:"Anchor: the Data Hub · flagship: DERTT event browser",count:7,
+   meta:"Two shelves: datasets (DERTT, PROSEC, resource concentration index) and computational methods (text-as-data tools).",
+   flags:[["DERTT: tracking democratic erosion (dataset, 2025)","https://www.researchgate.net/publication/400025334"],
+          ["PROSEC: domestic leader prosecutions v1.0 (dataset, 2025)","https://www.researchgate.net/publication/393329518"]]},
+ "04":{name:"AI & tech for development cooperation",c:"#A47FD0",
+   anchor:"Anchor: Depolarization Toolkit · with UNDP + DW Akademie",count:8,
+   meta:"Agentic AI for the development sector, GovTech under autocracy, the tech upgrade media support needs.",
+   flags:[["Reality check: do GovTech initiatives help autocrats? (IDOS PB 17, 2026)","https://doi.org/10.23661/ipb17.2026"],
+          ["Reforming the development sector for agentic AI (Current Column, 2026)","https://www.idos-research.de/en/the-current-column/article/reforming-the-development-sector-for-agentic-ai-and-whatever-comes-next/"]]},
+ "05":{name:"Democracy support & authoritarian durability",c:"#3D9A69",
+   anchor:"The trunk: most cross-listed work passes through here",count:19,
+   meta:"How autocrats hold power (cooptation, repression, personalism) and how democracies and their partners push back.",
+   flags:[["The personalist global order (Foreign Affairs, 2026)","https://www.foreignaffairs.com/united-states/personalist-global-order"],
+          ["Containing ethnic conflict (Comparative Politics, 2022)","https://www.ingentaconnect.com/content/cuny/cp/2022/00000054/00000004/art00009"]]}
+};
+const ITEMS=[
+ {id:1,y:2024,t:"Dissertation: autocrats & business allies in debt crises",p:"02"},
+ {id:2,y:2025,t:"Autocrats & business allies (Government and Opposition)",p:"02"},
+ {id:3,y:2025,t:"Can capitalism save democracy? (Journal of Democracy)",p:"02"},
+ {id:4,y:2024,t:"Lockdowns & refugee sentiment (JITP)",p:"03"},
+ {id:5,y:2024,t:"Resource-mobilization lexicon (Sociological Methods & Research)",p:"03",ds:1},
+ {id:6,y:2022,t:"Containing ethnic conflict (Comparative Politics)",p:"05"},
+ {id:7,y:2025,t:"Disaster relief & depolarization (working paper)",p:"01"},
+ {id:8,y:2024,t:"Financial-repression visual conjoint (working paper)",p:"02"},
+ {id:9,y:2025,t:"Tax audit as financial repression (working paper)",p:"02",ds:1},
+ {id:10,y:2025,t:"Strategic humanitarian aid (IDOS DP 28)",p:"01"},
+ {id:11,y:2025,t:"Soft propaganda & security operations (working paper)",p:"01"},
+ {id:12,y:2025,t:"E-government propaganda (IDOS DP 35)",p:"01"},
+ {id:13,y:2025,t:"PROSEC dataset v1.0",p:"03",ds:1},
+ {id:14,y:2025,t:"Resource concentration & autocratic resilience",p:"02",ds:1},
+ {id:15,y:2025,t:"DERTT event dataset",p:"03",ds:1},
+ {id:16,y:2026,t:"Elite defection under polarization (working paper)",p:"05"},
+ {id:17,y:2023,t:"Myanmar rebel defection (file drawer)",p:"wall"},
+ {id:18,y:2022,t:"Migrant polarization (file drawer)",p:"wall"},
+ {id:19,y:2026,t:"GovTech reality check (IDOS PB 17)",p:"04"},
+ {id:20,y:2026,t:"The future of democracy promotion (chapter)",p:"05"},
+ {id:21,y:2026,t:"Agentic AI Current Column",p:"04"},
+ {id:22,y:2026,t:"Hungarian election lessons (Global Policy)",p:"05"},
+ {id:23,y:2026,t:"Middle powers & principled pragmatism (Table.Briefings)",p:"05"},
+ {id:24,y:2026,t:"The personalist global order (Foreign Affairs)",p:"05"},
+ {id:25,y:2026,t:"Private sector safeguards democracy (Devex)",p:"02"},
+ {id:26,y:2025,t:"Prosecuting the powerful (Foreign Policy)",p:"05"},
+ {id:27,y:2025,t:"Communicating aid interests (IDOS PB 16)",p:"01"},
+ {id:28,y:2025,t:"Strategic aid (Diplomatisches Magazin)",p:"01"},
+ {id:29,y:2025,t:"Dev-coop tech upgrade (Tagesspiegel)",p:"04"},
+ {id:30,y:2025,t:"Media support tech upgrade (Global Policy)",p:"04"},
+ {id:31,y:2025,t:"Istanbul's mayor & European security (Global Policy)",p:"05"},
+ {id:32,y:2024,t:"Countering information pollution (IDOS PB 29)",p:"01"},
+ {id:33,y:2021,t:"Digitizing SMEs in Turkey (TURKONFED)",p:"04"},
+ {id:34,y:2021,t:"COVID-19 impact assessment (TURKONFED)",p:"wall"},
+ {id:35,y:2021,t:"Bureaucracy under authoritarianism (Daktilo1984)",p:"05"},
+ {id:36,y:2019,t:"A new conservative party in Turkey (Jerusalem Post)",p:"05"},
+ {id:37,y:2018,t:"Building a policy school (Policy Options)",p:"wall"},
+ {id:38,y:2018,t:"Memlekete Dönmek (Birikim)",p:"wall"},
+ {id:39,y:2018,t:"MENA youth & the fourth industrial revolution (IAI)",p:"04"},
+ {id:43,y:2017,t:"Death & politics (openDemocracy)",p:"wall"},
+ {id:46,y:2017,t:"New-Ottomanist TRT series (Birikim)",p:"01"},
+ {id:49,y:2015,t:"OIC basic services (COMCEC)",p:"wall"},
+ {id:50,y:2014,t:"Child care in Turkey (World Bank)",p:"wall"},
+ {id:51,y:2011,t:"Youth who make the future (openDemocracy)",p:"wall"},
+ {id:52,y:2016,t:"Living under occupation (Middle East Monitor)",p:"wall"},
+ {id:53,y:2016,t:"Syrian refugee crisis (Turkish Policy Quarterly)",p:"wall"}
+];
+
+/* legend */
+document.getElementById("legend").innerHTML=
+ Object.keys(PF).map(k=>`<span style="color:${PF[k].c}">${k}</span>`).join("")+
+ `<span style="color:var(--wall)">earlier</span>`;
+
+/* strip chart */
+(function(){
+ const svg=document.getElementById("stripchart"),NS="http://www.w3.org/2000/svg";
+ const years=[];for(let y=2011;y<=2026;y++)years.push(y);
+ const x0=30,x1=1100,step=(x1-x0)/(years.length-1),base=168;
+ const stacks={};
+ years.forEach(y=>{
+   const t=document.createElementNS(NS,"text");
+   t.setAttribute("x",x0+(y-2011)*step);t.setAttribute("y",192);t.setAttribute("text-anchor","middle");
+   t.setAttribute("style","font:400 10px 'IBM Plex Mono';fill:#5B6B80");
+   t.textContent="'"+String(y).slice(2);svg.appendChild(t);
+ });
+ const line=document.createElementNS(NS,"line");
+ line.setAttribute("x1",x0-14);line.setAttribute("x2",x1+14);line.setAttribute("y1",base+8);line.setAttribute("y2",base+8);
+ line.setAttribute("stroke","#1E2735");svg.appendChild(line);
+ ITEMS.forEach(it=>{
+   const i=stacks[it.y]=(stacks[it.y]||0)+1;
+   const x=x0+(it.y-2011)*step, yPos=base-(i-1)*11;
+   const r=document.createElementNS(NS,"rect");
+   r.setAttribute("x",x-9);r.setAttribute("y",yPos-4);r.setAttribute("width",18);r.setAttribute("height",8);
+   r.setAttribute("rx",2);r.setAttribute("fill",it.p==="wall"?"#4A5568":PF[it.p].c);
+   r.setAttribute("stroke","#0B0E14");r.setAttribute("stroke-width","2");
+   if(it.ds){r.setAttribute("fill-opacity","1");r.setAttribute("stroke","#E8EDF4");r.setAttribute("stroke-width","0.8");}
+   r.style.cursor="pointer";r.dataset.id=it.id;svg.appendChild(r);
+ });
+ const tip=document.getElementById("tip");
+ svg.addEventListener("mousemove",e=>{
+   const t=e.target;
+   if(t.tagName==="rect"&&t.dataset.id){
+     const it=ITEMS.find(i=>i.id==t.dataset.id);
+     tip.style.display="block";tip.style.left=(e.clientX+14)+"px";tip.style.top=(e.clientY+10)+"px";
+     tip.innerHTML=`<div class="m">${it.y} · ${it.p==="wall"?"EARLIER WORK":"CHANNEL "+it.p}${it.ds?" · DATASET":""}</div>${it.t}`;
+   } else tip.style.display="none";
+ });
+ svg.addEventListener("mouseleave",()=>tip.style.display="none");
+})();
+
+/* channels */
+(function(){
+ const years=[];for(let y=2014;y<=2026;y++)years.push(y);
+ document.getElementById("channels").innerHTML=Object.keys(PF).map(k=>{
+  const h=PF[k];
+  const perYear=years.map(y=>ITEMS.filter(i=>i.p===k&&i.y===y).length);
+  const max=Math.max(...perYear,1);
+  const spark=`<svg width="104" height="34" viewBox="0 0 104 34">`+perYear.map((v,i)=>
+    v?`<rect x="${i*8}" y="${30-v/max*26}" width="6" height="${v/max*26+2}" rx="1.5" fill="${h.c}"/>`:
+      `<rect x="${i*8}" y="29" width="6" height="2" rx="1" fill="#1E2735"/>`).join("")+`</svg>`;
+  return `<div class="channel" style="--cc:${h.c}">
+    <div><div class="id">CHANNEL ${k} · ${h.count} OUTPUTS</div><h3>${h.name}</h3></div>
+    <div class="spark">${spark}<div class="n">'14–'26</div></div>
+    <div class="meta">${h.meta}<br><span class="anchor">${h.anchor}</span></div>
+    <div class="flags">${h.flags.map(f=>`<a href="${f[1]}">${f[0]}</a>`).join("")}</div>
+  </div>`;
+ }).join("");
+})();
+
+/* bridges */
+const BRIDGES=[
+ {t:"E-government propaganda & regime support",p:["01","04","05"],rel:"DP 35 → distilled in PB 17"},
+ {t:"GovTech reality check",p:["04","01","05"],rel:"policy-brief version of DP 35"},
+ {t:"Autocrats & their business allies",p:["02","01"],rel:"media-control mediation"},
+ {t:"PROSEC leader-prosecution dataset",p:["03","05"],rel:"featured in Foreign Policy"},
+ {t:"Resource concentration index",p:["02","03"],rel:"original index, Data Hub shelf"},
+ {t:"Strategic humanitarian aid",p:["01","05"],rel:"DP 28 → PB 16 → op-ed"},
+ {t:"Media support tech upgrade",p:["04","05"],rel:"companion op-ed in Tagesspiegel"}
+];
+document.getElementById("bridges").innerHTML=BRIDGES.map(b=>`
+ <div class="bridge"><span class="chips">${b.p.map(k=>`<span class="chip" style="color:${PF[k].c};border-color:${PF[k].c}">${k}</span>`).join("")}</span>
+ <span>${b.t}</span><span class="rel">${b.rel}</span></div>`).join("");
+
+/* finding */
+const FIND={neutral:[48,44],sultanist:[57,49],militarist:[55,56]};
+const OUT=["Support for domestic security operations","Support for cross-border operations"];
+function drawBars(s){
+ document.getElementById("bars").innerHTML=OUT.map((o,i)=>`
+  <div><div class="lab"><span>${o}</span><span class="val">${FIND[s][i]}%</span></div>
+  <div class="track"><div class="fill" style="width:${FIND[s][i]}%"></div></div></div>`).join("");
+}
+drawBars("neutral");
+document.getElementById("scripts").addEventListener("click",e=>{
+ const b=e.target.closest(".sbtn");if(!b)return;
+ document.querySelectorAll(".sbtn").forEach(x=>x.classList.remove("on"));b.classList.add("on");drawBars(b.dataset.s);
+});
+
+/* latest */
+const LATEST=[
+ {y:2026,b:"POLICY BRIEF",t:"GovTech reality check",v:"IDOS PB 17",u:"https://doi.org/10.23661/ipb17.2026"},
+ {y:2026,b:"OP-ED",t:"The personalist global order",v:"Foreign Affairs",u:"https://www.foreignaffairs.com/united-states/personalist-global-order"},
+ {y:2026,b:"WORKING PAPER",t:"Elite defection under polarization",v:"w/ Jafarov & del Río",u:"https://www.researchgate.net/publication/400025352"},
+ {y:2026,b:"CHAPTER",t:"The future of democracy promotion",v:"w/ Leininger",u:"https://www.idos-research.de/en/publications/mitarbeiter-sonstige/article/the-future-of-democracy-promotion/"},
+ {y:2026,b:"OP-ED",t:"Private sector safeguards democracy",v:"Devex · #DEMCOR",u:"https://www.devex.com/news/can-the-private-sector-help-safeguard-democracy-the-answer-is-yes-111752"}
+];
+document.getElementById("latest").innerHTML=LATEST.map(l=>`
+ <div class="row"><span class="y">${l.y}</span><span class="badge">${l.b}</span>
+ <a href="${l.u}">${l.t}</a><span class="v">${l.v}</span></div>`).join("");
+</script>
+</body>
+</html>

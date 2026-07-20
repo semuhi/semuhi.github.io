@@ -1,0 +1,36 @@
+{% comment %}
+Work wall — the full corpus with type × portfolio × tag × year filters.
+Chips and rows are rendered client-side by wall.js from the #c-data JSON
+(same pattern as the network hero), so this include is just the frame.
+{% endcomment %}
+{% assign n_items = site.data.publications | size %}
+<section class="pf-head" style="--pc:var(--cobalt)">
+  <div class="sec-kicker">The Work wall</div>
+  <h1>Publications</h1>
+  <p class="narrative">The full corpus in one place: peer-reviewed articles, working and discussion papers, datasets, policy briefs, and op-eds.</p>
+</section>
+{% comment %} Selected work (2026-07-20): curated flag cards above the filter
+chips — ordered ids from _data/wall.yml, each edged in its primary portfolio's
+color. Static band; the chip filters below don't touch it. {% endcomment %}
+{% if site.data.wall.featured %}
+<section>
+  <div class="sec-kicker">Selected work</div>
+  <div class="fgrid">
+    {% for fid in site.data.wall.featured %}
+      {% assign fpub = site.data.publications | where: "id", fid | first %}
+      {% if fpub %}
+        {% assign fpk = fpub.portfolio.first %}
+        {% assign fpf = site.data.portfolios.list | where: "key", fpk | first %}
+        {% include c-flag-card.html pub=fpub pf=fpf %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+<section>
+  <div class="sec-kicker">Browse & filter</div>
+  <h2>The full ledger</h2>
+  <div class="wall-filters" id="wall-filters"></div>
+  <div class="wall-count mono" id="wall-count"></div>
+  <div class="latest wall-rows" id="wall-rows"></div>
+</section>

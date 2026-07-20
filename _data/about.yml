@@ -32,9 +32,10 @@ bio:
   - >-
     I study how dictators drive support for their regimes through propaganda,
     repression, and polarization, and which counter-mobilization and international
-    assistance strategies can mitigate their effectiveness. My dissertation research is
-    about how and why autocrats financially coerce their closest business allies during
-    sovereign debt crises. I also contribute to the computational and experimental
+    assistance strategies can mitigate their effectiveness. My
+    <a href="https://utoronto.scholaris.ca/items/b539ae4b-e8a0-47e0-af47-d9e8bdf35822">dissertation
+    research</a> is about how and why autocrats financially coerce their closest
+    business allies during sovereign debt crises. I also contribute to the computational and experimental
     methodological tools in political science research. I am part of several novel data
     collection efforts, including developing
     <a href="https://www.researchgate.net/publication/400025334_Tracking_Democratic_Erosion_Transparently_and_Reproducibly_An_Event-Level_Dataset">measures
@@ -65,11 +66,11 @@ bio:
     region in the wake of the Fourth Industrial Revolution.
   - >-
     During my doctoral studies, I was a graduate associate at
-    <a href="https://www.postcorlab.com/">POSTCOR Lab</a>, a
+    <a href="https://www.postcorlab.com/team-12">POSTCOR Lab</a>, a
     <a href="https://munkschool.utoronto.ca/trudeau-centre">Trudeau Centre Fellow</a> at
     the Munk School, a fellow at <a href="https://web.archive.org/web/20250419194114/https://jeannesauve.org/fellows/">Jeanne Sauvé
     Foundation</a>, and a Regional Manager at
-    <a href="http://digitalsocietyproject.org/the-team/">Digital Society Project</a>.
+    <a href="https://digitalsocietyproject.org/the-team/">Digital Society Project</a>.
     I’m a member of <a href="https://www.gif.org.tr/homepage">the Global Relations
     Forum</a>. I’m also an alum of <a href="https://www.masseycollege.ca/">Massey
     College</a>.
@@ -147,11 +148,11 @@ recognition:
       - when: "2022-23"
         what: "Digital Society Project"
         role: "Regional Manager"
-        url: "https://digitalsocietyproject.org"
+        url: "https://digitalsocietyproject.org/the-team/"
       - when: "2022-23"
         what: "POSTCOR Lab"
         role: "Associate"
-        url: "https://www.postcorlab.com"
+        url: "https://www.postcorlab.com/team-12"
       - when: "2022-23"
         what: "Trudeau Centre for Peace, Conflict and Justice"
         role: "Fellow"
@@ -159,7 +160,7 @@ recognition:
       - when: "2021-22"
         what: "Mercatus Center"
         role: "Oskar Morgenstern Fellow"
-        url: "https://www.mercatus.org/students/oskar-morgenstern-fellowship#2392643287-25203644"
+        url: "https://www.mercatus.org/students/oskar-morgenstern-fellowship-alumni"
       - when: "2019-22"
         what: "Massey College"
         role: "Non-resident Fellow"

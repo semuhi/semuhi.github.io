@@ -19,9 +19,10 @@
      "All N posts from this portfolio" links arrive here) */
   var initPf = null;
   try { initPf = new URLSearchParams(window.location.search).get("pf"); } catch (e) {}
+  if (initPf && !PF.some(function (p) { return p.key === initPf; })) initPf = null; // unknown/malformed ?pf= must not reach querySelector
 
   function esc(s) {
-    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
   }
   function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
 

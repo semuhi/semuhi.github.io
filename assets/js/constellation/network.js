@@ -239,13 +239,15 @@
   const byId = id => ITEMS.find(i => i.id == id);
   const projByKey = key => DATA.projects.find(p => p.key === key);
 
+  // YAML-sourced URLs land inside double-quoted href attributes; blurbs stay raw by design
+  const escAttr = s => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
   function itemPanelHTML(it) {
     const color = isWall(it) ? "#9AAAB9" : PF[it.portfolio[0]].color;
     const chips = (isWall(it)
       ? "<span>other</span>"
       : it.portfolio.map(k => '<span style="color:' + PF[k].color + ";border-color:" + PF[k].color + '">' + PF[k].num + "</span>").join(""))
       + (it.methods || []).map(m => '<span class="m">' + METHOD_LABELS[m] + "</span>").join("");
-    const link = it.url ? '<a class="go" href="' + it.url + '" target="_blank" rel="noopener">Open →</a>' : "";
+    const link = it.url ? '<a class="go" href="' + escAttr(it.url) + '" target="_blank" rel="noopener">Open →</a>' : "";
     /* a per-item `kicker` ("IDOS Policy brief") replaces the type label on the
        map card and swallows the numbered venue line; coauthors still show.
        Otherwise a venue that only repeats the type kicker is dropped. */
@@ -270,7 +272,7 @@
   function projPanelHTML(pr) {
     const h = PF[pr.portfolio];
     const link = pr.url
-      ? '<a class="go" href="' + pr.url + '" target="_blank" rel="noopener">Open →</a>'
+      ? '<a class="go" href="' + escAttr(pr.url) + '" target="_blank" rel="noopener">Open →</a>'
       : '<a class="go" href="' + pfHref(pr.portfolio) + '">Open portfolio →</a>';
     // a bare "IDOS" host adds nothing on the map card (the portfolio-page lead
     // card keeps it); richer hosts ("IDOS with UNDP + DW Akademie") stay;

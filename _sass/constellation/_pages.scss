@@ -284,9 +284,17 @@ body.constellation {
     .fgrid, .ta-groups, .ta-groups.two { grid-template-columns: 1fr; }
     .about-cols { grid-template-columns: 1fr; }
     .about-cols .portrait { max-width: 200px; order: -1; }
+    // type + portfolio stay visible on mobile (2026-07-20, user: same ask as
+    // the thread rows): badge tops the entry, title + meta beneath it,
+    // portfolio chips on their own line; the year keeps its gutter
     .wall-rows .wall-row {
       grid-template-columns: 56px 1fr;
-      .pfs { display: none; }
+      row-gap: 5px; // the base .row 14px gap reads as dead air once stacked
+      .yr { grid-column: 1; grid-row: 1; }
+      .badge { display: inline-block; grid-column: 2; grid-row: 1; justify-self: start; }
+      .main { grid-column: 2; grid-row: 2; }
+      .pfs { grid-column: 2; grid-row: 3; text-align: left; margin-top: 2px; }
+      .pdot { margin-left: 0; margin-right: 4px; }
     }
   }
 }

@@ -265,6 +265,12 @@ body.constellation .ta-group .when { font-family: "IBM Plex Mono", monospace; fo
   body.constellation .fgrid, body.constellation .ta-groups, body.constellation .ta-groups.two { grid-template-columns: 1fr; }
   body.constellation .about-cols { grid-template-columns: 1fr; }
   body.constellation .about-cols .portrait { max-width: 200px; order: -1; }
-  body.constellation .wall-rows .wall-row { grid-template-columns: 56px 1fr; }
-  body.constellation .wall-rows .wall-row .pfs { display: none; }
+  /* type + portfolio stay visible on mobile (2026-07-20): badge tops the
+     entry, title + meta beneath it, portfolio chips on their own line */
+  body.constellation .wall-rows .wall-row { grid-template-columns: 56px 1fr; row-gap: 5px; }
+  body.constellation .wall-rows .wall-row .yr { grid-column: 1; grid-row: 1; }
+  body.constellation .wall-rows .wall-row .badge { display: inline-block; grid-column: 2; grid-row: 1; justify-self: start; }
+  body.constellation .wall-rows .wall-row .main { grid-column: 2; grid-row: 2; }
+  body.constellation .wall-rows .wall-row .pfs { grid-column: 2; grid-row: 3; text-align: left; margin-top: 2px; }
+  body.constellation .wall-rows .wall-row .pdot { margin-left: 0; margin-right: 4px; }
 }

@@ -4,9 +4,9 @@ permalink: /:title/
 lang: "en"
 
 # The Constellation system (spec v3) renders everything: layout _layouts/constellation.html,
-# data in _data/, styles in _sass/constellation/. The old Bulma theme files
-# (_layouts/default|page|post, _includes/menu.html etc., _sass/*.sass) are retired and
-# no page references them; navigation/external config for that theme was removed with it.
+# data in _data/, styles in _sass/constellation/. The old Bulma theme (layouts, includes,
+# top-level _sass files, vendored KaTeX/jQuery) was deleted 2026-07-20 after the security
+# audit confirmed nothing referenced it.
 
 plugins:
  - jekyll-feed
@@ -15,6 +15,3 @@ plugins:
 exclude:
  - worklog.html           # internal work log, not for publication
  - _design/
- - assets/katex/README.md # no front matter: Pages' forced plugins (optional-front-matter
-                          # + default-layout) would page-ify it through the retired
-                          # default layout and break the build

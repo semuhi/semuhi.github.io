@@ -363,7 +363,7 @@ pfs.each do |pf|
     hl_card = <<~HTML
       <a class="actlink" href="activity.html?pf=#{key}#highlights">
         <div class="num">Highlights &middot; #{hls.length}</div>
-        <h3>Talks, media, events and news from this portfolio</h3>
+        <h3>Talks, media, events and news</h3>
         <p>Latest: #{h1["title"]} &middot; #{hdate}</p>
         <span class="mono go">Browse all #{hls.length} highlights &rarr;</span>
       </a>
@@ -387,7 +387,7 @@ pfs.each do |pf|
   end
   act_html = (hls.empty? && pposts.empty?) ? "" : <<~HTML
     <section style="--pc:#{pf["color"]}">
-      <div class="sec-kicker">Beyond the papers</div>
+      <div class="sec-kicker">From this portfolio</div>
       <h2>Highlights and field notes</h2>
       <div class="actlinks">#{hl_card}#{po_card}</div>
     </section>

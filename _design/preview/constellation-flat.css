@@ -230,6 +230,7 @@ body.constellation .actlink { display: block; background: var(--card); border: 1
 body.constellation .actlink .num { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--pc, var(--cobalt)); letter-spacing: .1em; text-transform: uppercase; }
 body.constellation .actlink h3 { font-size: 15.5px; margin: .35rem 0; font-weight: 600; }
 body.constellation .actlink p { font-size: 12.5px; color: var(--muted); margin: 0 0 .7rem; }
+body.constellation .actlink .go { font-size: 12px; }
 body.constellation .actlink:hover { text-decoration: none; border-color: var(--pc, var(--cobalt)); }
 body.constellation a.pcard { color: inherit; }
 body.constellation a.pcard:hover { text-decoration: none; border-color: var(--pc); }

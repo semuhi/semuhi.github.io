@@ -103,7 +103,7 @@ months-array formatting instead of the date filter. {% endcomment %}
 {% if hls.size > 0 or pposts.size > 0 %}
 {% assign months = "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC" | split: "," %}
 <section style="--pc:{{ pf.color }}">
-  <div class="sec-kicker">Beyond the papers</div>
+  <div class="sec-kicker">From this portfolio</div>
   <h2>Highlights and field notes</h2>
   <div class="actlinks">
     {% if hls.size > 0 %}
@@ -112,7 +112,7 @@ months-array formatting instead of the date filter. {% endcomment %}
       {% assign mi = parts[1] | plus: 0 | minus: 1 %}
       <a class="actlink" href="{{ '/activity/' | relative_url }}?pf={{ pf.key }}#highlights">
         <div class="num">Highlights · {{ hls.size }}</div>
-        <h3>Talks, media, events and news from this portfolio</h3>
+        <h3>Talks, media, events and news</h3>
         <p>Latest: {{ h1.title }} · {{ months[mi] | capitalize }} {{ parts[0] }}</p>
         <span class="mono go">Browse all {{ hls.size }} highlights →</span>
       </a>

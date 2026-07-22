@@ -91,46 +91,42 @@ toolkit is in its infancy, don't showcase prematurely. {% endcomment %}
 {% elsif page.pf == "datahub" %}{% include c-dertt-teaser.html %}
 {% endif %}
 
+{% comment %} Activity teasers (2026-07-22, user decision): the two 5-card grids
+(highlights + field notes) were too heavy after the research content, so each is
+now one large link card — count + latest-item teaser — pointing at /activity/
+with the portfolio chip preselected via ?pf= (activity.js) and the section
+anchored via #highlights / #posts. Card markup lives here; styles in
+_pages.scss (.actlinks). Highlight dates are YYYY-MM strings, hence the
+months-array formatting instead of the date filter. {% endcomment %}
 {% assign hls = site.data.highlights | where_exp: "h", "h.portfolio contains pf.key" %}
-{% if hls.size > 0 %}
-{% assign months = "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC" | split: "," %}
-<section>
-  <div class="sec-kicker">Highlights</div>
-  <h2>Recent highlights</h2>
-  <div class="hl">
-    {% for h in hls limit: 5 %}
-      {% assign parts = h.date | split: "-" %}
-      {% assign mi = parts[1] | plus: 0 | minus: 1 %}
-      <article data-y="{{ parts[0] }}" data-k="{{ h.kind }}" data-pf="{{ h.portfolio | join: ' ' }}">
-        {% if h.image %}<img class="thumb{% if h.fit == 'contain' %} contain{% endif %}" src="{{ h.image | relative_url }}" alt="" loading="lazy">{% endif %}
-        <div class="d">{{ months[mi] }} {{ parts[0] }} · {{ h.kind | upcase }}</div>
-        <h3>{% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.title }}</a>{% else %}{{ h.title }}{% endif %}</h3>
-      </article>
-    {% endfor %}
-  </div>
-  <p class="mono" style="font-size:12px;margin-top:14px"><a href="{{ '/activity/' | relative_url }}?pf={{ pf.key }}#highlights">Browse all {{ hls.size }} highlights from this portfolio →</a></p>
-</section>
-{% endif %}
-
-{% comment %} Field notes — newest 5 posts tagged with this portfolio; the link
-opens /activity/ with the portfolio chip preselected via ?pf= (activity.js). {% endcomment %}
 {% assign pposts = site.data.social.posts | where_exp: "p", "p.portfolio contains pf.key" %}
-{% if pposts.size > 0 %}
-<section>
-  <div class="sec-kicker">Field notes</div>
-  <h2>Latest posts</h2>
-  <div class="fn">
-    {% for p in pposts limit: 5 %}
-      {% if p.platform == "linkedin" %}{% assign plat = "LinkedIn" %}{% elsif p.platform == "bluesky" %}{% assign plat = "Bluesky" %}{% else %}{% assign plat = "X" %}{% endif %}
-      <a class="fncard" data-y="{{ p.date | date: '%Y' }}" data-k="{{ p.type }}" data-pf="{{ p.portfolio | join: ' ' }}" href="{{ p.url }}" target="_blank" rel="noopener">
-        {% if p.image %}<img class="thumb{% if p.fit == 'contain' %} contain{% endif %}" src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
-        <div class="d">{{ p.date | date: "%b %Y" | upcase }} · {{ plat | upcase }}</div>
-        <p>{{ p.excerpt }}</p>
-        <span class="mono go">Read on {{ plat }} →</span>
+{% if hls.size > 0 or pposts.size > 0 %}
+{% assign months = "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC" | split: "," %}
+<section style="--pc:{{ pf.color }}">
+  <div class="sec-kicker">Beyond the papers</div>
+  <h2>Highlights and field notes</h2>
+  <div class="actlinks">
+    {% if hls.size > 0 %}
+      {% assign h1 = hls.first %}
+      {% assign parts = h1.date | split: "-" %}
+      {% assign mi = parts[1] | plus: 0 | minus: 1 %}
+      <a class="actlink" href="{{ '/activity/' | relative_url }}?pf={{ pf.key }}#highlights">
+        <div class="num">Highlights · {{ hls.size }}</div>
+        <h3>Talks, media, events and news from this portfolio</h3>
+        <p>Latest: {{ h1.title }} · {{ months[mi] | capitalize }} {{ parts[0] }}</p>
+        <span class="mono go">Browse all {{ hls.size }} highlights →</span>
       </a>
-    {% endfor %}
+    {% endif %}
+    {% if pposts.size > 0 %}
+      {% assign p1 = pposts.first %}
+      <a class="actlink" href="{{ '/activity/' | relative_url }}?pf={{ pf.key }}#posts">
+        <div class="num">Field notes · {{ pposts.size }}</div>
+        <h3>Posts from LinkedIn and Bluesky</h3>
+        <p>Latest: {{ p1.excerpt | truncate: 90 }} · {{ p1.date | date: "%b %Y" }}</p>
+        <span class="mono go">Browse all {{ pposts.size }} posts →</span>
+      </a>
+    {% endif %}
   </div>
-  <p class="mono" style="font-size:12px;margin-top:14px"><a href="{{ '/activity/' | relative_url }}?pf={{ pf.key }}#posts">Browse all {{ pposts.size }} posts from this portfolio →</a></p>
 </section>
 {% endif %}
 

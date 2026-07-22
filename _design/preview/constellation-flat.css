@@ -225,6 +225,12 @@ body.constellation .bridge ul { list-style: none; }
 body.constellation .bridge li { font-size: 12px; color: var(--muted); padding: 2px 0; }
 body.constellation .bridge li::before { content: "– "; }
 body.constellation .bridge:hover { text-decoration: none; border-color: var(--pc); }
+body.constellation .actlinks { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+body.constellation .actlink { display: block; background: var(--card); border: 1px solid var(--hair); border-left: 3px solid var(--pc, var(--cobalt)); padding: 18px 20px; color: inherit; }
+body.constellation .actlink .num { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--pc, var(--cobalt)); letter-spacing: .1em; text-transform: uppercase; }
+body.constellation .actlink h3 { font-size: 15.5px; margin: .35rem 0; font-weight: 600; }
+body.constellation .actlink p { font-size: 12.5px; color: var(--muted); margin: 0 0 .7rem; }
+body.constellation .actlink:hover { text-decoration: none; border-color: var(--pc, var(--cobalt)); }
 body.constellation a.pcard { color: inherit; }
 body.constellation a.pcard:hover { text-decoration: none; border-color: var(--pc); }
 body.constellation .wall-filters { margin-top: 6px; }

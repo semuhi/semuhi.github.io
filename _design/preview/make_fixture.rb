@@ -349,25 +349,47 @@ pfs.each do |pf|
 
   threads_html, nlines = thread_blocks(srest, threads[key], pf["color"], type_labels)
 
+  # Activity teasers (2026-07-22): the two 5-card grids were replaced by one
+  # large link card each (count + latest-item teaser) pointing at the activity
+  # page with the portfolio chip preselected — mirrors c-portfolio-page.html.
+  months = %w[JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC]
   hls = highlights.select { |h| Array(h["portfolio"]).include?(key) }
-  hl_html = hls.empty? ? "" : <<~HTML
-    <section>
-      <div class="sec-kicker">Highlights</div>
-      <h2>Recent highlights</h2>
-      <div class="hl">#{hl_cards(hls.first(5))}</div>
-      <p class="mono" style="font-size:12px;margin-top:14px"><a href="activity.html?pf=#{key}#highlights">Browse all #{hls.length} highlights from this portfolio &rarr;</a></p>
-    </section>
-  HTML
-
-  # Field notes — newest 5 posts tagged with this portfolio; link preselects the
-  # portfolio chip on the activity page via ?pf= (activity.js).
   pposts = social.select { |p| Array(p["portfolio"]).include?(key) }
-  posts_html = pposts.empty? ? "" : <<~HTML
-    <section>
-      <div class="sec-kicker">Field notes</div>
-      <h2>Latest posts</h2>
-      <div class="fn">#{fn_cards(pposts.first(5))}</div>
-      <p class="mono" style="font-size:12px;margin-top:14px"><a href="activity.html?pf=#{key}#posts">Browse all #{pposts.length} posts from this portfolio &rarr;</a></p>
+  hl_card = ""
+  unless hls.empty?
+    h1 = hls.first
+    parts = h1["date"].to_s.split("-")
+    hdate = "#{months[parts[1].to_i - 1].capitalize} #{parts[0]}"
+    hl_card = <<~HTML
+      <a class="actlink" href="activity.html?pf=#{key}#highlights">
+        <div class="num">Highlights &middot; #{hls.length}</div>
+        <h3>Talks, media, events and news from this portfolio</h3>
+        <p>Latest: #{h1["title"]} &middot; #{hdate}</p>
+        <span class="mono go">Browse all #{hls.length} highlights &rarr;</span>
+      </a>
+    HTML
+  end
+  po_card = ""
+  unless pposts.empty?
+    p1 = pposts.first
+    pparts = p1["date"].to_s.split("-")
+    pdate = "#{months[pparts[1].to_i - 1].capitalize} #{pparts[0]}"
+    exc = p1["excerpt"].to_s
+    exc = exc.length > 90 ? "#{exc[0, 87]}..." : exc
+    po_card = <<~HTML
+      <a class="actlink" href="activity.html?pf=#{key}#posts">
+        <div class="num">Field notes &middot; #{pposts.length}</div>
+        <h3>Posts from LinkedIn and Bluesky</h3>
+        <p>Latest: #{exc} &middot; #{pdate}</p>
+        <span class="mono go">Browse all #{pposts.length} posts &rarr;</span>
+      </a>
+    HTML
+  end
+  act_html = (hls.empty? && pposts.empty?) ? "" : <<~HTML
+    <section style="--pc:#{pf["color"]}">
+      <div class="sec-kicker">Beyond the papers</div>
+      <h2>Highlights and field notes</h2>
+      <div class="actlinks">#{hl_card}#{po_card}</div>
     </section>
   HTML
 
@@ -400,8 +422,7 @@ pfs.each do |pf|
       <div class="latest xstream threads" style="--pc:#{pf["color"]}">#{threads_html}</div>
     </section>
     #{finding_html}
-    #{hl_html}
-    #{posts_html}
+    #{act_html}
     <section>
       <div class="sec-kicker">Bridges</div>
       <h2>From the other portfolios</h2>
@@ -427,7 +448,7 @@ wall_body = <<~HTML
     <p class="narrative">The full corpus in one place: peer-reviewed articles, working and discussion papers, datasets, policy briefs, and op-eds.</p>
   </section>
   <section>
-    <div class="sec-kicker">Selected work</div>
+    <div class="sec-kicker">Spotlight</div>
     <div class="fgrid">#{featured_cards}</div>
   </section>
   <section>

@@ -14,7 +14,7 @@ chips — ordered ids from _data/wall.yml, each edged in its primary portfolio's
 color. Static band; the chip filters below don't touch it. {% endcomment %}
 {% if site.data.wall.featured %}
 <section>
-  <div class="sec-kicker">Selected work</div>
+  <div class="sec-kicker">Spotlight</div>
   <div class="fgrid">
     {% for fid in site.data.wall.featured %}
       {% assign fpub = site.data.publications | where: "id", fid | first %}

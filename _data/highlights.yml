@@ -17,6 +17,13 @@
 # 2026-07-18 (IDOS blog + IDOS YouTube). Kinds + portfolios reclassified by the
 # user 2026-07-19. Add one = append a block (newest first).
 
+- date: 2026-08
+  kind: media
+  title: "A reality check on donor expectations"
+  portfolio: [aitech, propaganda, durability]
+  image: "/assets/img/highlight8-realitycheck.jpg"
+  url: "https://www.youtube.com/watch?v=Zi-JPD00eYA"
+
 - date: 2026-07
   kind: event
   title: "At the UN Global Dialogue on AI Governance and AI4Good Summit, Geneva"

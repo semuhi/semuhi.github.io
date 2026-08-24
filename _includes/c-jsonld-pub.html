@@ -1,0 +1,67 @@
+{% comment %}
+schema.org record for one publication, emitted on its /work/<slug>/ page.
+Params: pub (item), type_label.
+
+Author order is not in the data, so the co-authors ride as `contributor`, not as
+positions in `author`. Add an ordered `authors: [full names]` to the item in
+_data/publications.yml and this include uses that as `author` instead. Never
+guess an order here: a wrong machine-readable author list is worse than a short
+one. Every string runs through `jsonify`, which quotes and escapes it.
+{% endcomment %}
+{% assign pub = include.pub %}
+{% case pub.type %}
+  {% when "academic-thesis" %}{% assign schema_type = "Thesis" %}
+  {% when "academic-chapter" %}{% assign schema_type = "Chapter" %}
+  {% when "policy-brief" %}{% assign schema_type = "Report" %}
+  {% when "report" %}{% assign schema_type = "Report" %}
+  {% when "oped" %}{% assign schema_type = "OpinionNewsArticle" %}
+  {% when "essay" %}{% assign schema_type = "Article" %}
+  {% else %}{% assign schema_type = "ScholarlyArticle" %}
+{% endcase %}
+{% assign page_url = page.url | absolute_url %}
+{% capture pub_date %}{{ pub.year }}{% if pub.month %}-{{ pub.month | prepend: '0' | slice: -2, 2 }}{% if pub.day %}-{{ pub.day | prepend: '0' | slice: -2, 2 }}{% endif %}{% endif %}{% endcapture %}
+{% comment %}Keywords: tag labels plus the portfolio titles the item sits in.{% endcomment %}
+{% assign kw = "" | split: "" %}
+{% for t in pub.tags %}
+  {% assign to = site.data.portfolios.tags | where: "key", t | first %}
+  {% assign lbl = to.label | default: t %}
+  {% assign kw = kw | push: lbl %}
+{% endfor %}
+{% for k in pub.portfolio %}
+  {% assign po = site.data.portfolios.list | where: "key", k | first %}
+  {% if po %}{% assign kw = kw | push: po.title %}{% endif %}
+{% endfor %}
+{% comment %}"Way, Levitsky & Talebirad" -> three names.{% endcomment %}
+{% assign co_raw = pub.coauthors_full | default: pub.coauthors %}
+{% assign co_list = co_raw | replace: " & ", ", " | split: ", " %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ schema_type }}",
+  "@id": {{ page_url | append: "#record" | jsonify }},
+  "name": {{ pub.title | jsonify }},
+  "headline": {{ pub.title | jsonify }},
+  "url": {{ page_url | jsonify }},
+  "mainEntityOfPage": {{ page_url | jsonify }},
+  "inLanguage": "en",
+  "datePublished": {{ pub_date | strip | jsonify }},
+  {% if pub.abstract %}"abstract": {{ pub.abstract | strip | jsonify }},
+  {% endif %}
+  {% if pub.blurb %}"description": {{ pub.blurb | strip | jsonify }},
+  {% endif %}
+  {% if pub.venue and pub.venue != "" %}"isPartOf": { "@type": "CreativeWork", "name": {{ pub.venue | jsonify }} },
+  {% endif %}
+  {% if pub.url %}"sameAs": {{ pub.url | jsonify }},
+  {% endif %}
+  {% if kw.size > 0 %}"keywords": {{ kw | join: ", " | jsonify }},
+  {% endif %}
+  {% if pub.authors %}
+  "author": [{% for a in pub.authors %}{ "@type": "Person", "name": {{ a | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}],
+  {% else %}
+  "author": { "@type": "Person", "@id": "https://semuhi.github.io/#person", "name": "Semuhi Sinanoglu" },
+  {% if co_list.size > 0 %}"contributor": [{% for c in co_list %}{% assign cn = c | strip %}{% if cn contains "Lab" or cn contains "Analytics" or cn contains "Institute" %}{ "@type": "Organization", "name": {{ cn | jsonify }} }{% else %}{ "@type": "Person", "name": {{ cn | jsonify }} }{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}],
+  {% endif %}
+  {% endif %}
+  "isAccessibleForFree": true
+}
+</script>

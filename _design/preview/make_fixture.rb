@@ -5,6 +5,7 @@
 # encoding: utf-8
 require "yaml"
 require "json"
+require "cgi"
 
 # Repo root derived from this script's location (_design/preview/) so the
 # workspace folder can move or be renamed without breaking the generator.
@@ -435,12 +436,41 @@ pfs.each do |pf|
 end
 
 # ---------- wall ----------
+# One ledger row (mirrors the {% for %} block in c-wall.html). The data-*
+# attributes are the facet values wall.js reads; data-m/data-pf/data-tag are
+# space-joined lists and an empty data-pf marks a wall-only item.
+def wall_row(p, pfs, type_labels)
+  show_v = !p["venue"].to_s.empty? && p["kicker"].nil? &&
+           p["venue"].to_s.downcase != type_labels[p["type"]].to_s.downcase
+  parts = []
+  parts << p["venue"] if show_v
+  parts << "with #{p["coauthors"]}" if p["coauthors"]
+  meta = parts.join(" \u00b7 ")
+  keys = Array(p["portfolio"])
+  dots = if keys.empty?
+           %(<span class="pdot wallonly">other</span>)
+         else
+           keys.map { |k|
+             f = pfs.find { |x| x["key"] == k }
+             %(<span class="pdot" style="color:#{f["color"]}" title="#{CGI.escapeHTML(f["title"])}">#{f["num"]}</span>)
+           }.join
+         end
+  title = CGI.escapeHTML(p["title"].to_s)
+  t = p["url"] ? %(<a class="t" href="#{CGI.escapeHTML(p["url"])}" target="_blank" rel="noopener">#{title}</a>) : %(<span class="t">#{title}</span>)
+  %(<div class="row wall-row" data-id="#{p["id"]}" data-year="#{p["year"]}" data-type="#{p["type"]}" ) +
+    %(data-ds="#{p["dataset"] ? "1" : ""}" data-m="#{Array(p["methods"]).join(" ")}" ) +
+    %(data-pf="#{keys.join(" ")}" data-tag="#{Array(p["tags"]).join(" ")}">) +
+    %(<span class="yr">#{p["year"]}</span><span class="badge">#{p["kicker"] || type_labels[p["type"]]}</span>) +
+    %(<span class="main">#{t}<span class="meta">#{meta}</span></span><span class="pfs">#{dots}</span></div>)
+end
+
 # Selected work (2026-07-20): curated flag cards above the filter chips —
 # ordered ids from _data/wall.yml (mirrors c-wall.html).
 featured_cards = (wall_cfg["featured"] || []).map { |fid|
   pub = pubs.find { |p| p["id"] == fid }
   pub ? flag_card(pub, pfs.find { |f| f["key"] == pub["portfolio"].first }, type_labels) : ""
 }.join
+wall_rows = pubs.sort_by { |p| -p["year"] }.map { |p| wall_row(p, pfs, type_labels) }.join
 wall_body = <<~HTML
   <section class="pf-head" style="--pc:var(--cobalt)">
     <div class="sec-kicker">The Work wall</div>
@@ -456,7 +486,7 @@ wall_body = <<~HTML
     <h2>The full ledger</h2>
     <div class="wall-filters" id="wall-filters"></div>
     <div class="wall-count mono" id="wall-count"></div>
-    <div class="latest wall-rows" id="wall-rows"></div>
+    <div class="latest wall-rows" id="wall-rows">#{wall_rows}</div>
   </section>
 HTML
 File.write("#{ROOT}/_design/preview/wall.html",

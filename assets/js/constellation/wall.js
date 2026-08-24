@@ -1,7 +1,12 @@
-/* Work wall — spec v3. Renders the full corpus from the #c-data JSON with five
-   AND-combined facet groups (type × method × portfolio × tag × year), one
-   selection per group. Type and method groups match the network hero's chips
-   for consistency. */
+/* Work wall — spec v3. Filters the full corpus with five AND-combined facet
+   groups (type × method × portfolio × tag × year), one selection per group.
+   Type and method groups match the network hero's chips for consistency.
+
+   2026-08-24: the rows are no longer built here. c-wall.html renders all of
+   them server-side so a crawler sees the whole corpus, and this module reads
+   their data-* attributes and toggles display, like activity.js does with its
+   cards. The #c-data JSON is still the source for the chips and for the exact
+   row order. */
 (function () {
   "use strict";
   const dataEl = document.getElementById("c-data");
@@ -9,18 +14,23 @@
   const rowsEl = document.getElementById("wall-rows");
   const countEl = document.getElementById("wall-count");
   if (!dataEl || !filtersEl || !rowsEl) return;
+  const ROWS = Array.prototype.slice.call(rowsEl.querySelectorAll(".wall-row"));
+  if (!ROWS.length) return;
 
   const DATA = JSON.parse(dataEl.textContent);
   // newest first; within a year, exact dates (optional month/day) rank above
   // year-only items, which sink to the bottom of their year
   const ITEMS = DATA.items.slice().sort((a, b) =>
     b.year - a.year || (b.month || 0) - (a.month || 0) || (b.day || 0) - (a.day || 0) || b.id - a.id);
-  const TYPE_LABELS = DATA.typeLabels;
   const METHODS = DATA.methods || []; // [{key, label}] from _data/portfolios.yml
-  const METHOD_LABELS = {};
-  METHODS.forEach(m => { METHOD_LABELS[m.key] = m.label; });
   const PF = {};
   DATA.portfolios.forEach(p => { PF[p.key] = p; });
+
+  /* Liquid can only sort on one key, so it emits the rows in year order.
+     Put them in the exact year > month > day > id order here. */
+  const BY_ID = {};
+  ROWS.forEach(r => { BY_ID[r.dataset.id] = r; });
+  ITEMS.forEach(it => { const r = BY_ID[String(it.id)]; if (r) rowsEl.appendChild(r); });
 
   const TYPE_GROUPS = {
     peer: ["academic-peer-review"],
@@ -44,7 +54,7 @@
       .concat([["lt:" + head[YEAR_SHOWN - 1], tail[tail.length - 1] + "–" + tail[0]]]);
   }
   const usedTags = new Set();
-  ITEMS.forEach(i => (i.tags || []).forEach(t => usedTags.add(t)));
+  ROWS.forEach(r => attr(r, "tag").forEach(t => usedTags.add(t)));
   const facets = [
     ["type", "Type", [["all", "All"], ["peer", "Journal articles"], ["wpdp", "Working & discussion papers"], ["book", "Books & book chapters"], ["pb", "Policy briefs & reports"], ["oped", "Op-eds & essays"], ["ds", "Datasets"]]],
     ["m", "Method", [["all", "All"]].concat(METHODS.map(m => [m.key, m.label]))],
@@ -102,60 +112,44 @@
     render();
   });
 
-  function matches(it) {
+  /* space-joined data-* list -> array ("" -> []) */
+  function attr(row, name) {
+    const v = (row.dataset[name] || "").trim();
+    return v ? v.split(/\s+/) : [];
+  }
+
+  function matches(row) {
+    const d = row.dataset;
     if (state.type !== "all") {
-      if (state.type === "ds") { if (!it.dataset) return false; }
-      else if (!TYPE_GROUPS[state.type].includes(it.type)) return false;
+      if (state.type === "ds") { if (d.ds !== "1") return false; }
+      else if (!TYPE_GROUPS[state.type].includes(d.type)) return false;
     }
-    if (state.m !== "all" && !(it.methods || []).includes(state.m)) return false;
-    const pfs = it.portfolio || [];
+    if (state.m !== "all" && !attr(row, "m").includes(state.m)) return false;
+    const pfs = attr(row, "pf");
     if (state.pf === "wall") { if (pfs.length) return false; }
     else if (state.pf !== "all" && !pfs.includes(state.pf)) return false;
-    if (state.tag !== "all" && !(it.tags || []).includes(state.tag)) return false;
+    if (state.tag !== "all" && !attr(row, "tag").includes(state.tag)) return false;
     if (state.year !== "all") {
       // "lt:<y>" is the bucketed earlier-years chip
-      if (state.year.indexOf("lt:") === 0) { if (it.year >= +state.year.slice(3)) return false; }
-      else if (String(it.year) !== state.year) return false;
+      if (state.year.indexOf("lt:") === 0) { if (+d.year >= +state.year.slice(3)) return false; }
+      else if (d.year !== state.year) return false;
     }
     return true;
   }
 
-  function esc(s) {
-    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-  }
-
   function render() {
-    const hits = ITEMS.filter(matches);
-    const shown = expanded ? hits : hits.slice(0, CAP);
-    countEl.textContent = "SHOWING " + shown.length + " OF " + ITEMS.length + " OUTPUTS";
-    const hidden = hits.length - shown.length;
+    let hits = 0, shown = 0;
+    ROWS.forEach(r => {
+      if (!matches(r)) { r.style.display = "none"; return; }
+      hits += 1;
+      const visible = expanded || hits <= CAP;
+      r.style.display = visible ? "" : "none";
+      if (visible) shown += 1;
+    });
+    countEl.textContent = "SHOWING " + shown + " OF " + ROWS.length + " OUTPUTS";
+    const hidden = hits - shown;
     moreBtn.textContent = "Show " + hidden + " more";
     moreBtn.style.display = hidden > 0 ? "" : "none";
-    rowsEl.innerHTML = shown.map(it => {
-      const pfs = it.portfolio || [];
-      const color = pfs.length ? PF[pfs[0]].color : "#9AAAB9";
-      const dots = pfs.length
-        ? pfs.map(k => '<span class="pdot" style="color:' + PF[k].color + '" title="' + esc(PF[k].title) + '">' + PF[k].num + "</span>").join("")
-        : '<span class="pdot wallonly">other</span>';
-      const title = esc(it.title);
-      const t = it.url
-        ? '<a class="t" href="' + esc(it.url) + '" target="_blank" rel="noopener">' + title + "</a>"
-        : '<span class="t">' + title + "</span>";
-      // a per-item kicker ("IDOS Policy brief") becomes the badge and swallows
-      // the numbered venue ("IDOS Policy Brief 17/2026"), mirroring the map card;
-      // otherwise a venue that only repeats the type badge is dropped
-      const badge = it.kicker || TYPE_LABELS[it.type];
-      const metaParts = [];
-      if (it.venue && !it.kicker && it.venue.toLowerCase() !== TYPE_LABELS[it.type].toLowerCase()) metaParts.push(esc(it.venue));
-      if (it.coauthors) metaParts.push("with " + esc(it.coauthors));
-      // methods stay a filter facet only; the rows don't repeat them
-      const meta = metaParts.join(" · ");
-      return '<div class="row wall-row">' +
-        '<span class="yr">' + it.year + "</span>" +
-        '<span class="badge">' + badge + "</span>" +
-        '<span class="main">' + t + '<span class="meta">' + meta + "</span></span>" +
-        '<span class="pfs">' + dots + "</span></div>";
-    }).join("");
   }
 
   render();

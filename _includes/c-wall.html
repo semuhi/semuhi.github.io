@@ -1,7 +1,7 @@
 {% comment %}
 Work wall — the full corpus with type × portfolio × tag × year filters.
-Chips and rows are rendered client-side by wall.js from the #c-data JSON
-(same pattern as the network hero), so this include is just the frame.
+Chips are built client-side by wall.js from the #c-data JSON; the ledger
+rows below are rendered server-side in Liquid and wall.js only filters them.
 {% endcomment %}
 {% assign n_items = site.data.publications | size %}
 <section class="pf-head" style="--pc:var(--cobalt)">
@@ -27,10 +27,37 @@ color. Static band; the chip filters below don't touch it. {% endcomment %}
   </div>
 </section>
 {% endif %}
+{% comment %} Ledger rows are rendered here in Liquid, not by wall.js (changed
+2026-08-24). They used to be built client-side, so a crawler saw 6 of the 47
+outputs on this page and 3 portfolio-less items appeared in no HTML at all.
+wall.js now filters these rows instead of creating them, the same way
+activity.js filters its server-rendered cards. The data-* attributes are the
+facet values it reads; data-pf and data-tag and data-m are space-joined lists,
+and an empty data-pf marks a wall-only item. Order here is year descending;
+wall.js re-sorts on load to the exact year > month > day > id order.
+{% endcomment %}
+{% assign type_labels = site.data.portfolios.type_labels %}
+{% assign pf_list = site.data.portfolios.list %}
+{% assign wall_items = site.data.publications | sort: "year" | reverse %}
 <section>
   <div class="sec-kicker">Browse & filter</div>
   <h2>The full ledger</h2>
   <div class="wall-filters" id="wall-filters"></div>
   <div class="wall-count mono" id="wall-count"></div>
-  <div class="latest wall-rows" id="wall-rows"></div>
+  <div class="latest wall-rows" id="wall-rows">
+    {% for p in wall_items %}
+      {% assign v_lc = p.venue | downcase %}{% assign t_lc = type_labels[p.type] | downcase %}
+      {% comment %} venue is dropped when a kicker swallows it, or when it only
+      repeats the type badge; mirrors c-thread-row.html and the old wall.js {% endcomment %}
+      {% assign show_v = false %}
+      {% if p.venue and p.venue != "" and p.kicker == nil and v_lc != t_lc %}{% assign show_v = true %}{% endif %}
+      {% capture meta %}{% if show_v %}{{ p.venue }}{% endif %}{% if show_v and p.coauthors %} · {% endif %}{% if p.coauthors %}with {{ p.coauthors }}{% endif %}{% endcapture %}
+      <div class="row wall-row" data-id="{{ p.id }}" data-year="{{ p.year }}" data-type="{{ p.type }}" data-ds="{% if p.dataset %}1{% endif %}" data-m="{{ p.methods | join: ' ' }}" data-pf="{{ p.portfolio | join: ' ' }}" data-tag="{{ p.tags | join: ' ' }}">
+        <span class="yr">{{ p.year }}</span>
+        <span class="badge">{{ p.kicker | default: type_labels[p.type] }}</span>
+        <span class="main">{% if p.url %}<a class="t" href="{{ p.url | escape }}" target="_blank" rel="noopener">{{ p.title | escape }}</a>{% else %}<span class="t">{{ p.title | escape }}</span>{% endif %}<span class="meta">{{ meta | strip }}</span></span>
+        <span class="pfs">{% if p.portfolio.size > 0 %}{% for k in p.portfolio %}{% assign pfo = pf_list | where: "key", k | first %}<span class="pdot" style="color:{{ pfo.color }}" title="{{ pfo.title | escape }}">{{ pfo.num }}</span>{% endfor %}{% else %}<span class="pdot wallonly">other</span>{% endif %}</span>
+      </div>
+    {% endfor %}
+  </div>
 </section>

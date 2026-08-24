@@ -7,4 +7,4 @@ permalink: /about/
 ---
 {% include c-about.html %}
 {% include c-jsonld-person.html %}
-<script src="{{ '/assets/js/constellation/about.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/constellation/about.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

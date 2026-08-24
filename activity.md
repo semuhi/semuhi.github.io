@@ -5,4 +5,4 @@ description: "Talks, media appearances, events, and posts by Semuhi Sinanoglu on
 permalink: /activity/
 ---
 {% include c-activity.html %}
-<script src="{{ '/assets/js/constellation/activity.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/constellation/activity.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

@@ -6,4 +6,4 @@ permalink: /work/
 ---
 {% include c-wall.html %}
 {% include c-data.html %}
-<script src="{{ '/assets/js/constellation/wall.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/constellation/wall.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

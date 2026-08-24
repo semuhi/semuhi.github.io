@@ -33,7 +33,11 @@ retrieval pipelines read these instead of the plain meta tags.{% endcomment %}
 <meta name="google-site-verification" content="Km-GWINZtbH18zUFHu1vxeP_kUI_yj0vDKCYaD8FG1Q">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicon-180.png' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/constellation.css' | relative_url }}">
+{% comment %}The ?v stamp is the build time. It changes on every build, so a
+browser can never mix a new page with an old stylesheet or an old script.
+That mix broke the home page once (user report 2026-08-24): the cached CSS
+still had the 30px .hero-head h1 rule and blew up the map label.{% endcomment %}
+<link rel="stylesheet" href="{{ '/assets/css/constellation.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body class="constellation">
 

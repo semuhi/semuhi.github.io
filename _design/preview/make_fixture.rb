@@ -264,7 +264,7 @@ home_body = <<~HTML
     <span class="reg" style="bottom:8px;left:10px">+</span>
     <span class="reg" style="bottom:8px;right:10px">+</span>
     <div class="hero-head">
-      <div class="kicker">Research and policy advice map &middot; #{pubs.length} outputs &middot; 6 portfolios &middot; #{projects.count { |pr| pr["net_x"] }} initiatives</div>
+      <h1 class="kicker">Research and policy advice map &middot; #{pubs.length} outputs &middot; 6 portfolios &middot; #{projects.count { |pr| pr["net_x"] }} initiatives</h1>
     </div>
     <div class="net-scroll"><svg id="net" class="net" viewBox="0 0 1200 640" role="img" aria-label="Network map of research outputs grouped by six portfolios" data-pf-href="portfolio-{key}.html"></svg></div>
     <div class="chips" id="chips"></div>

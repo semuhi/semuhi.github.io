@@ -24,7 +24,8 @@ body.constellation {
       z-index: 5;
       max-width: 390px;
       pointer-events: none;
-      h1 { font-size: 30px; line-height: 1.15; font-weight: 600; margin: .35rem 0 .4rem; }
+      // the map label is the page h1; it keeps the small mono kicker look
+      h1.kicker { font-weight: 400; line-height: 1.5; }
       p { font-size: 14px; color: var(--muted); max-width: 340px; }
     }
     .net-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }

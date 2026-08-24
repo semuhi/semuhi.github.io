@@ -44,7 +44,7 @@ body.constellation footer.site .ficons svg { width: 15px; height: 15px; fill: cu
 body.constellation .hero { max-width: 1200px; margin: 8px auto 0; position: relative; border: 1px solid var(--hair); background: var(--card); }
 body.constellation .hero .reg { position: absolute; font-family: "IBM Plex Mono", monospace; color: var(--cobalt); opacity: .5; font-size: 12px; }
 body.constellation .hero .hero-head { position: absolute; top: 26px; left: 28px; z-index: 5; max-width: 390px; pointer-events: none; }
-body.constellation .hero .hero-head h1 { font-size: 30px; line-height: 1.15; font-weight: 600; margin: .35rem 0 .4rem; }
+body.constellation .hero .hero-head h1.kicker { font-weight: 400; line-height: 1.5; }
 body.constellation .hero .hero-head p { font-size: 14px; color: var(--muted); max-width: 340px; }
 body.constellation .hero .net-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 body.constellation .hero svg.net { display: block; width: 100%; height: auto; }

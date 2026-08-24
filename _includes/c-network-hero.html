@@ -5,7 +5,11 @@
   <span class="reg" style="top:8px;right:10px">+</span>
   <span class="reg" style="bottom:8px;left:10px">+</span>
   <span class="reg" style="bottom:8px;right:10px">+</span>
+  {% comment %}The home page h1 is his name (user decision 2026-08-24). It sits
+  in the hero head, above the map label, so the map stays the first thing on the
+  page and the page still has one heading that names the person.{% endcomment %}
   <div class="hero-head">
+    <h1>{{ site.data.about.identity.name }}</h1>
     {% assign map_initiatives = site.data.projects | where_exp: "p", "p.net_x" %}<div class="kicker">Research and policy advice map · {{ n_items }} outputs · 6 portfolios · {{ map_initiatives | size }} initiatives</div>
   </div>
   <div class="net-scroll"><svg id="net" class="net" viewBox="0 0 1200 640" role="img" aria-label="Network map of research outputs grouped by six portfolios" data-pf-href="{{ '/portfolios/' | relative_url }}{key}/" data-work-href="{{ '/work/' | relative_url }}{slug}/"></svg></div>

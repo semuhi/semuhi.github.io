@@ -1,0 +1,57 @@
+{% comment %}
+schema.org Person record. Emitted on the home page and on /about/ with the same
+@id, so both pages describe one entity and every other record on the site can
+point at it.
+
+Everything comes from _data/about.yml: the `identity` block, the `profiles`
+list (sameAs), the degree programs (alumniOf), and the awards. Nothing is
+hardcoded here. The Turkish spelling of the surname is deliberately absent:
+he does not publish under it, and a wrong alias is worse than a missing one.
+{% endcomment %}
+{% assign id = site.data.about.identity %}
+{% assign degrees = site.data.about.education | where: "group", "Degree Programs" | first %}
+{% assign awards = site.data.about.recognition | where: "group", "Awards & Scholarships" | first %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ '/' | absolute_url }}#person",
+  "name": {{ id.name | jsonify }},
+  "givenName": {{ id.given_name | jsonify }},
+  "familyName": {{ id.family_name | jsonify }},
+  "description": {{ id.summary | strip | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "mainEntityOfPage": {{ '/about/' | absolute_url | jsonify }},
+  "image": {{ site.data.about.photo | absolute_url | jsonify }},
+  "jobTitle": {{ id.job_title | jsonify }},
+  "worksFor": {
+    "@type": "Organization",
+    "name": {{ id.org | jsonify }},
+    "url": {{ id.org_url | jsonify }}
+  },
+  "affiliation": {
+    "@type": "Organization",
+    "name": {{ id.org | jsonify }},
+    "url": {{ id.org_url | jsonify }}
+  },
+  "workLocation": {
+    "@type": "Place",
+    "address": { "@type": "PostalAddress", "addressLocality": {{ id.locality | jsonify }}, "addressCountry": {{ id.country | jsonify }} }
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": {{ id.orcid | jsonify }}
+  },
+  "alumniOf": [{% for e in degrees.entries %}
+    { "@type": "CollegeOrUniversity", "name": {{ e.org | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],
+  {% if awards %}"award": [{% for a in awards.entries %}{{ a.what | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  {% endif %}
+  "knowsAbout": [{% for k in id.knows_about %}{{ k | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "sameAs": [
+    {{ id.staff_page | jsonify }}{% for pr in site.data.about.profiles %}{% unless pr.url contains "mailto:" %},
+    {{ pr.url | jsonify }}{% endunless %}{% endfor %}
+  ]
+}
+</script>

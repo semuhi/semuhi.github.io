@@ -1,6 +1,7 @@
 ---
 layout: constellation
-title: "Portfolios — Semuhi Sinanoglu"
+title: "Research portfolios — Semuhi Sinanoglu"
+description: "The six research portfolios of Semuhi Sinanoglu: authoritarian propaganda, business and democracy, democracy support and autocratic durability, data and methods, conflict and migration, and AI for development cooperation."
 permalink: /portfolios/
 ---
 <section class="pf-head" style="--pc:var(--cobalt)">

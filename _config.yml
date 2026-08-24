@@ -1,6 +1,9 @@
 title: "Dr. Semuhi Sinanoglu"
 url: "https://semuhi.github.io"
 author: "Dr. Semuhi Sinanoglu"
+# Site-wide fallback description. Pages that set their own `description:` win;
+# see the head of _layouts/constellation.html.
+description: "Semuhi Sinanoglu is a senior researcher at IDOS in Bonn. He studies authoritarian propaganda, repression, polarization, and democracy support."
 permalink: /:title/
 lang: "en"
 
@@ -16,3 +19,4 @@ plugins:
 exclude:
  - worklog.html           # internal work log, not for publication
  - _design/
+ - tools/                 # site build helpers (gen-pub-pages.rb), not content

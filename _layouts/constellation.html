@@ -5,9 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'; frame-src 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+{% comment %}Page description (2026-08-24): each page states its own, because one
+sentence repeated across twelve pages tells a search or answer engine nothing.
+Portfolio pages derive theirs from the portfolio blurb, so `pf:` stays the only
+front matter they need; everything else sets `description:` or falls back to the
+site one in _config.yml.{% endcomment %}
+{% assign meta_desc = page.description %}
+{% unless meta_desc %}{% if page.pf %}{% assign pfd = site.data.portfolios.list | where: "key", page.pf | first %}{% capture meta_desc %}Portfolio {{ pfd.num }} of the research of Semuhi Sinanoglu. {{ pfd.blurb }}{% endcapture %}{% endif %}{% endunless %}
+{% assign meta_desc = meta_desc | default: site.description | strip %}
+{% assign canonical = page.url | replace: 'index.html', '' | absolute_url %}
 <title>{{ page.title | default: site.title }}</title>
-<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
-<meta name="description" content="{{ page.description | default: 'Semuhi Sinanoglu, political scientist at IDOS, Bonn.' }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta name="description" content="{{ meta_desc | escape }}">
+<meta name="author" content="{{ site.data.about.identity.name }}">
+{% comment %}Open Graph and the Twitter card: some link previews and some
+retrieval pipelines read these instead of the plain meta tags.{% endcomment %}
+<meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+<meta property="og:site_name" content="Semuhi Sinanoglu">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ meta_desc | escape }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ '/assets/img/prof_pic.jpg' | absolute_url }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@semuhi">
+<meta name="twitter:creator" content="@semuhi">
 <meta name="google-site-verification" content="Km-GWINZtbH18zUFHu1vxeP_kUI_yj0vDKCYaD8FG1Q">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicon-180.png' | relative_url }}">

@@ -262,3 +262,37 @@ profiles:
   - { label: "Google Scholar", icon: "scholar", url: "https://scholar.google.com/citations?user=4IlRWR0AAAAJ" }
   - { label: "ResearchGate", icon: "researchgate", url: "https://www.researchgate.net/profile/Semuhi-Sinanoglu-2" }
   - { label: "ORCID", icon: "orcid", url: "https://orcid.org/0000-0003-1964-1054" }
+
+# Machine-readable identity (added 2026-08-24). Feeds the schema.org Person
+# record in _includes/c-jsonld-person.html, which the home page and this page
+# emit so an answer engine can tie this site, ORCID, Scholar, and the IDOS
+# staff page to one person. Same facts as the bio above, in named fields.
+# `sameAs` is built from `profiles` below (the mailto entry is left out).
+identity:
+  name: "Semuhi Sinanoglu"
+  given_name: "Semuhi"
+  family_name: "Sinanoglu"
+  job_title: "Senior Researcher"
+  org: "German Institute of Development and Sustainability (IDOS)"
+  org_url: "https://www.idos-research.de/"
+  staff_page: "https://www.idos-research.de/en/research-staff/sinanoglu-semuhi/"
+  locality: "Bonn"
+  country: "Germany"
+  orcid: "https://orcid.org/0000-0003-1964-1054"
+  summary: >-
+    Semuhi Sinanoglu is a senior researcher at the German Institute of
+    Development and Sustainability (IDOS) in Bonn. He studies authoritarian
+    propaganda, repression, and polarization, and which counter-strategies and
+    forms of international assistance reduce their effect. He holds a PhD in
+    Political Science from the University of Toronto.
+  knows_about:
+    - "authoritarian propaganda"
+    - "autocratization"
+    - "democratic backsliding"
+    - "democracy support"
+    - "political polarization"
+    - "business elites and authoritarian regimes"
+    - "survey experiments"
+    - "computational social science"
+    - "development cooperation"
+    - "comparative politics"

@@ -1,6 +1,6 @@
 ---
 layout: constellation
-title: "Business & democracy — Semuhi Sinanoglu"
+title: "Business & democracy - Semuhi Sinanoglu"
 permalink: /portfolios/business/
 pf: business
 ---

@@ -1,6 +1,6 @@
 ---
 layout: constellation
-title: "Authoritarianism, conflict & migration — Semuhi Sinanoglu"
+title: "Authoritarianism, conflict & migration - Semuhi Sinanoglu"
 permalink: /portfolios/conflict/
 pf: conflict
 ---

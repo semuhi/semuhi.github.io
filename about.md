@@ -1,6 +1,6 @@
 ---
 layout: constellation
-title: "About Semuhi Sinanoglu — political scientist at IDOS Bonn"
+title: "About Semuhi Sinanoglu - political scientist at IDOS Bonn"
 description: "Semuhi Sinanoglu is a senior researcher at IDOS in Bonn with a PhD in Political Science from the University of Toronto. Bio, initiatives, fellowships, awards, and education."
 og_type: profile
 permalink: /about/

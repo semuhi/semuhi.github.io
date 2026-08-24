@@ -116,7 +116,7 @@ rows.each do |row|
   path  = File.join(OUTDIR, "#{row["slug"]}.md")
   body  = +"---\n"
   body << "layout: constellation\n"
-  body << "title: #{"#{item["title"]} — Semuhi Sinanoglu".to_json}\n"
+  body << "title: #{"#{item["title"]} - Semuhi Sinanoglu".to_json}\n"
   body << "description: #{description(item, label).to_json}\n"
   body << "permalink: /work/#{row["slug"]}/\n"
   body << "pub_id: #{item["id"]}\n"

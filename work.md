@@ -1,6 +1,6 @@
 ---
 layout: constellation
-title: "Publications — Semuhi Sinanoglu"
+title: "Publications - Semuhi Sinanoglu"
 description: "Every publication by Semuhi Sinanoglu: journal articles, working and discussion papers, datasets, policy briefs, book chapters, and op-eds on autocracy, propaganda, business elites, and democracy support."
 permalink: /work/
 ---

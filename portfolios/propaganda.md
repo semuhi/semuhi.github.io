@@ -1,6 +1,6 @@
 ---
 layout: constellation
-title: "(Countering) authoritarian propaganda — Semuhi Sinanoglu"
+title: "(Countering) authoritarian propaganda - Semuhi Sinanoglu"
 permalink: /portfolios/propaganda/
 pf: propaganda
 ---

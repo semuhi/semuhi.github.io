@@ -1,9 +1,11 @@
 {% comment %}
 Emits the site data as JSON for the Constellation JS modules (network.js).
-Shape: {items, portfolios, projects} straight from _data/ via jsonify.
+Shape: {items, portfolios, projects} straight from _data/ via jsonify, plus
+pubPages (id -> slug) so a map card can link to an item's own page.
 {% endcomment %}
 <script id="c-data" type="application/json">
 {"items": {{ site.data.publications | jsonify }},
+ "pubPages": {{ site.data.pubpages | jsonify }},
  "portfolios": {{ site.data.portfolios.list | jsonify }},
  "typeLabels": {{ site.data.portfolios.type_labels | jsonify }},
  "tags": {{ site.data.portfolios.tags | jsonify }},

@@ -25,6 +25,14 @@
      include carries it as data-pf-href with a {key} placeholder. */
   const PF_HREF = svg.dataset.pfHref || "/portfolios/{key}/";
   const pfHref = k => PF_HREF.replace("{key}", k);
+  /* Same idea for an item's own page. PUB_PAGES is id -> slug from
+     _data/pubpages.yml; an item that has a page is linked there instead of the
+     publisher (user decision 2026-08-24), and that page carries the publisher
+     link. */
+  const WORK_HREF = svg.dataset.workHref || "/work/{slug}/";
+  const workHref = s => WORK_HREF.replace("{slug}", s);
+  const PUB_PAGES = {};
+  (DATA.pubPages || []).forEach(r => { PUB_PAGES[r.id] = r.slug; });
 
   const isWall = it => !it.portfolio || it.portfolio.length === 0;
 
@@ -247,7 +255,10 @@
       ? "<span>other</span>"
       : it.portfolio.map(k => '<span style="color:' + PF[k].color + ";border-color:" + PF[k].color + '">' + PF[k].num + "</span>").join(""))
       + (it.methods || []).map(m => '<span class="m">' + METHOD_LABELS[m] + "</span>").join("");
-    const link = it.url ? '<a class="go" href="' + escAttr(it.url) + '" target="_blank" rel="noopener">Open →</a>' : "";
+    const slug = PUB_PAGES[it.id];
+    const link = slug
+      ? '<a class="go" href="' + escAttr(workHref(slug)) + '">Full entry →</a>'
+      : it.url ? '<a class="go" href="' + escAttr(it.url) + '" target="_blank" rel="noopener">Open →</a>' : "";
     /* a per-item `kicker` ("IDOS Policy brief") replaces the type label on the
        map card and swallows the numbered venue line; coauthors still show.
        Otherwise a venue that only repeats the type kicker is dropped. */

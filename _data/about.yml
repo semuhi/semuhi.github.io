@@ -50,7 +50,7 @@ bio:
     &amp; Opposition</a>, and <a href="https://jcp.gc.cuny.edu/">Comparative Politics</a>.
   - >-
     Previously, I was the co‑founder of a Toronto‑based political risk consultancy
-    company, <a href="https://maidan.ca/">Maidan Analytics</a>, which leverages
+    company, <a href="https://web.archive.org/web/20250731112700/https://maidan.ca/products/">Maidan Analytics</a>, which leverages
     proprietary algorithms to forecast protests and elections. Before my doctoral
     studies, I worked as a social policy researcher at
     <a href="https://www.developmentanalytics.org">Development Analytics</a>, offering
@@ -109,7 +109,7 @@ launched:
     img: "/assets/img/maidan.png"
     fit: "contain"
     desc: "We offered risk consultancy built on two proprietary algorithms that predict protests and forecast elections in authoritarian regimes using open data and cutting-edge methodologies."
-    url: "https://maidan.ca/products/"
+    url: "https://web.archive.org/web/20250731112700/https://maidan.ca/products/"
   - label: "Social Impact · 2017-18 · Montreal"
     color: "var(--p-aitech)"
     title: "CityInclusive"

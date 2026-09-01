@@ -113,7 +113,7 @@
   host: "Toronto"
   # map_only removed 2026-07-20 (user decision): maidan joins the datahub
   # Initiative section as a second lead card after the hub card.
-  url: "https://maidan.ca/products/"
+  url: "https://web.archive.org/web/20250731112700/https://maidan.ca/products/"
   # lead-card link text (user preference, matches the archive-capture cards)
   link_label: "Link here"
   net_x: 140

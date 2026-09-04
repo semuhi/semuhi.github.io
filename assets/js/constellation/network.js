@@ -35,26 +35,21 @@
   (DATA.pubPages || []).forEach(r => { PUB_PAGES[r.id] = r.slug; });
 
   const isWall = it => !it.portfolio || it.portfolio.length === 0;
+  /* Only items with a portfolio are drawn. The 3 portfolio-less items (the
+     old grey "Miscellaneous" cluster) stay in _data and on the work wall, but
+     they are not connected to any portfolio, so the map leaves them out
+     (user decision 2026-09-04). ITEMS.length stays the kicker total. */
+  const MAP_ITEMS = ITEMS.filter(it => !isWall(it));
 
   /* ---------- deterministic layout ---------- */
   function hash(n) { return ((n * 2654435761) % 4294967296) / 4294967296; }
   const nodes = {};
   const byHub = {};
-  ITEMS.forEach(it => { if (!isWall(it)) it.portfolio.forEach(k => (byHub[k] = byHub[k] || []).push(it.id)); });
-  const wallItems = ITEMS.filter(isWall);
-  /* the grey "Miscellaneous" cluster (no number by design) sits in the gap
-     between the 02 and 06 hubs: a central connector dot with three spokes,
-     its label below the cluster */
-  const MISC = { x: 1055, y: 306 };
-  const MISC_LABEL = { x: 1055, y: 372 };
-  const MISC_SPOTS = [[1055, 248], [1000, 340], [1110, 340]];
-  ITEMS.forEach(it => {
-    if (isWall(it)) {
-      const s = MISC_SPOTS[wallItems.indexOf(it) % MISC_SPOTS.length];
-      nodes[it.id] = { x: s[0], y: s[1], wall: true };
-    } else if (it.portfolio.length === 1) {
+  MAP_ITEMS.forEach(it => it.portfolio.forEach(k => (byHub[k] = byHub[k] || []).push(it.id)));
+  MAP_ITEMS.forEach(it => {
+    if (it.portfolio.length === 1) {
       const k = it.portfolio[0], hub = PF[k];
-      const ring = byHub[k].filter(id => ITEMS.find(i => i.id === id).portfolio.length === 1);
+      const ring = byHub[k].filter(id => MAP_ITEMS.find(i => i.id === id).portfolio.length === 1);
       const idx = ring.indexOf(it.id);
       const a = (idx / ring.length) * Math.PI * 2 + hash(it.id) * 0.5 + (k === "durability" ? 0.4 : 2.1);
       const r = 70 + hash(it.id + 7) * 45;
@@ -69,21 +64,15 @@
     }
   });
   /* Keep item nodes out of every hub's title block (two text lines under the
-     hub, ~hub_y+30..+72, half-width 100 incl. drift amplitude) and out of the
-     Miscellaneous caption: push horizontally past the label, keeping its side. */
+     hub, ~hub_y+30..+72, half-width 100 incl. drift amplitude): push
+     horizontally past the label, keeping its side. */
   function keepOutOfLabels(n) {
-    if (!n.wall) {
-      DATA.portfolios.forEach(h => {
-        const dx = n.x - h.hub_x;
-        if (Math.abs(dx) < 100 && n.y > h.hub_y + 28 && n.y < h.hub_y + 72) {
-          n.x = h.hub_x + (dx >= 0 ? 112 : -112);
-        }
-      });
-      const dxm = n.x - MISC_LABEL.x;
-      if (Math.abs(dxm) < 70 && n.y > MISC_LABEL.y - 16 && n.y < MISC_LABEL.y + 12) {
-        n.x = MISC_LABEL.x + (dxm >= 0 ? 80 : -80);
+    DATA.portfolios.forEach(h => {
+      const dx = n.x - h.hub_x;
+      if (Math.abs(dx) < 100 && n.y > h.hub_y + 28 && n.y < h.hub_y + 72) {
+        n.x = h.hub_x + (dx >= 0 ? 112 : -112);
       }
-    }
+    });
     n.x = Math.max(50, Math.min(1150, n.x));
     n.y = Math.max(56, Math.min(612, n.y));
   }
@@ -94,8 +83,7 @@
   const obstacles = [];
   DATA.portfolios.forEach(h => obstacles.push({ x: h.hub_x, y: h.hub_y, d: 50 }));
   DATA.projects.forEach(pr => { if (pr.net_x != null) obstacles.push({ x: pr.net_x, y: pr.net_y, d: 30 }); });
-  obstacles.push({ x: MISC.x, y: MISC.y, d: 34 }); // the Miscellaneous connector dot
-  const allIds = ITEMS.map(i => i.id);
+  const allIds = MAP_ITEMS.map(i => i.id);
   for (let pass = 0; pass < 50; pass++) {
     let moved = false;
     for (let i = 0; i < allIds.length; i++) {
@@ -127,12 +115,11 @@
     (parent || svg).appendChild(e);
     return e;
   }
-  const gEdges = el("g", {}), gRel = el("g", {}), gMisc = el("g", {}), gHubs = el("g", {}), gNodes = el("g", {});
+  const gEdges = el("g", {}), gRel = el("g", {}), gHubs = el("g", {}), gNodes = el("g", {});
 
   // node -> hub edges (tagged with hub key so the legend can dim by portfolio)
   const hubEdges = []; // {line, id} — x1/y1 follow the drifting node
-  ITEMS.forEach(it => {
-    if (isWall(it)) return;
+  MAP_ITEMS.forEach(it => {
     it.portfolio.forEach(k => {
       hubEdges.push({
         line: el("line", {
@@ -146,7 +133,7 @@
   // related edges (red, dashed) — draw each pair once; both endpoints drift
   const relEdges = []; // {line, a, b}
   const seenRel = new Set();
-  ITEMS.forEach(it => (it.related || []).forEach(r => {
+  MAP_ITEMS.forEach(it => (it.related || []).forEach(r => {
     const key = [Math.min(it.id, r.id), Math.max(it.id, r.id)].join("-");
     if (seenRel.has(key) || !nodes[r.id]) return;
     seenRel.add(key);
@@ -161,7 +148,7 @@
   // item -> project related edges (red, dashed — same style as item-item
   // related): `related_project:` on the item; the project end is fixed
   const relProjEdges = []; // {line, id, projpf} — x1/y1 follow the drifting item
-  ITEMS.forEach(it => {
+  MAP_ITEMS.forEach(it => {
     if (!it.related_project) return;
     const pr = DATA.projects.find(p => p.key === it.related_project);
     if (!pr || pr.net_x == null) return;
@@ -176,7 +163,7 @@
   // item -> project edges (short-dashed, in the project's portfolio color):
   // an item with `project:` links straight to its anchor-project ring
   const projEdges = []; // {line, id, projpf} — x1/y1 follow the drifting item
-  ITEMS.forEach(it => {
+  MAP_ITEMS.forEach(it => {
     if (!it.project) return;
     const pr = DATA.projects.find(p => p.key === it.project);
     if (!pr || pr.net_x == null) return;
@@ -215,29 +202,14 @@
   });
   // item nodes (all circles; datasets carry a "· dataset" kicker + legend chip)
   const nodeEls = {}; // id -> g, for the drift transform
-  ITEMS.forEach(it => {
+  MAP_ITEMS.forEach(it => {
     const n = nodes[it.id];
-    const c = isWall(it) ? "#9AAAB9" : PF[it.portfolio[0]].color;
+    const c = PF[it.portfolio[0]].color;
     const g = el("g", { "data-id": it.id, style: "cursor:pointer" }, gNodes);
     nodeEls[it.id] = g;
     el("circle", { cx: n.x, cy: n.y, r: 6.5, fill: c, "fill-opacity": 0.92, stroke: "#FBFCFD", "stroke-width": 1.5 }, g);
     el("circle", { cx: n.x, cy: n.y, r: 13, fill: "transparent" }, g); // hit target
   });
-  // grey connector dot ties the three wall-only pieces into one cluster,
-  // labeled like a hub title but unnumbered by design; dims with its items
-  const miscEdges = []; // {line, id} — x1/y1 follow the drifting wall node
-  if (wallItems.length) {
-    wallItems.forEach(it => {
-      miscEdges.push({
-        line: el("line", { x1: nodes[it.id].x, y1: nodes[it.id].y, x2: MISC.x, y2: MISC.y, stroke: "#9AAAB9", "stroke-opacity": 0.5, "stroke-width": 1.2 }, gMisc),
-        id: it.id
-      });
-    });
-    el("circle", { cx: MISC.x, cy: MISC.y, r: 14, fill: "#9AAAB9", "fill-opacity": 0.12, stroke: "#9AAAB9", "stroke-width": 1.5 }, gMisc);
-    el("circle", { cx: MISC.x, cy: MISC.y, r: 4.5, fill: "#9AAAB9" }, gMisc);
-    el("text", { x: MISC_LABEL.x, y: MISC_LABEL.y, "text-anchor": "middle", fill: "#5E7186", style: "font:600 12.5px 'Space Grotesk';letter-spacing:.02em" }, gMisc)
-      .textContent = "Miscellaneous";
-  }
 
   /* ---------- panel (hover previews, click pins) ---------- */
   const panel = document.getElementById("panel");
@@ -250,10 +222,8 @@
   // YAML-sourced URLs land inside double-quoted href attributes; blurbs stay raw by design
   const escAttr = s => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
   function itemPanelHTML(it) {
-    const color = isWall(it) ? "#9AAAB9" : PF[it.portfolio[0]].color;
-    const chips = (isWall(it)
-      ? "<span>other</span>"
-      : it.portfolio.map(k => '<span style="color:' + PF[k].color + ";border-color:" + PF[k].color + '">' + PF[k].num + "</span>").join(""))
+    const color = PF[it.portfolio[0]].color;
+    const chips = it.portfolio.map(k => '<span style="color:' + PF[k].color + ";border-color:" + PF[k].color + '">' + PF[k].num + "</span>").join("")
       + (it.methods || []).map(m => '<span class="m">' + METHOD_LABELS[m] + "</span>").join("");
     const slug = PUB_PAGES[it.id];
     const link = slug
@@ -273,7 +243,7 @@
       '<div class="pf">' + chips + "</div>" + link;
   }
   function hubPanelHTML(h) {
-    const n = ITEMS.filter(i => !isWall(i) && i.portfolio.includes(h.key)).length;
+    const n = MAP_ITEMS.filter(i => i.portfolio.includes(h.key)).length;
     return '<div class="ty">Portfolio ' + h.num + " · " + n + " outputs</div>" +
       "<h3>" + h.title + "</h3>" +
       '<div class="blurb">' + h.blurb + "</div>" +
@@ -304,7 +274,7 @@
     panel.style.display = "block";
     panel.classList.remove("hub");
     panel.style.background = "";
-    panel.style.borderLeftColor = isWall(it) ? "#9AAAB9" : PF[it.portfolio[0]].color;
+    panel.style.borderLeftColor = PF[it.portfolio[0]].color;
     panel.innerHTML = itemPanelHTML(it);
   }
   // the program card gets the portfolio's own ground so it reads as a different
@@ -442,7 +412,6 @@
 
   function applyFilter() {
     const pf = active.pf;
-    let wallShown = false;
     let shown = 0;
     const vis = {}; // item id -> visible under the active filters (for related edges)
     document.querySelectorAll("g[data-id]").forEach(g => {
@@ -450,14 +419,11 @@
       let show = true;
       if (active.k) show = active.k === "ds" ? !!it.dataset : TYPE_GROUPS[active.k].includes(it.type);
       if (show && active.m) show = (it.methods || []).includes(active.m);
-      if (show && pf) show = !isWall(it) && it.portfolio.includes(pf);
-      if (show && isWall(it)) wallShown = true;
+      if (show && pf) show = it.portfolio.includes(pf);
       vis[it.id] = show;
       if (show) shown++;
       g.style.opacity = show ? 1 : (pf ? 0.08 : 0.12);
     });
-    // the Miscellaneous connector + label follow their wall-only items
-    gMisc.style.opacity = wallShown ? 1 : (pf ? 0.08 : 0.12);
     // a portfolio selection dims everything else on the map, not just item nodes
     document.querySelectorAll("g[data-hub]").forEach(g => { g.style.opacity = (!pf || g.dataset.hub === pf) ? 1 : 0.12; });
     document.querySelectorAll("g[data-projpf]").forEach(g => { g.style.opacity = (!pf || g.dataset.projpf === pf) ? 1 : 0.12; });
@@ -497,9 +463,9 @@
   const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!reduceMotion) {
     const drift = {}; // per-item oscillator params, deterministic from the id
-    ITEMS.forEach(it => {
+    MAP_ITEMS.forEach(it => {
       drift[it.id] = {
-        amp: nodes[it.id].wall ? 1.5 : 2 + hash(it.id + 11) * 2,
+        amp: 2 + hash(it.id + 11) * 2,
         w1: 0.45 + hash(it.id + 5) * 0.35, w2: 0.4 + hash(it.id + 17) * 0.35,
         p1: hash(it.id + 23) * Math.PI * 2, p2: hash(it.id + 29) * Math.PI * 2,
         dx: 0, dy: 0
@@ -508,7 +474,7 @@
     const step = t => {
       if (!frozen()) {
         const s = t / 1000;
-        ITEMS.forEach(it => {
+        MAP_ITEMS.forEach(it => {
           const d = drift[it.id];
           d.dx = d.amp * Math.sin(s * d.w1 + d.p1);
           d.dy = d.amp * Math.cos(s * d.w2 + d.p2);
@@ -518,11 +484,6 @@
           const n = nodes[he.id], d = drift[he.id];
           he.line.setAttribute("x1", n.x + d.dx);
           he.line.setAttribute("y1", n.y + d.dy);
-        });
-        miscEdges.forEach(me => {
-          const n = nodes[me.id], d = drift[me.id];
-          me.line.setAttribute("x1", n.x + d.dx);
-          me.line.setAttribute("y1", n.y + d.dy);
         });
         projEdges.forEach(pe => {
           const n = nodes[pe.id], d = drift[pe.id];

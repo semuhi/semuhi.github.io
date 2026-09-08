@@ -25,6 +25,14 @@
 # Dates for the 2024-25 backfill are decoded from the LinkedIn post IDs (UTC).
 
 posts:
+  - date: 2026-09-08
+    platform: linkedin
+    type: talk
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_apsa2026-llm-data-activity-7503042597628780544-cgZZ"
+    excerpt: "#APSA2026 was a blast! I presented our measurement paper with Lucan Way, Steve Levitsky, and Yashar Talebirad. It is an event-level dataset that tracks autocratization globally, built on a precision-first #LLM pipeline that lets you trace every registered incident to its source. It is also very cost-efficient. We see it as a complementary measure to expert-coded #data. Our paper was part of a panel I put together to offer fresh perspectives on measuring regime trends in innovative ways."
+    portfolio: [datahub, durability]
+    project: datahub
+
   - date: 2026-07-09
     platform: linkedin
     type: event

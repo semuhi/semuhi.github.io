@@ -32,6 +32,7 @@ posts:
     excerpt: "#APSA2026 was a blast! I presented our measurement paper with Lucan Way, Steve Levitsky, and Yashar Talebirad. It is an event-level dataset that tracks autocratization globally, built on a precision-first #LLM pipeline that lets you trace every registered incident to its source. It is also very cost-efficient. We see it as a complementary measure to expert-coded #data. Our paper was part of a panel I put together to offer fresh perspectives on measuring regime trends in innovative ways."
     portfolio: [datahub, durability]
     project: datahub
+    image: /assets/img/post-apsa2026.jpeg
 
   - date: 2026-07-09
     platform: linkedin

@@ -441,6 +441,7 @@
     - {label: "WZB-MoPED Workshop 2025 (Berlin)", url: "https://www.wzb.eu/en/events/moped-workshop-0"}
     - {label: "EIPCC Workshop 2025 (Bonn)", url: "https://www.uni-erfurt.de/universitaet/aktuelles/news/news-detail/inter-institutional-research-workshop-retreat-2025-brings-four-major-institutions-together-in-bonn"}
     - {label: "ECPR Joint Sessions 2026 (Innsbruck)", url: "https://ecpr.eu/JointSessions"}
+    - {label: "ECPR General Conference 2026 (Kraków)", url: "https://ecpr.eu/GeneralConference"}
 
 - id: 13
   year: 2025

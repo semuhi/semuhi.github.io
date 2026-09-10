@@ -32,6 +32,14 @@
   ROWS.forEach(r => { BY_ID[r.dataset.id] = r; });
   ITEMS.forEach(it => { const r = BY_ID[String(it.id)]; if (r) rowsEl.appendChild(r); });
 
+  /* render() caps the list by position in the ROWS array, so that array must
+     hold the same order as the page. Without this sort it keeps the Liquid
+     year-only order, the cap hides the wrong rows, and "Show N more" reveals
+     rows that belong above the ones already on screen. */
+  const POS = {};
+  ITEMS.forEach((it, i) => { POS[String(it.id)] = i; });
+  ROWS.sort((a, b) => (POS[a.dataset.id] || 0) - (POS[b.dataset.id] || 0));
+
   const TYPE_GROUPS = {
     peer: ["academic-peer-review"],
     wpdp: ["academic-working-paper", "academic-discussion-paper", "academic-file-drawer"],

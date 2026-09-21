@@ -236,7 +236,7 @@ end
 # ---------- home ----------
 # user-curated five newest outputs, reverse-chronological by month (2026-07-19);
 # keep in step with the id list in _includes/c-latest.html
-recent = [19, 21, 20, 22, 23].map { |i| pubs.find { |p| p["id"] == i } }
+recent = [55, 19, 21, 20, 22].map { |i| pubs.find { |p| p["id"] == i } }
 
 # home-only variant: highlight-style cards (round-10 trial 2026-07-19) —
 # YYYY/MM · TYPE date line, title, venue + coauthors via dedup_venue

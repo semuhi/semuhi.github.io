@@ -1169,3 +1169,50 @@
     the role of US foreign policy and asserts that American influence is quite limited in the
     region. He therefore suggests that Washington can utilize development-based programs rather
     than governance programs to play the long game.
+
+- id: 55
+  year: 2026
+  month: 9
+  title: "AI's potential to facilitate more agile development cooperation"
+  # chapter 4.1 (pp. 63-67) of the IDOS Flagship Report 2026 "Disruption & Reform"
+  # (Hornidge & Berger, eds.), https://doi.org/10.23661/r4.2026; same venue string
+  # as the other IDOS Report chapter (id 20)
+  venue: "IDOS Report"
+  type: "academic-chapter"
+  portfolio: ["aitech"]
+  tags: ["dev-cooperation"]
+  methods: ["largen", "text"]
+  dataset: false
+  featured: false
+  coauthors: "Roll"
+  coauthors_full: "Michael Roll"
+  url: "https://www.idos-research.de/en/publications/mitarbeiter-sonstige/article/ais-potential-to-facilitate-more-agile-development-cooperation/"
+  # sips-derived 960px render of the report cover (page 1 of the IDOS pdf)
+  image: "/assets/img/pub-agile-ai.jpg"
+  blurb: "Across 172 catalogued AI deployments, the development sector uses AI to do its existing work faster, not yet to change how it works and learns."
+  # the chapter has no abstract; this is its opening text, verbatim (user decision 2026-09-21)
+  abstract: >
+    Two features of AI stand out among technological innovations: It is exceptionally
+    powerful, and its (computing) power is increasing faster than any previous technology in
+    human history. AI is not a tool that can simply be added to the existing arsenal just for
+    the sake of task automation and increased efficiency (Sinanoglu, 2025a). Its consequences
+    are so profound that using it to advance broader development objectives requires changes
+    to some of the ways development cooperation works. In this chapter, we go beyond more
+    general assessments (OECD, 2025) of the use of AI by governments (OECD, 2026) and of the
+    global development risks posed by AI (United Nations Independent International Scientific
+    Panel on Artificial Intelligence, 2026). We argue that successful development cooperation
+    for sustainable futures depends on collaboration with others in iterative and adaptive
+    ways to exploit opportunities for positive change more effectively in challenging
+    contexts. To this end, current development-cooperation structures and processes should be
+    reformed to facilitate and encourage organisational learning (Brandi & Büge, 2026) and
+    adopt a more iterative approach to cooperation. To what extent does development
+    cooperation currently deploy AI tools for such organisational learning? By "AI", we mean
+    generative and agentic artificial intelligence. We also distinguish between "AI in
+    development" and "AI for development". Whereas the former refers to how AI is used in
+    middle- and low-income countries, the latter refers to how the development sector can use
+    AI. We catalogued how the supply side of development cooperation (donors, ministries,
+    agencies, development banks, United Nations (UN) entities, humanitarian implementers and
+    funders) uses AI in its own operations, programming, advisory work and evaluations. The
+    database comprises 172 AI deployments and, while not exhaustive, provides a comprehensive
+    primary-source snapshot that lets us answer three questions empirically: Who is deploying
+    AI? What for? And how far has it matured?

@@ -10,7 +10,7 @@ the publisher when it does not (user decision 2026-08-24).{% endcomment %}
   <div class="sec-kicker">Outputs</div>
   <h2 class="ruled">Latest Publications</h2>
   <div class="hl">
-    {% assign latest_ids = "19,21,20,22,23" | split: "," %}
+    {% assign latest_ids = "55,19,21,20,22" | split: "," %}
     {% for lid in latest_ids %}
       {% assign lid_n = lid | plus: 0 %}
       {% assign pub = site.data.publications | where: "id", lid_n | first %}

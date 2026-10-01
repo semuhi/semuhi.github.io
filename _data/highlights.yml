@@ -17,6 +17,13 @@
 # 2026-07-18 (IDOS blog + IDOS YouTube). Kinds + portfolios reclassified by the
 # user 2026-07-19. Add one = append a block (newest first).
 
+- date: 2026-09
+  kind: talk
+  title: "IDOS@APSA 2026: Tracking autocratization transparently"
+  portfolio: [datahub]
+  project: datahub
+  url: "https://blogs.idos-research.de/2026/09/28/research-on-autocratisation-takes-centre-stage-at-annual-meeting-of-apsa/"
+
 - date: 2026-08
   kind: media
   title: "A reality check on donor expectations"

@@ -1,6 +1,10 @@
 # Teaching & training data. Rendered by the teaching include.
 # workshops/training dates: keep the month in `date` — it drives chronological
 # ordering — but the templates display only the year (last whitespace token).
+# eval_score / eval_n: institutional composite mean (out of 5) and number of
+# respondents from the official UofT evaluations. Authoritarianism ran two
+# terms (Winter 2023: 4.5, n=22; Summer 2023: 4.8, n=14), so its score is the
+# mean weighted by respondents, (4.5*22 + 4.8*14) / 36 = 4.62, and n is the sum.
 
 courses:
   - title: "The Political Economy of Economic Crisis"
@@ -8,6 +12,8 @@ courses:
     role: "Course Instructor"
     syllabus: "/assets/pdf/syllabus-crisis.pdf"
     image: "/assets/img/post-capitalism.jpeg"
+    eval_score: "4.7"
+    eval_n: 15
     description: >
       The political and social costs of economic crises and austerity: electoral
       punishment, redistribution preferences, and the international ramifications,
@@ -37,6 +43,8 @@ courses:
     role: "Course Instructor"
     syllabus: "/assets/pdf/autocrat-syllabus.pdf"
     image: "/assets/img/pub-promotion.jpg"
+    eval_score: "4.6"
+    eval_n: 36
     description: >
       The international roots of autocratic resilience: post-liberal order, cross-border
       repression, autocracy promotion and diffusion, and whether the international
@@ -63,6 +71,8 @@ courses:
     role: "Course Instructor"
     syllabus: "/assets/pdf/syllabus-mena.pdf"
     image: "/assets/img/morocco.jpg"
+    eval_score: "4.8"
+    eval_n: 9
     description: >
       Colonial state legacies, patrimonial capitalism and the rentier state,
       authoritarian ruling bargains, and social mobilization, read through the

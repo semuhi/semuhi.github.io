@@ -205,14 +205,12 @@ body.constellation {
   /* ---------- teaching ---------- */
   .course {
     .go { font-size: 12px; display: inline-block; margin-top: .5rem; }
-    // Headline evaluation score: big composite mean + mono label
+    // Evaluation score at the top of the open "Student evaluations" panel
     .eval-score {
       display: flex;
       align-items: baseline;
       gap: 8px;
-      border-top: 1px solid var(--hair);
-      margin-top: .7rem;
-      padding-top: .6rem;
+      margin: 10px 0 4px;
       .num { font-size: 24px; font-weight: 600; line-height: 1; color: var(--cobalt); white-space: nowrap; }
       .lbl { font-size: 11px; color: var(--muted); }
     }

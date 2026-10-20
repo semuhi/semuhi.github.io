@@ -1216,3 +1216,55 @@
     database comprises 172 AI deployments and, while not exhaustive, provides a comprehensive
     primary-source snapshot that lets us answer three questions empirically: Who is deploying
     AI? What for? And how far has it matured?
+
+- id: 56
+  year: 2026
+  month: 10
+  title: "Regulating and mobilising the private sector for democracy protection in the European Union's trade policy"
+  venue: "IDOS Policy Brief 26/2026"
+  type: "policy-brief"
+  portfolio: ["business", "durability"]
+  tags: ["europe", "dev-cooperation"]
+  dataset: false
+  featured: false
+  coauthors: "Keijzer"
+  coauthors_full: "Niels Keijzer"
+  # red dashed map edge to the #DEMCOR node (user decision 2026-10-20)
+  related_project: "demcor"
+  url: "https://doi.org/10.23661/ipb26.2026"
+  # Table 1 of the brief (demcor/trade/pb-visual.png); contain keeps the table columns uncropped
+  image: "/assets/img/pub-eu-trade-democracy.jpg"
+  fit: "contain"
+  blurb: "The EU should protect democracy through firm-facing trade rules, such as corruption-based exclusion in public procurement and stronger due diligence, backed by development cooperation."
+  abstract: >
+    The European Union (EU) conditions access to its market on compliance with human rights,
+    labour standards, and environmental policy and regulation. Its trade-related legislation
+    falls into two categories: measures addressing partner governments and measures targeting
+    the private sector. Within these two groups, only the first includes an instrument that
+    specifically mentions democracy, namely the essential elements clause, which appears
+    frequently in EU trade agreements yet has been invoked only once since 2014.
+
+    The EU is under domestic political pressure to deregulate in order to strengthen its
+    competitiveness. The competitiveness agenda is cutting into the instruments the EU already
+    has, especially amid geopolitical competition with China, making suspension-led
+    conditionality against partner governments harder to enact. Our recommendations are as
+    follows:
+
+    • Democracy protection stakeholders should shift their attention from suspension-led
+    democracy support and conditionality aimed at partner governments towards the rules and
+    incentives that run through the private sector. Even after the Omnibus reform’s narrowing
+    scope, firm-facing rules remain in place. They are default-on and run through existing
+    regulatory arrangements, and their potential geopolitical repercussions are smaller in
+    comparison.
+
+    • Tender processes are one particular set of firm-facing rules. With the momentum behind
+    the European Commission’s legislative proposal to revise the public procurement directive,
+    corruption-based exclusion rules should be applied against operators linked to state
+    capture in partner countries, as democratic backsliders often use public procurement to
+    consolidate patronage networks.
+
+    • Firm-facing regulations also permit a different case to be made: stronger due diligence
+    carries no measurable competitiveness penalty. Companies are not just subjects of
+    regulation. They are also stakeholders with their own interest in transparent procurement
+    and predictable rules. To bolster such a narrative, development cooperation should invest
+    in developing compliance capacity, especially in autocratising states.

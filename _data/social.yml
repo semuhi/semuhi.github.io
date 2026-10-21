@@ -25,6 +25,15 @@
 # Dates for the 2024-25 backfill are decoded from the LinkedIn post IDs (UTC).
 
 posts:
+  - date: 2026-10-21
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_ai-development-activity-7518597954715435008-BEiG"
+    excerpt: "How is #AI currently being used in #development cooperation? To assess the sector's AI engagement, I collected a database of AI deployments by development cooperation organizations. In a recent co-authored piece with Michael Roll, PhD, we argue that monitoring, evaluation, and coordination, which are the functions that would actually change how the sector learns, make up only about 19%. ▶In other words, the sector uses AI to do its existing work faster, not to change how it works and learns."
+    portfolio: [aitech]
+    item: 55
+    image: /assets/img/post-agile-ai.jpg
+    fit: contain  # portrait 3:4 card: crop clips the "19%" headline
   - date: 2026-09-08
     platform: linkedin
     type: talk

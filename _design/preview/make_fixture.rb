@@ -234,9 +234,11 @@ def fn_cards(posts)
 end
 
 # ---------- home ----------
-# user-curated five newest outputs, reverse-chronological by month (2026-07-19);
-# keep in step with the id list in _includes/c-latest.html
-recent = [56, 55, 19, 21, 20].map { |i| pubs.find { |p| p["id"] == i } }
+# five newest outputs by year > month > day (automatic since 2026-10-24); a missing
+# month/day sorts as 0, a date tie keeps the file order. Same rule as _includes/c-latest.html
+recent = pubs.each_with_index
+             .sort_by { |p, i| [-p["year"], -(p["month"] || 0), -(p["day"] || 0), i] }
+             .first(5).map(&:first)
 
 # home-only variant: highlight-style cards (round-10 trial 2026-07-19) —
 # YYYY/MM · TYPE date line, title, venue + coauthors via dedup_venue

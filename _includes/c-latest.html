@@ -1,5 +1,7 @@
-{% comment %}Latest publications: user-curated five newest outputs, all types in one
-stream (order fixed 2026-07-18; update the id list as new work lands). Card strip in
+{% comment %}Latest publications: the five newest outputs, all types in one stream,
+sorted by year > month > day (automatic since 2026-10-24; was a hand-kept id list).
+Same rule as the wall: an item without month/day sinks to the bottom of its
+year/month. A date tie keeps the file order (earlier block first). Card strip in
 the Recent Highlights style (round-10 trial, 2026-07-19); optional per-item image:
 and fit: contain fields work like on highlight cards.
 A card links to the item's own page under /work/<slug>/ when it has one, and to
@@ -10,7 +12,21 @@ the publisher when it does not (user decision 2026-08-24).{% endcomment %}
   <div class="sec-kicker">Outputs</div>
   <h2 class="ruled">Latest Publications</h2>
   <div class="hl">
-    {% assign latest_ids = "56,55,19,21,20" | split: "," %}
+    {% comment %}Sort key "YYYYMMDD" + (9999 - file index) + ":" + id. All keys have the
+    same length, so a plain string sort is a date sort; reversed, it is newest first.{% endcomment %}
+    {% assign latest_keys = "" | split: "," %}
+    {% for p in site.data.publications %}
+      {% assign k = p.month | default: 0 | times: 100 | plus: p.day %}
+      {% assign k = p.year | times: 10000 | plus: k | times: 10000 | plus: 9999 | minus: forloop.index0 %}
+      {% capture key %}{{ k }}:{{ p.id }}{% endcapture %}
+      {% assign latest_keys = latest_keys | push: key %}
+    {% endfor %}
+    {% assign latest_ids = "" | split: "," %}
+    {% assign latest_keys = latest_keys | sort | reverse %}
+    {% for key in latest_keys limit: 5 %}
+      {% assign lid = key | split: ":" | last %}
+      {% assign latest_ids = latest_ids | push: lid %}
+    {% endfor %}
     {% for lid in latest_ids %}
       {% assign lid_n = lid | plus: 0 %}
       {% assign pub = site.data.publications | where: "id", lid_n | first %}

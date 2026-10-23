@@ -82,6 +82,12 @@ in the citation line.{% endcomment %}
     <dt>Funding</dt>
     <dd>{% for g in p.grants %}{% if g.url %}<a href="{{ g.url }}" target="_blank" rel="noopener">{{ g.label }}</a>{% else %}{{ g.label | default: g }}{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}</dd>
     {% endif %}
+    {% comment %}Credit for a card thumbnail under a license that requires attribution
+    (CC BY): author, source and license, each linked (2026-10-24).{% endcomment %}
+    {% if p.image_credit %}{% assign ic = p.image_credit %}
+    <dt>Thumbnail</dt>
+    <dd>Photo: {{ ic.author }}, {% if ic.url %}<a href="{{ ic.url }}" target="_blank" rel="noopener">{{ ic.source }}</a>{% else %}{{ ic.source }}{% endif %}, {% if ic.license_url %}<a href="{{ ic.license_url }}" target="_blank" rel="noopener">{{ ic.license }}</a>{% else %}{{ ic.license }}{% endif %}{% if ic.note %} ({{ ic.note }}){% endif %}</dd>
+    {% endif %}
   </dl>
 </section>
 

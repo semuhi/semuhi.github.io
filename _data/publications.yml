@@ -1268,3 +1268,53 @@
     regulation. They are also stakeholders with their own interest in transparent procurement
     and predictable rules. To bolster such a narrative, development cooperation should invest
     in developing compliance capacity, especially in autocratising states.
+
+- id: 57
+  year: 2026
+  month: 6
+  title: "Foreign aid and NGOs under democratic backsliding"
+  # chapter in the edited volume "The International Dynamics of Democratic Backsliding",
+  # eds. Simón Ballesteros, Daniel Laqua & Susan Stokes (user decision 2026-10-23)
+  venue: "The International Dynamics of Democratic Backsliding"
+  type: "academic-chapter"
+  portfolio: ["durability", "propaganda"]
+  tags: ["dev-cooperation"]
+  methods: ["qual"]
+  dataset: false
+  featured: false
+  coauthors: "Barker"
+  coauthors_full: "Jennie Barker"
+  url: "https://www.researchgate.net/publication/416711946_Foreign_Aid_and_NGOs_under_Democratic_Backsliding"
+  related:
+    - {id: 10, rel: "builds on"}
+    - {id: 27, rel: "companion policy brief"}
+  # 960x540 crop (R magick) of the 960px Wikimedia Commons render; CC BY 4.0 needs the
+  # credit, shown in the Details list of the chapter page (c-pub-page.html)
+  image: "/assets/img/pub-foreign-aid-ngos.jpg"
+  image_credit:
+    author: "G. Edward Johnson"
+    source: "Wikimedia Commons"
+    url: "https://commons.wikimedia.org/wiki/File:2025-02-07_Taping_over_a_USAID_sign_Washington_DC_12-54-35.jpg"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    note: "cropped"
+  blurb: "Democratic backsliding is both a consequence and a driver of aid cuts and shrinking civic space."
+  abstract: >
+    In 2025, major foreign aid donors introduced dramatic funding cuts. As a consequence, civil
+    society groups and NGOs, which are often the intended recipients of aid, must now operate
+    with less as international and domestic conditions for them continue to deteriorate. We
+    suggest that democratic backsliding is both a consequence and a driver of these trends in
+    foreign aid and civic space. Our argument is twofold. First, geopolitical changes have
+    de-prioritized democracy promotion for donors, with overall aid declining, a greater share
+    allocated to protecting strategic interests, and a reluctance to withdraw support from
+    autocrats who serve as strategic partners despite their transgressions. These shifts, in
+    turn, are likely to tarnish donors' (and recipient NGOs') reputations, lower public support
+    for aid, and negatively affect democratic outcomes in recipient countries. Second, autocrats
+    in recipient countries leverage these securitization trends in aid to further restrict
+    NGOs, as reflected in mounting global crackdowns. These restrictions reduce donors'
+    willingness and ability to provide aid in such a shrinking civic space. This reduced
+    engagement is also exacerbated in donor countries by rising nativist sentiments, which
+    allow democratic backsliders to attack aid infrastructure and reduce democracy aid. In
+    light of these trends, we conclude by discussing potential tools to counter authoritarian
+    propaganda about aid and civil society and identify areas for further research on how
+    NGOs can adapt to survive.

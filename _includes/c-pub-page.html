@@ -41,7 +41,7 @@ in the citation line.{% endcomment %}
   {% comment %}The citation line is the page's first sentence on purpose: a
   retrieval chunk that starts here carries the author, the year, and the venue
   without needing the rest of the page.{% endcomment %}
-  <p class="pub-cite">Semuhi Sinanoglu{% if p.coauthors %} with {{ p.coauthors_full | default: p.coauthors }}{% endif %} ({{ p.year_display | default: p.year }}). “{{ cite_title }}”{% if show_v %} {{ p.venue }}.{% endif %} {{ type_label }}.{% if p.dataset %} Includes an original dataset.{% endif %}</p>
+  <p class="pub-cite">Semuhi Sinanoglu{% if p.coauthors %} with {{ p.coauthors_full | default: p.coauthors }}{% endif %} ({{ p.year_display | default: p.year }}). “{{ cite_title }}”{% if show_v %}{% if p.editors %} In {{ p.venue }}, edited by {{ p.editors }}.{% else %} {{ p.venue }}.{% endif %}{% endif %} {{ type_label }}.{% if p.dataset %} Includes an original dataset.{% endif %}</p>
   {% if p.blurb %}<p class="narrative">{{ p.blurb }}</p>{% endif %}
   <p class="pub-links mono">
     {% if p.url %}<a class="go" href="{{ p.url }}" target="_blank" rel="noopener">{{ read_label }} →</a>{% endif %}
@@ -64,6 +64,7 @@ in the citation line.{% endcomment %}
     <dt>Type</dt><dd>{{ type_label }}{% if p.dataset %} · dataset{% endif %}</dd>
     <dt>Year</dt><dd>{{ p.year_display | default: p.year }}</dd>
     {% if show_v %}<dt>Venue</dt><dd>{{ p.venue }}</dd>{% endif %}
+    {% if p.editors %}<dt>Editors</dt><dd>{{ p.editors }}</dd>{% endif %}
     <dt>Author</dt><dd>Semuhi Sinanoglu{% if p.coauthors %}, with {{ p.coauthors_full | default: p.coauthors }}{% endif %}</dd>
     {% if p.methods %}
       {% assign mlabels = "" | split: "" %}

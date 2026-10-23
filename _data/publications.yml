@@ -1273,9 +1273,10 @@
   year: 2026
   month: 6
   title: "Foreign aid and NGOs under democratic backsliding"
-  # chapter in the edited volume "The International Dynamics of Democratic Backsliding",
-  # eds. Simón Ballesteros, Daniel Laqua & Susan Stokes (user decision 2026-10-23)
+  # chapter in an edited volume under review, so no publisher yet (user decision 2026-10-24)
   venue: "The International Dynamics of Democratic Backsliding"
+  # editors: shown in the citation line and the Details list of the chapter page
+  editors: "Simón Ballesteros, Daniel Laqua, and Susan Stokes"
   type: "academic-chapter"
   portfolio: ["durability", "propaganda"]
   tags: ["dev-cooperation"]

@@ -13,7 +13,9 @@ bio:
     <a href="https://tspace.library.utoronto.ca/handle/1807/140563">PhD in
     Political Science</a> at <a href="https://politics.utoronto.ca/">the University of
     Toronto</a>. I’m a <a href="https://www.gmfus.org/marshall-memorial-fellowship">German
-    Marshall Fund Marshall Memorial Fellow (MMF) (2025)</a>.
+    Marshall Fund Marshall Memorial Fellow (MMF) (2025)</a> and a member of the
+    <a href="https://www.itu.int/net4/wsis/ungis/Home/MCG">United Nations Group on the
+    Information Society Multistakeholder Consultation Group (UNGIS-MCG)</a>.
   - >-
     At IDOS, I offer policy advice to German and international stakeholders on
     countering digital authoritarian propaganda, based on insights from my experimental
@@ -129,6 +131,10 @@ launched:
 recognition:
   - group: "Fellowships & Affiliations"
     entries:
+      - when: "2026"
+        what: "UN Group on the Information Society Multistakeholder Consultation Group (UNGIS-MCG)"
+        role: "Member"
+        url: "https://www.itu.int/net4/wsis/ungis/Home/MCG"
       - when: "2026"
         what: "Cornell Center on Global Democracy"
         role: "Community of Practice Member"

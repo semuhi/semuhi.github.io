@@ -32,6 +32,8 @@ posts:
     excerpt: "New publication! 🔔 🇪🇺 The #EU has developed a diverse menu of policy instruments to protect #democracy and human rights in its #trade policy. But with geopolitical tensions, tariff wars, and increased pressure to boost competitiveness, withdrawing trade preferences and imposing sanctions on partner governments has become more politically costly. 🛡 But that doesn't mean the EU should abandon its commitment to democracy in its trade policy. There is a feasible alternative."
     portfolio: [business, durability]
     item: 56
+    image: /assets/img/post-eu-trade-democracy.jpg
+    fit: contain  # portrait 4:5 carousel slide: crop clips the headline
   - date: 2026-10-21
     platform: linkedin
     type: publication

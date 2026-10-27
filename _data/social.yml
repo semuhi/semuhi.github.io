@@ -25,6 +25,13 @@
 # Dates for the 2024-25 backfill are decoded from the LinkedIn post IDs (UTC).
 
 posts:
+  - date: 2026-10-27
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_democracy-protection-in-the-eu-trade-policy-activity-7520803257271619584-Wx5C"
+    excerpt: "New publication! 🔔 🇪🇺 The #EU has developed a diverse menu of policy instruments to protect #democracy and human rights in its #trade policy. But with geopolitical tensions, tariff wars, and increased pressure to boost competitiveness, withdrawing trade preferences and imposing sanctions on partner governments has become more politically costly. 🛡 But that doesn't mean the EU should abandon its commitment to democracy in its trade policy. There is a feasible alternative."
+    portfolio: [business, durability]
+    item: 56
   - date: 2026-10-21
     platform: linkedin
     type: publication

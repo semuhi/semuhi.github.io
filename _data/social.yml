@@ -25,6 +25,14 @@
 # Dates for the 2024-25 backfill are decoded from the LinkedIn post IDs (UTC).
 
 posts:
+  - date: 2026-10-28
+    platform: linkedin
+    type: news
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_egovernance-ai-digitalization-share-7521184727433773057-_WQb"
+    excerpt: "I am excited to join the Multistakeholder Consultation Group of the United Nations Group on the Information Society (UNGIS-MCG). We just had our kick-off meeting for the first cohort (2026-28). The MCG is a direct result of the WSIS+20 review (WSIS Process), which the United Nations General Assembly concluded in December 2025. Following the ECOSOC call for UNGIS to draw on multi-stakeholder advice, UNGIS convenes this consultative body to receive input from diverse stakeholders and to help put WSIS commitments into practice."
+    portfolio: [aitech]
+    image: /assets/img/post-ungis-mcg.webp
+    fit: contain  # portrait 4:5 UNGIS-MCG card: crop clips the title
   - date: 2026-10-27
     platform: linkedin
     type: publication

@@ -132,6 +132,10 @@ recognition:
   - group: "Fellowships & Affiliations"
     entries:
       - when: "2026"
+        what: "The Institute for Humane Studies (IHS)"
+        role: "Affiliated Scholar"
+        url: "https://theihs.org"
+      - when: "2026"
         what: "UN Group on the Information Society Multistakeholder Consultation Group (UNGIS-MCG)"
         role: "Member"
         url: "https://www.itu.int/net4/wsis/ungis/Home/MCG"

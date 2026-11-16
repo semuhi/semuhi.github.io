@@ -1216,6 +1216,9 @@
     database comprises 172 AI deployments and, while not exhaustive, provides a comprehensive
     primary-source snapshot that lets us answer three questions empirically: Who is deploying
     AI? What for? And how far has it matured?
+  links:
+    - label: "Video"
+      url: "https://www.youtube.com/watch?v=QIWrjmeVaQE"
 
 - id: 56
   year: 2026

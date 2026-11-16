@@ -1319,3 +1319,29 @@
     light of these trends, we conclude by discussing potential tools to counter authoritarian
     propaganda about aid and civil society and identify areas for further research on how
     NGOs can adapt to survive.
+
+- id: 58
+  year: 2026
+  month: 11
+  day: 16
+  title: "The case for protecting democracies through the EU's trade policy"
+  venue: "Table.Europe"
+  type: "oped"
+  portfolio: ["business", "durability"]
+  tags: ["europe", "dev-cooperation"]
+  dataset: false
+  featured: false
+  coauthors: "Keijzer"
+  coauthors_full: "Niels Keijzer"
+  url: "https://table.media/en/europe/opinion/the-case-for-protecting-democracies-through-the-eus-trade-policy"
+  # red dashed map edge to the policy brief (user decision 2026-11-16)
+  related:
+    - {id: 56, rel: "op-ed version of"}
+  # screenshot of the Table.Briefings header, supplied by the user; contain keeps the text uncropped
+  image: "/assets/img/pub-table-eu-trade-policy.png"
+  fit: "contain"
+  blurb: "Amid geopolitical competition, the EU should not abandon its commitment to democracy in its trade policy."
+  abstract: >
+    Amid geopolitical competition, the EU should not abandon its commitment to democracy in
+    its trade policy. It may shift from democratic conditionality suspensions that target
+    partner governments to private-sector regulations.

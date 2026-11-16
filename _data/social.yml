@@ -25,6 +25,15 @@
 # Dates for the 2024-25 backfill are decoded from the LinkedIn post IDs (UTC).
 
 posts:
+  - date: 2026-11-16
+    platform: linkedin
+    type: publication
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_democracy-trade-geopolitical-share-7528084739115700224-gvPl"
+    excerpt: "New op-ed! 🔉 In a recent exchange, a colleague in the #democracy protection ecosystem told us, “We have all become #trade experts these days.” For a good reason. In this new #geopolitical environment, democracy is increasingly absent from high-stakes trade conversations, as it is harder to convince trade officials that suspension-led, government-facing democratic conditionality is proportionate."
+    portfolio: [business, durability]
+    item: 58
+    image: /assets/img/pub-table-eu-trade-policy.png
+    fit: contain  # wide Table.Briefings header: crop clips the text
   - date: 2026-10-28
     platform: linkedin
     type: news

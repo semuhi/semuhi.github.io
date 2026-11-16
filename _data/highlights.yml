@@ -17,6 +17,16 @@
 # 2026-07-18 (IDOS blog + IDOS YouTube). Kinds + portfolios reclassified by the
 # user 2026-07-19. Add one = append a block (newest first).
 
+- date: 2026-11
+  kind: media
+  # IDOS YouTube video on the IDOS report chapter (publications.yml id 55); the title
+  # follows the chapter, because the YouTube title has two typing errors
+  title: "AI's potential to facilitate more agile development cooperation"
+  portfolio: [aitech]
+  item: 55
+  image: "/assets/img/highlight10-agile-ai-video.jpg"
+  url: "https://www.youtube.com/watch?v=QIWrjmeVaQE"
+
 - date: 2026-09
   kind: talk
   title: "IDOS@APSA 2026: Tracking autocratization transparently"

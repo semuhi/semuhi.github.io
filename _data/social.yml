@@ -25,6 +25,13 @@
 # Dates for the 2024-25 backfill are decoded from the LinkedIn post IDs (UTC).
 
 posts:
+  - date: 2026-11-19
+    platform: linkedin
+    type: event
+    url: "https://www.linkedin.com/posts/semuhisinanoglu_i-was-in-brussels-this-week-for-the-applyai-ugcPost-7529210773110448128-Zwsk"
+    excerpt: "I was in Brussels this week for the #ApplyAI Summit. It was a well-attended flagship event that marked the first European AI Innovation Month and brought together key stakeholders from industry, regulation, and the technical community. One targeted sector was public administration for #AI adoption. “Many public administrations do not even know they are actually running AI pilots within their systems.” Someone said this half as a joke, but it captures where we are in AI adoption in knowledge-intensive organizations like public administrations."
+    portfolio: [aitech]
+    image: /assets/img/post-apply-ai-summit.png
   - date: 2026-11-16
     platform: linkedin
     type: publication

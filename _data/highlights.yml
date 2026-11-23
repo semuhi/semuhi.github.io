@@ -19,6 +19,17 @@
 
 - date: 2026-11
   kind: media
+  # IDOS YouTube video on the IDOS policy brief (publications.yml id 56); the title
+  # drops the YouTube suffix " | IDOS Paper | Semuhi Sinanoglu"
+  title: "How can the European Union use its trade policy to protect democracy"
+  portfolio: [business, durability]
+  item: 56
+  # YouTube thumbnail of the video (maxresdefault.jpg)
+  image: "/assets/img/highlight11-eu-trade-democracy-video.jpg"
+  url: "https://www.youtube.com/watch?v=UV6xrFualWU"
+
+- date: 2026-11
+  kind: media
   # IDOS YouTube video on the IDOS report chapter (publications.yml id 55); the title
   # follows the chapter, because the YouTube title has two typing errors
   title: "AI's potential to facilitate more agile development cooperation"
